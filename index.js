@@ -9,6 +9,8 @@ import { configOfSystemFunction } from "./routes/api/Config/configOfSystem.js";
 import auth from "./auth/auth.js";
 import Associations from "./models/association/index.js";
 import cors from "@fastify/cors";
+import { Group } from "./routes/api/Group/Group.js";
+import { Organization } from "./routes/api/Organization/Organization.js";
 const fastify = Fastify({
   logger: {
     transport: {
@@ -38,7 +40,12 @@ const start = async () => {
     fastify.register(configOfSystemFunction, {
       prefix: "/config",
     });
-
+    fastify.register(Group, {
+      prefix: "/groups",
+    });
+    fastify.register(Organization, {
+      prefix: "/organization",
+    });
     fastify.setErrorHandler((err, req, res) => {
       res
         .status(err.statusCode)

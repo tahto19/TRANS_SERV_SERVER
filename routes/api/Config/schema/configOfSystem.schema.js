@@ -1,3 +1,4 @@
+import { getArray, getObject, getString } from "../../Type/type.js";
 import {
   autoCompleteData,
   createData,
@@ -24,11 +25,11 @@ export const createDataSchema = {
     body: {
       type: "object",
       properties: {
-        groupId: { type: "string" },
-        intents: { type: "string" },
-        desc: { type: "string" },
-        script: { type: "string" },
-        data: { type: "array" },
+        groupId: getString,
+        intents: getString,
+        desc: getString,
+        script: getString,
+        data: getArray,
       },
     },
   },
@@ -46,16 +47,16 @@ export const getDataSchema = {
           data: {
             type: "object",
             properties: {
-              groupId: { type: "string" },
+              groupId: getString,
               // createdAt: { type: "date" },
-              metricRange: { type: "string" },
+              metricRange: getString,
               Intents: {
                 type: "array",
                 properties: {
-                  intent: { type: "string" },
-                  desc: { type: "string" },
-                  script: { type: "string" },
-                  data: { type: "array" },
+                  intent: getString,
+                  desc: getString,
+                  script: getString,
+                  data: getArray,
                 },
               },
             },
@@ -66,7 +67,7 @@ export const getDataSchema = {
     querystring: {
       type: "object",
       properties: {
-        groupId: { type: "string" },
+        groupId: getString,
       },
       required: ["groupId"],
     },
@@ -79,7 +80,7 @@ export const deleteDataSchema = {
   handler: deleteData,
   schema: {
     body: {
-      properties: { id: { type: "string" } },
+      properties: { id: getString },
     },
   },
 };
@@ -88,10 +89,10 @@ export const updateDataSchema = {
   schema: {
     body: {
       properties: {
-        data: { type: "array" },
-        desc: { type: "string" },
-        intent: { type: "string" },
-        script: { type: "string" },
+        data: getArray,
+        desc: getString,
+        intent: getString,
+        script: getString,
       },
     },
   },
@@ -102,7 +103,7 @@ export const autoCompleteSchema = {
     querystring: {
       type: "object",
       properties: {
-        groupId: { type: "string" },
+        groupId: getString,
       },
       // required: ["groupId"],
     },
@@ -110,8 +111,8 @@ export const autoCompleteSchema = {
       default: {
         type: "object",
         properties: {
-          data: { type: "object" },
-          result: { type: "string" },
+          data: getObject,
+          result: getString,
         },
       },
     },
@@ -123,8 +124,8 @@ export const metricsOnChangeSchema = {
     body: {
       type: "object",
       properties: {
-        groupId: { type: "string" },
-        metricRange: { type: "string" },
+        groupId: getString,
+        metricRange: getString,
       },
       required: ["groupId", "metricRange"],
     },
@@ -132,9 +133,9 @@ export const metricsOnChangeSchema = {
       default: {
         type: "object",
         properties: {
-          data: { type: "object" },
-          result: { type: "string" },
-          message: { type: "string" },
+          data: getObject,
+          result: getString,
+          message: getString,
         },
       },
     },
