@@ -12,10 +12,10 @@ Intents.init(
       allowNull: false,
       autoIncrement: true,
       primaryKey: true,
-      type: DataTypes.INTEGER,
+      type: DataTypes.INTEGER(11),
     },
     GroupServicePKey: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.INTEGER(11),
       references: {
         model: GroupServiceConfig,
         key: "id",

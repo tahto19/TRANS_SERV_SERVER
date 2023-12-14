@@ -24,7 +24,7 @@ export const getData = async (req, res) => {
     if (r === null) {
       toSend = await GroupServiceConfig.create({ groupId });
     }
-
+    console.log(toSend);
     res.send(changeSend(toSend));
   } catch (err) {
     throw err;

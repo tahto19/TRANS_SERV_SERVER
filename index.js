@@ -11,6 +11,8 @@ import Associations from "./models/association/index.js";
 import cors from "@fastify/cors";
 import { Group } from "./routes/api/Group/Group.js";
 import { Organization } from "./routes/api/Organization/Organization.js";
+import { Agent } from "./routes/api/Agent/Agent.js";
+import { CallAI } from "./routes/api/CallAI/CallAI.js";
 const fastify = Fastify({
   logger: {
     transport: {
@@ -25,16 +27,31 @@ const fastify = Fastify({
 // const { errorCodes } = fastify;
 const start = async () => {
   try {
-    await fastify.register(csrf);
-    await fastify.register(cBreaker);
-    await fastify.register(compress);
-    await fastify.register(helmet);
+    // await fastify.register(csrf);
+    await fastify.register(cBreaker, {
+      threshold: 5, // default 5
+      timeout: 5000, // default 10000
+      resetTimeout: 5000, // default 10000
+      onCircuitOpen: async (req, reply) => {
+        throw new Error("Open circuit");
+      },
+      onTimeout: async (req, reply) => {
+        throw new Error("Timeout");
+      },
+    });
+    // await fastify.register(compress, { threshold: 2048 });
+    // await fastify.register(helmet);
     await fastify.register(cors, {});
 
     // await fastify.register(require("@fastify/jwt"), {
     //   secret: process.env.SECRET,
     // });
-    fastify.addHook("preHandler", fastify.circuitBreaker());
+    fastify.addHook("preHandler", (req, reply, done) => {
+      if (!req.url.includes("callai")) {
+        fastify.circuitBreaker();
+      }
+      done();
+    });
     fastify.addHook("preHandler", auth);
 
     fastify.register(configOfSystemFunction, {
@@ -46,10 +63,20 @@ const start = async () => {
     fastify.register(Organization, {
       prefix: "/organization",
     });
+    fastify.register(Agent, {
+      prefix: "/agent",
+    });
+    fastify.register(CallAI, {
+      prefix: "/callai",
+    });
     fastify.setErrorHandler((err, req, res) => {
-      res
-        .status(err.statusCode)
-        .send({ result: "error", message: err.message, err });
+      console.log(err, "herer");
+      if (err.code === undefined) {
+        console.log(err, "123");
+      } else
+        res
+          .status(err.code)
+          .send({ result: "error", message: err.message, err });
     });
     fastify.listen(process.env.PORT, (err, address) => {
       console.log(address);
@@ -59,7 +86,7 @@ const start = async () => {
     await Connection.sync();
   } catch (err) {
     console.log(err);
-    process.exit(1);
+    // process.exit(1);
   }
 };
 

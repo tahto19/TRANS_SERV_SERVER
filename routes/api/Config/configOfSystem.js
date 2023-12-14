@@ -8,8 +8,8 @@ import {
 } from "./schema/configOfSystem.schema.js";
 
 export const configOfSystemFunction = (app, opts, done) => {
-  app.route(getDataSchema);
-  app.route(createDataSchema);
+  app.get("/", getDataSchema);
+  app.post("/addIntent", createDataSchema);
   app.post("/deleteIntent", deleteDataSchema);
   app.post("/updateIntent", updateDataSchema);
   app.get("/getAutoComplete", autoCompleteData);

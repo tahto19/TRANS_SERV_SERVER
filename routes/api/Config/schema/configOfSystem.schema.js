@@ -10,8 +10,6 @@ import {
   // updateData,
 } from "../controller/configOfSystem.controller.js";
 export const createDataSchema = {
-  method: "POST",
-  url: "/addIntent",
   handler: createData,
   schema: {
     response: {

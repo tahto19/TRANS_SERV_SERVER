@@ -1,60 +1,49 @@
 import { Op, Model, DataTypes, Sequelize } from "sequelize";
 import Connection from "../configDatabase/conn.js";
 import "dotenv/config";
-import moment from "moment/moment.js";
+class Groups extends Model {}
 
-class GroupServiceConfig extends Model {}
-
-GroupServiceConfig.init(
+Groups.init(
   {
     id: {
       allowNull: false,
-      autoIncrement: true,
       primaryKey: true,
+      autoIncrement: true,
       type: DataTypes.INTEGER(11),
     },
-    groupId: {
-      type: DataTypes.INTEGER(11),
+    name: {
       allowNull: false,
+      type: DataTypes.STRING(250),
       validate: {
         notNull: {
-          msg: "Name is null",
+          msg: "Group name is null",
         },
         customValidator(value) {
-          if (value === null) {
-            throw "groupId is null";
+          if (value === null || value === "") {
+            throw "Group name is required";
           }
 
           if (value.toString().length > 250) {
-            throw "groupId length is greater than 250";
+            throw "Group name length is greater than 250";
           }
         },
       },
     },
+    code: { allowNull: true, type: DataTypes.STRING(250), defaultValue: "" },
+    organization_id: { allowNull: false, type: DataTypes.INTEGER },
     createdAt: {
       type: "TIMESTAMP",
       defaultValue: Sequelize.literal("CURRENT_TIMESTAMP"),
       allowNull: false,
       // defaultValue: parseInt(moment().format("X")),
     },
-    metricRange: {
-      type: DataTypes.STRING,
-      allowNull: true,
-      defaultValue: "",
-    },
-
-    /**
-     * in milliseconds
-     * - 1000 (1 second)
-     */
   },
   {
     timestamps: false,
     sequelize: Connection.sequelize,
-    modelName: "GroupServiceConfig",
+    modelName: "Groups",
     paranoid: true,
-    tableName: process.env.DB_PREFIX + "_group_service_config",
+    tableName: process.env.DB_PREFIX + "_groups",
   }
 );
-
-export default GroupServiceConfig;
+export default Groups;

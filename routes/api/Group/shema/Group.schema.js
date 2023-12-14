@@ -1,33 +1,60 @@
-import { getArray, getObject, getString } from "../../Type/type.js";
+import { getArray, getInt, getObject, getString } from "../../Type/type.js";
 import {
+  createGroup,
+  getGroupInfo,
   getGroups,
   getUsersByGroupId,
+  updateGroup,
 } from "../controller/Group.controller.js";
-
+export const createGroupSchema = {
+  handler: createGroup,
+  schema: {
+    body: {
+      type: "object",
+      properties: {
+        name: getString,
+        code: getString,
+        organization_id: getInt,
+      },
+    },
+  },
+};
 export const getUsersByGroupIdSchema = {
   handler: getUsersByGroupId,
   schema: {
     body: {
       type: "object",
       properties: {
-        groudId: getString,
+        agent_group_id: getInt,
       },
+    },
+  },
+};
+
+export const getGroupInfoSchema = {
+  handler: getGroupInfo,
+  schema: {
+    queryString: {
+      id: getString,
     },
   },
 };
 export const getGroupsSchema = {
   handler: getGroups,
   schema: {
+    queryString: {
+      organization_id: getString,
+    },
+  },
+};
+export const updateGroupSchema = {
+  handler: updateGroup,
+  schema: {
     body: {
       type: "object",
       properties: {
-        companyId: getString,
-      },
-    },
-    response: {
-      200: {
-        type: "object",
-        properties: { result: getString, data: getArray },
+        name: getString,
+        id: getInt,
       },
     },
   },
