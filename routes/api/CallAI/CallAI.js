@@ -1,4 +1,8 @@
-import { intentAnylsisSchema } from "./schema/CallAI.schema.js";
+import {
+  getIntentAlysisByUserOrByGroupSchema,
+  getIntentAlysisSchema,
+  intentAnylsisSchema,
+} from "./schema/CallAI.schema.js";
 
 // import { intentAnylsisSchema } from "./schema/CallAI.schema.js";
 export const CallAI = (app, opts, done) => {
@@ -8,6 +12,9 @@ export const CallAI = (app, opts, done) => {
     },
   });
   app.post("/intentAnylsis", intentAnylsisSchema);
+  app.get("/intentAnylsis", getIntentAlysisSchema);
+  app.get("/getByUser", getIntentAlysisByUserOrByGroupSchema);
+  app.get("/getByGroup", getIntentAlysisByUserOrByGroupSchema);
   done();
 };
 // intentAnylsisSchema

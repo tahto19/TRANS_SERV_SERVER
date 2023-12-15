@@ -42,6 +42,7 @@ KpiAnylsis.init(
       allowNull: true,
       defaultValue: null,
     },
+    getWeight: { type: DataTypes.STRING(250), allowNull: false },
     deletedAt: { type: DataTypes.DATE, allowNull: true, defaultValue: null },
     setup_id: { type: DataTypes.INTEGER(11), allowNull: false },
   },

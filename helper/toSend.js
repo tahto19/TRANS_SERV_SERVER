@@ -1,4 +1,6 @@
 export const changeSend = (data) => {
-  console.log(data);
-  return { result: "success", data };
+  return { result: "success", data: data };
+};
+export const tojson = (data) => {
+  return data.toJSON();
 };

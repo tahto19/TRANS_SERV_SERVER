@@ -242,15 +242,19 @@ export class proccessIntent {
       let i = 0;
       let j = 0;
       while (a.id === null) {
-        console.log("create again");
+        if (j !== 0) console.log("Attempting to reconnect create " + j);
         a.id = await er.create();
-        console.log(a.id, j);
         j++;
       }
+      console.log(a);
       while (a.details === null) {
-        console.log("execute again");
+        if (i !== 0) {
+          console.log("Attempting to reconnect get " + i);
+          // a.details = await er.callback();
+        }
+        // else
+
         a.details = await er.execute();
-        console.log(a.details, i);
         i++;
       }
       console.log(a);

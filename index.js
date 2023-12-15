@@ -70,9 +70,9 @@ const start = async () => {
       prefix: "/callai",
     });
     fastify.setErrorHandler((err, req, res) => {
-      console.log(err, "herer");
+      console.log(err);
       if (err.code === undefined) {
-        console.log(err, "123");
+        res.status(400).send({ result: "error", message: "Invalid" });
       } else
         res
           .status(err.code)
