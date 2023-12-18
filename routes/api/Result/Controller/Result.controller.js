@@ -165,3 +165,4 @@ export const getTotal = async (req, res) => {
     throw err;
   }
 };
+export const seperateTranscript = async (req, res) => {};

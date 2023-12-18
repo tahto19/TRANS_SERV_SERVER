@@ -6,6 +6,7 @@ import IntentResult from "../IntentResult.model.js";
 import Intents from "../Intents.model.js";
 import KpiAnylsis from "../KpiAnylsis.model.js";
 import SentimentAnylsis from "../SentimentAnylsis.model.js";
+import TranscriptSeperation from "../TranscriptSeperation.js";
 import Transcripts from "../Transcripts.model.js";
 
 export default async function Associations() {
@@ -48,6 +49,18 @@ export default async function Associations() {
     constraints: false,
   });
   SentimentAnylsis.belongsTo(Transcripts, {
+    foreignKey: "transcript_id",
+    targetKey: "id",
+    constraints: false,
+  });
+  // ##################### trans to seperate
+
+  Transcripts.hasOne(TranscriptSeperation, {
+    foreignKey: "transcript_id",
+    sourceKey: "id",
+    constraints: false,
+  });
+  TranscriptSeperation.belongsTo(Transcripts, {
     foreignKey: "transcript_id",
     targetKey: "id",
     constraints: false,
