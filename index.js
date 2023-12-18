@@ -13,6 +13,7 @@ import { Group } from "./routes/api/Group/Group.js";
 import { Organization } from "./routes/api/Organization/Organization.js";
 import { Agent } from "./routes/api/Agent/Agent.js";
 import { CallAI } from "./routes/api/CallAI/CallAI.js";
+import Result from "./routes/api/Result/Result.js";
 const fastify = Fastify({
   logger: {
     transport: {
@@ -69,8 +70,10 @@ const start = async () => {
     fastify.register(CallAI, {
       prefix: "/callai",
     });
+    fastify.register(Result, {
+      prefix: "/result",
+    });
     fastify.setErrorHandler((err, req, res) => {
-      console.log(err);
       if (err.code === undefined) {
         res.status(400).send({ result: "error", message: "Invalid" });
       } else

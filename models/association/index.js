@@ -55,13 +55,12 @@ export default async function Associations() {
   // ##################### IntentResult to IntentDetails sub_intent
 
   IntentDetails.hasOne(IntentResult, {
-    as: "sub_intent",
     foreignKey: "sub_intent_id",
     sourceKey: "id",
     constraints: false,
   });
   IntentResult.belongsTo(IntentDetails, {
-    as: "sub_intent1",
+    as: "sub_intent",
     foreignKey: "sub_intent_id",
     targetKey: "id",
     constraints: false,

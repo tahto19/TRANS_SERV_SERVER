@@ -48,7 +48,7 @@ Transcripts.init(
   {
     timestamps: false,
     sequelize: Connection.sequelize,
-    modelName: "Agents",
+    modelName: "Transcripts",
     paranoid: true,
     tableName: process.env.DB_PREFIX + "_transcripts",
   }
