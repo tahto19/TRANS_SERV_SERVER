@@ -25,11 +25,12 @@ export class proccessIntent {
     this.group_id;
     this.Intents = [];
     this.error = [];
+    this.kind;
   }
-  async process(transcript, userId) {
+  async process(transcript, userId, kind) {
     try {
       var getUserInfo = await this.getUserInfo(userId);
-
+      this.kind = kind;
       if (getUserInfo === null)
         handleError("Id Provided cant find in the database");
 
@@ -150,7 +151,8 @@ export class proccessIntent {
     return response;
   }
   async getUserInfo(userId) {
-    let r = await Groups.findOne({
+    let r = await Groups.findAll({
+      raw: true,
       include: [
         {
           model: Agents,
@@ -160,10 +162,12 @@ export class proccessIntent {
         },
       ],
     });
+    console.log(r);
     return changeToJson(r);
   }
   async getServiceConfigDetails() {
-    let r = await GroupServiceConfig.findOne({
+    let r = await GroupServiceConfig.findAll({
+      raw: true,
       where: { groupId: this.group_id },
       include: [
         {
@@ -257,7 +261,7 @@ export class proccessIntent {
         a.details = await er.execute();
         i++;
       }
-      console.log(a);
+
       return a;
     } catch (err) {
       handleError(err.message);

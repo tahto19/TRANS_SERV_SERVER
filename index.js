@@ -14,6 +14,8 @@ import { Organization } from "./routes/api/Organization/Organization.js";
 import { Agent } from "./routes/api/Agent/Agent.js";
 import { CallAI } from "./routes/api/CallAI/CallAI.js";
 import Result from "./routes/api/Result/Result.js";
+import fastifyMultipart from "@fastify/multipart";
+import Notes from "./routes/api/Notes/Notes.js";
 const fastify = Fastify({
   logger: {
     transport: {
@@ -40,6 +42,18 @@ const start = async () => {
         throw new Error("Timeout");
       },
     });
+    await fastify.register(fastifyMultipart, {
+      limits: {
+        fieldNameSize: 100, // Max field name size in bytes
+        fieldSize: 100, // Max field value size in bytes
+        fields: 10, // Max number of non-file fields
+        fileSize: 100000000, // For multipart forms, the max file size in bytes
+        files: 1, // Max number of file fields
+        headerPairs: 2000, // Max number of header key=>value pairs
+        parts: 1000, // For multipart forms, the max number of parts (fields + files)
+      },
+    });
+
     // await fastify.register(compress, { threshold: 2048 });
     // await fastify.register(helmet);
     await fastify.register(cors, {});
@@ -48,7 +62,7 @@ const start = async () => {
     //   secret: process.env.SECRET,
     // });
     fastify.addHook("preHandler", (req, reply, done) => {
-      if (!req.url.includes("callai")) {
+      if (!req.url.includes("callai") || !req.url.includes("getAudio")) {
         fastify.circuitBreaker();
       }
       done();
@@ -72,6 +86,9 @@ const start = async () => {
     });
     fastify.register(Result, {
       prefix: "/result",
+    });
+    fastify.register(Notes, {
+      prefix: "/notes",
     });
     fastify.setErrorHandler((err, req, res) => {
       if (err.code === undefined) {

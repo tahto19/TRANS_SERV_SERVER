@@ -2,6 +2,8 @@ import {
   getIntentAlysisByUserOrByGroupSchema,
   getIntentAlysisSchema,
   intentAnylsisSchema,
+  newintentAnylsisSchema,
+  speechTotextSchema,
 } from "./schema/CallAI.schema.js";
 
 // import { intentAnylsisSchema } from "./schema/CallAI.schema.js";
@@ -12,9 +14,13 @@ export const CallAI = (app, opts, done) => {
     },
   });
   app.post("/intentAnylsis", intentAnylsisSchema);
+
   app.get("/intentAnylsis", getIntentAlysisSchema);
+  app.post("/speechTotext", speechTotextSchema);
   app.get("/getByUser", getIntentAlysisByUserOrByGroupSchema);
   app.get("/getByGroup", getIntentAlysisByUserOrByGroupSchema);
+  app.post("/newintentAnylsis", newintentAnylsisSchema);
+  // app.post("/callback", newintentAnylsisSchema);
   done();
 };
 // intentAnylsisSchema

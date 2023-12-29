@@ -1,10 +1,20 @@
-import { getCSAT, getTotal } from "../Controller/Result.controller.js";
-import { getString } from "../../Type/type.js";
+import {
+  getAudio,
+  getCSAT,
+  getDashboard,
+  getMetricsPerIntent,
+  getMetricsofKpi,
+  getSentiment,
+  getTotal,
+  getTranscriptOfUsersInGroup,
+  seperateTranscript,
+} from "../Controller/Result.controller.js";
+import { getString, getInt } from "../../Type/type.js";
 export const getTotalSchema = {
   handler: getTotal,
   schema: {
     queryString: {
-      id: { getString },
+      id: getInt,
     },
   },
 };
@@ -12,7 +22,70 @@ export const getCSAtSchema = {
   handler: getCSAT,
   schema: {
     queryString: {
-      id: { getString },
+      id: getInt,
+    },
+  },
+};
+export const getScriptSeperationSchema = {
+  handler: seperateTranscript,
+  schema: {
+    queryString: {
+      id: getInt,
+    },
+  },
+};
+
+export const getTranscriptOfUsersInGroupSchema = {
+  handler: getTranscriptOfUsersInGroup,
+  schema: {
+    queryString: {
+      id: getInt,
+    },
+  },
+};
+export const getAudioSchema = {
+  handler: getAudio,
+  schema: {
+    queryString: {
+      id: getInt,
+    },
+  },
+};
+export const getMetricsofKpiSchema = {
+  handler: getMetricsofKpi,
+  schema: {
+    queryString: {
+      id: getInt,
+    },
+  },
+};
+export const getMetricsPerIntentSchema = {
+  handler: getMetricsPerIntent,
+  schema: {
+    body: {
+      type: "object",
+      properties: {
+        id: getInt,
+        intent: getString,
+      },
+    },
+  },
+};
+export const getDashboardSchema = {
+  handler: getDashboard,
+  schema: {
+    queryString: {
+      id: getInt,
+    },
+  },
+};
+export const getSentimentSchema = {
+  handler: getSentiment,
+  schema: {
+    queryString: {
+      id: getInt,
+      start: getString,
+      end: getString,
     },
   },
 };

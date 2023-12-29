@@ -10,16 +10,14 @@ class executeRequest {
   }
   async create() {
     try {
-      console.log("create running");
       let r = await axios.post(
         `${process.env.EXTERNAL_SERVICE_API_ENDPOINT}/request/create`,
         this.getData
       );
 
-      console.log("create done");
       if (r.data.details.id === undefined) return null;
       this.id = r.data.details.id;
-      return r.data.details.id;
+      return r.data.details;
     } catch (err) {
       console.log(err);
       return null;
@@ -35,12 +33,17 @@ class executeRequest {
         `${process.env.EXTERNAL_SERVICE_API_ENDPOINT}/request/mock/execute/` +
           getId
       );
-      console.log(r.data);
+
       console.log("execute done");
+      console.log(r.data);
       if (r.data.details === undefined) return null;
-      else
-        return r.data.details.choices[0].message.tool_calls[0].function
-          .arguments;
+      else {
+        if (r.data.details.choices === undefined) {
+          return r.data.details.text;
+        } else
+          return r.data.details.choices[0].message.tool_calls[0].function
+            .arguments;
+      }
     } catch (err) {
       console.log(err);
       return null;

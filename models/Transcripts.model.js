@@ -2,6 +2,7 @@ import { Op, Model, DataTypes, Sequelize } from "sequelize";
 import Connection from "../configDatabase/conn.js";
 import "dotenv/config";
 import Groups from "./Groups.model.js";
+import Agents from "./Agents.model.js";
 
 class Transcripts extends Model {}
 
@@ -29,6 +30,10 @@ Transcripts.init(
     agent_id: {
       allowNull: false,
       type: DataTypes.INTEGER(11),
+      references: {
+        model: Agents,
+        key: "id",
+      },
     },
     createdAt: {
       type: "TIMESTAMP",

@@ -4,6 +4,7 @@ import {
   getGroupInfo,
   getGroups,
   getUsersByGroupId,
+  getUsersByGroupIdWithTranscripts,
   updateGroup,
 } from "../controller/Group.controller.js";
 export const createGroupSchema = {
@@ -56,6 +57,14 @@ export const updateGroupSchema = {
         name: getString,
         id: getInt,
       },
+    },
+  },
+};
+export const getUserByGroupIdWithTranscriptSchema = {
+  handler: getUsersByGroupIdWithTranscripts,
+  schema: {
+    queryString: {
+      id: getInt,
     },
   },
 };

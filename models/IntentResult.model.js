@@ -16,11 +16,12 @@ IntentResult.init(
     },
     main_intent_id: {
       type: DataTypes.INTEGER(11),
-      allowNull: false,
+      allowNull: true,
       references: {
         model: IntentDetails,
         key: "id",
       },
+      defaultValue: null,
     },
     sub_intent_id: {
       type: DataTypes.INTEGER(11),
@@ -29,6 +30,7 @@ IntentResult.init(
         model: IntentDetails,
         key: "id",
       },
+      defaultValue: null,
     },
     transcript_id: {
       type: DataTypes.INTEGER(11),

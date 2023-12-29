@@ -3,6 +3,8 @@ import {
   getIntentAnylsis,
   getIntentByuserOrByGroup,
   intentAnylsis,
+  newIntentAnylsis,
+  speechTotext,
 } from "../controller/CallAI.controller.js";
 
 export const intentAnylsisSchema = {
@@ -32,5 +34,12 @@ export const getIntentAlysisByUserOrByGroupSchema = {
         id: getObject,
       },
     },
+  },
+};
+export const speechTotextSchema = { handler: speechTotext };
+export const newintentAnylsisSchema = {
+  handler: newIntentAnylsis,
+  schema: {
+    body: { type: "object", properties: { transcript: getString, id: getInt } },
   },
 };

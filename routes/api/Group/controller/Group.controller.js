@@ -66,3 +66,42 @@ export const updateGroup = async (req, res) => {
     throw err;
   }
 };
+export const getUsersByGroupIdWithTranscripts = async (req, res) => {
+  try {
+    const { agent_group_id } = req.body;
+    let queryFind = req.url.includes("getByUser")
+      ? { group_id: id }
+      : { agent_id: id };
+    const r = await Transcripts.findAll({
+      where: queryFind,
+      include: [
+        {
+          require: false,
+          model: IntentResult,
+          attributes: ["main_intent_id", "sub_intent_id", "id"],
+          include: [
+            {
+              require: false,
+              model: IntentDetails,
+              attributes: ["intent_name", "desc", "score"],
+              as: "main_intent",
+            },
+          ],
+        },
+        {
+          require: false,
+          model: KpiAnylsis,
+          attributes: ["anaylsis", "kpi", "rating", "getWeight"],
+        },
+        {
+          require: false,
+          model: SentimentAnylsis,
+          attributes: ["sentiment_score", "explanation", "sentiment_name"],
+        },
+      ],
+    });
+    res.send(changeSend(r));
+  } catch (err) {
+    throw err;
+  }
+};

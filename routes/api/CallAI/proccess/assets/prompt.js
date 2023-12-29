@@ -3,3 +3,7 @@ export const intent_prompt =
 export const kpi_prompt = `Rate the text based on the following KPI.
 KPIs to rate:[kpi_array]
 Evaluate the  KPI against [transcript] and GRADE as [metricrange]. EXPLAIN your evaluation of KPI in one sentence. Return your result as JSON with the following fields: KPI, GRADE, EXPLAIN.`;
+export const compliance_prompt = `Compliance: evaluate [transcript] compliance to [script]. rate using [callmetrics] as the range. Explain your answer in one sentence as description
+Suggestion: Provide an evaluation of [transcript]. Suggest what can be done to improve the conversation.
+
+Do not include personal identifiable information in your response. `;

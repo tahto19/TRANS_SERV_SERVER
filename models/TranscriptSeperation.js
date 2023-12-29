@@ -46,6 +46,7 @@ TranscriptSeperation.init(
       type: DataTypes.DATE,
       allowNull: true,
     },
+    setup_id: { type: DataTypes.INTEGER(11), allowNull: false },
   },
   {
     timestamps: false,

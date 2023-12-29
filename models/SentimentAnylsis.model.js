@@ -12,14 +12,14 @@ SentimentAnylsis.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    sentiment_score: { type: DataTypes.INTEGER(11), allowNull: false },
+    sentiment_score: { type: DataTypes.INTEGER(11), allowNull: true },
     sentiment_name: {
       type: DataTypes.STRING(250),
-      allowNull: false,
+      allowNull: true,
     },
     explanation: {
       type: DataTypes.TEXT,
-      allowNull: false,
+      allowNull: true,
     },
     transcript_id: {
       type: DataTypes.INTEGER(11),

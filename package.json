@@ -17,6 +17,7 @@
     "@fastify/csrf-protection": "^6.4.1",
     "@fastify/helmet": "^11.1.1",
     "@fastify/jwt": "^7.2.4",
+    "@fastify/multipart": "^8.0.0",
     "@fastify/swagger": "^8.12.1",
     "axios": "^1.6.2",
     "cors": "^2.8.5",
@@ -27,7 +28,8 @@
     "moment": "^2.29.4",
     "pino": "^8.16.2",
     "pino-pretty": "^10.2.3",
-    "sequelize": "^6.35.1"
+    "sequelize": "^6.35.1",
+    "uuid": "^9.0.1"
   },
   "devDependencies": {
     "nodemon": "^3.0.2"

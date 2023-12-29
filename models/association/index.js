@@ -1,10 +1,12 @@
 import Agents from "../Agents.model.js";
+import Compliance from "../Compliance.model.js";
 import GroupServiceConfig from "../GroupServiceConfig.model.js";
 import Groups from "../Groups.model.js";
 import IntentDetails from "../IntentDetails.model.js";
 import IntentResult from "../IntentResult.model.js";
 import Intents from "../Intents.model.js";
 import KpiAnylsis from "../KpiAnylsis.model.js";
+import Notes from "../Notes.model.js";
 import SentimentAnylsis from "../SentimentAnylsis.model.js";
 import TranscriptSeperation from "../TranscriptSeperation.js";
 import Transcripts from "../Transcripts.model.js";
@@ -18,6 +20,46 @@ export default async function Associations() {
   Groups.hasMany(Agents, {
     foreignKey: "agent_group_id",
     sourceKey: "id",
+    constraints: false,
+  });
+  Agents.hasMany(Transcripts, {
+    foreignKey: "agent_id",
+    sourceKey: "id",
+    constraints: false,
+  });
+  Transcripts.belongsTo(Agents, {
+    foreignKey: "agent_id",
+    targetKey: "id",
+    constraints: false,
+  });
+  Groups.hasMany(Transcripts, {
+    foreignKey: "group_id",
+    sourceKey: "id",
+    constraints: false,
+  });
+  Transcripts.belongsTo(Groups, {
+    foreignKey: "group_id",
+    targetKey: "id",
+    constraints: false,
+  }); // ##################### trans to notes
+  Transcripts.hasOne(Notes, {
+    foreignKey: "transcript_id",
+    sourceKey: "id",
+    constraints: false,
+  });
+  Notes.belongsTo(Transcripts, {
+    foreignKey: "transcript_id",
+    targetKey: "id",
+    constraints: false,
+  }); // ##################### trans to compliance
+  Transcripts.hasOne(Compliance, {
+    foreignKey: "transcript_id",
+    sourceKey: "id",
+    constraints: false,
+  });
+  Compliance.belongsTo(Transcripts, {
+    foreignKey: "transcript_id",
+    targetKey: "id",
     constraints: false,
   });
   // ##################### trans to intentresults
@@ -52,7 +94,18 @@ export default async function Associations() {
     foreignKey: "transcript_id",
     targetKey: "id",
     constraints: false,
-  });
+  }); //
+  // ##################### trans to transcripts
+  // Transcripts.hasMany(StoredSpeach, {
+  //   foreignKey: "transcript_id",
+  //   sourceKey: "id",
+  //   constraints: false,
+  // });
+  // StoredSpeach.belongsTo(Transcripts, {
+  //   foreignKey: "transcript_id",
+  //   targetKey: "id",
+  //   constraints: false,
+  // });
   // ##################### trans to seperate
 
   Transcripts.hasOne(TranscriptSeperation, {

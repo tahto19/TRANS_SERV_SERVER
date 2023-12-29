@@ -32,6 +32,7 @@ KpiAnylsis.init(
         key: "id",
       },
     },
+    metricsRange: { type: DataTypes.STRING(250), allowNull: false },
     createdAt: {
       type: "TIMESTAMP",
       allowNull: false,
