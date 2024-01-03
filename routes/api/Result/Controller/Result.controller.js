@@ -96,6 +96,7 @@ export const getCSAT = async (req, res) => {
       let csatTotal = ckpi.totalOfKPI();
       data["csatTotal"] = csatTotal;
       data["count"] = totalEach;
+      // data["createdAt"] = data;
       totalEach += 1;
       total += csatTotal === null ? 0 : csatTotal;
       data["csatPercentageTotal"] = `${getTotalRating}%`;
