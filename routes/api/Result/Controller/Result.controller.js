@@ -752,7 +752,7 @@ export const getSentimentTable = async (req, res) => {
       ? { group_id: id }
       : { agent_id: id };
     let r = await Transcripts.findAll({
-      raw: true,
+      // raw: true,
       // where: queryFind,
 
       include: [
@@ -765,6 +765,13 @@ export const getSentimentTable = async (req, res) => {
           model: Agents,
         },
       ],
+      attributes: [
+        [
+          Sequelize.fn("COUNT", Sequelize.col("SentiAnylses.sentiment_name")),
+          "count",
+        ],
+      ],
+      group: ["Agent.fullname", "SentiAnylses.sentiment_name"],
       // attributes: ["SentiAnylses", "id", "agent_id"],
     });
     res.send(changeSend(r));
