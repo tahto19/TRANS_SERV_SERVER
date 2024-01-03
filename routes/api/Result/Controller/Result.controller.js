@@ -47,7 +47,7 @@ export const getCSAT = async (req, res) => {
         {
           required: false,
           model: Groups,
-          attributes: [],
+          // attributes: [],
         },
         {
           required: false,
