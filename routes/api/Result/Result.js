@@ -6,6 +6,7 @@ import {
   getMetricsofKpiSchema,
   getScriptSeperationSchema,
   getSentimentSchema,
+  getSentimentTableSchema,
   getTotalSchema,
   getTranscriptOfUsersInGroupSchema,
 } from "./Schema/Result.Schema.js";
@@ -23,6 +24,7 @@ const Result = (app, opts, done) => {
   app.post("/getMetricsPerIntentByUser", getMetricsPerIntentSchema);
   app.get("/dashboardPerOrg", getDashboardSchema);
   app.get("/sentiment/getByGroup", getSentimentSchema);
+  app.get("/sentimentTable/getByGroup", getSentimentTableSchema);
   app.get("/getAudio", getAudioSchema);
   done();
 };

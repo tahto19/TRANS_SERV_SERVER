@@ -37,7 +37,7 @@ export const getCSAT = async (req, res) => {
     }
     const r = await Transcripts.findAll({
       where: queryFind,
-      attributes: ["id"],
+      attributes: ["id", "createdAt", "updatedAt"],
       include: [
         {
           required: false,
@@ -712,31 +712,59 @@ export const getSentiment = async (req, res) => {
       queryFind["createdAt"] = { [Op.between]: [changeStart, changeEnd] };
     }
     let r = await Transcripts.findAll({
+      // raw: true,
       where: queryFind,
+
+      include: {
+        required: false,
+        model: SentimentAnylsis,
+        attributes: [],
+      },
       attributes: [
         [
-          Sequelize.fn("FORMAT", Sequelize.col("createdAt"), "yyyy-mm-dd"),
-          "createdAt",
+          Sequelize.fn(
+            "date_format",
+            Sequelize.col("Transcripts.createdAt"),
+            "%Y-%m-%d"
+          ),
+          "formattedCreatedAt",
         ],
+
         [
-          Sequelize.fn(Sequelize.col("SentiAnylses.sentiment_name")),
-          "sentiment_name",
+          Sequelize.fn("COUNT", Sequelize.col("SentiAnylses.sentiment_name")),
+          "count",
         ],
-        // [
-        //   Sequelize.fn("COUNT", Sequelize.col("SentiAnylses.sentiment_name")),
-        //   "count",
-        // ],
-        // [Sequelize.col("SentiAnylses.sentiment_name"), "sentiment_name"],
+        [Sequelize.col("SentiAnylses.sentiment_name"), "sentiment_name"],
       ],
+      group: ["SentiAnylses.sentiment_name", "formattedCreatedAt"],
+    });
+    res.send(changeSend(r));
+  } catch (err) {
+    console.log(err);
+    throw err;
+  }
+};
+export const getSentimentTable = async (req, res) => {
+  try {
+    const { id, start, end } = req.query;
+    let queryFind = req.url.includes("getByGroup")
+      ? { group_id: id }
+      : { agent_id: id };
+    let r = await Transcripts.findAll({
+      raw: true,
+      // where: queryFind,
+
       include: [
         {
-          required: true,
+          require: true,
           model: SentimentAnylsis,
-          attributes: [],
+        },
+        {
+          require: true,
+          model: Agents,
         },
       ],
-
-      // group: ["SentiAnylses.sentiment_name"],
+      // attributes: ["SentiAnylses", "id", "agent_id"],
     });
     res.send(changeSend(r));
   } catch (err) {

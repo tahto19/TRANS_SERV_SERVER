@@ -5,6 +5,7 @@ import {
   getMetricsPerIntent,
   getMetricsofKpi,
   getSentiment,
+  getSentimentTable,
   getTotal,
   getTranscriptOfUsersInGroup,
   seperateTranscript,
@@ -81,6 +82,16 @@ export const getDashboardSchema = {
 };
 export const getSentimentSchema = {
   handler: getSentiment,
+  schema: {
+    queryString: {
+      id: getInt,
+      start: getString,
+      end: getString,
+    },
+  },
+};
+export const getSentimentTableSchema = {
+  handler: getSentimentTable,
   schema: {
     queryString: {
       id: getInt,
