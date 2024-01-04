@@ -1,9 +1,11 @@
 import {
+  averageCompliance,
   getAudio,
   getCSAT,
   getDashboard,
   getMetricsPerIntent,
   getMetricsofKpi,
+  getPertIntentInCompliance,
   getSentiment,
   getSentimentTable,
   getTotal,
@@ -92,6 +94,26 @@ export const getSentimentSchema = {
 };
 export const getSentimentTableSchema = {
   handler: getSentimentTable,
+  schema: {
+    queryString: {
+      id: getInt,
+      start: getString,
+      end: getString,
+    },
+  },
+};
+export const getAverageComplianceSchema = {
+  handler: averageCompliance,
+  schema: {
+    queryString: {
+      id: getInt,
+      start: getString,
+      end: getString,
+    },
+  },
+};
+export const getPertIntentInComplianceSchema = {
+  handler: getPertIntentInCompliance,
   schema: {
     queryString: {
       id: getInt,

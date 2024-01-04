@@ -1,9 +1,11 @@
 import {
   getAudioSchema,
+  getAverageComplianceSchema,
   getCSAtSchema,
   getDashboardSchema,
   getMetricsPerIntentSchema,
   getMetricsofKpiSchema,
+  getPertIntentInComplianceSchema,
   getScriptSeperationSchema,
   getSentimentSchema,
   getSentimentTableSchema,
@@ -25,6 +27,9 @@ const Result = (app, opts, done) => {
   app.get("/dashboardPerOrg", getDashboardSchema);
   app.get("/sentiment/getByGroup", getSentimentSchema);
   app.get("/sentimentTable/getByGroup", getSentimentTableSchema);
+  app.get("/compliance/averagebyGroup", getAverageComplianceSchema);
+  app.get("/compliance/averagebyAgent", getAverageComplianceSchema);
+  app.get("/compliance/perIntentByGroup", getPertIntentInComplianceSchema);
   app.get("/getAudio", getAudioSchema);
   done();
 };

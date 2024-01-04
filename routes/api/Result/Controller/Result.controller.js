@@ -16,6 +16,8 @@ import StoredSpeech from "../../../../models/StoredSpeech.model.js";
 import fs from "fs";
 import { changeFormat, changeToJson } from "../../../../helper/helpersHere.js";
 import Compliance from "../../../../models/Compliance.model.js";
+import moment from "moment/moment.js";
+
 export const getCSAT = async (req, res) => {
   try {
     const { id, start, end } = req.query;
@@ -25,8 +27,9 @@ export const getCSAT = async (req, res) => {
       : req.url.includes("getByGroup")
       ? { group_id: id }
       : { id };
-    var changeStart = new Date(start);
-    var changeEnd = new Date(end);
+
+    var changeStart = new Date(moment(start).startOf("day"));
+    var changeEnd = new Date(moment(end).endOf("day"));
     if (
       start !== "" &&
       end !== "" &&
@@ -119,8 +122,8 @@ export const getCSAT = async (req, res) => {
 export const getTotal = async (req, res) => {
   try {
     const { id, start, end } = req.query;
-    var changeStart = new Date(start);
-    var changeEnd = new Date(end);
+    var changeStart = moment(start).startOf("day");
+    var changeEnd = moment(end).endOf("day");
     let queryFind = req.url.includes("getByUser")
       ? { agent_id: id }
       : { group_id: id };
@@ -422,8 +425,8 @@ export const getMetricsPerIntent = async (req, res) => {
     let queryFind = req.url.includes("getMetricsPerIntentByGroup")
       ? { group_id: id }
       : { agent_id: id };
-    var changeStart = new Date(start);
-    var changeEnd = new Date(end);
+    var changeStart = moment(start).startOf("day");
+    var changeEnd = moment(end).endOf("day");
     if (
       start !== "" &&
       end !== "" &&
@@ -531,8 +534,8 @@ export const getDashboard = async (req, res) => {
   try {
     // where: { KpiAnylses: { [Op.not]: null } },
     const { id, start, end } = req.query;
-    var changeStart = new Date(start);
-    var changeEnd = new Date(end);
+    var changeStart = moment(start).startOf("day");
+    var changeEnd = moment(end).endOf("day");
     let queryFind = {
       where: { organization_id: id },
       include: [
@@ -710,7 +713,9 @@ export const getSentiment = async (req, res) => {
       start !== undefined &&
       end !== undefined
     ) {
-      queryFind["createdAt"] = { [Op.between]: [changeStart, changeEnd] };
+      queryFind["createdAt"] = {
+        [Op.between]: [moment(start).startOf("day"), moment(end).endOf("day")],
+      };
     }
     let r = await Transcripts.findAll({
       // raw: true,
@@ -777,6 +782,88 @@ export const getSentimentTable = async (req, res) => {
     res.send(changeSend(r));
   } catch (err) {
     console.log(err);
+    throw err;
+  }
+};
+export const averageCompliance = async (req, res) => {
+  try {
+    const { id, start, end } = req.query;
+    let queryFind = req.url.includes("averagebyGroup")
+      ? { group_id: id }
+      : { agent_id: id };
+    let r = await Transcripts.findAll({
+      where: queryFind,
+      include: [
+        {
+          require: true,
+          model: Compliance,
+          // attributes: [],
+        },
+        {
+          required: true,
+          model: IntentResult,
+          attributes: [],
+          where: { main_intent_id: { [Op.not]: null } },
+          include: [
+            {
+              require: true,
+              model: IntentDetails,
+              attributes: [],
+              as: "main_intent",
+            },
+          ],
+        },
+      ],
+      attributes: [
+        [Sequelize.col("IntentResults.main_intent.intent_name"), "Intent_Name"],
+        [Sequelize.fn("COUNT", Sequelize.col("Compliance.id")), "count"],
+        [Sequelize.fn("SUM", Sequelize.col("Compliance.score")), "score"],
+      ],
+      group: ["IntentResults.main_intent.intent_name"],
+    });
+    res.send(changeSend(r));
+  } catch (err) {
+    throw err;
+  }
+};
+export const getPertIntentInCompliance = async (req, res) => {
+  try {
+    const { id, start, end } = req.query;
+    let queryFind = req.url.includes("perIntentByGroup")
+      ? { group_id: id }
+      : { agent_id: id };
+    let r = await Transcripts.findAll({
+      where: queryFind,
+      include: [
+        {
+          require: true,
+          model: Compliance,
+          attributes: [],
+        },
+        {
+          required: true,
+          model: IntentResult,
+          attributes: [],
+          where: { main_intent_id: { [Op.not]: null } },
+          include: [
+            {
+              require: true,
+              model: IntentDetails,
+              attributes: [],
+              as: "main_intent",
+            },
+          ],
+        },
+      ],
+      attributes: [
+        [Sequelize.col("IntentResults.main_intent.intent_name"), "Intent_Name"],
+        [Sequelize.fn("COUNT", Sequelize.col("Compliance.id")), "count"],
+        [Sequelize.fn("SUM", Sequelize.col("Compliance.score")), "score"],
+      ],
+      group: ["IntentResults.main_intent.intent_name"],
+    });
+    res.send(changeSend(r));
+  } catch (err) {
     throw err;
   }
 };
