@@ -28,8 +28,12 @@ export const getCSAT = async (req, res) => {
       ? { group_id: id }
       : { id };
 
-    var changeStart = new Date(moment(start).startOf("day"));
-    var changeEnd = new Date(moment(end).endOf("day"));
+    var changeStart = new Date(
+      moment(start).startOf("day").format("YYYY-MM-DD HH:mm:ss")
+    );
+    var changeEnd = new Date(
+      moment(end).endOf("day").format("YYYY-MM-DD HH:mm:ss")
+    );
     if (
       start !== "" &&
       end !== "" &&
@@ -122,8 +126,10 @@ export const getCSAT = async (req, res) => {
 export const getTotal = async (req, res) => {
   try {
     const { id, start, end } = req.query;
-    var changeStart = moment(start).startOf("day");
-    var changeEnd = moment(end).endOf("day");
+    var changeStart = moment(start)
+      .startOf("day")
+      .format("YYYY-MM-DD HH:mm:ss");
+    var changeEnd = moment(end).endOf("day").format("YYYY-MM-DD HH:mm:ss");
     let queryFind = req.url.includes("getByUser")
       ? { agent_id: id }
       : { group_id: id };
@@ -425,8 +431,10 @@ export const getMetricsPerIntent = async (req, res) => {
     let queryFind = req.url.includes("getMetricsPerIntentByGroup")
       ? { group_id: id }
       : { agent_id: id };
-    var changeStart = moment(start).startOf("day");
-    var changeEnd = moment(end).endOf("day");
+    var changeStart = moment(start)
+      .startOf("day")
+      .format("YYYY-MM-DD HH:mm:ss");
+    var changeEnd = moment(end).endOf("day").format("YYYY-MM-DD HH:mm:ss");
     if (
       start !== "" &&
       end !== "" &&
@@ -534,8 +542,10 @@ export const getDashboard = async (req, res) => {
   try {
     // where: { KpiAnylses: { [Op.not]: null } },
     const { id, start, end } = req.query;
-    var changeStart = moment(start).startOf("day");
-    var changeEnd = moment(end).endOf("day");
+    var changeStart = moment(start)
+      .startOf("day")
+      .format("YYYY-MM-DD HH:mm:ss");
+    var changeEnd = moment(end).endOf("day").format("YYYY-MM-DD HH:mm:ss");
     let queryFind = {
       where: { organization_id: id },
       include: [
@@ -714,7 +724,10 @@ export const getSentiment = async (req, res) => {
       end !== undefined
     ) {
       queryFind["createdAt"] = {
-        [Op.between]: [moment(start).startOf("day"), moment(end).endOf("day")],
+        [Op.between]: [
+          moment(start).startOf("day").format("YYYY-MM-DD HH:mm:ss"),
+          moment(end).endOf("day").format("YYYY-MM-DD HH:mm:ss"),
+        ],
       };
     }
     let r = await Transcripts.findAll({
@@ -797,7 +810,7 @@ export const averageCompliance = async (req, res) => {
         {
           require: true,
           model: Compliance,
-          // attributes: [],
+          attributes: [],
         },
         {
           required: true,
@@ -821,8 +834,18 @@ export const averageCompliance = async (req, res) => {
       ],
       group: ["IntentResults.main_intent.intent_name"],
     });
-    res.send(changeSend(r));
+    let toSend = [{ average: 0, count: 0, score: 0 }];
+    r.forEach((v, i) => {
+      let value = changeToJson(v);
+      toSend[0].score += value.score;
+      toSend[0].count = value.count;
+      let average = value.score / value.count;
+      if (i !== 0) toSend[0].average = (toSend[0].average + average) / 2;
+      else toSend[0].average = average;
+    });
+    res.send(changeSend(toSend));
   } catch (err) {
+    console.log(err);
     throw err;
   }
 };
