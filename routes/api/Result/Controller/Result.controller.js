@@ -37,7 +37,7 @@ export const getCSAT = async (req, res) => {
     }
     const r = await Transcripts.findAll({
       where: queryFind,
-      attributes: ["id", "createdAt", "updatedAt"],
+      attributes: ["id", "createdAt", "updatedAt", "content"],
       include: [
         {
           required: false,
