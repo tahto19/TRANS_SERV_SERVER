@@ -890,3 +890,122 @@ export const getPertIntentInCompliance = async (req, res) => {
     throw err;
   }
 };
+export const getPerAgentCompliance = async (req, res) => {
+  try {
+    const { id, start, end } = req.query;
+    let queryFind = req.url.includes("perAgentByGroup")
+      ? { group_id: id }
+      : { agent_id: id };
+    if (
+      start !== "" &&
+      end !== "" &&
+      start !== undefined &&
+      end !== undefined
+    ) {
+      queryFind["createdAt"] = {
+        [Op.between]: [
+          moment(start).startOf("day").format("YYYY-MM-DD HH:mm:ss"),
+          moment(end).endOf("day").format("YYYY-MM-DD HH:mm:ss"),
+        ],
+      };
+    }
+
+    let r = await Transcripts.findAll({
+      where: queryFind,
+      include: [
+        { require: true, model: Agents, attributes: [] },
+        {
+          require: true,
+          model: Compliance,
+          attributes: [],
+        },
+        {
+          required: true,
+          model: IntentResult,
+          attributes: [],
+          where: { main_intent_id: { [Op.not]: null } },
+          include: [
+            {
+              require: true,
+              model: IntentDetails,
+              attributes: [],
+              as: "main_intent",
+            },
+          ],
+        },
+      ],
+      attributes: [
+        [Sequelize.col("Agent.fullname"), "fullname"],
+        [Sequelize.col("IntentResults.main_intent.intent_name"), "Intent_Name"],
+        [Sequelize.fn("COUNT", Sequelize.col("Compliance.id")), "count"],
+        [Sequelize.fn("SUM", Sequelize.col("Compliance.score")), "score"],
+      ],
+      group: ["IntentResults.main_intent.intent_name", "Agent.fullname"],
+    });
+    res.send(changeSend(r));
+  } catch (err) {
+    throw err;
+  }
+};
+export const getCompliancePerPeriod = async (req, res) => {
+  try {
+    const { id, start, end } = req.query;
+    let queryFind = req.url.includes("perPeriodByGroup")
+      ? { group_id: id }
+      : { agent_id: id };
+    if (
+      start !== "" &&
+      end !== "" &&
+      start !== undefined &&
+      end !== undefined
+    ) {
+      queryFind["createdAt"] = {
+        [Op.between]: [
+          moment(start).startOf("day").format("YYYY-MM-DD HH:mm:ss"),
+          moment(end).endOf("day").format("YYYY-MM-DD HH:mm:ss"),
+        ],
+      };
+    }
+    let r = await Transcripts.findAll({
+      where: queryFind,
+      include: [
+        {
+          require: true,
+          model: Compliance,
+          attributes: [],
+        },
+        {
+          required: true,
+          model: IntentResult,
+          attributes: [],
+          where: { main_intent_id: { [Op.not]: null } },
+          include: [
+            {
+              require: true,
+              model: IntentDetails,
+              attributes: [],
+              as: "main_intent",
+            },
+          ],
+        },
+      ],
+      attributes: [
+        [
+          Sequelize.fn(
+            "date_format",
+            Sequelize.col("Transcripts.createdAt"),
+            "%Y-%m-%d"
+          ),
+          "formattedCreatedAt",
+        ],
+        [Sequelize.col("IntentResults.main_intent.intent_name"), "Intent_Name"],
+        [Sequelize.fn("COUNT", Sequelize.col("Compliance.id")), "count"],
+        [Sequelize.fn("SUM", Sequelize.col("Compliance.score")), "score"],
+      ],
+      group: ["IntentResults.main_intent.intent_name", "formattedCreatedAt"],
+    });
+    res.send(changeSend(r));
+  } catch (err) {
+    throw err;
+  }
+};
