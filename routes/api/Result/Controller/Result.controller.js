@@ -737,6 +737,28 @@ export const getSentiment = async (req, res) => {
         ],
       };
     }
+    let formattedCreated =
+      moment(start).diff(end, "days") === 0 &&
+      start !== "" &&
+      end !== "" &&
+      start !== undefined &&
+      end !== undefined
+        ? [
+            Sequelize.fn(
+              "date_format",
+              Sequelize.col("Transcripts.createdAt"),
+              "%Y-%m-%d %H:%i:%s"
+            ),
+            "formattedCreatedAt",
+          ]
+        : [
+            Sequelize.fn(
+              "date_format",
+              Sequelize.col("Transcripts.createdAt"),
+              "%Y-%m-%d"
+            ),
+            "formattedCreatedAt",
+          ];
     let r = await Transcripts.findAll({
       // raw: true,
       where: queryFind,
@@ -747,14 +769,7 @@ export const getSentiment = async (req, res) => {
         attributes: [],
       },
       attributes: [
-        [
-          Sequelize.fn(
-            "date_format",
-            Sequelize.col("Transcripts.createdAt"),
-            "%Y-%m-%d"
-          ),
-          "formattedCreatedAt",
-        ],
+        formattedCreated,
 
         [
           Sequelize.fn("COUNT", Sequelize.col("SentiAnylses.sentiment_name")),
@@ -1032,7 +1047,28 @@ export const getCompliancePerPeriod = async (req, res) => {
         ],
       };
     }
-
+    let formattedCreated =
+      moment(start).diff(end, "days") === 0 &&
+      start !== "" &&
+      end !== "" &&
+      start !== undefined &&
+      end !== undefined
+        ? [
+            Sequelize.fn(
+              "date_format",
+              Sequelize.col("Transcripts.createdAt"),
+              "%Y-%m-%d %H:%i:%s"
+            ),
+            "formattedCreatedAt",
+          ]
+        : [
+            Sequelize.fn(
+              "date_format",
+              Sequelize.col("Transcripts.createdAt"),
+              "%Y-%m-%d"
+            ),
+            "formattedCreatedAt",
+          ];
     let r = await Transcripts.findAll({
       where: queryFind,
       include: [
@@ -1062,14 +1098,7 @@ export const getCompliancePerPeriod = async (req, res) => {
         },
       ],
       attributes: [
-        [
-          Sequelize.fn(
-            "date_format",
-            Sequelize.col("Transcripts.createdAt"),
-            "%Y-%m-%d"
-          ),
-          "formattedCreatedAt",
-        ],
+        formattedCreated,
         [Sequelize.col("IntentResults.main_intent.intent_name"), "Intent_Name"],
         [Sequelize.fn("COUNT", Sequelize.col("Compliance.id")), "count"],
         [Sequelize.fn("SUM", Sequelize.col("Compliance.score")), "score"],
@@ -1103,18 +1132,54 @@ export const getCSATTotal = async (req, res) => {
         ],
       };
     }
+    let formattedCreated =
+      moment(start).diff(end, "days") === 0 &&
+      start !== "" &&
+      end !== "" &&
+      start !== undefined &&
+      end !== undefined
+        ? [
+            Sequelize.fn(
+              "date_format",
+              Sequelize.col("Transcripts.createdAt"),
+              "%Y-%m-%d %H:%i:%s"
+            ),
+            "formattedCreatedAt",
+          ]
+        : [
+            Sequelize.fn(
+              "date_format",
+              Sequelize.col("Transcripts.createdAt"),
+              "%Y-%m-%d"
+            ),
+            "formattedCreatedAt",
+          ];
     let r = await Transcripts.findAll({
       where: queryFind,
       include: [
         {
           required: true,
           model: Groups,
-          // attributes: [],
+          attributes: [],
         },
         {
           required: true,
           model: KpiAnylsis,
-          // attributes: [],
+          attributes: [],
+        },
+        {
+          required: true,
+          model: IntentResult,
+          attributes: [],
+          where: { main_intent_id: { [Op.not]: null } },
+          include: [
+            {
+              required: true,
+              model: IntentDetails,
+              attributes: [],
+              as: "main_intent",
+            },
+          ],
         },
       ],
       attributes: [
@@ -1123,10 +1188,16 @@ export const getCSATTotal = async (req, res) => {
             "SUM",
             Sequelize.literal("KpiAnylses.rating *.01 * KpiAnylses.getWeight")
           ),
-          "NewPrice",
+          "TotalCsat",
         ],
+        formattedCreated,
+        [Sequelize.col("IntentResults.main_intent.intent_name"), "Intent_Name"],
       ],
-      group: ["id"],
+      group: [
+        "id",
+        "formattedCreatedAt",
+        // IntentResults.main_intent.intent_name,
+      ],
       // attributes: [
       //   [
       //     Sequelize.fn(
@@ -1144,6 +1215,7 @@ export const getCSATTotal = async (req, res) => {
     });
     res.send(changeSend(r));
   } catch (err) {
+    console.log(err);
     throw err;
   }
 };
