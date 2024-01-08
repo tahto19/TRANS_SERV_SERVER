@@ -2,6 +2,7 @@ import {
   averageCompliance,
   getAudio,
   getCSAT,
+  getCSATTotal,
   getCompliancePerPeriod,
   getDashboard,
   getMetricsPerIntent,
@@ -136,6 +137,16 @@ export const getPerAgentComplianceSchema = {
 };
 export const getCompliancePerPeriodSchema = {
   handler: getCompliancePerPeriod,
+  schema: {
+    queryString: {
+      id: getInt,
+      start: getString,
+      end: getString,
+    },
+  },
+};
+export const getCSATTotalSchema = {
+  handler: getCSATTotal,
   schema: {
     queryString: {
       id: getInt,

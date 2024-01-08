@@ -14,13 +14,16 @@ class executeRequest {
         `${process.env.EXTERNAL_SERVICE_API_ENDPOINT}/request/create`,
         this.getData
       );
-
-      if (r.data.details.id === undefined) return null;
+      if (r.data.response === false) {
+        console.log(r);
+        throw new Error("Something wrong 9995");
+      }
+      if (r.data.details === undefined) return null;
       this.id = r.data.details.id;
       return r.data.details;
     } catch (err) {
       console.log(err);
-      return null;
+      throw err;
     }
   }
   async execute(id) {
@@ -59,7 +62,7 @@ class executeRequest {
       let r = await axios.get(
         `${process.env.EXTERNAL_SERVICE_API_ENDPOINT}/request/details/` + getId
       );
-      console.log(r.data.details.details);
+      console.log(r.data.details);
       if (r.data.details === undefined) return null;
       else return r.data.details.details.RequestData[3].value_array;
     } catch (err) {

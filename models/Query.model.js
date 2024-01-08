@@ -2,6 +2,7 @@ import { Op, Model, DataTypes, Sequelize } from "sequelize";
 import Connection from "../configDatabase/conn.js";
 import "dotenv/config";
 import Groups from "./Groups.model.js";
+import Transcripts from "./Transcripts.model.js";
 
 class Query extends Model {}
 
@@ -13,9 +14,22 @@ Query.init(
       allowNull: false,
       type: DataTypes.INTEGER(11),
     },
-    type: { allowNull: false, type: DataTypes.INTEGER(11) },
+    type: { allowNull: false, type: DataTypes.STRING(11) },
     code: { allowNull: false, type: DataTypes.INTEGER(11) },
     setup_id: { allowNull: false, type: DataTypes.INTEGER(11) },
+    status: {
+      allowNull: false,
+      type: DataTypes.STRING(11),
+      defaultValue: "Created",
+    },
+    transcript_id: {
+      type: DataTypes.INTEGER(11),
+      allowNull: false,
+      references: {
+        model: Transcripts,
+        key: "id",
+      },
+    },
     createdAt: {
       type: "TIMESTAMP",
       defaultValue: Sequelize.literal("CURRENT_TIMESTAMP"),

@@ -16,6 +16,7 @@ import { CallAI } from "./routes/api/CallAI/CallAI.js";
 import Result from "./routes/api/Result/Result.js";
 import fastifyMultipart from "@fastify/multipart";
 import Notes from "./routes/api/Notes/Notes.js";
+import Callback from "./routes/api/Callback/Callback.js";
 const fastify = Fastify({
   logger: {
     transport: {
@@ -89,6 +90,9 @@ const start = async () => {
     });
     fastify.register(Notes, {
       prefix: "/notes",
+    });
+    fastify.register(Callback, {
+      prefix: "/Callback",
     });
     fastify.setErrorHandler((err, req, res) => {
       if (err.code === undefined) {

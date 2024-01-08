@@ -26,6 +26,8 @@ export const getCSAT = async (req, res) => {
       ? { agent_id: id }
       : req.url.includes("getByGroup")
       ? { group_id: id }
+      : req.url.includes("getByOrganization")
+      ? { "$Group.organization_id$": id }
       : { id };
 
     var changeStart = new Date(
@@ -42,27 +44,28 @@ export const getCSAT = async (req, res) => {
     ) {
       queryFind["createdAt"] = { [Op.between]: [changeStart, changeEnd] };
     }
-    const r = await Transcripts.findAll({
+    let query = {
       where: queryFind,
       attributes: ["id", "createdAt", "updatedAt", "content"],
       include: [
         {
-          required: false,
+          required: true,
           model: Agents,
           // attributes: ["anaylsis", "kpi", "rating", "getWeight"],
         },
+        { required: true, model: Compliance },
         {
-          required: false,
+          required: true,
           model: Groups,
           // attributes: [],
         },
         {
-          required: false,
+          required: true,
           model: IntentResult,
           // attributes: ["main_intent_id", "sub_intent_id", "id"],
           include: [
             {
-              required: false,
+              required: true,
               model: IntentDetails,
               // attributes: ["intent_name", "desc", "score"],
               as: "main_intent",
@@ -70,17 +73,19 @@ export const getCSAT = async (req, res) => {
           ],
         },
         {
-          required: false,
+          required: true,
           model: KpiAnylsis,
           // attributes: ["anaylsis", "kpi", "rating", "getWeight"],
         },
         {
-          required: false,
+          required: true,
           model: SentimentAnylsis,
           // attributes: ["sentiment_score", "explanation", "sentiment_name"],
         },
       ],
-    });
+    };
+    console.log(query);
+    const r = await Transcripts.findAll(query);
     let getAllPercent = 0;
     let total = 0;
     let totalEach = 0;
@@ -716,6 +721,8 @@ export const getSentiment = async (req, res) => {
     const { id, start, end } = req.query;
     let queryFind = req.url.includes("getByGroup")
       ? { group_id: id }
+      : req.url.includes("getByOrganization")
+      ? { "$Group.organization_id$": id }
       : { agent_id: id };
     if (
       start !== "" &&
@@ -735,7 +742,7 @@ export const getSentiment = async (req, res) => {
       where: queryFind,
 
       include: {
-        required: false,
+        required: true,
         model: SentimentAnylsis,
         attributes: [],
       },
@@ -768,18 +775,33 @@ export const getSentimentTable = async (req, res) => {
     const { id, start, end } = req.query;
     let queryFind = req.url.includes("getByGroup")
       ? { group_id: id }
+      : req.url.includes("getByOrganization")
+      ? { "$Group.organization_id$": id }
       : { agent_id: id };
+    if (
+      start !== "" &&
+      end !== "" &&
+      start !== undefined &&
+      end !== undefined
+    ) {
+      queryFind["createdAt"] = {
+        [Op.between]: [
+          moment(start).startOf("day").format("YYYY-MM-DD HH:mm:ss"),
+          moment(end).endOf("day").format("YYYY-MM-DD HH:mm:ss"),
+        ],
+      };
+    }
     let r = await Transcripts.findAll({
       // raw: true,
-      // where: queryFind,
+      where: queryFind,
 
       include: [
         {
-          require: true,
+          required: true,
           model: SentimentAnylsis,
         },
         {
-          require: true,
+          required: true,
           model: Agents,
         },
       ],
@@ -803,12 +825,27 @@ export const averageCompliance = async (req, res) => {
     const { id, start, end } = req.query;
     let queryFind = req.url.includes("averagebyGroup")
       ? { group_id: id }
+      : req.url.includes("averagebyOrganization")
+      ? { "$Group.organization_id$": id }
       : { agent_id: id };
+    if (
+      start !== "" &&
+      end !== "" &&
+      start !== undefined &&
+      end !== undefined
+    ) {
+      queryFind["createdAt"] = {
+        [Op.between]: [
+          moment(start).startOf("day").format("YYYY-MM-DD HH:mm:ss"),
+          moment(end).endOf("day").format("YYYY-MM-DD HH:mm:ss"),
+        ],
+      };
+    }
     let r = await Transcripts.findAll({
       where: queryFind,
       include: [
         {
-          require: true,
+          required: true,
           model: Compliance,
           attributes: [],
         },
@@ -819,7 +856,7 @@ export const averageCompliance = async (req, res) => {
           where: { main_intent_id: { [Op.not]: null } },
           include: [
             {
-              require: true,
+              required: true,
               model: IntentDetails,
               attributes: [],
               as: "main_intent",
@@ -854,13 +891,33 @@ export const getPertIntentInCompliance = async (req, res) => {
     const { id, start, end } = req.query;
     let queryFind = req.url.includes("perIntentByGroup")
       ? { group_id: id }
+      : req.url.includes("perIntentOrganization")
+      ? { "$Group.organization_id$": id }
       : { agent_id: id };
+    if (
+      start !== "" &&
+      end !== "" &&
+      start !== undefined &&
+      end !== undefined
+    ) {
+      queryFind["createdAt"] = {
+        [Op.between]: [
+          moment(start).startOf("day").format("YYYY-MM-DD HH:mm:ss"),
+          moment(end).endOf("day").format("YYYY-MM-DD HH:mm:ss"),
+        ],
+      };
+    }
     let r = await Transcripts.findAll({
       where: queryFind,
       include: [
         {
-          require: true,
+          required: true,
           model: Compliance,
+          attributes: [],
+        },
+        {
+          required: true,
+          model: Groups,
           attributes: [],
         },
         {
@@ -870,7 +927,7 @@ export const getPertIntentInCompliance = async (req, res) => {
           where: { main_intent_id: { [Op.not]: null } },
           include: [
             {
-              require: true,
+              required: true,
               model: IntentDetails,
               attributes: [],
               as: "main_intent",
@@ -895,6 +952,8 @@ export const getPerAgentCompliance = async (req, res) => {
     const { id, start, end } = req.query;
     let queryFind = req.url.includes("perAgentByGroup")
       ? { group_id: id }
+      : req.url.includes("perAgentByOrganization")
+      ? { "$Group.organization_id$": id }
       : { agent_id: id };
     if (
       start !== "" &&
@@ -913,10 +972,15 @@ export const getPerAgentCompliance = async (req, res) => {
     let r = await Transcripts.findAll({
       where: queryFind,
       include: [
-        { require: true, model: Agents, attributes: [] },
+        { required: true, model: Agents, attributes: [] },
         {
-          require: true,
+          required: true,
           model: Compliance,
+          attributes: [],
+        },
+        {
+          required: true,
+          model: Groups,
           attributes: [],
         },
         {
@@ -926,7 +990,7 @@ export const getPerAgentCompliance = async (req, res) => {
           where: { main_intent_id: { [Op.not]: null } },
           include: [
             {
-              require: true,
+              required: true,
               model: IntentDetails,
               attributes: [],
               as: "main_intent",
@@ -952,6 +1016,8 @@ export const getCompliancePerPeriod = async (req, res) => {
     const { id, start, end } = req.query;
     let queryFind = req.url.includes("perPeriodByGroup")
       ? { group_id: id }
+      : req.url.includes("perPeriodByOrganization")
+      ? { "$Group.organization_id$": id }
       : { agent_id: id };
     if (
       start !== "" &&
@@ -966,12 +1032,18 @@ export const getCompliancePerPeriod = async (req, res) => {
         ],
       };
     }
+
     let r = await Transcripts.findAll({
       where: queryFind,
       include: [
         {
-          require: true,
+          required: true,
           model: Compliance,
+          attributes: [],
+        },
+        {
+          required: true,
+          model: Groups,
           attributes: [],
         },
         {
@@ -981,7 +1053,7 @@ export const getCompliancePerPeriod = async (req, res) => {
           where: { main_intent_id: { [Op.not]: null } },
           include: [
             {
-              require: true,
+              required: true,
               model: IntentDetails,
               attributes: [],
               as: "main_intent",
@@ -1003,6 +1075,72 @@ export const getCompliancePerPeriod = async (req, res) => {
         [Sequelize.fn("SUM", Sequelize.col("Compliance.score")), "score"],
       ],
       group: ["IntentResults.main_intent.intent_name", "formattedCreatedAt"],
+    });
+    res.send(changeSend(r));
+  } catch (err) {
+    throw err;
+  }
+};
+
+export const getCSATTotal = async (req, res) => {
+  try {
+    const { id, start, end } = req.query;
+    let queryFind = req.url.includes("perPeriodByGroup")
+      ? { group_id: id }
+      : req.url.includes("perPeriodByOrganization")
+      ? { "$Group.organization_id$": id }
+      : { agent_id: id };
+    if (
+      start !== "" &&
+      end !== "" &&
+      start !== undefined &&
+      end !== undefined
+    ) {
+      queryFind["createdAt"] = {
+        [Op.between]: [
+          moment(start).startOf("day").format("YYYY-MM-DD HH:mm:ss"),
+          moment(end).endOf("day").format("YYYY-MM-DD HH:mm:ss"),
+        ],
+      };
+    }
+    let r = await Transcripts.findAll({
+      where: queryFind,
+      include: [
+        {
+          required: true,
+          model: Groups,
+          // attributes: [],
+        },
+        {
+          required: true,
+          model: KpiAnylsis,
+          // attributes: [],
+        },
+      ],
+      attributes: [
+        [
+          Sequelize.fn(
+            "SUM",
+            Sequelize.literal("KpiAnylses.rating *.01 * KpiAnylses.getWeight")
+          ),
+          "NewPrice",
+        ],
+      ],
+      group: ["id"],
+      // attributes: [
+      //   [
+      //     Sequelize.fn(
+      //       "date_format",
+      //       Sequelize.col("Transcripts.createdAt"),
+      //       "%Y-%m-%d"
+      //     ),
+      //     "formattedCreatedAt",
+      //   ],
+      //   [Sequelize.col("IntentResults.main_intent.intent_name"), "Intent_Name"],
+      //   [Sequelize.fn("COUNT", Sequelize.col("IntentResults.id")), "count"],
+      //   [Sequelize.fn("SUM", Sequelize.col("Compliance.score")), "score"],
+      // ],
+      // group: ["IntentResults.main_intent.intent_name", "formattedCreatedAt"],
     });
     res.send(changeSend(r));
   } catch (err) {

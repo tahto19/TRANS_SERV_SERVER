@@ -52,14 +52,15 @@ export default class NewIntentProcess {
         getGeneratedPrompt.intent_prompt
       );
 
+      // this.saveTranscript_id = saveTranscript.id;
+
+      let getIntent = await this.request(getPromptIntent);
       let saveTranscript = await this.saveToDatabase(Transcripts, {
         content: transcript,
         agent_id: user_id,
         group_id: this.group_id,
       });
       this.saveTranscript_id = saveTranscript.id;
-
-      let getIntent = await this.request(getPromptIntent);
       await this.saveIntent(getIntent);
       let kpiProcess = await this.savekpi();
       let senti = await this.saveSenti();
@@ -198,6 +199,7 @@ export default class NewIntentProcess {
         type: "Intents",
         setup_id: data.id.id,
         code: data.id.code,
+        transcript_id: this.saveTranscript_id,
       });
       this.error.push(data.details.error);
     } else {
@@ -274,6 +276,7 @@ export default class NewIntentProcess {
           type: "KPI",
           setup_id: getKpi.id.id,
           code: getKpi.id.code,
+          transcript_id: this.saveTranscript_id,
         });
         this.push({ error: true, message: "Waiting for KPI to finish" });
       } else {
@@ -311,6 +314,7 @@ export default class NewIntentProcess {
         type: "Sentiment Anylsis",
         setup_id: getSenti.id.id,
         code: getSenti.id.code,
+        transcript_id: this.saveTranscript_id,
       });
 
       this.error.push({ error: true, message: "waiting for senti to finish" });
@@ -352,6 +356,7 @@ export default class NewIntentProcess {
             type: "Compliance",
             setup_id: getRequest.id.id,
             code: getRequest.id.code,
+            transcript_id: this.saveTranscript_id,
           });
           this.push({
             error: true,
