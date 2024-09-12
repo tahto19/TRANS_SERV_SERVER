@@ -93,10 +93,7 @@ class executeRequest {
     try {
       console.log(this.apikey);
       console.log("###########################");
-      let api_key =
-        this.apikey === undefined
-          ? "ei-pI8k0CvfPJQLOwOyUoKldwOiO49bnEegbWcML1UTfgf6fHut5S"
-          : this.apikey;
+      let api_key = this.apikey === undefined ? "" : this.apikey;
       let config = {
         method: "POST",
         url: `https://ai-insight.etpbx.com/api-gateway/gateway/start`,
