@@ -3,6 +3,7 @@ import Connection from "../configDatabase/conn.js";
 import "dotenv/config";
 import moment from "moment/moment.js";
 import GroupServiceConfig from "./GroupServiceConfig.model.js";
+import OrgIntentsConf from "./OrgIntentsConf.model.js";
 
 class Intents extends Model {}
 
@@ -37,7 +38,7 @@ Intents.init(
       defaultValue: "",
     },
     data: {
-      type: Sequelize.TEXT,
+      type: DataTypes.TEXT,
       allowNull: false,
       get: function () {
         if (this.getDataValue("data") !== undefined)
@@ -47,11 +48,28 @@ Intents.init(
         return this.setDataValue("data", JSON.stringify(val));
       },
     },
+    orgIntentConn: {
+      type: DataTypes.INTEGER(11),
+      references: {
+        model: OrgIntentsConf,
+        key: "id",
+      },
+    },
     active: { type: DataTypes.BOOLEAN, allowNull: false, defaultValue: true },
+    default: { type: DataTypes.BOOLEAN, allowNull: false, defaultValue: false },
+
     /**
      * in milliseconds
      * - 1000 (1 second)
      */
+    createdAt: {
+      type: "TIMESTAMP",
+      defaultValue: Sequelize.literal("CURRENT_TIMESTAMP"),
+      allowNull: false,
+      // defaultValue: parseInt(moment().format("X")),
+    },
+    updatedAt: { type: Sequelize.DATE, field: "updated_at" },
+    deletedAt: { type: Sequelize.DATE, field: "deleted_at" },
   },
   {
     timestamps: false,

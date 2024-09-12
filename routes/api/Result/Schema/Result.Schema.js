@@ -1,8 +1,10 @@
 import {
   averageCompliance,
+  getAllIntentByOrg,
   getAudio,
   getCSAT,
   getCSATTotal,
+  getCSATversion2,
   getCompliancePerPeriod,
   getDashboard,
   getMetricsPerIntent,
@@ -11,9 +13,18 @@ import {
   getPertIntentInCompliance,
   getSentiment,
   getSentimentTable,
+  getSeperateCall,
   getTotal,
   getTranscriptOfUsersInGroup,
   seperateTranscript,
+  getCSATperIntent,
+  getCSATPerKPI,
+  getCSATAgentScoreCard,
+  getCSATPerPeriod,
+  ListOftranscript,
+  getIntentV2,
+  getIntentDurationCall,
+  checkIfContain,
 } from "../Controller/Result.controller.js";
 import { getString, getInt } from "../../Type/type.js";
 export const getTotalSchema = {
@@ -51,6 +62,14 @@ export const getTranscriptOfUsersInGroupSchema = {
 };
 export const getAudioSchema = {
   handler: getAudio,
+  schema: {
+    queryString: {
+      id: getInt,
+    },
+  },
+};
+export const getSeperateCallSchema = {
+  handler: getSeperateCall,
   schema: {
     queryString: {
       id: getInt,
@@ -152,6 +171,93 @@ export const getCSATTotalSchema = {
       id: getInt,
       start: getString,
       end: getString,
+    },
+  },
+};
+export const getAllIntentByOrgSchema = {
+  handler: getAllIntentByOrg,
+  schema: {
+    queryString: {
+      id: getInt,
+    },
+  },
+};
+export const getCSATversion2Schema = {
+  handler: getCSATversion2,
+  schema: {
+    queryString: {
+      id: getInt,
+    },
+  },
+};
+export const getCSATperIntentSchema = {
+  handler: getCSATperIntent,
+  schema: {
+    queryString: {
+      id: getInt,
+    },
+  },
+};
+
+export const getCSATPerKPISchema = {
+  handler: getCSATPerKPI,
+  schema: {
+    queryString: {
+      id: getInt,
+    },
+  },
+};
+export const getCSATAgentScoreCardSchema = {
+  handler: getCSATAgentScoreCard,
+  schema: {
+    queryString: {
+      id: getInt,
+    },
+  },
+};
+export const getCSATPerPeriodSchema = {
+  handler: getCSATPerPeriod,
+  schema: {
+    queryString: {
+      id: getInt,
+    },
+  },
+};
+export const ListOftranscriptSchema = {
+  handler: ListOftranscript,
+  schema: {
+    body: {
+      type: "object",
+      properties: {
+        id: getInt,
+        offset: getInt,
+        limit: getInt,
+      },
+    },
+  },
+};
+
+export const getIntentV2Schema = {
+  handler: getIntentV2,
+  schema: {
+    queryString: {
+      id: getInt,
+    },
+  },
+};
+export const getIntentDurationCallSchema = {
+  handler: getIntentDurationCall,
+  schema: {
+    queryString: {
+      id: getInt,
+    },
+  },
+};
+export const checkIfContainSchema = {
+  handler: checkIfContain,
+  schema: {
+    queryString: {
+      id: getInt,
     },
   },
 };

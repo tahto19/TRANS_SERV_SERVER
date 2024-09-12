@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Elisha Insights</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+  </head>
+  <body onload="randombg()" id="random">
+	  <div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span> 
+	  </div>
+   
+      <div class=" xdarkblue">
+        <div class="container-fluid bg">
+          <div class="row">
+            <div class="col-6 left ">
+             
+				<section class="forms-section">
+  <h1 class="section-title"><img src="images/insights_logo.png" class="logo" alt="Logo"><br>
+    Generative AI Customer Service Analytics</h1>
+					<p class="text-white lit">Elisha Insights utilises Artificial Intelligence to provide real-time evaluation of customer service interactions for your business. Leveraging the latest acdvancements in Large Language models and Natural Processing, Elisha Insights is the mose sophisticated customer service analytics platform in the market today.</p>
+  <div class="forms">
+    <div class="form-wrapper is-active">
+      <button type="button" class="switcher switcher-login">
+        Login
+        <span class="underline"></span>
+      </button>
+      <form class="form form-login">
+        <fieldset>
+          <legend>Please, enter your email and password for login.</legend>
+          <div class="input-block">
+            <label for="login-email">E-mail</label>
+            <input id="login-email" type="email" required>
+          </div>
+          <div class="input-block">
+            <label for="login-password">Password</label>
+            <input id="login-password" type="password" required>
+          </div>
+        </fieldset>
+        <button type="submit" class="btn-login">Login</button>
+      </form>
+    </div>
+    <div class="form-wrapper">
+      <button type="button" class="switcher switcher-signup">
+        Sign Up
+        <span class="underline"></span>
+      </button>
+      <form class="form form-signup">
+        <fieldset>
+          <legend>Please, enter your email, password and password confirmation for sign up.</legend>
+          <div class="input-block">
+            <label for="signup-email">E-mail</label>
+            <input id="signup-email" type="email" required>
+          </div>
+          <div class="input-block">
+            <label for="signup-password">Password</label>
+            <input id="signup-password" type="password" required>
+          </div>
+          <div class="input-block">
+            <label for="signup-password-confirm">Confirm password</label>
+            <input id="signup-password-confirm" type="password" required>
+          </div>
+        </fieldset>
+        <button type="submit" class="btn-signup">Continue</button>
+      </form>
+    </div>
+  </div>
+</section>
+				
+				
+				
+            </div>
+			  <div class="col-6">
+            
+            </div>
+          </div>
+        </div>
+      </div>
+   
+
+    
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+    <script src="js/jquery-3.4.1.min.js"></script> 
+    <!-- Include all compiled plugins (below), or include individual files as needed --> 
+    <script src="js/popper.min.js"></script> 
+    <script src="js/bootstrap-4.4.1.js"></script>
+	  <script src="script.js"></script>
+	  
+	<script>
+	  $(window).on("load",function(){
+		  $(".loader-wrapper").fadeOut("slow");
+	  });
+	  
+	</script>
+	  
+	<script>
+	function randombg(){
+  var random= Math.floor(Math.random() * 6) + 0;
+  var bigSize = ["url('images/bg1.jpg')","url('images/bg2.jpg')", "url('images/bg3.jpg')"];
+ document.getElementById("random").style.backgroundImage=bigSize[random];
+}  
+	  
+	</script>
+  </body>
+</html>

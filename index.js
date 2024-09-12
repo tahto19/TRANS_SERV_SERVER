@@ -10,6 +10,7 @@ import auth from "./auth/auth.js";
 import Associations from "./models/association/index.js";
 import cors from "@fastify/cors";
 import { Group } from "./routes/api/Group/Group.js";
+import cron from "node-cron";
 import { Organization } from "./routes/api/Organization/Organization.js";
 import { Agent } from "./routes/api/Agent/Agent.js";
 import { CallAI } from "./routes/api/CallAI/CallAI.js";
@@ -17,6 +18,19 @@ import Result from "./routes/api/Result/Result.js";
 import fastifyMultipart from "@fastify/multipart";
 import Notes from "./routes/api/Notes/Notes.js";
 import Callback from "./routes/api/Callback/Callback.js";
+import Convert from "./routes/api/Convert/Convert.js";
+import Listener from "./routes/api/Listener/Listener.js";
+import Notif from "./routes/api/Notif/Notif.js";
+import { configNotif } from "./routes/api/ConfigNotif/ConfigNotif.js";
+import {
+  creatingDefaultNotesDefault,
+  creatingDefaultPii,
+  creatingSentiment,
+} from "./configDatabase/creatingSentimentList.js";
+
+import TranscriptDetails from "./routes/api/TranscriptDetails/TranscriptDetails.js";
+import moment from "moment";
+import checker from "./checker.js";
 const fastify = Fastify({
   logger: {
     transport: {
@@ -25,7 +39,7 @@ const fastify = Fastify({
   },
   logger: true,
   trustProxy: true,
-  disableRequestLogging: false,
+  disableRequestLogging: true,
   level: "debug",
 });
 // const { errorCodes } = fastify;
@@ -91,27 +105,55 @@ const start = async () => {
     fastify.register(Notes, {
       prefix: "/notes",
     });
+    fastify.register(Notif, {
+      prefix: "/notif",
+    });
     fastify.register(Callback, {
-      prefix: "/Callback",
+      prefix: "/callback",
+    });
+    fastify.register(Convert, {
+      prefix: "/convert",
+    });
+    fastify.register(configNotif, {
+      prefix: "/config-notif",
+    });
+    fastify.register(TranscriptDetails, {
+      prefix: "/transcript-details",
+    });
+    fastify.register(Listener, {
+      prefix: "/listener",
     });
     fastify.setErrorHandler((err, req, res) => {
+      console.log(err);
       if (err.code === undefined) {
-        res.status(400).send({ result: "error", message: "Invalid" });
+        res.status(400).send({ result: "error", message: err.message });
       } else
         res
           .status(err.code)
           .send({ result: "error", message: err.message, err });
     });
+    console.log("here");
     fastify.listen(process.env.PORT, (err, address) => {
       console.log(address);
     });
     await Connection.auth();
     await Associations();
     await Connection.sync();
+    await createDefault();
   } catch (err) {
     console.log(err);
     // process.exit(1);
   }
 };
-
+cron.schedule("*/10 * * * * *", () => {
+  // console.log("Running checker if the system is runnig fine");
+  let getDate = moment();
+  let getHours = parseInt(getDate.format("H"));
+  let getDay = parseInt(getDate.format("d"));
+  // console.log(getHours, getDay);
+  if (getHours >= 9 && getHours <= 20 && getDay !== 7) {
+    // console.log(getDate.format("MM-DD-YYYY"));
+    // checker(getDate);
+  }
+});
 start();

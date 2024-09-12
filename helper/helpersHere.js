@@ -1,7 +1,16 @@
 import fs from "fs";
+import path from "path";
 
 import pump from "pump";
 import { v4 as uuidv4 } from "uuid";
+import Transcripts from "../models/Transcripts.model.js";
+import Groups from "../models/Groups.model.js";
+import GroupServiceConfig from "../models/GroupServiceConfig.model.js";
+import Intents from "../models/Intents.model.js";
+import IntentResult from "../models/IntentResult.model.js";
+import IntentDetails from "../models/IntentDetails.model.js";
+import { Op } from "sequelize";
+
 export const randomLetters = (length) => {
   let toreturn = "";
   const alphabet =
@@ -55,6 +64,45 @@ export const uploadDestination = async (dest, files, ext) => {
     return err;
   }
 };
+export const uploadQueueFile = async (dest, file, ext, f) => {
+  try {
+    let filename = `${getTimeStamp()}-${randomLetters(5)}-${randomLetters(
+      7
+    )}.mp3`;
+    let path_ = await new URL(
+      "../upload/" + dest + "/" + filename,
+      import.meta.url
+    );
+    let buff = file;
+
+    if (f === undefined) buff = Buffer.from(file, "base64");
+    await fs.writeFileSync(path_, buff);
+    let getvalue = await fs.readFileSync(path_, "utf-8");
+
+    let getFileNameSave = path_.pathname.split("upload/audio/");
+    if (filename !== getFileNameSave[1]) {
+      fs.unlinkSync(path_);
+
+      let getPath = await uploadQueueFile("audio", file);
+
+      let a = getPath.split("audio/");
+      console.log(a);
+      getFileNameSave[1] = a[1];
+    }
+
+    if (getvalue.includes("failed")) {
+      fs.unlinkSync(path);
+      return false;
+    } else {
+      let toReturn = dest + "/" + getFileNameSave[1];
+      console.log(toReturn);
+      return toReturn;
+    }
+  } catch (err) {
+    console.log(err);
+    return false;
+  }
+};
 export const shortSaveToDatabase = async (db, data) => {
   let r = await db.create(data);
   return r;
@@ -75,3 +123,76 @@ export class changeFormat {
     return buffer.toString("base64");
   }
 }
+export const getBase64 = async (filepath) => {
+  try {
+    let newUrl = await new URL("../upload/" + filepath, import.meta.url);
+    console.log(newUrl);
+    const bitmap = fs.readFileSync(newUrl);
+    return bitmap.toString("base64");
+  } catch (err) {
+    console.log(err);
+    return false;
+  }
+};
+
+export const filterIntents = (data) => {
+  let intents = JSON.parse(data);
+
+  let filtered_intent = {
+    main_intent: {},
+    sub_intents: [],
+  };
+
+  const filter_main = intents.intents.reduce((maxObject, currentObject) => {
+    return currentObject.score > maxObject.score ? currentObject : maxObject;
+  }, intents.intents[0]);
+
+  filtered_intent.main_intent = filter_main;
+
+  const filter_sub = intents.intents.filter((x) => {
+    const score = filtered_intent.main_intent.score - x.score;
+    return (
+      x !== filtered_intent.main_intent &&
+      (x.score > 0.5 || score == 0.1 || score == 0.2)
+    );
+  });
+  filtered_intent.sub_intents = filter_sub;
+
+  return filtered_intent;
+};
+export const getConfigurationByTranscriptId = async (id, name) => {
+  try {
+    let r = await Transcripts.findOne({
+      where: { id },
+      include: [
+        {
+          model: Groups,
+          include: [
+            {
+              model: GroupServiceConfig,
+              // attributes: [],
+              include: [
+                {
+                  model: Intents,
+                  where: { active: true },
+                },
+              ],
+            },
+          ],
+        },
+      ],
+    });
+    let a = r.Group.GroupServiceConfigs[0].Intents.find(
+      (x) => x.intent.toLowerCase() === name.toLowerCase()
+    );
+    return a === undefined ? false : a.id;
+  } catch (err) {
+    console.log(id);
+  }
+};
+export const isValidDate = function (date) {
+  return new Date(date) !== "Invalid Date" && !isNaN(new Date(date));
+};
+export const unlink = async (path) => {
+  console.log(path);
+};
