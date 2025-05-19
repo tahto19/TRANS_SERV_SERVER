@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Dolany Farms - Gavin Guerini</name>
+	<description>Scaddan Grass Patch Weather Station Network</description>
+	<Style id="icon-ci-1-labelson">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>icon-1_0.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="poly-FFEA00-3001-0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#poly-FFEA00-3001-0-normal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#poly-FFEA00-3001-0-highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="poly-FFEA00-3001-0-highlight">
+		<LineStyle>
+			<color>ff00eaff</color>
+			<width>4.5015</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>0000eaff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-FFEA00-3001-0-normal">
+		<LineStyle>
+			<color>ff00eaff</color>
+			<width>3.001</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>0000eaff</color>
+		</PolyStyle>
+	</Style>
+	<Folder>
+		<name>Gavin Guerini - Property Boundary</name>
+		<Placemark>
+			<name>Ashgrove Boundary</name>
+			<description><![CDATA[description:  <br> name Ashgrove Boundary <br> folders  <br> descriptio  <br> altitude  <br> alt_mode absolute <br> time_begin  <br> time_end  <br> time_when  <br>folders: <br>descriptio: <br>altitude: <br>alt_mode: absolute<br>time_begin: <br>time_end: <br>time_when:]]></description>
+			<styleUrl>#poly-FFEA00-3001-0</styleUrl>
+			<ExtendedData>
+				<Data name="description">
+					<value>name Ashgrove Boundary 
+ folders  
+ descriptio  
+ altitude  
+ alt_mode absolute 
+ time_begin  
+ time_end  
+ time_when</value>
+				</Data>
+				<Data name="folders">
+				</Data>
+				<Data name="descriptio">
+				</Data>
+				<Data name="altitude">
+				</Data>
+				<Data name="alt_mode">
+					<value>absolute</value>
+				</Data>
+				<Data name="time_begin">
+				</Data>
+				<Data name="time_end">
+				</Data>
+				<Data name="time_when">
+				</Data>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							121.228895,-33.485291,0 121.273727,-33.509392,0 121.299971,-33.475465,0 121.255253,-33.44871,0 121.228895,-33.485291,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+	</Folder>
+	<Folder>
+		<name>Gavin Guerini - XPS6M</name>
+		<Placemark>
+			<name>DOL-S01-01-XPS6M-SMP</name>
+			<description><![CDATA[description:  <br> id 1 <br> Name DOL-S01-01-XPS6M-SMP <br>id: 1<br>Name: DOL-S01-01-XPS6M-SMP]]></description>
+			<styleUrl>#icon-ci-1-labelson</styleUrl>
+			<ExtendedData>
+				<Data name="description">
+					<value>id 1 
+ Name DOL-S01-01-XPS6M-SMP</value>
+				</Data>
+				<Data name="id">
+					<value>1</value>
+				</Data>
+				<Data name="Name">
+					<value>DOL-S01-01-XPS6M-SMP</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>121.269126,-33.465976,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

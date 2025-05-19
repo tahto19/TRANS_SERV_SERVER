@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Hakea Area 2.kml</name>
+	<Schema name="Lawson_Grains___Hakea_Farm_Outline" id="Lawson_Grains___Hakea_Farm_Outline">
+		<SimpleField type="string" name="timestamp"></SimpleField>
+		<SimpleField type="string" name="begin"></SimpleField>
+		<SimpleField type="string" name="end"></SimpleField>
+		<SimpleField type="string" name="altitudeMode"></SimpleField>
+		<SimpleField type="int" name="tessellate"></SimpleField>
+		<SimpleField type="int" name="extrude"></SimpleField>
+		<SimpleField type="int" name="visibility"></SimpleField>
+		<SimpleField type="int" name="drawOrder"></SimpleField>
+		<SimpleField type="string" name="icon"></SimpleField>
+	</Schema>
+	<StyleMap id="stylemap_id6">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#style17</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#style9</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="style9">
+		<LineStyle>
+			<color>ff00ffff</color>
+			<width>2.5</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="style17">
+		<LineStyle>
+			<color>ff00ffff</color>
+			<width>2.5</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Placemark>
+		<name>Hakea Area 2</name>
+		<styleUrl>#stylemap_id6</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="#Lawson_Grains___Hakea_Farm_Outline">
+				<SimpleData name="tessellate">1</SimpleData>
+				<SimpleData name="extrude">0</SimpleData>
+				<SimpleData name="visibility">-1</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						120.555023794786,-33.7385254736326,0 120.580464378206,-33.719287902959,0 120.548191181688,-33.6893551470286,0 120.539548153209,-33.6912080783216,0 120.555023794786,-33.7385254736326,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+</Document>
+</kml>

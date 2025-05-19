@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Bungulla Boundaries.kml</name>
+	<Schema name="dunns_block" id="dunns_block">
+		<SimpleField type="string" name="folders"></SimpleField>
+		<SimpleField type="string" name="descriptio"></SimpleField>
+		<SimpleField type="float" name="altitude"></SimpleField>
+		<SimpleField type="string" name="alt_mode"></SimpleField>
+		<SimpleField type="string" name="time_begin"></SimpleField>
+		<SimpleField type="string" name="time_end"></SimpleField>
+		<SimpleField type="string" name="time_when"></SimpleField>
+	</Schema>
+	<Schema name="uppill_block" id="uppill_block">
+		<SimpleField type="string" name="folders"></SimpleField>
+		<SimpleField type="string" name="descriptio"></SimpleField>
+		<SimpleField type="float" name="altitude"></SimpleField>
+		<SimpleField type="string" name="alt_mode"></SimpleField>
+		<SimpleField type="string" name="time_begin"></SimpleField>
+		<SimpleField type="string" name="time_end"></SimpleField>
+		<SimpleField type="string" name="time_when"></SimpleField>
+	</Schema>
+	<StyleMap id="m_ylw-pushpin0013">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin00001</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl000000</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_ylw-pushpin15">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin190</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl17</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_ylw-pushpin610">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin180</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl1500</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin00001">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff2dff0c</color>
+			<width>2.6</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="s_ylw-pushpin180">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff00ff00</color>
+			<width>2.6</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="s_ylw-pushpin190">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff00ff00</color>
+			<width>2.6</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl000000">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff2dff0c</color>
+			<width>2.6</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl1500">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff00ff00</color>
+			<width>2.6</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl17">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff00ff00</color>
+			<width>2.6</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Folder>
+		<name>Bungulla Boundaries &amp; POI</name>
+		<open>1</open>
+		<Placemark>
+			<name>Dunns</name>
+			<styleUrl>#m_ylw-pushpin15</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#uppill_block">
+					<SimpleData name="altitude">0.000000000000000</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								117.537336981978,-31.5014098752968,0 117.55042320154,-31.5010602869772,0 117.550932211297,-31.497538913974,0 117.552319575673,-31.4965258302106,0 117.563458158656,-31.4964349027855,0 117.564153040426,-31.5058410013134,0 117.567387991283,-31.5057689853239,0 117.56776297766,-31.5163982303915,0 117.550136454797,-31.5166832950342,0 117.550321336253,-31.5104098671879,0 117.540386793384,-31.5100551906757,0 117.540870602595,-31.506640669507,0 117.537561789093,-31.5064314843811,0 117.537336981978,-31.5014098752968,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+		<Placemark>
+			<name>Uppill</name>
+			<styleUrl>#m_ylw-pushpin610</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#dunns_block">
+					<SimpleData name="altitude">0.000000000000000</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								117.557831253564,-31.5558671240697,0 117.536481772801,-31.5553873640684,0 117.536733464182,-31.5469270978502,0 117.523315130399,-31.5469680280092,0 117.523057262854,-31.5337891838411,0 117.540567564401,-31.5335736541448,0 117.540572687978,-31.5274710503532,0 117.559088591739,-31.5275432409904,0 117.558852113679,-31.5345227947642,0 117.5555468371,-31.5341305642602,0 117.550438480683,-31.5357499684052,0 117.550008668654,-31.5397815695825,0 117.5520124188,-31.5395923780103,0 117.553818395948,-31.5406536044409,0 117.569116864967,-31.5405774872766,0 117.569361210267,-31.5437425394109,0 117.563963944818,-31.5442198935259,0 117.564765117864,-31.5470844776345,0 117.560446768013,-31.5470878154054,0 117.56034222209,-31.5530837349292,0 117.557831253564,-31.5558671240697,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+		<Placemark>
+			<name>Brad Farm 2</name>
+			<styleUrl>#m_ylw-pushpin0013</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							117.5223688064336,-31.55262044425817,0 117.5230977132499,-31.53359246629095,0 117.5402996465344,-31.53370516106808,0 117.5403076150885,-31.5194884329011,0 117.5186509401071,-31.51962954115401,0 117.5169741273413,-31.5224979112555,0 117.5031062470335,-31.52224113608226,0 117.5029333666042,-31.52615382873022,0 117.4983787212988,-31.52647204127015,0 117.4981863345116,-31.53054347476485,0 117.4887197630057,-31.53085547867754,0 117.488748079455,-31.53526575872665,0 117.4876581648851,-31.53525365647825,0 117.4875501852583,-31.5360993262258,0 117.4871144395936,-31.54276590648213,0 117.5080134352538,-31.54273953631636,0 117.5060997643841,-31.55273153342311,0 117.5223688064336,-31.55262044425817,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Brad Farm 1</name>
+			<styleUrl>#m_ylw-pushpin0013</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							117.4905184141296,-31.630521448638,0 117.4909808013297,-31.63635353487328,0 117.4935427642292,-31.63601908048594,0 117.4938249052029,-31.64030169789731,0 117.5053909514671,-31.64035340763877,0 117.5047908461629,-31.62816181157834,0 117.5093774321595,-31.62806936169389,0 117.5101216053947,-31.63678922625822,0 117.51683443553,-31.63641712816602,0 117.5168871931274,-31.6399062167088,0 117.5284810169155,-31.63959626306722,0 117.5281786760681,-31.65755903422043,0 117.5347884282402,-31.65862855878608,0 117.537228730535,-31.65772724665117,0 117.5448858153147,-31.64863890252492,0 117.5473029037953,-31.6485017404501,0 117.5669012032081,-31.6594030898385,0 117.5764591516456,-31.65730950532616,0 117.5889508875827,-31.65495656205815,0 117.5893661704171,-31.64249839042878,0 117.5976871686572,-31.64251514998389,0 117.5977676092122,-31.64188128923747,0 117.610889770655,-31.64197243656765,0 117.6111040138436,-31.62141251902336,0 117.6208915832901,-31.62019567401289,0 117.6209464642011,-31.61059692058389,0 117.6149515386669,-31.61029370702786,0 117.6149907764396,-31.60629728261182,0 117.6138899963623,-31.60605905056955,0 117.6155986187563,-31.60466349369752,0 117.615859853223,-31.59389766780659,0 117.6097307579184,-31.59314439344988,0 117.6093499035583,-31.59078263035006,0 117.6093375304315,-31.58486380340533,0 117.6098513405426,-31.57899643927666,0 117.6183375033728,-31.57895829012323,0 117.6180323520595,-31.5648477909306,0 117.6030235666658,-31.56432903644944,0 117.6028277437074,-31.57399586363163,0 117.589091558066,-31.57426219640533,0 117.5890201816539,-31.55975547040525,0 117.5945151093681,-31.55964147579217,0 117.5945312683778,-31.54982825484825,0 117.5890324332835,-31.54988015435265,0 117.5874544251352,-31.54708356531215,0 117.5880964303165,-31.54156298021143,0 117.5911559860492,-31.53787561686037,0 117.5998399578551,-31.53790292396291,0 117.5996794788769,-31.53249017908097,0 117.5875042817687,-31.5324602769979,0 117.5875809365417,-31.5417121048873,0 117.585077436866,-31.54398501978029,0 117.5645106844853,-31.54409146247599,0 117.564206367995,-31.54704895210439,0 117.560350436962,-31.54710388120695,0 117.5604839037124,-31.55343803174812,0 117.5626746888235,-31.5537230176179,0 117.5622324453581,-31.5556306646482,0 117.5372124427058,-31.5558699356947,0 117.5374083295901,-31.56352859891353,0 117.5465707653835,-31.5639716082041,0 117.546741523622,-31.57103797353273,0 117.5358153859133,-31.57106109023152,0 117.5359898665251,-31.57947646035313,0 117.5453408771095,-31.57976312033304,0 117.54533130974,-31.58428326755889,0 117.5230822402623,-31.58437221310515,0 117.5226228276718,-31.59152467992158,0 117.5059910307364,-31.59138533373278,0 117.4766300285663,-31.59159527260643,0 117.4813991601902,-31.61163377842113,0 117.4832003907641,-31.630821206141,0 117.4905184141296,-31.630521448638,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

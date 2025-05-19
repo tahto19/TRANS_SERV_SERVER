@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Hakea Area 3.kml</name>
+	<Schema name="Lawson_Grains___Hakea_Farm_Outline" id="Lawson_Grains___Hakea_Farm_Outline">
+		<SimpleField type="string" name="timestamp"></SimpleField>
+		<SimpleField type="string" name="begin"></SimpleField>
+		<SimpleField type="string" name="end"></SimpleField>
+		<SimpleField type="string" name="altitudeMode"></SimpleField>
+		<SimpleField type="int" name="tessellate"></SimpleField>
+		<SimpleField type="int" name="extrude"></SimpleField>
+		<SimpleField type="int" name="visibility"></SimpleField>
+		<SimpleField type="int" name="drawOrder"></SimpleField>
+		<SimpleField type="string" name="icon"></SimpleField>
+	</Schema>
+	<StyleMap id="stylemap_id5">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#style21</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#style4</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="style21">
+		<LineStyle>
+			<color>ff00ffff</color>
+			<width>2.5</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="style4">
+		<LineStyle>
+			<color>ff00ffff</color>
+			<width>2.5</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Placemark>
+		<name>Hakea Area 3</name>
+		<styleUrl>#stylemap_id5</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="#Lawson_Grains___Hakea_Farm_Outline">
+				<SimpleData name="tessellate">1</SimpleData>
+				<SimpleData name="extrude">0</SimpleData>
+				<SimpleData name="visibility">-1</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						120.608829468374,-33.7444598578983,0 120.633295773946,-33.7262116054962,0 120.64960646426,-33.7262488621348,0 120.649428669728,-33.7103929213773,0 120.654062474626,-33.7085848959327,0 120.642944905988,-33.6930605115351,0 120.653614601424,-33.6770747508869,0 120.654943504985,-33.6716014690162,0 120.642341533373,-33.6706685316878,0 120.635316835372,-33.6685784955673,0 120.625726019544,-33.671229093316,0 120.607088188361,-33.6755828677563,0 120.582419910654,-33.6813673567838,0 120.549703668583,-33.6888016577912,0 120.608829468374,-33.7444598578983,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+</Document>
+</kml>

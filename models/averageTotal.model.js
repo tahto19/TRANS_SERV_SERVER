@@ -50,6 +50,7 @@ averageTotal.init(
     modelName: "average_total",
     paranoid: true,
     tableName: process.env.DB_PREFIX + "_average_total",
+    indexes: [{ name: "transcript_id_idx", fields: ["transcript_id"] }],
   }
 );
 export default averageTotal;

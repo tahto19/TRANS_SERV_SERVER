@@ -1,0 +1,7 @@
+{
+    "origoAPI": "https://api.origo.farm/api/v1/",
+    "OWAPI3h": "https://api.openweathermap.org/data/2.5/forecast",
+    "OWAPICurrent": "https://api.openweathermap.org/data/2.5/weather",
+    "OWAPIDaily": "https://api.openweathermap.org/data/2.5/forecast/daily",
+    "OWKey": "6802e7b4dff5987ab2d87deb6cb0e00d"
+}

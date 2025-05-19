@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Geoff Harris - Property Boundary.kml</name>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="poly-FFEA00-3201-0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#poly-FFEA00-3201-0-normal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#poly-FFEA00-3201-0-highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="poly-FFEA00-3201-0-highlight">
+		<LineStyle>
+			<color>ff00eaff</color>
+			<width>4.8015</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>0000eaff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-FFEA00-3201-0-normal">
+		<LineStyle>
+			<color>ff00eaff</color>
+			<width>3.201</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>0000eaff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff00ffff</color>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>00ffffff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff00ffff</color>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>00ffffff</color>
+		</PolyStyle>
+	</Style>
+	<Folder>
+		<name>Geoff Harris - Property Boundary</name>
+		<open>1</open>
+		<Placemark>
+			<name>Longys</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							121.7757663204161,-33.24114955594685,0 121.7581557034601,-33.24078263820328,0 121.7585092883845,-33.26165389924746,0 121.7762532583047,-33.26123639173613,0 121.7757663204161,-33.24114955594685,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>The Cups</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							121.3585237285388,-33.17274953757126,0 121.3405199396281,-33.17106044663112,0 121.342316708107,-33.20706101323861,0 121.3634712725742,-33.20704881534436,0 121.3585237285388,-33.17274953757126,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description>1</description>
+			<styleUrl>#poly-FFEA00-3201-0</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							121.570304,-33.092934,0 121.570221,-33.08139,0 121.570188,-33.076552,0 121.570725,-33.060206,0 121.56015,-33.060149,0 121.556792,-33.052721,0 121.555785,-33.050695,0 121.545109,-33.052721,0 121.539234,-33.054184,0 121.541786,-33.060177,0 121.522649,-33.060234,0 121.520635,-33.060234,0 121.520769,-33.076608,0 121.545378,-33.076552,0 121.545512,-33.092895,0 121.570304,-33.092934,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

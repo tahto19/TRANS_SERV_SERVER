@@ -42,6 +42,7 @@ PiiResult.init(
     },
   },
   {
+    indexes: [{ name: "transcript_id_idx", fields: ["transcript_id"] }],
     timestamps: true,
     sequelize: Connection.sequelize,
     modelName: "piiResult",

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Facey Trial Farm outline.kml</name>
+	<open>1</open>
+	<StyleMap id="msn_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_ylw-pushpin">
+		<LineStyle>
+			<color>ff00eaff</color>
+			<width>2.5515</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>0000eaff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin">
+		<LineStyle>
+			<color>ff00eaff</color>
+			<width>1.701</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>0000eaff</color>
+		</PolyStyle>
+	</Style>
+	<Folder>
+		<name>Facey Trial Farm outline</name>
+		<open>1</open>
+		<Placemark>
+			<name>FG Hyper Network Skeleton</name>
+			<description><![CDATA[description:  <br> name FG Hyper Network Skeleton <br> folders FG Hyper Network Skeleton Outline.kml <br> descriptio  <br> altitude  <br> alt_mode  <br> time_begin  <br> time_end  <br> time_when  <br>folders: FG Hyper Network Skeleton Outline.kml<br>descriptio: <br>altitude: <br>alt_mode: <br>time_begin: <br>time_end: <br>time_when:]]></description>
+			<styleUrl>#msn_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<Data name="description">
+					<value>name FG Hyper Network Skeleton 
+ folders FG Hyper Network Skeleton Outline.kml 
+ descriptio  
+ altitude  
+ alt_mode  
+ time_begin  
+ time_end  
+ time_when</value>
+				</Data>
+				<Data name="folders">
+					<value>FG Hyper Network Skeleton Outline.kml</value>
+				</Data>
+				<Data name="descriptio">
+				</Data>
+				<Data name="altitude">
+				</Data>
+				<Data name="alt_mode">
+				</Data>
+				<Data name="time_begin">
+				</Data>
+				<Data name="time_end">
+				</Data>
+				<Data name="time_when">
+				</Data>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							117.1000545277703,-32.35999604688491,0 117.0998685481421,-33.04985290879852,0 118.0753154689673,-33.05021415464222,0 118.0598988416408,-32.35983903733582,0 117.1000545277703,-32.35999604688491,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

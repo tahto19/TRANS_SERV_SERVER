@@ -26,10 +26,11 @@ import averageTotal from "../../../../models/averageTotal.model.js";
 import Queue from "../../../../models/Queue.model.js";
 import Query from "../../../../models/Query.model.js";
 import OrgIntentsConf from "../../../../models/OrgIntentsConf.model.js";
+import { isDate, monthsList } from "./MonthList.js";
 
 export const getCSAT = async (req, res) => {
   try {
-    var { id, start, end } = req.query;
+    var { id, start, end, org_id } = req.query;
 
     let queryFind = req.url.includes("getByUser")
       ? { "$Agent.user_conn$": id }
@@ -37,8 +38,11 @@ export const getCSAT = async (req, res) => {
       ? { group_id: id }
       : req.url.includes("getByOrganization")
       ? { "$Group.organization_id$": id }
-      : { id };
-
+      : { id, "$Group.organization_id$": org_id };
+    //   console.log(req.url)
+    // if (req.url.includes("getByTranscript") && org_id === undefined) {
+    //   throw new Error("UnAuthorized");
+    // }
     if (start !== undefined && end !== undefined) {
       queryFind["queue_date"] = {
         [Op.between]: [
@@ -103,7 +107,7 @@ export const getCSAT = async (req, res) => {
         },
       ],
 
-      order: [["createdAt", "DESC"]],
+      order: [["queue_date", "DESC"]],
     };
 
     const r = await Transcripts.findAll(query);
@@ -656,7 +660,7 @@ export const getMetricsPerIntent = async (req, res) => {
       start !== undefined &&
       end !== undefined
     ) {
-      queryFind["createdAt"] = { [Op.between]: [changeStart, changeEnd] };
+      queryFind["queue_date"] = { [Op.between]: [changeStart, changeEnd] };
     }
 
     var getConfig = await GroupServiceConfig.findAll({
@@ -1009,7 +1013,7 @@ export const getSentiment = async (req, res) => {
       start !== undefined &&
       end !== undefined
     ) {
-      queryFind["createdAt"] = {
+      queryFind["queue_date"] = {
         [Op.between]: [
           moment(start).startOf("day").format("YYYY-MM-DD HH:mm:ss"),
           moment(end).endOf("day").format("YYYY-MM-DD HH:mm:ss"),
@@ -1089,7 +1093,7 @@ export const getSentimentTable = async (req, res) => {
       start !== undefined &&
       end !== undefined
     ) {
-      queryFind["createdAt"] = {
+      queryFind["queue_date"] = {
         [Op.between]: [
           moment(start).startOf("day").format("YYYY-MM-DD HH:mm:ss"),
           moment(end).endOf("day").format("YYYY-MM-DD HH:mm:ss"),
@@ -1255,7 +1259,7 @@ export const getPertIntentInCompliance = async (req, res) => {
       ? { user_conn: id }
       : {};
     if (start !== undefined && end !== undefined) {
-      queryFind["createdAt"] = {
+      queryFind["queue_date"] = {
         [Op.between]: [
           moment(start).startOf("day").format("YYYY-MM-DD HH:mm:ss"),
           moment(end).endOf("day").format("YYYY-MM-DD HH:mm:ss"),
@@ -1280,6 +1284,7 @@ export const getPertIntentInCompliance = async (req, res) => {
           model: Agents,
           attributes: [],
           where: queryAgent,
+          include: { model: AgentLists, required: true },
         },
         {
           required: true,
@@ -1386,17 +1391,35 @@ export const getPerAgentCompliance = async (req, res) => {
               model: IntentDetails,
               attributes: [],
               as: "main_intent",
+              include: {
+                model: Intents,
+                include: [{ model: OrgIntentsConf }],
+                attributes: [],
+                // where: { active: true },
+              },
             },
           ],
         },
       ],
       attributes: [
+        [
+          Sequelize.fn(
+            "CONCAT",
+            Sequelize.literal(
+              "CASE WHEN `IntentResults->main_intent->Intent->OrgIntentsConf`.`active` = 1 THEN '' ELSE 'old ' END"
+            ),
+            Sequelize.col(
+              "IntentResults.main_intent.Intent.OrgIntentsConf.intent"
+            )
+          ),
+          "Intent_Name",
+        ],
         [Sequelize.col("Agent.AgentList.fullname"), "fullname"],
-        [Sequelize.col("IntentResults.main_intent.intent_name"), "Intent_Name"],
+        // [Sequelize.col("IntentResults.main_intent.intent_name"), "Intent_Name"],
         [Sequelize.fn("COUNT", Sequelize.col("Compliance.id")), "count"],
         [Sequelize.fn("SUM", Sequelize.col("Compliance.score")), "score"],
       ],
-      group: ["IntentResults.main_intent.intent_name", "fullname"],
+      group: ["IntentResults.main_intent.Intent.OrgIntentsConf.id", "fullname"],
     });
     res.send(changeSend(r));
   } catch (err) {
@@ -1415,7 +1438,7 @@ export const getCompliancePerPeriod = async (req, res) => {
       ? { user_conn: id }
       : {};
     if (start !== undefined && end !== undefined) {
-      queryFind["createdAt"] = {
+      queryFind["queue_date"] = {
         [Op.between]: [
           moment(start).startOf("day").format("YYYY-MM-DD HH:mm:ss"),
           moment(end).endOf("day").format("YYYY-MM-DD HH:mm:ss"),
@@ -1469,19 +1492,52 @@ export const getCompliancePerPeriod = async (req, res) => {
               model: IntentDetails,
               attributes: [],
               as: "main_intent",
+              include: {
+                model: Intents,
+                include: [
+                  {
+                    model: OrgIntentsConf,
+                    required: true,
+                    where: { active: true },
+                  },
+                ],
+                attributes: [],
+              },
             },
           ],
         },
       ],
       attributes: [
         formatDateDesign,
-        [Sequelize.col("IntentResults.main_intent.intent_name"), "Intent_Name"],
+        [
+          Sequelize.fn(
+            "CONCAT",
+            Sequelize.literal(
+              "CASE WHEN `IntentResults->main_intent->Intent->OrgIntentsConf`.`active` = 1 THEN '' ELSE 'this_is_old ' END"
+            ),
+            Sequelize.col(
+              "IntentResults.main_intent.Intent.OrgIntentsConf.intent"
+            )
+          ),
+          "Intent_Name",
+        ],
         [Sequelize.fn("COUNT", Sequelize.col("Compliance.id")), "count"],
         [Sequelize.fn("SUM", Sequelize.col("Compliance.score")), "score"],
       ],
-      group: ["IntentResults.main_intent.intent_name", "formattedCreatedAt"],
+      group: [
+        "IntentResults.main_intent.Intent.OrgIntentsConf.id",
+        "formattedCreatedAt",
+      ],
     });
-    res.send(changeSend(r));
+    res.send(
+      changeSend(
+        r.filter((x) => {
+          let val = tojson(x);
+
+          return val.Intent_Name !== null;
+        })
+      )
+    );
   } catch (err) {
     console.log(err);
     throw err;
@@ -1500,7 +1556,7 @@ export const getCSATTotal = async (req, res) => {
       ? { user_conn: id }
       : {};
     if (start !== undefined && end !== undefined) {
-      queryFind["createdAt"] = {
+      queryFind["queue_date"] = {
         [Op.between]: [
           moment(start).startOf("day").format("YYYY-MM-DD HH:mm:ss"),
           moment(end).endOf("day").format("YYYY-MM-DD HH:mm:ss"),
@@ -1640,7 +1696,7 @@ export const getCSATversion2 = async (req, res) => {
         ],
       };
     }
-
+    console.log("starting query", moment().format("hh:mm:ss"));
     const getIntents = await Transcripts.findAll({
       where: queryFind,
 
@@ -1650,12 +1706,12 @@ export const getCSATversion2 = async (req, res) => {
           attributes: [],
           model: averageTotal,
         },
-        {
-          required: true,
-          attributes: [],
-          model: Agents,
-          include: { model: AgentLists, required: true },
-        },
+        // {
+        //   required: true,
+        //   attributes: [],
+        //   model: Agents,
+        //   include: { model: AgentLists, required: true },
+        // },
         {
           required: true,
           attributes: [],
@@ -1712,6 +1768,7 @@ export const getCSATversion2 = async (req, res) => {
     //   where: queryFind,
     //   include: [{ model: GroupServiceConfig }],
     // });
+    console.log("ending query", moment().format("hh:mm:ss"));
     let total = {
       total_sum: 0,
       total_average: 0,
@@ -2103,6 +2160,7 @@ export const getCSATAgentScoreCard = async (req, res) => {
           "intent_name",
         ],
       ],
+      sort: [["Transcript.Agent.user_conn", "ASC"]],
       group: [
         "kpi_name",
         "Transcript.Agent.user_conn",
@@ -2119,13 +2177,16 @@ export const getCSATAgentScoreCard = async (req, res) => {
       raw: true,
     });
 
-    a.forEach((v, i) => {
+    // a.forEach((v, i) => {
+    for (let i = 0; i < a.length; i++) {
+      let v = a[i];
       let temp = {};
       let val = changeToJson(v);
 
       let findUser = toSend.findIndex((x) => x.user_id === val.Agent_id);
 
       if (findUser === -1) {
+        var getAverage = await Transcripts.findAll({ where: queryFind });
         temp["csatAverage"] = val.csatAverage;
         temp["user_id"] = val.Agent_id;
         temp["agent_id"] = val.Agent_id;
@@ -2137,18 +2198,13 @@ export const getCSATAgentScoreCard = async (req, res) => {
         temp["i"] = i;
         toSend.push(temp);
       } else {
-        toSend[findUser]["csatAverage"] =
-          (toSend[findUser]["csatAverage"] + val.csatAverage) / 2;
-        toSend[findUser]["complianceAverage"] =
-          (toSend[findUser]["complianceAverage"] + val.complianceAverage) / 2;
-
         toSend[findUser]["kpi"].push(val);
         if (!toSend[findUser]["t_id"].includes(val.transcript_id)) {
           toSend[findUser]["calls"] += val.Count;
           toSend[findUser]["t_id"].push(val.transcript_id);
         }
       }
-    });
+    }
 
     res.send(changeSend(toSend));
   } catch (err) {
@@ -2165,7 +2221,7 @@ export const getCSATPerPeriod = async (req, res) => {
       ? { "$Group.organization_id$": id }
       : {};
     if (start !== undefined && end !== undefined) {
-      queryFind["createdAt"] = {
+      queryFind["queue_date"] = {
         [Op.between]: [
           moment(start).startOf("day").format("YYYY-MM-DD HH:mm:ss"),
           moment(end).endOf("day").format("YYYY-MM-DD HH:mm:ss"),
@@ -2235,11 +2291,9 @@ export const ListOftranscript = async (req, res) => {
       };
     }
     let agentSearch = req.url.includes("getByAgent") ? { user_conn: id } : 1;
-    console.log(groupSearch, transcriptdate, agentSearch);
+    console.log("groupSearch, transcriptdate, agentSearch");
     let getQueue = await Queue.findAll({
       where: transcriptdate,
-
-      order: [["id", "ASC"]],
       include: [
         {
           model: Query,
@@ -2251,6 +2305,7 @@ export const ListOftranscript = async (req, res) => {
             {
               model: Transcripts,
               required: true,
+
               include: [
                 {
                   model: Groups,
@@ -2285,6 +2340,10 @@ export const ListOftranscript = async (req, res) => {
         },
       ],
       group: ["Queries.transcript_id"],
+      order: [
+        ["id", "DESC"],
+        [Query, "id", "ASC"],
+      ],
     });
     let toSend = [];
     getQueue.forEach(async (v) => {
@@ -2598,8 +2657,9 @@ export const checkIfContain = async (req, res) => {
         ],
       };
     }
+    console.log(queryfind);
     let a = await Transcripts.findOne({
-      where: queryFind,
+      where: queryfind,
       limit: 1,
       include: [
         { model: Groups, required: true },
@@ -2609,6 +2669,312 @@ export const checkIfContain = async (req, res) => {
     res.send(changeSend(a !== null));
   } catch (err) {
     console.log(err);
+    throw err;
+  }
+};
+export const PaginationListOftranscriptController = async (req, res) => {
+  try {
+    var { id, start, end, filter, offset, limit, sort } = req.body;
+
+    offset = offset ? offset : 0;
+    limit = limit ? limit : 10;
+    console.log(sort);
+    let sort_ =
+      !sort || !sort.field
+        ? [["id", "ASC"]]
+        : sort.field.toLowerCase() === "csat"
+        ? [[averageTotal, "csatScore", sort.type.toUpperCase()]]
+        : sort.field.toLowerCase() === "agent"
+        ? [[Agents, AgentLists, "fullname", sort.type.toUpperCase()]]
+        : sort.field.toLowerCase() === "intent"
+        ? [
+            [
+              IntentResult,
+              "main_intent",
+              "intent_name",
+              sort.type.toUpperCase(),
+            ],
+          ]
+        : sort.field.toLowerCase() === "compliance"
+        ? [[averageTotal, "complianceScore", sort.type.toUpperCase()]]
+        : sort.field.toLowerCase() === "sentiment"
+        ? [[SentimentAnylsis, "sentiment_name", sort.type.toUpperCase()]]
+        : sort.field.toLowerCase() === "duration"
+        ? [[StoredSpeech, "duration", sort.type.toUpperCase()]]
+        : [[sort.field, sort.type.toUpperCase()]];
+
+    console.log(sort_);
+    let transcriptdate = {};
+    if (start !== undefined && end !== undefined) {
+      transcriptdate["queue_date"] = {
+        [Op.between]: [
+          moment(start).startOf("day").format("YYYY-MM-DD HH:mm:ss"),
+          moment(end).endOf("day").format("YYYY-MM-DD HH:mm:ss"),
+        ],
+      };
+    }
+    var query = {};
+    let agentSearch = req.url.includes("getByAgent") ? { user_conn: id } : 1;
+    let a;
+    if (filter !== "") {
+      a = monthsList.findIndex((x) => {
+        return x.toLowerCase().includes(filter.trim().toLowerCase());
+      });
+      if (a !== -1) {
+        // query["queue_date"] = {
+        //   [Op.between]: [
+        //     moment(`${a + 1} 01 ${moment(start).format("YYYY")}`, "MM DD YYYY")
+        //       .startOf("month")
+        //       .format("YYYY-MM-DD HH:mm:ss"),
+        //     moment(`${a + 1} 01 ${moment(end).format("YYYY")}`, "MM DD YYYY")
+        //       .endOf("month")
+        //       .format("YYYY-MM-DD HH:mm:ss"),
+        //   ],
+        // };
+        query[Op.or] = [
+          { "$Agent.AgentList.fullname$": { [Op.like]: `%${filter}%` } },
+          {
+            queue_date: {
+              [Op.between]: [
+                moment(
+                  `${a + 1} 01 ${moment(start).format("YYYY")}`,
+                  "MM DD YYYY"
+                )
+                  .startOf("month")
+                  .format("YYYY-MM-DD HH:mm:ss"),
+                moment(
+                  `${a + 1} 01 ${moment(end).format("YYYY")}`,
+                  "MM DD YYYY"
+                )
+                  .endOf("month")
+                  .format("YYYY-MM-DD HH:mm:ss"),
+              ],
+            },
+          },
+        ];
+      } else {
+        if (
+          isDate(filter, "MMMM D") ||
+          isDate(filter, "MMMM DD") ||
+          isDate(filter, "MMMM DD YYYY")
+        ) {
+          let seperateFilter = filter.split(" ");
+          let getMonth = seperateFilter[0];
+          let b = monthsList.findIndex((x) => {
+            return x.toLowerCase().includes(getMonth.toLowerCase());
+          });
+          query["queue_date"] = {
+            [Op.between]: [
+              moment(
+                `${b + 1} ${seperateFilter[1]} ${moment(start).format("YYYY")}`,
+                "MM DD YYYY"
+              )
+                .startOf("day")
+                .format("YYYY-MM-DD HH:mm:ss"),
+              moment(
+                `${b + 1} ${seperateFilter[1]} ${moment(start).format("YYYY")}`,
+                "MM DD YYYY"
+              )
+                .endOf("day")
+                .format("YYYY-MM-DD HH:mm:ss"),
+            ],
+          };
+        } else {
+          if (start !== undefined && end !== undefined) {
+            query["queue_date"] = {
+              [Op.between]: [
+                moment(start).startOf("day").format("YYYY-MM-DD HH:mm:ss"),
+                moment(end).endOf("day").format("YYYY-MM-DD HH:mm:ss"),
+              ],
+            };
+          }
+
+          query[Op.or] = [
+            { callerid: { [Op.like]: `%${filter}%` } },
+            { "$average_total.csatScore$": { [Op.like]: `%${filter}%` } },
+            { "$average_total.complianceScore$": { [Op.like]: `%${filter}%` } },
+            { "$StoredSpeeches.duration$": filter },
+            { "$SentiAnylses.sentiment_name$": filter },
+            { call_type: { [Op.like]: `%${filter}%` } },
+            { number_dialled: { [Op.like]: `%${filter}%` } },
+            { "$Agent.AgentList.fullname$": { [Op.like]: `%${filter}%` } },
+            {
+              "$IntentResults.main_intent.intent_name$": {
+                [Op.like]: `%${filter}%`,
+              },
+            },
+            {
+              "$SentiAnylses.sentiment_name$": {
+                [Op.like]: `%${filter}%`,
+              },
+            },
+          ];
+        }
+      }
+    } else {
+      query["queue_date"] = {
+        [Op.between]: [
+          moment(start).startOf("day").format("YYYY-MM-DD HH:mm:ss"),
+          moment(end).endOf("day").format("YYYY-MM-DD HH:mm:ss"),
+        ],
+      };
+    }
+    let queryfind = req.url.includes("getByGroup")
+      ? { group_id: id }
+      : req.url.includes("getByOrganization")
+      ? { "$Group.organization_id$": id }
+      : { "$Agent.user_conn$": id };
+    query = { ...query, ...queryfind };
+
+    console.log(new Date(), " start of limit");
+    let getTranscript = await Transcripts.findAndCountAll({
+      // where: ,
+      where: query,
+      attributes: [
+        "id",
+        [
+          Sequelize.fn(
+            "date_format",
+            Sequelize.col("queue_date"),
+            "%M %d %Y %k:%i"
+          ),
+          "queue_date",
+        ],
+        //   // temp["intent"] = getT.IntentResults[0].main_intent.intent_name;
+        [Sequelize.col("average_total.csatScore"), "csat"],
+        [Sequelize.col("average_total.complianceScore"), "compliance"],
+        [Sequelize.col("callerid"), "callerid"],
+        [Sequelize.col("call_type"), "call_type"],
+        [Sequelize.col("number_dialled"), "number_dialled"],
+        [Sequelize.col("Agent.AgentList.fullname"), "agent"],
+        [Sequelize.col("SentiAnylses.sentiment_name"), "sentiment"],
+        [Sequelize.col("IntentResults.main_intent.intent_name"), "intent"],
+        [Sequelize.col("StoredSpeeches.duration"), "duration"],
+      ],
+      include: [
+        {
+          attributes: [],
+          model: Agents,
+          required: true,
+          include: { model: AgentLists },
+        },
+        {
+          model: StoredSpeech,
+          required: true,
+          where: { type: 2 },
+          attributes: [],
+        },
+        { model: SentimentAnylsis, required: true, attributes: [] },
+        { model: Groups, required: true, attributes: [] },
+        {
+          model: averageTotal,
+          required: true,
+          attributes: [],
+          where: { csatScore: { [Op.ne]: null } },
+        },
+
+        {
+          attributes: [],
+          model: IntentResult,
+          required: true,
+          // attributes: ["main_intent_id", "sub_intent_id", "id"],
+          include: [
+            {
+              attributes: [],
+              model: IntentDetails,
+
+              // attributes: ["intent_name", "desc", "score"],
+              as: "main_intent",
+            },
+          ],
+        },
+      ],
+
+      limit: limit,
+      offset,
+
+      subQuery: false,
+      distinct: true,
+      order: sort_,
+    });
+    console.log(query);
+    console.log(new Date(), " end of limit");
+
+    // let total = await Transcripts.count({
+    //   // where: { "$Agent.AgentList.fullname$": { [Op.like]: `%${filter}%` } },
+    //   where: query,
+
+    //   include: [
+    //     {
+    //       model: Agents,
+    //       required: true,
+    //       include: { model: AgentLists },
+    //     },
+    //     { model: SentimentAnylsis, required: true },
+    //     { model: Groups, required: true },
+    //     {
+    //       model: IntentResult,
+    //       required: true,
+    //       // attributes: ["main_intent_id", "sub_intent_id", "id"],
+    //       include: [
+    //         {
+    //           model: IntentDetails,
+
+    //           // attributes: ["intent_name", "desc", "score"],
+    //           as: "main_intent",
+    //         },
+    //       ],
+    //     },
+    //   ],
+
+    //   order: [["id", "DESC"]],
+    //   subQuery: false,
+    //   distinct: true,
+    // });
+
+    let toSend = [];
+    // getQueue.forEach(async (v) => {
+    //   let temp = {
+    //     name: "",
+    //     queue_date: v.queue_date,
+    //     callerid: v.callerid,
+    //     call_type: v.call_type,
+    //     number_dialled: v.number_dialled,
+    //     id: null,
+    //     agent: "",
+    //   };
+    //   v.Queries.forEach(async (vv, i) => {
+    //     let getT = vv.Transcripts[0];
+    //     if (temp["id"] === null) temp["id"] = getT.id;
+    //     if (getT.average_total.complianceScore === null) {
+    //       let a = await Compliance.findOne({
+    //         where: { Transcript_id: getT.id },
+    //       });
+    //       let b = changeToJson(a);
+    //       await averageTotal.update(
+    //         { complianceScore: parseFloat(b.score) },
+    //         { where: { transcript_id: getT.id } }
+    //       );
+    //     }
+    //     temp["compliance"] = getT.average_total.complianceScore;
+    //     temp["csat"] = getT.average_total.csatScore;
+    //     temp["intent"] = getT.IntentResults[0].main_intent.intent_name;
+    //     temp["sentiment"] = getT.SentiAnylses[0].sentiment_name;
+    //     temp["call_duration"] = getT.StoredSpeeches[0].duration;
+    //     temp["agent"] +=
+    //       i === 0
+    //         ? getT.Agent.AgentList.fullname
+    //         : `,${getT.Agent.AgentList.fullname}`;
+    //     temp["name"] +=
+    //       i === 0
+    //         ? getT.Agent.AgentList.fullname
+    //         : `,${getT.Agent.AgentList.fullname}`;
+    //   });
+    //   toSend.push(temp);
+    // });
+
+    res.send(changeSend({ transcripts: getTranscript }));
+  } catch (err) {
     throw err;
   }
 };

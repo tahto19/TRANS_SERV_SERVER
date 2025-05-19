@@ -123,7 +123,7 @@ export const createData = async (req, res) => {
 export const deleteData = async (req, res) => {
   try {
     const { id, data, desc, intent, script } = req.body;
-    let changeActive = await Intents.update(
+    let changeActive = await OrgIntentsConf.update(
       { active: false },
       { where: { id } }
     );
@@ -318,18 +318,20 @@ export const addConfi = async (req, res) => {
 };
 export const defaultConfig = async (req, res) => {
   try {
-    let getDefault = await GroupServiceConfig.findOne({
-      where: { forDefault: true },
-      include: [
-        {
-          required: false,
-          model: Intents,
-          attributes: ["id", "intent", "desc", "script", "data"],
-          where: { active: true },
-        },
-      ],
-    });
-    res.send(changeSend(getDefault));
+    throw new Error("Cancel Default Config");
+    // let getDefault = await GroupServiceConfig.findOne({
+    //   where: { forDefault: true },
+    //   include: [
+    //     {
+    //       required: false,
+    //       model: Intents,
+    //       attributes: ["id", "intent", "desc", "script", "data"],
+    //       where: { active: true },
+    //     },
+    //   ],
+    // });
+
+    res.send(changeSend([]));
   } catch (err) {
     console.log(err);
     throw err;
@@ -614,7 +616,12 @@ export const HighlightTranscript = async (req, res) => {
               as: "main_intent",
               include: {
                 model: Intents,
-                include: [{ model: HighlightConfig }],
+                include: [
+                  {
+                    model: OrgIntentsConf,
+                    include: [{ required: false, model: OrgHighConfig }],
+                  },
+                ],
               },
             },
           ],
@@ -629,11 +636,12 @@ export const HighlightTranscript = async (req, res) => {
     //     include: { model: Intents, include: { model: HighlightConfig } },
     //   },
     // },
+    console.log();
     let toReturn =
       r === null
         ? []
-        : changeToJson(r).IntentResults[0].main_intent.Intent.highlightConfig
-            .data;
+        : changeToJson(r).IntentResults[0].main_intent.Intent.OrgIntentsConf
+            .OrgHighConfig.data;
     res.send(changeSend(toReturn));
   } catch (err) {
     console.log(err);
@@ -792,16 +800,15 @@ export const saveConfigv3 = async (req, res) => {
         desc: v.desc,
         organization_id,
       });
-      if (v.data !== null)
-        for (let ii = 0; ii < v.data.length; ii++) {
-          let vdata = v.data[ii];
-          await OrgIntentMetrics.create({
-            intent_id: r.id,
-            call_quality: vdata.call_quality,
-            cust_sat_weight: vdata.cust_sat_weight,
-            metric_desc: vdata.metric_desc,
-          });
-        }
+      for (let ii = 0; ii < v.data.length; ii++) {
+        let vdata = v.data[ii];
+        await OrgIntentMetrics.create({
+          intent_id: r.id,
+          call_quality: vdata.call_quality,
+          cust_sat_weight: vdata.cust_sat_weight,
+          metric_desc: vdata.metric_desc,
+        });
+      }
       if (v.highlights && v.highlights.length !== 0) {
         await OrgHighConfig.create({ intent_id: r.id, data: v.highlights });
       }
@@ -821,7 +828,7 @@ export const saveConfigv3 = async (req, res) => {
 };
 export const saveWithoutArchive = async (req, res) => {
   try {
-    const { intent_edited, organization_id, desc, intent, script, id } =
+    const { intent_editable, organization_id, desc, intent, script, id } =
       req.body;
     let groups = req.body.Intents;
 
@@ -829,8 +836,11 @@ export const saveWithoutArchive = async (req, res) => {
     const notes = req.body.OrgNotesConfig;
     const piiFilter = req.body.OrgPiifilter;
     const highlight = req.body.OrgHighConfig;
-    if (intent_edited) {
-      await OrgIntentsConf.update({ desc, intent, script }, { where: { id } });
+    if (intent_editable) {
+      let r = await OrgIntentsConf.update(
+        { desc, intent, script },
+        { where: { id } }
+      );
       metrics.forEach(async (v) => {
         await OrgIntentMetrics.update(
           {
@@ -841,6 +851,7 @@ export const saveWithoutArchive = async (req, res) => {
           { where: { id: v.id } }
         );
       });
+      console.log(r);
     }
     if (notes !== undefined) {
       let getIfExists = await OrgNotesConfig.findOne({
@@ -896,10 +907,15 @@ export const saveWithoutArchive = async (req, res) => {
           ],
         });
         if (g_info === null) {
-          console.log("groups didnt found line 834");
-          throw new Error("Something went wrong");
+          g_info = await GroupServiceConfig.create({
+            groupId: g._id,
+            organization_id: g.organization_id,
+          });
+          // console.log("groups didnt found line 834");
+          // throw new Error("Something went wrong");
         }
-        let g_change = changeToJson(g_info);
+        // let g_change = changeToJson(g_info);
+        let g_change = g_info;
         let intent_info = g_change.Intents;
 
         if (intent_info === null || intent_info.length === 0) {
@@ -1083,13 +1099,10 @@ export const piiFilterTogglev2 = async (req, res) => {
 export const updatechatgptVersionController = async (req, res) => {
   try {
     const { id, chatgpt_version } = req.body;
-    let r = await GroupServiceConfig.findOne({ id });
+    let r = await GroupServiceConfig.findOne({ where: { id } });
     if (r === null) throw new Error("Not Found");
-    await GroupServiceConfig.update(
-      { where: id },
-      { $set: { chatgpt_version } }
-    );
-    res.send(changeSend("successfully updated"));
+    await GroupServiceConfig.update({ chatgpt_version }, { where: { id } });
+    res.send(changeSend(r));
   } catch (err) {
     console.log(err);
     throw err;
@@ -1100,8 +1113,15 @@ export const getChatgptversionController = async (req, res) => {
     const { id } = req.query;
     let r = await GroupServiceConfig.findOne({
       where: { organization_id: id },
-      order: [["chatgpt_version", "ASC"]],
+      order: [["chatgpt_version", "DESC"]],
     });
+    if (r === null) {
+      r = await GroupServiceConfig.create({
+        organization_id: id,
+        metricRange: "1-100%",
+      });
+    }
+
     res.send(changeSend(r));
   } catch (err) {
     console.log(err);

@@ -406,12 +406,14 @@ export const piiFilterTogglev2Schema = {
 };
 export const updatechatgptVersionSchema = {
   handler: updatechatgptVersionController,
-  schema: {
-    body: {
-      id: getInt,
-      chatgpt_version: getString,
-    },
-  },
+  // schema: {
+  //   body: {
+  //     properties: {
+  //       chatgpt_version: getString,
+  //       id: getInt,
+  //     },
+  //   },
+  // },
 };
 export const getChatgptversionSchema = {
   handler: getChatgptversionController,

@@ -36,6 +36,7 @@ export const uploadDestination = async (dest, files, ext) => {
     const filepath = [];
     for await (const file of files) {
       if (file.type === "file") {
+        console.log(file);
         let extension =
           file.filename.split(".")[file.filename.split(".").length - 1];
 
@@ -86,16 +87,18 @@ export const uploadQueueFile = async (dest, file, ext, f) => {
       let getPath = await uploadQueueFile("audio", file);
 
       let a = getPath.split("audio/");
-      console.log(a);
+
       getFileNameSave[1] = a[1];
     }
 
     if (getvalue.includes("failed")) {
+      console.log(getvalue);
       fs.unlinkSync(path);
       return false;
     } else {
       let toReturn = dest + "/" + getFileNameSave[1];
       console.log(toReturn);
+      console.log("toReturn");
       return toReturn;
     }
   } catch (err) {

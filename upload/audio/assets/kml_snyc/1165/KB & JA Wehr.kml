@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>KB &amp; JA Wehr</name>
+	<visibility>0</visibility>
+	<Style id="icon-ci-1-labelson">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>icon-1_2.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="poly-FFEA00-3401-0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#poly-FFEA00-3401-0-normal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#poly-FFEA00-3401-0-highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="poly-FFEA00-3401-0-highlight">
+		<LineStyle>
+			<color>ff00eaff</color>
+			<width>5.1015</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>0000eaff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-FFEA00-3401-0-normal">
+		<LineStyle>
+			<color>ff00eaff</color>
+			<width>3.401</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>0000eaff</color>
+		</PolyStyle>
+	</Style>
+	<Folder>
+		<name>Property Boundary - KB &amp; JA Wehr</name>
+		<visibility>0</visibility>
+		<Placemark>
+			<visibility>0</visibility>
+			<description>1</description>
+			<styleUrl>#poly-FFEA00-3401-0</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							121.88482,-33.516013,0 121.902139,-33.516013,0 121.908751,-33.516013,0 121.918405,-33.51616,0 121.918405,-33.496791,0 121.918449,-33.496474,0 121.918405,-33.482261,0 121.918449,-33.47754,0 121.901188,-33.477613,0 121.901569,-33.485397,0 121.902154,-33.496718,0 121.884659,-33.496669,0 121.88482,-33.516013,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<description>2</description>
+			<styleUrl>#poly-FFEA00-3401-0</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							121.930912,-33.477149,0 121.930941,-33.442638,0 121.930912,-33.43734,0 121.930356,-33.435875,0 121.924885,-33.434166,0 121.922691,-33.435558,0 121.917601,-33.435021,0 121.916284,-33.436681,0 121.905401,-33.43673,0 121.905489,-33.43734,0 121.905372,-33.445299,0 121.905372,-33.453549,0 121.90546,-33.470072,0 121.90543,-33.476954,0 121.905694,-33.477125,0 121.930912,-33.477149,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<visibility>0</visibility>
+			<description>3</description>
+			<styleUrl>#poly-FFEA00-3401-0</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							121.917484,-33.570023,0 121.900311,-33.56995,0 121.899667,-33.570121,0 121.899696,-33.585476,0 121.899638,-33.599074,0 121.899638,-33.60887,0 121.91763,-33.608918,0 121.917571,-33.606068,0 121.917513,-33.601438,0 121.917513,-33.592007,0 121.917601,-33.58745,0 121.91763,-33.577774,0 121.917484,-33.570023,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+	</Folder>
+	<Folder>
+		<name>2-Metre Weather Station - XPS2M-M1</name>
+		<visibility>0</visibility>
+		<Placemark>
+			<name>KJW-S01-01-XPS2M-M1</name>
+			<visibility>0</visibility>
+			<description><![CDATA[description:  <br> id 1 <br> Name KJW-S01-01-XPS2M-M1 <br>id: 1<br>Name: KJW-S01-01-XPS2M-M1]]></description>
+			<styleUrl>#icon-ci-1-labelson</styleUrl>
+			<ExtendedData>
+				<Data name="description">
+					<value>id 1 
+ Name KJW-S01-01-XPS2M-M1</value>
+				</Data>
+				<Data name="id">
+					<value>1</value>
+				</Data>
+				<Data name="Name">
+					<value>KJW-S01-01-XPS2M-M1</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>121.908967,-33.578812,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>KJW-S02-02-XPS2M-M1</name>
+			<visibility>0</visibility>
+			<description><![CDATA[description:  <br> id 2 <br> Name KJW-S02-02-XPS2M-M1 <br>id: 2<br>Name: KJW-S02-02-XPS2M-M1]]></description>
+			<styleUrl>#icon-ci-1-labelson</styleUrl>
+			<ExtendedData>
+				<Data name="description">
+					<value>id 2 
+ Name KJW-S02-02-XPS2M-M1</value>
+				</Data>
+				<Data name="id">
+					<value>2</value>
+				</Data>
+				<Data name="Name">
+					<value>KJW-S02-02-XPS2M-M1</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>121.914448,-33.4418,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

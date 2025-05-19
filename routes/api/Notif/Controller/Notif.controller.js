@@ -12,22 +12,19 @@ export const getNotif = async (req, res) => {
   try {
     const { id } = req.query;
 
-    let getNotif = await averageTotal.count({
+    let getNotif = await averageTotal.findAll({
       where: { status: "Created" },
       include: [
         {
-          required: true,
           model: Transcripts,
           // attributes: ["Agents", "createdAt", "id"],
           include: [
-            { model: Agents, required: true },
             {
               required: true,
               model: Groups,
               where: { organization_id: id },
               // attributes: [],
             },
-            { model: Notes, required: true },
           ],
         },
       ],

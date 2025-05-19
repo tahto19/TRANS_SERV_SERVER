@@ -44,7 +44,7 @@ class executeRequest {
       );
 
       console.log("execute done");
-      console.log(r.data);
+
       if (r.data.details === undefined) return null;
       else {
         if (r.data.details.choices === undefined) {
@@ -62,13 +62,13 @@ class executeRequest {
     try {
       console.log("details");
       let getId = id !== undefined ? id : this.id;
-      console.log(getId);
+
       if (getId === undefined) throw "Something went wrong code AI-9998";
 
       let r = await axios.get(
         `${process.env.EXTERNAL_SERVICE_API_ENDPOINT}/request/details/` + getId
       );
-      console.log(r.data.details);
+
       if (r.data.details === undefined) return null;
       else return r.data.details.details.RequestData[3].value_array;
     } catch (err) {
@@ -81,7 +81,7 @@ class executeRequest {
       let r = await axios.get(
         `${process.env.EXTERNAL_SERVICE_API_ENDPOINT}/request/mock/callback-url`
       );
-      console.log(r.data);
+
       if (r.data.details === undefined) return null;
       else return r.data.details.details.RequestData[3].value_array;
     } catch (err) {
@@ -91,9 +91,10 @@ class executeRequest {
   }
   async start_call() {
     try {
-      console.log(this.apikey);
-      console.log("###########################");
-      let api_key = this.apikey === undefined ? "" : this.apikey;
+      let api_key =
+        this.apikey === undefined
+          ? "ei-pI8k0CvfPJQLOwOyUoKldwOiO49bnEegbWcML1UTfgf6fHut5S"
+          : this.apikey;
       let config = {
         method: "POST",
         url: `https://ai-insight.etpbx.com/api-gateway/gateway/start`,
@@ -102,9 +103,9 @@ class executeRequest {
           AuthorizationCode: api_key,
         },
       };
-      console.log("###########################");
+
       let r = await axios(config);
-      console.log(r.data);
+
       return r.data.details;
     } catch (err) {
       console.log(err);

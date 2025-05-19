@@ -48,6 +48,7 @@ SentimentAnylsis.init(
     modelName: "SentiAnylsis",
     paranoid: true,
     tableName: process.env.DB_PREFIX + "_sentiments_result",
+    indexes: [{ name: "transcript_id_idx", fields: ["transcript_id"] }],
   }
 );
 export default SentimentAnylsis;

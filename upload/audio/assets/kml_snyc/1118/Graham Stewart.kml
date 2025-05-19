@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="Graham_Stewart" id="Graham_Stewart">
+	<SimpleField name="timestamp" type="string"></SimpleField>
+	<SimpleField name="begin" type="string"></SimpleField>
+	<SimpleField name="end" type="string"></SimpleField>
+	<SimpleField name="altitudeMode" type="string"></SimpleField>
+	<SimpleField name="tessellate" type="int"></SimpleField>
+	<SimpleField name="extrude" type="int"></SimpleField>
+	<SimpleField name="visibility" type="int"></SimpleField>
+	<SimpleField name="drawOrder" type="int"></SimpleField>
+	<SimpleField name="icon" type="string"></SimpleField>
+</Schema>
+<Folder><name>Graham_Stewart</name>
+  <Placemark>
+	<name>Untitled Polygon</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Graham_Stewart">
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>120.734777280461,-33.5583353487255,0 120.720058017741,-33.5574661341503,0 120.708645771015,-33.6027514504436,0 120.749645462615,-33.5948751943788,0 120.734777280461,-33.5583353487255,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>Untitled Polygon</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Graham_Stewart">
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>120.948443797767,-33.6626854975935,0 120.946752085417,-33.6763186073884,0 120.994092018608,-33.6698501958918,0 120.995526068238,-33.669321882367,0 120.996655259087,-33.6683986188365,0 120.998523939732,-33.664027914981,0 120.989438674131,-33.6539197458614,0 120.99132785523,-33.6449989076123,0 120.998459411988,-33.6402397344224,0 120.997664728844,-33.630355191968,0 120.988360037478,-33.6239637314001,0 120.985367662074,-33.6275195552746,0 120.939559982111,-33.6360572761591,0 120.948443797767,-33.6626854975935,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+</Folder>
+</Document></kml>

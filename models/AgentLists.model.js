@@ -41,6 +41,7 @@ AgentLists.init(
     modelName: "AgentLists",
     paranoid: true,
     tableName: process.env.DB_PREFIX + "_agent_lists",
+    indexes: [{ name: "fullname_idx", fields: ["fullname"] }],
   }
 );
 export default AgentLists;

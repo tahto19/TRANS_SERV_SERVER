@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Ironhorse - Boundary.kml</name>
+	<StyleMap id="poly-FFEA00-1690-0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#poly-FFEA00-1690-0-normal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#poly-FFEA00-1690-0-highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="poly-FFEA00-1690-0-highlight">
+		<LineStyle>
+			<color>ff00eaff</color>
+			<width>2.535</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>0000eaff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-FFEA00-1690-0-normal">
+		<LineStyle>
+			<color>ff00eaff</color>
+			<width>1.69</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>0000eaff</color>
+		</PolyStyle>
+	</Style>
+	<Folder>
+		<name>Ironhorse - Boundary</name>
+		<open>1</open>
+		<Placemark>
+			<description><![CDATA[description:  <br> fid 2 <br> id 2 <br> name  <br> folders  <br> descriptio  <br> altitude  <br> alt_mode  <br> time_begin  <br> time_end  <br> time_when  <br> layer Iron Horse Hill - Property Boundaries <br> path Iron Horse Hill - Property Boundaries.shp <br>fid: 2<br>id: 2<br>folders: <br>descriptio: <br>altitude: <br>alt_mode: <br>time_begin: <br>time_end: <br>time_when: <br>layer: Iron Horse Hill - Property Boundaries<br>path: Iron Horse Hill - Property Boundaries.shp]]></description>
+			<styleUrl>#poly-FFEA00-1690-0</styleUrl>
+			<ExtendedData>
+				<Data name="description">
+					<value>fid 2 
+ id 2 
+ name  
+ folders  
+ descriptio  
+ altitude  
+ alt_mode  
+ time_begin  
+ time_end  
+ time_when  
+ layer Iron Horse Hill - Property Boundaries 
+ path Iron Horse Hill - Property Boundaries.shp</value>
+				</Data>
+				<Data name="fid">
+					<value>2</value>
+				</Data>
+				<Data name="id">
+					<value>2</value>
+				</Data>
+				<Data name="folders">
+				</Data>
+				<Data name="descriptio">
+				</Data>
+				<Data name="altitude">
+				</Data>
+				<Data name="alt_mode">
+				</Data>
+				<Data name="time_begin">
+				</Data>
+				<Data name="time_end">
+				</Data>
+				<Data name="time_when">
+				</Data>
+				<Data name="layer">
+					<value>Iron Horse Hill - Property Boundaries</value>
+				</Data>
+				<Data name="path">
+					<value>Iron Horse Hill - Property Boundaries.shp</value>
+				</Data>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							119.730265,-33.600542,0 119.717778,-33.58346,0 119.709543,-33.587496,0 119.710135,-33.588078,0 119.704753,-33.590993,0 119.707552,-33.596866,0 119.709112,-33.600273,0 119.706098,-33.60117,0 119.702708,-33.601528,0 119.698671,-33.602694,0 119.698617,-33.604576,0 119.69964,-33.608342,0 119.701039,-33.610807,0 119.706906,-33.606011,0 119.708682,-33.605025,0 119.711481,-33.610045,0 119.730265,-33.600542,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[description:  <br> fid 1 <br> id 1 <br> name  <br> folders  <br> descriptio  <br> altitude  <br> alt_mode  <br> time_begin  <br> time_end  <br> time_when  <br> layer Iron Horse Hill - Property Boundaries <br> path Iron Horse Hill - Property Boundaries.shp <br>fid: 1<br>id: 1<br>folders: <br>descriptio: <br>altitude: <br>alt_mode: <br>time_begin: <br>time_end: <br>time_when: <br>layer: Iron Horse Hill - Property Boundaries<br>path: Iron Horse Hill - Property Boundaries.shp]]></description>
+			<styleUrl>#poly-FFEA00-1690-0</styleUrl>
+			<ExtendedData>
+				<Data name="description">
+					<value>fid 1 
+ id 1 
+ name  
+ folders  
+ descriptio  
+ altitude  
+ alt_mode  
+ time_begin  
+ time_end  
+ time_when  
+ layer Iron Horse Hill - Property Boundaries 
+ path Iron Horse Hill - Property Boundaries.shp</value>
+				</Data>
+				<Data name="fid">
+					<value>1</value>
+				</Data>
+				<Data name="id">
+					<value>1</value>
+				</Data>
+				<Data name="folders">
+				</Data>
+				<Data name="descriptio">
+				</Data>
+				<Data name="altitude">
+				</Data>
+				<Data name="alt_mode">
+				</Data>
+				<Data name="time_begin">
+				</Data>
+				<Data name="time_end">
+				</Data>
+				<Data name="time_when">
+				</Data>
+				<Data name="layer">
+					<value>Iron Horse Hill - Property Boundaries</value>
+				</Data>
+				<Data name="path">
+					<value>Iron Horse Hill - Property Boundaries.shp</value>
+				</Data>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							119.70513,-33.342612,0 119.716163,-33.334204,0 119.741836,-33.314866,0 119.753893,-33.30578,0 119.740437,-33.292914,0 119.738661,-33.294263,0 119.715625,-33.311537,0 119.688875,-33.331641,0 119.70513,-33.342612,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

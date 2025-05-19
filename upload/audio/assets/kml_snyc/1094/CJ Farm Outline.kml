@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>CJ Farm Outline.kml</name>
+	<Style id="sh_ylw-pushpin490">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0affff</color>
+			<width>2.5</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin0000">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0affff</color>
+			<width>2.5</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin290">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin0000</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin490</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Folder>
+		<name>CJ Farm Outline</name>
+		<open>1</open>
+		<Placemark>
+			<name>Farm Outline 1</name>
+			<description>1 XPS2M
+2 XTS with Two Tanks rain gauge on both
+4 XTS with single tanks rain gauge on all
+
+DM - XGW - Sharing of costs XGW?</description>
+			<styleUrl>#msn_ylw-pushpin290</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							117.6303448011039,-32.53193760559778,0 117.6360941376281,-32.53220170381505,0 117.642054013414,-32.5339979266049,0 117.6393021887207,-32.54308742907045,0 117.6504214990557,-32.54319777782965,0 117.652736437403,-32.53406292343154,0 117.6569664078384,-32.53265908347799,0 117.6585923076122,-32.52796104118853,0 117.6615997327288,-32.52867277735745,0 117.6663355215403,-32.53258202396106,0 117.6656435924143,-32.53700834139831,0 117.6675215388003,-32.54209942298642,0 117.6702652263585,-32.54165879157381,0 117.6810397533624,-32.54399230116832,0 117.6972018063828,-32.54315137000646,0 117.7048736449426,-32.54249173017534,0 117.7079593762664,-32.5398319041137,0 117.7093733528079,-32.53361534103622,0 117.7060084795448,-32.52950526753642,0 117.708713452119,-32.52643271178175,0 117.7131265156119,-32.52951763152941,0 117.7134283113238,-32.53329729608174,0 117.716679361789,-32.53816311012217,0 117.7266188540133,-32.53437803279928,0 117.7375109164058,-32.52732372254557,0 117.7427677240693,-32.51926845914748,0 117.7426599778955,-32.51136283559354,0 117.7478958359664,-32.50630914562395,0 117.7511673086699,-32.50817601715471,0 117.7548751108669,-32.51009575886268,0 117.7550884562584,-32.50298102982846,0 117.7284838522611,-32.50232097139203,0 117.7271876171577,-32.50779733667372,0 117.7084635457701,-32.50806142595071,0 117.7094962652369,-32.5014318171079,0 117.7162297538529,-32.50102357200806,0 117.7174695325416,-32.49591242373048,0 117.7089302895603,-32.49649994017214,0 117.7086363582839,-32.4840672380918,0 117.6937427966919,-32.48537113782388,0 117.6948467277009,-32.50692935206252,0 117.6507145191825,-32.50721351240509,0 117.6496252518828,-32.52545110932849,0 117.631386329151,-32.52529617846321,0 117.6292496666246,-32.51905626068488,0 117.6181829593109,-32.51856262911236,0 117.6244693607827,-32.52677431022018,0 117.6228783846756,-32.53411225051746,0 117.6303448011039,-32.53193760559778,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Farm Outline 2</name>
+			<styleUrl>#msn_ylw-pushpin290</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							117.6110785703413,-32.51854639002956,0 117.6030457905343,-32.51880495659045,0 117.6015916766021,-32.52801785864114,0 117.6065253250603,-32.52782183392291,0 117.6061699678944,-32.52440226411471,0 117.6087563143473,-32.52205238161918,0 117.6110785703413,-32.51854639002956,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

@@ -35,15 +35,12 @@ Transcripts.init(
         key: "id",
       },
     },
-    queue_date: { allowNull: false, type: DataTypes.DATE },
-
     createdAt: {
       type: "TIMESTAMP",
       defaultValue: Sequelize.literal("CURRENT_TIMESTAMP"),
       allowNull: false,
       // defaultValue: parseInt(moment().format("X")),
     },
-    number_dialled: { type: DataTypes.STRING(255), allowNull: true },
     updatedAt: {
       type: DataTypes.DATE,
       allowNull: true,
@@ -52,24 +49,8 @@ Transcripts.init(
       type: DataTypes.DATE,
       allowNull: true,
     },
-    callerid: {
-      type: DataTypes.STRING,
-      allowNull: true,
-    },
-    call_id: {
-      type: DataTypes.STRING,
-      allowNull: true,
-    },
-    call_type: {
-      type: DataTypes.STRING,
-      allowNull: true,
-    },
   },
   {
-    indexes: [
-      // add a FULLTEXT index
-      { type: "FULLTEXT", name: "text_idx", fields: ["content"] },
-    ],
     timestamps: false,
     sequelize: Connection.sequelize,
     modelName: "Transcripts",

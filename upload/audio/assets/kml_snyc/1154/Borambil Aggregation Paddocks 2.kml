@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="Borambil_Aggregation_Paddocks_2" id="Borambil_Aggregation_Paddocks_2">
+	<SimpleField name="timestamp" type="string"></SimpleField>
+	<SimpleField name="begin" type="string"></SimpleField>
+	<SimpleField name="end" type="string"></SimpleField>
+	<SimpleField name="altitudeMode" type="string"></SimpleField>
+	<SimpleField name="tessellate" type="int"></SimpleField>
+	<SimpleField name="extrude" type="int"></SimpleField>
+	<SimpleField name="visibility" type="int"></SimpleField>
+	<SimpleField name="drawOrder" type="int"></SimpleField>
+	<SimpleField name="icon" type="string"></SimpleField>
+</Schema>
+<Folder><name>Borambil_Aggregation_Paddocks_2</name>
+  <Placemark>
+	<name>Borambil</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Borambil_Aggregation_Paddocks_2">
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>146.474168368571,-35.6780429001468 146.476120274402,-35.6684078347349 146.489473345285,-35.6701191438003 146.491727126555,-35.6587537385616 146.505945848018,-35.6603560189484 146.507746776074,-35.6514396564412 146.493583445266,-35.6493857114916 146.495080097581,-35.6406801254968 146.458896339596,-35.6358575007251 146.457713092809,-35.6429286021745 146.456948512902,-35.6427969805533 146.455131940523,-35.6540436146848 146.451865013467,-35.6536596068678 146.449033941207,-35.6534499267103 146.447168890354,-35.6535701511394 146.439324691064,-35.6553466069644 146.436047223272,-35.6549621054308 146.432646368476,-35.6729261390658 146.474168368571,-35.6780429001468</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>Green Park</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Borambil_Aggregation_Paddocks_2">
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>146.445922468769,-35.5955894118292 146.441442259238,-35.619527520469 146.426985557555,-35.6174399644149 146.42279765922,-35.6433798797795 146.434903255131,-35.6430046857565 146.438196534588,-35.6408412766251 146.441573467027,-35.6398634003336 146.449986054096,-35.6393579670723 146.45099712103,-35.6398970290664 146.452335459742,-35.6402450497188 146.452361882641,-35.6423591713658 146.457437174223,-35.6427347810526 146.45886444456,-35.6354780377752 146.495128729365,-35.6406366848726 146.496318318137,-35.6334082128972 146.497043579545,-35.6322509368531 146.492836377554,-35.6255743844133 146.494944114119,-35.6145107914927 146.487800194568,-35.6136848906975 146.489409366811,-35.60447955888 146.46096830369,-35.6011695240548 146.459660339642,-35.600145010962 146.457461042675,-35.5980443697523 146.453742112472,-35.5968428130872 146.445922468769,-35.5955894118292</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>Elgin</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Borambil_Aggregation_Paddocks_2">
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>146.384756812427,-35.7133676476866 146.405172749091,-35.7160776582776 146.405519400216,-35.7125484798993 146.410281738824,-35.7131406037029 146.412256037847,-35.7023919356905 146.387558989557,-35.6988288736591 146.384756812427,-35.7133676476866</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>Elgin</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Borambil_Aggregation_Paddocks_2">
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>146.525735760835,-35.6997519027534 146.543241675285,-35.7017967928497 146.544090391089,-35.6976527839956 146.546437414861,-35.6976521875512 146.547792336216,-35.6913772072341 146.552332281352,-35.691927878793 146.552688069406,-35.6915050487089 146.553336955685,-35.6915765396036 146.555003576464,-35.6866607622603 146.546701733863,-35.6855218856518 146.545680359471,-35.6903687801608 146.527958928356,-35.6884216243306 146.525735760835,-35.6997519027534</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>Hilltop</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Borambil_Aggregation_Paddocks_2">
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>146.439006898064,-35.7382917922736 146.437450010009,-35.7489313968605 146.415096356601,-35.7461307073821 146.412340890133,-35.7606727259346 146.411416220868,-35.7608247998669 146.40902608965,-35.7746175815982 146.410867960834,-35.7749199214145 146.410756258357,-35.7753875792647 146.44085955993,-35.7789885701157 146.443287081059,-35.766487467143 146.442000812138,-35.7640186807981 146.447114781944,-35.7375539030545 146.444537354419,-35.735046801843 146.434409413396,-35.7336499081533 146.433672827754,-35.7376449774524 146.43581867977,-35.7378672944907 146.439006898064,-35.7382917922736</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>Caringa</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Borambil_Aggregation_Paddocks_2">
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>146.648009422399,-35.8071109160579 146.655603666148,-35.8082746445195 146.654067930947,-35.8157118459463 146.668470915281,-35.8175235864109 146.669743873263,-35.8102291475221 146.671028727186,-35.8017874716632 146.675516893667,-35.8022826437871 146.676601367631,-35.7950902939398 146.651018089832,-35.7917375386146 146.648009422399,-35.8071109160579</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>Oakbank North</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Borambil_Aggregation_Paddocks_2">
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>146.693463229817,-35.9072490617892 146.695272303818,-35.8985101291814 146.704076879767,-35.8995633377033 146.707417428272,-35.8837950821475 146.700209171909,-35.8829341609883 146.697868003521,-35.8952543571988 146.696159852647,-35.8954573335049 146.690792945147,-35.8947656314308 146.690259829034,-35.8916339176232 146.674547303318,-35.8897571164365 146.67640678917,-35.8921956668479 146.674193219625,-35.8987910455394 146.67357737921,-35.9004733690677 146.672425696993,-35.9041840951385 146.693463229817,-35.9072490617892</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>Bandon</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Borambil_Aggregation_Paddocks_2">
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>146.599108243089,-35.9385111994631 146.617660081402,-35.9410528256125 146.617269165108,-35.9436535976382 146.611449013031,-35.9492013850251 146.62303760581,-35.9508008938053 146.6244932675,-35.9430366557172 146.622752683492,-35.9427466462773 146.623774503335,-35.9383442477607 146.622860452149,-35.9380697449049 146.623634907205,-35.9346051590117 146.617964659562,-35.9339841061832 146.613752089306,-35.9303864576018 146.601153587796,-35.9285165514376 146.599108243089,-35.9385111994631</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>One Tree Hill</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Borambil_Aggregation_Paddocks_2">
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates></coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>One Tree Hill</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Borambil_Aggregation_Paddocks_2">
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>146.662066867647,-35.9560971226984 146.65887906445,-35.9707355991346 146.6814003007,-35.9738928890142 146.679850719578,-35.9813970515232 146.685593722341,-35.9820884892338 146.687302341936,-35.974901271335 146.692858304936,-35.9755878496934 146.694224297185,-35.9682039673019 146.682938073965,-35.9666104401969 146.684538672947,-35.959281529679 146.687461276199,-35.9491249910422 146.681354985232,-35.9465690528033 146.679605027209,-35.9511605361538 146.663809352676,-35.9470604570402 146.663769851786,-35.9415472092673 146.663681344159,-35.9398702849776 146.667328003912,-35.9325390667644 146.661796606351,-35.9312371299125 146.660022116819,-35.9371522575166 146.662120421866,-35.937793395811 146.66094131831,-35.9410049973229 146.647778835359,-35.9391341012898 146.646502755561,-35.9373724265031 146.644631781496,-35.9341319348163 146.645747104912,-35.9299452767 146.643074047206,-35.9294721768711 146.642378900773,-35.9316688350187 146.640129380224,-35.931376154823 146.638886434345,-35.9366063581411 146.63286648849,-35.9358170032186 146.634692460238,-35.9401661906019 146.634204807301,-35.9425582887728 146.63303371918,-35.9459586184203 146.630695781457,-35.951859687501 146.662066867647,-35.9560971226984</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+</Folder>
+</Document></kml>

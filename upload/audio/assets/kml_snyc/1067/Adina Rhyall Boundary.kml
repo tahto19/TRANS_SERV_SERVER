@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Adina Rhyall Boundary.kml</name>
+	<Style id="poly-000000-1200-77-nodesc-highlight0">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-000000-1200-77-nodesc-normal0">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4d000000</color>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="poly-000000-1200-77-nodesc0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#poly-000000-1200-77-nodesc-normal0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#poly-000000-1200-77-nodesc-highlight0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="poly-BDBDBD-895-0-nodesc-highlight0">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>00bdbdbd</color>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-BDBDBD-895-0-nodesc-normal">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>00bdbdbd</color>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="poly-BDBDBD-895-0-nodesc0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#poly-BDBDBD-895-0-nodesc-normal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#poly-BDBDBD-895-0-nodesc-highlight0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Folder>
+		<name>Adina Rhyall Boundary</name>
+		<open>1</open>
+		<Placemark>
+			<name>Rhyall</name>
+			<styleUrl>#poly-BDBDBD-895-0-nodesc0</styleUrl>
+			<gx:balloonVisibility>1</gx:balloonVisibility>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							122.6647473360617,-33.74990552204884,0 122.6650442065909,-33.73343501349095,0 122.6831055693746,-33.71984026487778,0 122.6616301270455,-33.69305009206917,0 122.630505843483,-33.71667806619369,0 122.6313360564869,-33.74916106588822,0 122.6417616470739,-33.74734567129108,0 122.6647550482059,-33.74993951884579,0 122.6647473360617,-33.74990552204884,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>South Rhyall</name>
+			<styleUrl>#poly-000000-1200-77-nodesc0</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							122.7156971,-33.7543919,0 122.6647566,-33.7498068,0 122.6654432,-33.7756373,0 122.715225,-33.7744958,0 122.7156971,-33.7543919,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

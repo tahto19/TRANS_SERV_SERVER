@@ -5,7 +5,7 @@ export const chatgptConfig = (transcript, explanation, intent_prompt) => {
     // service_api_id: 2, //changeable
     // request_link_id: 1,
     fields: {
-      model: "gpt-3.5-turbo-1106",
+      model: "gpt-4o-mini",
       messages: [
         {
           role: "system",
@@ -60,12 +60,19 @@ export const chatgptConfig = (transcript, explanation, intent_prompt) => {
     },
   };
 };
-export const intent_config = (transcript, explanation, intent_prompt) => {
+export const intent_config = (
+  transcript,
+  explanation,
+  intent_prompt,
+
+  model
+) => {
+  var model_ = model === null ? "gpt-4o-mini" : "gpt-4o-mini";
   return {
     // service_api_id: 2, //changeable
     // request_link_id: 1,
 
-    model: "gpt-3.5-turbo-1106",
+    model: model_,
     messages: [
       {
         role: "system",
@@ -117,7 +124,7 @@ export const intent_config = (transcript, explanation, intent_prompt) => {
 };
 export const kpi_config = (kpi_prompt) => {
   return {
-    model: "gpt-3.5-turbo-1106",
+    model: "gpt-4o-mini",
     messages: [
       {
         role: "system",
@@ -170,7 +177,7 @@ export const kpi_config = (kpi_prompt) => {
 };
 export const sentimental_config = (transcript) => {
   return {
-    model: "gpt-3.5-turbo-1106",
+    model: "gpt-4o-mini",
     messages: [
       {
         role: "system",
@@ -216,7 +223,7 @@ export const sentimental_config = (transcript) => {
 };
 export const transcript_seperator_config = (transcript) => {
   return {
-    model: "gpt-3.5-turbo-1106",
+    model: "gpt-4o-mini",
 
     messages: [
       {
@@ -276,7 +283,7 @@ export const compliance_config = (transcript, script, metricRange) => {
   prompt = prompt.replace("[script]", `"${script}"`);
   prompt = prompt.replace("[callmetrics]", metricRange);
   return {
-    model: "gpt-3.5-turbo-1106",
+    model: "gpt-4o-mini",
     messages: [
       {
         role: "system",
@@ -322,7 +329,7 @@ export const notes_config = (transcript) => {
   prompt = prompt.replace("[transcript]", `"${transcript}"`);
 
   return {
-    model: "gpt-3.5-turbo-1106",
+    model: "gpt-4o-mini",
     messages: [
       {
         role: "system",
@@ -360,7 +367,7 @@ export const prompt_suggestion = (prompt) => {
     // service_api_id: 2, //changeable
     // request_link_id: 1,
 
-    model: "gpt-3.5-turbo-0125",
+    model: "gpt-4o-mini",
     messages: [
       {
         role: "system",

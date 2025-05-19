@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>MJ and PA Nicholls - Boundary.kml</name>
+	<StyleMap id="poly-FFEA00-1690-0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#poly-FFEA00-1690-0-normal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#poly-FFEA00-1690-0-highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="poly-FFEA00-1690-0-highlight">
+		<LineStyle>
+			<color>ff00eaff</color>
+			<width>2.535</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>0000eaff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-FFEA00-1690-0-normal">
+		<LineStyle>
+			<color>ff00eaff</color>
+			<width>1.69</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>0000eaff</color>
+		</PolyStyle>
+	</Style>
+	<Folder>
+		<name>MJ and PA Nicholls - Boundary</name>
+		<Placemark>
+			<description><![CDATA[description:  <br> fid 13 <br> id 2 <br> name  <br> folders  <br> descriptio  <br> altitude  <br> alt_mode  <br> time_begin  <br> time_end  <br> time_when  <br> layer MJ & PA Nicholls <br> path C:/Users/khodges/ownCloud - khodges@192.168.101.10/Customers/1177 - Lake King Group/Lake King QGIS/MJ & PA Nicholls.shp <br>fid: 13<br>id: 2<br>folders: <br>descriptio: <br>altitude: <br>alt_mode: <br>time_begin: <br>time_end: <br>time_when: <br>layer: MJ &amp; PA Nicholls<br>path: C:/Users/khodges/ownCloud - khodges@192.168.101.10/Customers/1177 - Lake King Group/Lake King QGIS/MJ &amp; PA Nicholls.shp]]></description>
+			<styleUrl>#poly-FFEA00-1690-0</styleUrl>
+			<ExtendedData>
+				<Data name="description">
+					<value>fid 13 
+ id 2 
+ name  
+ folders  
+ descriptio  
+ altitude  
+ alt_mode  
+ time_begin  
+ time_end  
+ time_when  
+ layer MJ &amp; PA Nicholls 
+ path C:/Users/khodges/ownCloud - khodges@192.168.101.10/Customers/1177 - Lake King Group/Lake King QGIS/MJ &amp; PA Nicholls.shp</value>
+				</Data>
+				<Data name="fid">
+					<value>13</value>
+				</Data>
+				<Data name="id">
+					<value>2</value>
+				</Data>
+				<Data name="folders">
+				</Data>
+				<Data name="descriptio">
+				</Data>
+				<Data name="altitude">
+				</Data>
+				<Data name="alt_mode">
+				</Data>
+				<Data name="time_begin">
+				</Data>
+				<Data name="time_end">
+				</Data>
+				<Data name="time_when">
+				</Data>
+				<Data name="layer">
+					<value>MJ &amp;amp; PA Nicholls</value>
+				</Data>
+				<Data name="path">
+					<value>C:/Users/khodges/ownCloud - khodges@192.168.101.10/Customers/1177 - Lake King Group/Lake King QGIS/MJ &amp;amp; PA Nicholls.shp</value>
+				</Data>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							119.912305,-33.398165,0 119.917162,-33.394672,0 119.931029,-33.394526,0 119.931087,-33.378257,0 119.913885,-33.37811,0 119.913944,-33.361057,0 119.903353,-33.360861,0 119.902885,-33.342582,0 119.903295,-33.342142,0 119.935008,-33.342289,0 119.92746,-33.332414,0 119.917103,-33.319459,0 119.909789,-33.309924,0 119.881763,-33.325472,0 119.863156,-33.335298,0 119.859002,-33.337694,0 119.849991,-33.342582,0 119.857363,-33.348252,0 119.863156,-33.352748,0 119.867076,-33.355974,0 119.871143,-33.359004,0 119.874829,-33.362083,0 119.878076,-33.364355,0 119.8803,-33.365699,0 119.881119,-33.366041,0 119.883342,-33.3678,0 119.888228,-33.37149,0 119.890715,-33.373542,0 119.893026,-33.375374,0 119.893684,-33.376632,0 119.894108,-33.377952,0 119.894167,-33.379711,0 119.894591,-33.381421,0 119.895922,-33.382288,0 119.912305,-33.398165,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[description:  <br> fid 14 <br> id 4 <br> name  <br> folders  <br> descriptio  <br> altitude  <br> alt_mode  <br> time_begin  <br> time_end  <br> time_when  <br> layer MJ & PA Nicholls <br> path C:/Users/khodges/ownCloud - khodges@192.168.101.10/Customers/1177 - Lake King Group/Lake King QGIS/MJ & PA Nicholls.shp <br>fid: 14<br>id: 4<br>folders: <br>descriptio: <br>altitude: <br>alt_mode: <br>time_begin: <br>time_end: <br>time_when: <br>layer: MJ &amp; PA Nicholls<br>path: C:/Users/khodges/ownCloud - khodges@192.168.101.10/Customers/1177 - Lake King Group/Lake King QGIS/MJ &amp; PA Nicholls.shp]]></description>
+			<styleUrl>#poly-FFEA00-1690-0</styleUrl>
+			<ExtendedData>
+				<Data name="description">
+					<value>fid 14 
+ id 4 
+ name  
+ folders  
+ descriptio  
+ altitude  
+ alt_mode  
+ time_begin  
+ time_end  
+ time_when  
+ layer MJ &amp; PA Nicholls 
+ path C:/Users/khodges/ownCloud - khodges@192.168.101.10/Customers/1177 - Lake King Group/Lake King QGIS/MJ &amp; PA Nicholls.shp</value>
+				</Data>
+				<Data name="fid">
+					<value>14</value>
+				</Data>
+				<Data name="id">
+					<value>4</value>
+				</Data>
+				<Data name="folders">
+				</Data>
+				<Data name="descriptio">
+				</Data>
+				<Data name="altitude">
+				</Data>
+				<Data name="alt_mode">
+				</Data>
+				<Data name="time_begin">
+				</Data>
+				<Data name="time_end">
+				</Data>
+				<Data name="time_when">
+				</Data>
+				<Data name="layer">
+					<value>MJ &amp;amp; PA Nicholls</value>
+				</Data>
+				<Data name="path">
+					<value>C:/Users/khodges/ownCloud - khodges@192.168.101.10/Customers/1177 - Lake King Group/Lake King QGIS/MJ &amp;amp; PA Nicholls.shp</value>
+				</Data>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							119.976796,-33.082971,0 119.944218,-33.083693,0 119.949018,-33.090157,0 119.957384,-33.102078,0 119.969659,-33.119166,0 119.9783,-33.131083,0 119.990438,-33.124651,0 119.999661,-33.11954,0 120.001547,-33.11819,0 119.994072,-33.107363,0 119.985809,-33.095902,0 119.976796,-33.082971,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[description:  <br> fid 12 <br> id 1 <br> name  <br> folders  <br> descriptio  <br> altitude  <br> alt_mode  <br> time_begin  <br> time_end  <br> time_when  <br> layer MJ & PA Nicholls <br> path C:/Users/khodges/ownCloud - khodges@192.168.101.10/Customers/1177 - Lake King Group/Lake King QGIS/MJ & PA Nicholls.shp <br>fid: 12<br>id: 1<br>folders: <br>descriptio: <br>altitude: <br>alt_mode: <br>time_begin: <br>time_end: <br>time_when: <br>layer: MJ &amp; PA Nicholls<br>path: C:/Users/khodges/ownCloud - khodges@192.168.101.10/Customers/1177 - Lake King Group/Lake King QGIS/MJ &amp; PA Nicholls.shp]]></description>
+			<styleUrl>#poly-FFEA00-1690-0</styleUrl>
+			<ExtendedData>
+				<Data name="description">
+					<value>fid 12 
+ id 1 
+ name  
+ folders  
+ descriptio  
+ altitude  
+ alt_mode  
+ time_begin  
+ time_end  
+ time_when  
+ layer MJ &amp; PA Nicholls 
+ path C:/Users/khodges/ownCloud - khodges@192.168.101.10/Customers/1177 - Lake King Group/Lake King QGIS/MJ &amp; PA Nicholls.shp</value>
+				</Data>
+				<Data name="fid">
+					<value>12</value>
+				</Data>
+				<Data name="id">
+					<value>1</value>
+				</Data>
+				<Data name="folders">
+				</Data>
+				<Data name="descriptio">
+				</Data>
+				<Data name="altitude">
+				</Data>
+				<Data name="alt_mode">
+				</Data>
+				<Data name="time_begin">
+				</Data>
+				<Data name="time_end">
+				</Data>
+				<Data name="time_when">
+				</Data>
+				<Data name="layer">
+					<value>MJ &amp;amp; PA Nicholls</value>
+				</Data>
+				<Data name="path">
+					<value>C:/Users/khodges/ownCloud - khodges@192.168.101.10/Customers/1177 - Lake King Group/Lake King QGIS/MJ &amp;amp; PA Nicholls.shp</value>
+				</Data>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							119.902592,-33.0848,0 119.867486,-33.085388,0 119.867486,-33.109456,0 119.867486,-33.122148,0 119.890247,-33.122001,0 119.902592,-33.122246,0 119.902592,-33.0848,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

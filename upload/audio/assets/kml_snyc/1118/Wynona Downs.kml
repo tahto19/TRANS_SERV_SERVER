@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="Wynona_Downs" id="Wynona_Downs">
+	<SimpleField name="timestamp" type="string"></SimpleField>
+	<SimpleField name="begin" type="string"></SimpleField>
+	<SimpleField name="end" type="string"></SimpleField>
+	<SimpleField name="altitudeMode" type="string"></SimpleField>
+	<SimpleField name="tessellate" type="int"></SimpleField>
+	<SimpleField name="extrude" type="int"></SimpleField>
+	<SimpleField name="visibility" type="int"></SimpleField>
+	<SimpleField name="drawOrder" type="int"></SimpleField>
+	<SimpleField name="icon" type="string"></SimpleField>
+</Schema>
+<Folder><name>Wynona_Downs</name>
+  <Placemark>
+	<name>Block 1</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Wynona_Downs">
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>121.277419427156,-33.6432750746674,0 121.291365621136,-33.6400276491794,0 121.298090012991,-33.6313785412962,0 121.30555106879,-33.6213073343999,0 121.312841951439,-33.6207220927156,0 121.321947009115,-33.6084862555681,0 121.321032145558,-33.6057969662641,0 121.302942291826,-33.6048579674371,0 121.293404760701,-33.5984172232463,0 121.289877559013,-33.5773557059208,0 121.27584442905,-33.5783121828999,0 121.269469147058,-33.5897170940902,0 121.2760224147,-33.5919846569393,0 121.261744625427,-33.6228310159328,0 121.261214364884,-33.6511623418389,0 121.277419427156,-33.6432750746674,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>Block 2</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Wynona_Downs">
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>121.728063484346,-33.5916922206691,0 121.707115121699,-33.5913937061699,0 121.707570128838,-33.571590293724,0 121.654084140096,-33.5720378786204,0 121.655065789834,-33.5911185989049,0 121.691338121216,-33.5909489711489,0 121.691509589485,-33.61967835453,0 121.728708893604,-33.619001763163,0 121.728063484346,-33.5916922206691,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+</Folder>
+</Document></kml>

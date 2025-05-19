@@ -1,21 +1,30 @@
 import { changeToJson } from "../../../../helper/helpersHere.js";
+import StoredSpeech from "../../../../models/StoredSpeech.model.js";
 import Transcripts from "../../../../models/Transcripts.model.js";
-
-const sendDurationCall = async (data) => {
+import axios from "axios";
+const sendDurationCall = async (data, id, total) => {
   try {
-    let getTranscript = await Transcripts.findOne({
+    console.log("running sendDuration");
+    let getTranscript = await StoredSpeech.findOne({
       where: { transcript_id: id },
     });
-    if (getTranscript !== null) {
+    let getTranscript_details = await Transcripts.findOne({
+      where: { id: id },
+    });
+    if (getTranscript !== null && getTranscript_details !== null) {
       let r = changeToJson(getTranscript);
+      let trans_details = changeToJson(getTranscript_details);
       await axios.post(
         "https://ai-insight.etpbx.com/general-info/report/call/create/logs",
         {
-          organization_id: data.Groups.organization_id,
-          minutes: r.duration,
-          agent_count: 1,
+          organization_id: data.Group.organization_id,
+          minutes: r.duration / 60,
+          agent_count: total,
+          call_date: trans_details.queue_date,
         }
       );
+    } else {
+      console.log(id);
     }
   } catch (err) {
     throw err;

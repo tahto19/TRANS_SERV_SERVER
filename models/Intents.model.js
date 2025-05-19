@@ -39,7 +39,7 @@ Intents.init(
     },
     data: {
       type: DataTypes.TEXT,
-      allowNull: false,
+      allowNull: true,
       get: function () {
         if (this.getDataValue("data") !== undefined)
           return JSON.parse(this.getDataValue("data"));
@@ -77,6 +77,17 @@ Intents.init(
     modelName: "Intents",
     paranoid: true,
     tableName: process.env.DB_PREFIX + "_intents",
+    indexes: [
+      { name: "orgIntentConn_idx", fields: ["orgIntentConn"] },
+      {
+        name: "GroupServicePKey_idx",
+        fields: ["GroupServicePKey"],
+      },
+      {
+        name: "intent_idx",
+        fields: ["intent"],
+      },
+    ],
   }
 );
 

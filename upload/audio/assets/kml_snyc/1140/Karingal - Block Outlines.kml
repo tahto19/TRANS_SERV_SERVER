@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Karingal - Block Outlines.kml</name>
+	<StyleMap id="msn_ylw-pushpin380">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin380</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin47</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_ylw-pushpin47">
+		<IconStyle>
+			<scale>1.2</scale>
+		</IconStyle>
+		<LineStyle>
+			<color>ff00ffff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin380">
+		<LineStyle>
+			<color>ff00ffff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Folder>
+		<name>Karingal - Block Outlines</name>
+		<open>1</open>
+		<Placemark>
+			<name>Halfords</name>
+			<styleUrl>#msn_ylw-pushpin380</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							121.562701126603,-33.4443595158955,0 121.5625826694348,-33.48066091464611,0 121.5842859843996,-33.48077065101669,0 121.5839793720381,-33.44477128449042,0 121.562701126603,-33.4443595158955,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Longhurst</name>
+			<styleUrl>#msn_ylw-pushpin380</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							121.5410505565333,-33.42599651890558,0 121.5410012201584,-33.4440266725009,0 121.5625848090193,-33.44409429418225,0 121.5623385370861,-33.42591027280927,0 121.5410505565333,-33.42599651890558,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Blumans</name>
+			<styleUrl>#msn_ylw-pushpin380</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							121.5413099866531,-33.38911979964666,0 121.5409102521745,-33.42543255322471,0 121.5624400375991,-33.42558231957577,0 121.5624145625835,-33.41664443053584,0 121.5623941831947,-33.41311342374103,0 121.5625132349385,-33.41059407223648,0 121.5625148266639,-33.40884186837493,0 121.5625153978941,-33.40740145492204,0 121.5626442733056,-33.40489952402469,0 121.5626113370875,-33.40194249094422,0 121.562578280699,-33.40051385560191,0 121.5627661002539,-33.39858432458836,0 121.5627010411589,-33.39637480830346,0 121.5626246574748,-33.39461069741652,0 121.5627341372141,-33.39267566458005,0 121.5626175889946,-33.39109997213895,0 121.5627028346443,-33.38923566484059,0 121.5413099866531,-33.38911979964666,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Goldings</name>
+			<styleUrl>#msn_ylw-pushpin380</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							121.5628247249988,-33.40755318944196,0 121.5627545396272,-33.42566070021801,0 121.5842647270485,-33.42555844059628,0 121.5845209147895,-33.40800463972203,0 121.5628247249988,-33.40755318944196,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Campbell</name>
+			<styleUrl>#msn_ylw-pushpin380</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							121.6062514905325,-33.40522543688898,0 121.6063237838126,-33.42558238951252,0 121.6283422541601,-33.42575633283782,0 121.6283200869509,-33.40524556794913,0 121.6062514905325,-33.40522543688898,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Karingal</name>
+			<styleUrl>#msn_ylw-pushpin380</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							121.5844394610952,-33.38898841082984,0 121.5845760667006,-33.4257694423035,0 121.6061745625043,-33.4256052931416,0 121.6061866981933,-33.3894286432222,0 121.5844394610952,-33.38898841082984,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>AR123</name>
+			<styleUrl>#msn_ylw-pushpin380</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							121.628167246776,-33.4260633769431,0 121.6281297852224,-33.43480110186103,0 121.6494829262283,-33.43479700900962,0 121.6497856453361,-33.42606795909035,0 121.628167246776,-33.4260633769431,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Greens</name>
+			<styleUrl>#msn_ylw-pushpin380</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							121.8306215379309,-33.78342615852989,0 121.8313348106864,-33.79859161147252,0 121.8328874967397,-33.80240403712371,0 121.8484810092611,-33.80227247363845,0 121.848415919065,-33.78347934673725,0 121.8306215379309,-33.78342615852989,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Ken &amp; Vivs</name>
+			<styleUrl>#msn_ylw-pushpin380</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							121.3976974029825,-33.74381310365995,0 121.3976828668896,-33.77666825993866,0 121.4025259864454,-33.77683351120774,0 121.40911490643,-33.77534064074711,0 121.412905737879,-33.7772373184228,0 121.4153789750198,-33.77646918782655,0 121.4154661006753,-33.74385311007296,0 121.3976974029825,-33.74381310365995,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

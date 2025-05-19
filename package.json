@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "nodemon index.js",
     "convert": "nodemon converting/index.js",
-    "listener": "nodemon etbxlistener/index.js"
+    "listener": "nodemon etbxlistener/index.js",
+    "listenerPort": "nodemon etbxlistener/listenerPort.js"
   },
   "author": "",
   "license": "ISC",

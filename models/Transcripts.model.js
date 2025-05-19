@@ -69,6 +69,9 @@ Transcripts.init(
     indexes: [
       // add a FULLTEXT index
       { type: "FULLTEXT", name: "text_idx", fields: ["content"] },
+      { name: "queue_date_idx", fields: ["queue_date"] },
+      { name: "agent_id_idx", fields: ["agent_id"] },
+      { name: "group_id_idx", fields: ["group_id"] },
     ],
     timestamps: false,
     sequelize: Connection.sequelize,

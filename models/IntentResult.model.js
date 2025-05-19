@@ -54,6 +54,11 @@ IntentResult.init(
     modelName: "IntentResult",
     paranoid: true,
     tableName: process.env.DB_PREFIX + "_intent_result",
+    indexes: [
+      { name: "transcript_id_idx", fields: ["transcript_id"] },
+      { name: "main_intent_id_idx", fields: ["main_intent_id"] },
+      { name: "sub_intent_id_idx", fields: ["sub_intent_id"] },
+    ],
   }
 );
 

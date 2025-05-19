@@ -1,9 +1,7 @@
 import {
   addNewAgentSchema,
   autoCompleteSchema,
-  changeUserInUserIDSchema,
   createAgentSchema,
-  getAgentDetailsSchema,
   getAgentSchema,
   getAgentsListSchema,
   getAgentsSchema,
@@ -11,7 +9,6 @@ import {
   getAllAgentSchema,
   getNewAgentListSchema,
   getUserIdSchema,
-  switchUserIDSchema,
   totalAgentSchema,
   updateAgentSchema,
   updateNewAgentListSchema,
@@ -30,12 +27,10 @@ export const Agent = (app, opts, done) => {
     app.post("/getNewAgentList", getNewAgentListSchema);
     app.get("/agentWithNoGroup", getAgentsWithNoGroupSchema);
     app.post("/updateNewAgentList", updateNewAgentListSchema);
-    app.post("/changeUserInUserID", changeUserInUserIDSchema);
     app.post("/getAgentsList", getAgentsListSchema);
-    app.post("/switchUserID", switchUserIDSchema);
     app.post("/getAgent", getAgentSchema);
     app.get("/", getAgentsSchema);
-    app.get("/getAgentDetails", getAgentDetailsSchema);
+
     app.post("/", createAgentSchema);
     done();
   } catch (err) {

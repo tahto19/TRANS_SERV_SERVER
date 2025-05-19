@@ -39,6 +39,7 @@ IntentDetails.init(
     },
   },
   {
+    indexes: [{ name: "conn_idx", fields: ["conn"] }],
     timestamps: false,
     sequelize: Connection.sequelize,
     modelName: "IntentDetails",

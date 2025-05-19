@@ -28,7 +28,7 @@ OrgIntentMetrics.init(
     },
     metric_desc: {
       type: DataTypes.TEXT,
-      allowNull: false,
+      allowNull: true,
     },
     cust_sat_weight: {
       type: DataTypes.TEXT,

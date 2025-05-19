@@ -1,0 +1,669 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Condingup Boundary - All.kml</name>
+	<Schema name="Adrian_Perks" id="Adrian_Perks0">
+		<SimpleField type="string" name="timestamp"></SimpleField>
+		<SimpleField type="string" name="begin"></SimpleField>
+		<SimpleField type="string" name="end"></SimpleField>
+		<SimpleField type="string" name="altitudeMode"></SimpleField>
+		<SimpleField type="int" name="tessellate"></SimpleField>
+		<SimpleField type="int" name="extrude"></SimpleField>
+		<SimpleField type="int" name="visibility"></SimpleField>
+		<SimpleField type="int" name="drawOrder"></SimpleField>
+		<SimpleField type="string" name="icon"></SimpleField>
+	</Schema>
+	<StyleMap id="poly-0097A7-3181-0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#poly-0097A7-3181-0-normal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#poly-0097A7-3181-0-highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="poly-0097A7-3181-0-highlight">
+		<LineStyle>
+			<color>ffa79700</color>
+			<width>4.7715</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>00a79700</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-0097A7-3181-0-normal">
+		<LineStyle>
+			<color>ffa79700</color>
+			<width>3.181</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>00a79700</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="poly-0288D1-2684-0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#poly-0288D1-2684-0-normal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#poly-0288D1-2684-0-highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="poly-0288D1-2684-0-highlight">
+		<LineStyle>
+			<color>ffd18802</color>
+			<width>4.026</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>00d18802</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-0288D1-2684-0-normal">
+		<LineStyle>
+			<color>ffd18802</color>
+			<width>2.684</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>00d18802</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="poly-673AB7-3082-0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#poly-673AB7-3082-0-normal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#poly-673AB7-3082-0-highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="poly-673AB7-3082-0-highlight">
+		<LineStyle>
+			<color>ffb73a67</color>
+			<width>4.623</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>00b73a67</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-673AB7-3082-0-normal">
+		<LineStyle>
+			<color>ffb73a67</color>
+			<width>3.082</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>00b73a67</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="poly-7CB342-3578-0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#poly-7CB342-3578-0-normal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#poly-7CB342-3578-0-highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="poly-7CB342-3578-0-highlight">
+		<LineStyle>
+			<color>ff42b37c</color>
+			<width>5.367</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>0042b37c</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-7CB342-3578-0-normal">
+		<LineStyle>
+			<color>ff42b37c</color>
+			<width>3.578</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>0042b37c</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="poly-BDBDBD-3479-0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#poly-BDBDBD-3479-0-normal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#poly-BDBDBD-3479-0-highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="poly-BDBDBD-3479-0-highlight">
+		<LineStyle>
+			<color>ffbdbdbd</color>
+			<width>5.2185</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>00bdbdbd</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-BDBDBD-3479-0-normal">
+		<LineStyle>
+			<color>ffbdbdbd</color>
+			<width>3.479</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>00bdbdbd</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="poly-F57C00-2783-0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#poly-F57C00-2783-0-normal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#poly-F57C00-2783-0-highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="poly-F57C00-2783-0-highlight">
+		<LineStyle>
+			<color>ff007cf5</color>
+			<width>4.1745</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>00007cf5</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-F57C00-2783-0-normal">
+		<LineStyle>
+			<color>ff007cf5</color>
+			<width>2.783</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>00007cf5</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="poly-FFEA00-2883-0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#poly-FFEA00-2883-0-normal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#poly-FFEA00-2883-0-highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="poly-FFEA00-2883-0-highlight">
+		<LineStyle>
+			<color>ff00eaff</color>
+			<width>4.3245</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>0000eaff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-FFEA00-2883-0-normal">
+		<LineStyle>
+			<color>ff00eaff</color>
+			<width>2.883</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>0000eaff</color>
+		</PolyStyle>
+	</Style>
+	<Placemark>
+		<name>GGF 1</name>
+		<description>1</description>
+		<styleUrl>#poly-0288D1-2684-0</styleUrl>
+		<gx:balloonVisibility>1</gx:balloonVisibility>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<tessellate>1</tessellate>
+					<coordinates>
+						122.498321,-33.752269,0 122.493834,-33.753095,0 122.490355,-33.752889,0 122.487089,-33.752593,0 122.479883,-33.75221,0 122.471754,-33.751649,0 122.471713,-33.764017,0 122.471647,-33.771334,0 122.471683,-33.780805,0 122.480812,-33.780992,0 122.498366,-33.780868,0 122.498288,-33.758153,0 122.498321,-33.752269,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+	<Placemark>
+		<name>GGF 2</name>
+		<description>2</description>
+		<styleUrl>#poly-0288D1-2684-0</styleUrl>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<tessellate>1</tessellate>
+					<coordinates>
+						122.487333,-33.751695,0 122.487053,-33.743235,0 122.486979,-33.733734,0 122.48668,-33.722152,0 122.486493,-33.710381,0 122.467265,-33.710661,0 122.467228,-33.717493,0 122.468049,-33.73954,0 122.46831,-33.750531,0 122.487333,-33.751695,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+	<Placemark>
+		<name>Forward Plains 1</name>
+		<description>1</description>
+		<styleUrl>#poly-BDBDBD-3479-0</styleUrl>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<tessellate>1</tessellate>
+					<coordinates>
+						122.595831,-33.706456,0 122.600511,-33.710803,0 122.604668,-33.714834,0 122.605333,-33.715348,0 122.610488,-33.715585,0 122.621391,-33.716197,0 122.630655,-33.716711,0 122.641391,-33.708827,0 122.628849,-33.698532,0 122.626854,-33.69697,0 122.617329,-33.689164,0 122.608825,-33.695982,0 122.602102,-33.701338,0 122.597565,-33.704875,0 122.59595,-33.706199,0 122.595831,-33.706456,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+	<Placemark>
+		<name>Forward Plains 2</name>
+		<description>2</description>
+		<styleUrl>#poly-BDBDBD-3479-0</styleUrl>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<tessellate>1</tessellate>
+					<coordinates>
+						122.641926,-33.708659,0 122.646795,-33.704796,0 122.647472,-33.704203,0 122.652354,-33.70034,0 122.653375,-33.69949,0 122.656594,-33.696891,0 122.661499,-33.692998,0 122.659468,-33.691031,0 122.650513,-33.68269,0 122.639063,-33.671917,0 122.628635,-33.680062,0 122.617804,-33.688838,0 122.62474,-33.694569,0 122.629277,-33.698205,0 122.633149,-33.701358,0 122.635465,-33.703353,0 122.641926,-33.708659,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+	<Placemark>
+		<name>JMD</name>
+		<description>1</description>
+		<styleUrl>#poly-7CB342-3578-0</styleUrl>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<tessellate>1</tessellate>
+					<coordinates>
+						122.653307,-33.617518,0 122.653122,-33.617323,0 122.651515,-33.616036,0 122.648423,-33.613338,0 122.640737,-33.606977,0 122.642498,-33.608434,0 122.635465,-33.602525,0 122.627015,-33.59561,0 122.622753,-33.599221,0 122.610496,-33.60986,0 122.609178,-33.611071,0 122.612584,-33.613974,0 122.613659,-33.614915,0 122.621752,-33.621767,0 122.623168,-33.623029,0 122.625151,-33.624721,0 122.627061,-33.626424,0 122.629426,-33.628475,0 122.631434,-33.63027,0 122.634304,-33.632742,0 122.639391,-33.62866,0 122.646018,-33.623449,0 122.649763,-33.620475,0 122.652288,-33.618351,0 122.653307,-33.617518,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+	<Placemark>
+		<name>1</name>
+		<description>1</description>
+		<styleUrl>#poly-FFEA00-2883-0</styleUrl>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<tessellate>1</tessellate>
+					<coordinates>
+						122.534219,-33.519921,0 122.49419,-33.554053,0 122.504122,-33.562238,0 122.515426,-33.571565,0 122.503984,-33.581715,0 122.495534,-33.589074,0 122.497784,-33.589783,0 122.503381,-33.594468,0 122.50703,-33.597485,0 122.511173,-33.600707,0 122.51784,-33.606305,0 122.518718,-33.605711,0 122.521105,-33.60338,0 122.530708,-33.595154,0 122.548102,-33.579863,0 122.547169,-33.579223,0 122.548706,-33.57776,0 122.549749,-33.578514,0 122.555346,-33.573371,0 122.560888,-33.568513,0 122.576691,-33.554647,0 122.56001,-33.540962,0 122.54481,-33.528521,0 122.534219,-33.519921,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+	<Placemark>
+		<name>2</name>
+		<description>2</description>
+		<styleUrl>#poly-FFEA00-2883-0</styleUrl>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<tessellate>1</tessellate>
+					<coordinates>
+						122.577281,-33.555059,0 122.571924,-33.559712,0 122.565024,-33.56569,0 122.559879,-33.570319,0 122.554008,-33.575486,0 122.544879,-33.583446,0 122.538335,-33.589189,0 122.541874,-33.592205,0 122.55326,-33.601552,0 122.562452,-33.60923,0 122.571341,-33.616611,0 122.580258,-33.623967,0 122.586678,-33.629267,0 122.606569,-33.612086,0 122.601741,-33.608099,0 122.59672,-33.603849,0 122.590354,-33.598707,0 122.585004,-33.594251,0 122.582041,-33.59192,0 122.601795,-33.574686,0 122.582535,-33.559323,0 122.577281,-33.555059,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+	<Placemark>
+		<name>3</name>
+		<description>3</description>
+		<styleUrl>#poly-FFEA00-2883-0</styleUrl>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<tessellate>1</tessellate>
+					<coordinates>
+						122.517778,-33.607117,0 122.462082,-33.655991,0 122.45975,-33.658184,0 122.462,-33.66033,0 122.471356,-33.66798,0 122.483236,-33.67789,0 122.491165,-33.684397,0 122.497283,-33.689556,0 122.507517,-33.697911,0 122.515611,-33.69088,0 122.523924,-33.683735,0 122.53446,-33.674785,0 122.528122,-33.66967,0 122.535722,-33.663094,0 122.532951,-33.660719,0 122.522305,-33.652223,0 122.517422,-33.648181,0 122.528945,-33.637971,0 122.541758,-33.626709,0 122.524637,-33.612475,0 122.520577,-33.609082,0 122.517778,-33.607117,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+	<Placemark>
+		<name>4</name>
+		<description>4</description>
+		<styleUrl>#poly-FFEA00-2883-0</styleUrl>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<tessellate>1</tessellate>
+					<coordinates>
+						122.489327,-33.684214,0 122.481603,-33.690583,0 122.475979,-33.695377,0 122.467034,-33.702933,0 122.467144,-33.710716,0 122.486405,-33.710373,0 122.486652,-33.719183,0 122.486844,-33.728014,0 122.487063,-33.739194,0 122.487351,-33.751685,0 122.493826,-33.752072,0 122.499478,-33.75116,0 122.499313,-33.742651,0 122.508066,-33.742514,0 122.507901,-33.736331,0 122.507791,-33.727546,0 122.507572,-33.722092,0 122.507462,-33.712599,0 122.507325,-33.704907,0 122.50716,-33.69903,0 122.496103,-33.68983,0 122.489327,-33.684214,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+	<Placemark>
+		<name>5</name>
+		<description>5</description>
+		<styleUrl>#poly-FFEA00-2883-0</styleUrl>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<tessellate>1</tessellate>
+					<coordinates>
+						122.508573,-33.709575,0 122.508436,-33.712017,0 122.509204,-33.749278,0 122.523142,-33.746928,0 122.53483,-33.747704,0 122.5435,-33.748365,0 122.564561,-33.746717,0 122.588046,-33.747721,0 122.587992,-33.736177,0 122.587607,-33.71249,0 122.562476,-33.691856,0 122.549635,-33.701626,0 122.550129,-33.708747,0 122.533486,-33.709232,0 122.508573,-33.709575,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+	<Placemark>
+		<name>Fleur Macdonald</name>
+		<description><![CDATA[description:  <br> name Fleur Macdonald <br> folders  <br> descriptio  <br> altitude  <br> alt_mode  <br> time_begin  <br> time_end  <br> time_when  <br>folders: <br>descriptio: <br>altitude: <br>alt_mode: <br>time_begin: <br>time_end: <br>time_when:]]></description>
+		<styleUrl>#poly-673AB7-3082-0</styleUrl>
+		<ExtendedData>
+			<Data name="description">
+				<value>name Fleur Macdonald 
+ folders  
+ descriptio  
+ altitude  
+ alt_mode  
+ time_begin  
+ time_end  
+ time_when</value>
+			</Data>
+			<Data name="folders">
+			</Data>
+			<Data name="descriptio">
+			</Data>
+			<Data name="altitude">
+			</Data>
+			<Data name="alt_mode">
+			</Data>
+			<Data name="time_begin">
+			</Data>
+			<Data name="time_end">
+			</Data>
+			<Data name="time_when">
+			</Data>
+		</ExtendedData>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<tessellate>1</tessellate>
+					<coordinates>
+						122.954939,-33.779731,0 122.964524,-33.779731,0 122.974348,-33.77963,0 122.986424,-33.779528,0 123.001776,-33.779354,0 123.008554,-33.779252,0 123.009052,-33.761851,0 122.975691,-33.762163,0 122.955271,-33.762427,0 122.954939,-33.779731,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+	<Placemark>
+		<name>Rhyall</name>
+		<description><![CDATA[description:  <br> name Rhyall <br> folders Phase 1 Nov21 <br> descriptio  <br> altitude  <br> alt_mode  <br> time_begin  <br> time_end  <br> time_when  <br>folders: Phase 1 Nov21<br>descriptio: <br>altitude: <br>alt_mode: <br>time_begin: <br>time_end: <br>time_when:]]></description>
+		<styleUrl>#poly-F57C00-2783-0</styleUrl>
+		<ExtendedData>
+			<Data name="description">
+				<value>name Rhyall 
+ folders Phase 1 Nov21 
+ descriptio  
+ altitude  
+ alt_mode  
+ time_begin  
+ time_end  
+ time_when</value>
+			</Data>
+			<Data name="folders">
+				<value>Phase 1 Nov21</value>
+			</Data>
+			<Data name="descriptio">
+			</Data>
+			<Data name="altitude">
+			</Data>
+			<Data name="alt_mode">
+			</Data>
+			<Data name="time_begin">
+			</Data>
+			<Data name="time_end">
+			</Data>
+			<Data name="time_when">
+			</Data>
+		</ExtendedData>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<tessellate>1</tessellate>
+					<coordinates>
+						122.664747,-33.749906,0 122.665044,-33.733435,0 122.683106,-33.71984,0 122.66163,-33.69305,0 122.630506,-33.716678,0 122.631336,-33.749161,0 122.641762,-33.747346,0 122.664755,-33.74994,0 122.664747,-33.749906,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+	<Placemark>
+		<name>South Rhyall</name>
+		<description><![CDATA[description:  <br> name South Rhyall <br> folders Phase 1 Nov21 <br> descriptio  <br> altitude  <br> alt_mode  <br> time_begin  <br> time_end  <br> time_when  <br>folders: Phase 1 Nov21<br>descriptio: <br>altitude: <br>alt_mode: <br>time_begin: <br>time_end: <br>time_when:]]></description>
+		<styleUrl>#poly-F57C00-2783-0</styleUrl>
+		<ExtendedData>
+			<Data name="description">
+				<value>name South Rhyall 
+ folders Phase 1 Nov21 
+ descriptio  
+ altitude  
+ alt_mode  
+ time_begin  
+ time_end  
+ time_when</value>
+			</Data>
+			<Data name="folders">
+				<value>Phase 1 Nov21</value>
+			</Data>
+			<Data name="descriptio">
+			</Data>
+			<Data name="altitude">
+			</Data>
+			<Data name="alt_mode">
+			</Data>
+			<Data name="time_begin">
+			</Data>
+			<Data name="time_end">
+			</Data>
+			<Data name="time_when">
+			</Data>
+		</ExtendedData>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<tessellate>1</tessellate>
+					<coordinates>
+						122.715697,-33.754392,0 122.664757,-33.749807,0 122.665443,-33.775637,0 122.715225,-33.774496,0 122.715697,-33.754392,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+	<Placemark>
+		<name>McVay - Howick</name>
+		<description><![CDATA[description:  <br> name McVay - Howick <br> folders Sara McVay <br> descriptio  <br> altitude  <br> alt_mode  <br> time_begin  <br> time_end  <br> time_when  <br>folders: Sara McVay<br>descriptio: <br>altitude: <br>alt_mode: <br>time_begin: <br>time_end: <br>time_when:]]></description>
+		<styleUrl>#poly-0097A7-3181-0</styleUrl>
+		<ExtendedData>
+			<Data name="description">
+				<value>name McVay - Howick 
+ folders Sara McVay 
+ descriptio  
+ altitude  
+ alt_mode  
+ time_begin  
+ time_end  
+ time_when</value>
+			</Data>
+			<Data name="folders">
+				<value>Sara McVay</value>
+			</Data>
+			<Data name="descriptio">
+			</Data>
+			<Data name="altitude">
+			</Data>
+			<Data name="alt_mode">
+			</Data>
+			<Data name="time_begin">
+			</Data>
+			<Data name="time_end">
+			</Data>
+			<Data name="time_when">
+			</Data>
+		</ExtendedData>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<tessellate>1</tessellate>
+					<coordinates>
+						122.754309,-33.755862,0 122.7432,-33.755545,0 122.742593,-33.803664,0 122.822349,-33.801912,0 122.82221,-33.793315,0 122.832838,-33.792982,0 122.832847,-33.749985,0 122.805064,-33.751424,0 122.801258,-33.749996,0 122.797672,-33.749556,0 122.794328,-33.751099,0 122.790194,-33.75282,0 122.769564,-33.7543,0 122.769298,-33.773753,0 122.760418,-33.774714,0 122.758809,-33.773754,0 122.75387,-33.773665,0 122.754309,-33.755862,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+	<Placemark>
+		<name>McVay - Penns</name>
+		<description><![CDATA[description:  <br> name McVay - Penns <br> folders Sara McVay <br> descriptio  <br> altitude  <br> alt_mode  <br> time_begin  <br> time_end  <br> time_when  <br>folders: Sara McVay<br>descriptio: <br>altitude: <br>alt_mode: <br>time_begin: <br>time_end: <br>time_when:]]></description>
+		<styleUrl>#poly-0097A7-3181-0</styleUrl>
+		<ExtendedData>
+			<Data name="description">
+				<value>name McVay - Penns 
+ folders Sara McVay 
+ descriptio  
+ altitude  
+ alt_mode  
+ time_begin  
+ time_end  
+ time_when</value>
+			</Data>
+			<Data name="folders">
+				<value>Sara McVay</value>
+			</Data>
+			<Data name="descriptio">
+			</Data>
+			<Data name="altitude">
+			</Data>
+			<Data name="alt_mode">
+			</Data>
+			<Data name="time_begin">
+			</Data>
+			<Data name="time_end">
+			</Data>
+			<Data name="time_when">
+			</Data>
+		</ExtendedData>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<tessellate>1</tessellate>
+					<coordinates>
+						122.829578,-33.605139,0 122.796666,-33.632066,0 122.847241,-33.675338,0 122.869885,-33.657049,0 122.838456,-33.62958,0 122.848454,-33.621326,0 122.829578,-33.605139,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+	<Placemark>
+		<name>McVay - McMora</name>
+		<description><![CDATA[description:  <br> name McVay - McMora <br> folders Sara McVay <br> descriptio  <br> altitude  <br> alt_mode  <br> time_begin  <br> time_end  <br> time_when  <br>folders: Sara McVay<br>descriptio: <br>altitude: <br>alt_mode: <br>time_begin: <br>time_end: <br>time_when:]]></description>
+		<styleUrl>#poly-0097A7-3181-0</styleUrl>
+		<ExtendedData>
+			<Data name="description">
+				<value>name McVay - McMora 
+ folders Sara McVay 
+ descriptio  
+ altitude  
+ alt_mode  
+ time_begin  
+ time_end  
+ time_when</value>
+			</Data>
+			<Data name="folders">
+				<value>Sara McVay</value>
+			</Data>
+			<Data name="descriptio">
+			</Data>
+			<Data name="altitude">
+			</Data>
+			<Data name="alt_mode">
+			</Data>
+			<Data name="time_begin">
+			</Data>
+			<Data name="time_end">
+			</Data>
+			<Data name="time_when">
+			</Data>
+		</ExtendedData>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<tessellate>1</tessellate>
+					<coordinates>
+						122.654779,-33.61746,0 122.635163,-33.632344,0 122.622944,-33.641847,0 122.615908,-33.650124,0 122.638939,-33.670948,0 122.661692,-33.692833,0 122.683006,-33.718814,0 122.716609,-33.694807,0 122.704891,-33.683404,0 122.717916,-33.673027,0 122.673188,-33.633148,0 122.683874,-33.611757,0 122.670499,-33.560538,0 122.671405,-33.554077,0 122.670935,-33.551012,0 122.638346,-33.560573,0 122.639674,-33.562797,0 122.613966,-33.583547,0 122.646448,-33.610521,0 122.64806,-33.60929,0 122.652596,-33.613074,0 122.651118,-33.61442,0 122.654779,-33.61746,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+	<Placemark>
+		<name>Adrian Perks Farm 1</name>
+		<Style>
+			<LineStyle>
+				<color>ff0000ff</color>
+			</LineStyle>
+			<PolyStyle>
+				<fill>0</fill>
+			</PolyStyle>
+		</Style>
+		<ExtendedData>
+			<SchemaData schemaUrl="#Adrian_Perks0">
+				<SimpleData name="tessellate">1</SimpleData>
+				<SimpleData name="extrude">0</SimpleData>
+				<SimpleData name="visibility">-1</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						122.368946205,-33.5829980838701,0 122.358747932094,-33.5904568375343,0 122.347590853721,-33.6106300755569,0 122.31941481092,-33.6185347509674,0 122.343133121918,-33.6447182976842,0 122.365531049876,-33.6258771824968,0 122.385025668766,-33.6423412113816,0 122.388047339589,-33.6395978363905,0 122.390245764507,-33.6408984173483,0 122.413757819734,-33.6205788445354,0 122.368946205,-33.5829980838701,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+	<Placemark>
+		<name>Adrian Perks Farm 2</name>
+		<Style>
+			<LineStyle>
+				<color>ff0000ff</color>
+			</LineStyle>
+			<PolyStyle>
+				<fill>0</fill>
+			</PolyStyle>
+		</Style>
+		<ExtendedData>
+			<SchemaData schemaUrl="#Adrian_Perks0">
+				<SimpleData name="tessellate">1</SimpleData>
+				<SimpleData name="extrude">0</SimpleData>
+				<SimpleData name="visibility">-1</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						122.41434407614,-33.6482957376669,0 122.399365735665,-33.6611869414412,0 122.427898799673,-33.6850757910747,0 122.443340573968,-33.6719959159882,0 122.41434407614,-33.6482957376669,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+</Document>
+</kml>

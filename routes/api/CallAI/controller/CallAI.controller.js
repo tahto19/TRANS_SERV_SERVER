@@ -36,11 +36,14 @@ import { getDetailsofOrgByAccountCode } from "../outsideCall/getDetailsofOrgByAc
 import { processingData } from "../helper/ProcessData.js";
 import processSameQueueId from "../proccess/processSameQueueId.js";
 import {
-  Improve_prompt,
   description_prompt,
   metrics_prompt,
   script_prompt,
   summary_prompt,
+  Improve_prompt_intent,
+  Improve_prompt_desc,
+  Improve_prompt_callFlow,
+  Improve_prompt_metrics,
 } from "../proccess/assets/prompt.js";
 import { prompt_suggestion } from "../proccess/chatgptconfig.js";
 import promptGenDetails from "../../../../models/promptGenDetails.model.js";
@@ -295,9 +298,21 @@ export const speechTotextFromListener = async (req, res) => {
 
           if (!a) {
             console.log("data is not correct");
-
-            return res.code(401).send({ error: true, queueId });
+            queueId = await saveToDatabase(Queue, {
+              user_id,
+              queue_id,
+              user_group_id: group_id,
+              queue_date: createdAt,
+              account_code,
+              status: "Data is Incorrect",
+              callerid,
+              call_id,
+              call_type,
+            });
+            throw new Error("Data is Incorrect");
+            // return res.code(401).send({ error: true, queueId });
           } else if (a.format.duration <= 15) {
+            console.log("path__");
             fs.unlink("/" + converted, (e, d) => {
               console.log(e);
             });
@@ -320,7 +335,6 @@ export const speechTotextFromListener = async (req, res) => {
       } catch (err) {
         console.log(err);
         path.forEach(async (path__) => {
-          // console.log(path__);
           let path_ = await new URL(
             "../../../../upload/" + path__,
             import.meta.url
@@ -333,6 +347,7 @@ export const speechTotextFromListener = async (req, res) => {
         });
         throw new Error(err.message);
       }
+
       queueId = await saveToDatabase(Queue, {
         user_id,
         queue_id,
@@ -434,9 +449,12 @@ export const fromListener = async (req, res) => {
       call_id,
       call_type,
       number_dialled,
+      priority,
+      language,
     } = req.body;
 
     // res.send(changeSend(orgDetails));
+
     let check = await Queue.findOne({
       where: {
         queue_id,
@@ -448,6 +466,7 @@ export const fromListener = async (req, res) => {
       console.log(changeToJson(check));
       throw new Error("Already saved");
     }
+
     var duration = 0;
     if (user_id === "" || user_id === undefined) {
       await saveToDatabase(Queue, {
@@ -494,6 +513,7 @@ export const fromListener = async (req, res) => {
     });
 
     if (agent === null) {
+      console.log(req.body);
       await saveToDatabase(Queue, {
         number_dialled,
         user_id,
@@ -569,6 +589,7 @@ export const fromListener = async (req, res) => {
           let f = file[i];
           let getPath = await uploadQueueFile("audio", f);
 
+          if (!getPath) throw new Error("Not found");
           let path_ = await new URL(
             "../../../../upload/" + getPath,
             import.meta.url
@@ -578,6 +599,7 @@ export const fromListener = async (req, res) => {
           const a = await mm.parseFile("/" + converted);
 
           if (!a) {
+            console.log(a);
             return res.code(401).send({ error: true, queueId });
           } else if (a.format.duration <= 15) {
             // "/" +  add this below
@@ -618,6 +640,7 @@ export const fromListener = async (req, res) => {
         throw new Error(err.message);
       }
       // if all is correct save the queue as normal
+
       var queueId = await saveToDatabase(Queue, {
         number_dialled,
         user_id,
@@ -630,7 +653,9 @@ export const fromListener = async (req, res) => {
         call_type,
         status: "Created",
       });
+
       let q_id = changeToJson(queueId);
+
       path.forEach(async (v, i) => {
         await StoredSpeech.create({
           queueId: q_id.id,
@@ -644,10 +669,26 @@ export const fromListener = async (req, res) => {
         file,
         orgDetails.apikey,
         agent,
-        orgDetails.service
+        orgDetails.service,
+        null,
+        null,
+        null,
+        priority,
+        language
       );
-
+      if (processFirstRequests.error) {
+        await updateDataBase(
+          Queue,
+          {
+            where: { queue_id },
+          },
+          { status: processFirstRequests.message }
+        );
+        throw new Error("Error");
+      }
       let saveQuery = await saveToDatabase(Query, {
+        priority: priority,
+
         type: processFirstRequests.type,
         status: "Proccessing",
         code: processFirstRequests.response.code,
@@ -669,7 +710,7 @@ export const fromListener = async (req, res) => {
     throw err;
   }
 };
-export const generatePrompt = async (req, res) => {
+export const generatePrompt_old = async (req, res) => {
   try {
     let data = {
       headers: {
@@ -726,6 +767,93 @@ export const generatePrompt = async (req, res) => {
     throw err;
   }
 };
+export const generatePrompt = async (req, res) => {
+  try {
+    let data = {
+      headers: {
+        Authorization: "Bearer " + process.env.OPEN_AIAPI_KEY,
+      },
+      data: [],
+    };
+    const { intent, type, organization_id, metricsType, api_type, text } =
+      req.body;
+    let prompt = "";
+
+    if (api_type === "improve") {
+      prompt =
+        type === "Description"
+          ? Improve_prompt_intent
+          : type === "Script"
+          ? Improve_prompt_callFlow
+          : type === "metrics"
+          ? Improve_prompt_metrics
+          : "";
+
+      if (type === "Description" || type === "Script") {
+        prompt = prompt.replace("[intent]", intent);
+        prompt = prompt.replace("[text]", text);
+        console.log(prompt);
+      } else if (type === "metrics") {
+        prompt = prompt.replace("[intent]", intent);
+        prompt = prompt.replace("[text]", text);
+        prompt = prompt.replace("[metricsType]", metricsType);
+      }
+    } else {
+      prompt =
+        type.toLowerCase() === "description"
+          ? description_prompt
+          : type.toLowerCase() === "script"
+          ? script_prompt
+          : type.toLowerCase() === "metrics"
+          ? metrics_prompt
+          : summary_prompt;
+      if (type === "Description" || type === "Script") {
+        prompt = prompt.replace("[intent]", intent);
+
+        console.log(prompt);
+      } else if (type === "metrics") {
+        prompt = prompt.replace("[intent]", intent);
+        prompt = prompt.replace("[metricsType]", metricsType);
+      }
+      // let toChange =
+      //   type == undefined
+      //     ? "[intent]"
+      //     : type.toLowerCase() === "metrics"
+      //     ? "[intent]"
+      //     : "[metricsType]";
+      // let changeReplace =
+      //   type == undefined
+      //     ? intent
+      //     : type.toLowerCase() === "metrics"
+      //     ? metricsType
+      //     : intent;
+      // prompt = prompt.replace(toChange, changeReplace);
+    }
+    let chatgpt = prompt_suggestion(prompt);
+    data.data.push(chatgpt);
+
+    // get org
+    let org = new getOrg();
+    await org.start(organization_id);
+    let apikey = org.getPromptGeneratorAPIkey();
+    if (!apikey) throw new Error("No service found");
+
+    // start request to sir henry
+    let er = new executeRequest();
+    await er.start(data, apikey);
+    let response = await er.start_call(apikey);
+    await promptGenDetails.create({
+      organization_id,
+      code: response.code,
+      setup_id: response.id,
+    });
+    res.send(changeSend(response));
+  } catch (err) {
+    console.log(err.data);
+    // res.send(changeSend(err));
+    throw err;
+  }
+};
 export const getGeneratePrompt = async (req, res) => {
   try {
     const { id } = req.query;
@@ -742,3 +870,27 @@ export const getGeneratePrompt = async (req, res) => {
     throw err;
   }
 };
+export const reRunFailedSuccess = async (req, res) => {
+  try {
+    let { id } = req.body;
+    let r = await Query.findAll({
+      where: { type: "Proccessing", id: { [Op.in]: [id[0], id[1]] } },
+    });
+    for (let i = 0; i < r.length; i++) {
+      let val = changeToJson(r[i]);
+      await delay(1000);
+      let r = await axios.get(
+        `https://ai-insight.etpbx.com/api-gateway/gateway/status/${val.code}`
+      );
+      if (r.data.response) {
+        console.log(r.data);
+      }
+    }
+  } catch (err) {
+    console.log(err);
+    res.send({ result: "error", message: err.message });
+  }
+};
+function delay(ms) {
+  return new Promise((resolve, reject) => setTimeout(resolve, ms));
+}

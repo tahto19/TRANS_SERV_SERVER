@@ -8,7 +8,39 @@ import AgentLists from "../../../../models/AgentLists.model.js";
 import axios from "axios";
 import { changeFormat, changeToJson } from "../../../../helper/helpersHere.js";
 import { Agent } from "../Agent.js";
+// old
+// export const getAgents = async (req, res) => {
+//   try {
+//     const { id, active } = req.query;
+//     let a = active === "true" ? true : false;
+//     if (id === undefined) throw new Error("No id");
+//     let query =
+//       id === undefined || id === "" ? {} : { organization_id: parseInt(id) };
 
+//     let r = await AgentLists.findAll({
+//       where: query,
+//       include: [{ model: Agents, where: { active: a }, required: true }],
+//     });
+//     let toSend = [];
+//     if (!a)
+//       for (let i = 0; i < r.length; i++) {
+//         let v = changeToJson(r[i]);
+//         // console.log(v);
+//         let findActive = await Agents.findOne({
+//           where: { active: !a, user_conn: v.id },
+//         });
+//         console.log(findActive);
+//         if (!findActive) toSend.push(v);
+//       }
+//     else {
+//       toSend = r;
+//     }
+//     res.send(changeSend(id === undefined ? "No organization found" : toSend));
+//   } catch (err) {
+//     throw err;
+//   }
+// };
+// new
 export const getAgents = async (req, res) => {
   try {
     const { id, active } = req.query;
@@ -19,27 +51,39 @@ export const getAgents = async (req, res) => {
 
     let r = await AgentLists.findAll({
       where: query,
-      include: [{ model: Agents, where: { active: a }, required: true }],
+      include: [
+        {
+          model: Agents,
+          where: { active: a },
+          include: { model: Groups, required: false },
+          required: false,
+        },
+      ],
     });
     let toSend = [];
-    if (!a)
-      for (let i = 0; i < r.length; i++) {
-        let v = changeToJson(r[i]);
-        // console.log(v);
-        let findActive = await Agents.findOne({
-          where: { active: !a, user_conn: v.id },
-        });
-        console.log(findActive);
-        if (!findActive) toSend.push(v);
-      }
-    else {
-      toSend = r;
+
+    for (let i = 0; i < r.length; i++) {
+      let v = changeToJson(r[i]);
+      console.log(v);
+      let temp = {
+        user_details: { Agent: v.Agent, Groups: [] },
+        fullname: v.fullname,
+        contact_details: v.contact_details,
+        user_id: v.user_id,
+        id: v.id,
+      };
+      v.Agents.forEach((vv) => {
+        temp.user_details.Groups.push(vv.Group);
+      });
+      toSend.push(temp);
     }
+
     res.send(changeSend(id === undefined ? "No organization found" : toSend));
   } catch (err) {
     throw err;
   }
 };
+
 export const getAgentsWithNoGroup = async (req, res) => {
   try {
     const { id, organization_id } = req.query;
@@ -207,7 +251,7 @@ export const addNewAgent = async (req, res) => {
         "Content-Type": "application/json",
       },
     });
-    console.log(re.data);
+
     res.send(changeSend({ r, data: re.data }));
   } catch (err) {
     console.log(err);
@@ -464,7 +508,6 @@ export const changeUserInUserID = async (req, res) => {
       const r = await Agents.findAll({
         where: { user_id: user_id, active: true },
       });
-
       await AgentLists.update(
         {
           user_id: "",

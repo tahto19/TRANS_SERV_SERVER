@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Sanderson Farms - Grass Patch</name>
+	<open>1</open>
+	<StyleMap id="poly-FFFF00-4000-0-nodesc">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#poly-FFFF00-4000-0-nodesc-normal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#poly-FFFF00-4000-0-nodesc-highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="poly-FFFF00-4000-0-nodesc-highlight">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff00ffff</color>
+			<width>6</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>0000ffff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-FFFF00-4000-0-nodesc-normal">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff00ffff</color>
+			<width>4</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>0000ffff</color>
+		</PolyStyle>
+	</Style>
+	<Placemark>
+		<name>Farm Block - John</name>
+		<styleUrl>#poly-FFFF00-4000-0-nodesc</styleUrl>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<tessellate>1</tessellate>
+					<coordinates>
+						121.49723,-33.247763,0 121.471262,-33.261695,0 121.502916,-33.309128,0 121.525944,-33.298046,0 121.538391,-33.295739,0 121.539869,-33.283122,0 121.561737,-33.283256,0 121.561704,-33.273118,0 121.539665,-33.273253,0 121.539718,-33.265699,0 121.496989,-33.265612,0 121.49723,-33.247763,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+	<Placemark>
+		<name>Farm Block - Bruchle</name>
+		<styleUrl>#poly-FFFF00-4000-0-nodesc</styleUrl>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<tessellate>1</tessellate>
+					<coordinates>
+						121.253547,-33.263893,0 121.216794,-33.276542,0 121.234026,-33.316632,0 121.275531,-33.312373,0 121.253547,-33.263893,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+	<Placemark>
+		<name>Farm Block - Danny</name>
+		<styleUrl>#poly-FFFF00-4000-0-nodesc</styleUrl>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<tessellate>1</tessellate>
+					<coordinates>
+						121.496976,-33.230476,0 121.496534,-33.211719,0 121.485179,-33.211464,0 121.485081,-33.197428,0 121.444535,-33.208011,0 121.451587,-33.230666,0 121.496976,-33.230476,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+</Document>
+</kml>

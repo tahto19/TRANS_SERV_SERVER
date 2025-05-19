@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="Karranga" id="Karranga">
+	<SimpleField name="timestamp" type="string"></SimpleField>
+	<SimpleField name="begin" type="string"></SimpleField>
+	<SimpleField name="end" type="string"></SimpleField>
+	<SimpleField name="altitudeMode" type="string"></SimpleField>
+	<SimpleField name="tessellate" type="int"></SimpleField>
+	<SimpleField name="extrude" type="int"></SimpleField>
+	<SimpleField name="visibility" type="int"></SimpleField>
+	<SimpleField name="drawOrder" type="int"></SimpleField>
+	<SimpleField name="icon" type="string"></SimpleField>
+</Schema>
+<Folder><name>Karranga</name>
+  <Placemark>
+	<name>Karranga</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Karranga">
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>121.166292743753,-33.6098511690655,0 121.084805693049,-33.5721920771957,0 121.050642318795,-33.5732108383208,0 121.052691581736,-33.6506600723374,0 121.06234916569,-33.6432019308286,0 121.075199501948,-33.640833566811,0 121.075942662198,-33.6631428581391,0 121.100429355529,-33.6631168670053,0 121.10121653048,-33.6773998330698,0 121.12935699177,-33.6766183361023,0 121.130081815756,-33.6630037028642,0 121.136301337184,-33.6624611180846,0 121.132548984013,-33.6431145117376,0 121.135678011571,-33.6412425057934,0 121.136299706986,-33.638879653641,0 121.135157927354,-33.6350379948601,0 121.148672019402,-33.6404752706703,0 121.166292743753,-33.6098511690655,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>Karinda</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Karranga">
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>121.068037775692,-33.7670838361152,0 121.065711562447,-33.7377205317858,0 121.025606589608,-33.7375507996881,0 121.019841908322,-33.7357534169421,0 121.015488058316,-33.7498018805401,0 121.029579761961,-33.755565613049,0 121.036749933581,-33.7591382429949,0 121.062507633314,-33.7672671985648,0 121.068037775692,-33.7670838361152,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+</Folder>
+</Document></kml>

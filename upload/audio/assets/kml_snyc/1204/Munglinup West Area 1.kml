@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Munglinup West Area 1.kml</name>
+	<Schema name="Lawson_Munglinup_West_Farm_Outline" id="Lawson_Munglinup_West_Farm_Outline">
+		<SimpleField type="string" name="timestamp"></SimpleField>
+		<SimpleField type="string" name="begin"></SimpleField>
+		<SimpleField type="string" name="end"></SimpleField>
+		<SimpleField type="string" name="altitudeMode"></SimpleField>
+		<SimpleField type="int" name="tessellate"></SimpleField>
+		<SimpleField type="int" name="extrude"></SimpleField>
+		<SimpleField type="int" name="visibility"></SimpleField>
+		<SimpleField type="int" name="drawOrder"></SimpleField>
+		<SimpleField type="string" name="icon"></SimpleField>
+	</Schema>
+	<Style id="style6">
+		<LineStyle>
+			<color>ff00ffff</color>
+			<width>2.5</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="stylemap_id01">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#style6</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#style10</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="style10">
+		<LineStyle>
+			<color>ff00ffff</color>
+			<width>2.5</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Placemark>
+		<name>Munglinup West Area 1</name>
+		<styleUrl>#stylemap_id01</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="#Lawson_Munglinup_West_Farm_Outline">
+				<SimpleData name="tessellate">1</SimpleData>
+				<SimpleData name="extrude">0</SimpleData>
+				<SimpleData name="visibility">-1</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						120.756547355251,-33.6104847481037,0 120.764091223927,-33.6194253818334,0 120.775620911169,-33.632109698726,0 120.788280029353,-33.6428850870553,0 120.793857923876,-33.6474840048337,0 120.803896720961,-33.6593171909979,0 120.805503077795,-33.6593198054572,0 120.820388012282,-33.6318051340108,0 120.795957702499,-33.6103906469945,0 120.812530455067,-33.598716179673,0 120.801026176431,-33.5860553122679,0 120.756547355251,-33.6104847481037,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+</Document>
+</kml>

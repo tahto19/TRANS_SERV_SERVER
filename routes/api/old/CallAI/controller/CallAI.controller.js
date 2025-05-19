@@ -409,7 +409,6 @@ export const speechTotextFromListener = async (req, res) => {
     res.send({ result: "error", message: err.message });
   }
 };
-const sequencecalling = [2, 0, 1, 5];
 export const fromListener = async (req, res) => {
   try {
     const {
@@ -423,28 +422,15 @@ export const fromListener = async (req, res) => {
       callerid,
       call_id,
       call_type,
-      number_dialled,
     } = req.body;
 
     // res.send(changeSend(orgDetails));
-    let check = await Queue.findOne({
-      where: {
-        queue_id,
-        user_id,
-        user_group_id: group_id === "" ? 2 : group_id,
-      },
-    });
-    if (check !== null) {
-      console.log("Already saved");
-      throw new Error("Already saved");
-    }
     var duration = 0;
     if (user_id === "" || user_id === undefined) {
       await saveToDatabase(Queue, {
-        number_dialled,
-        user_id: user_id ? user_id : null,
+        user_id,
         queue_id,
-        user_group_id: group_id === "" ? 2 : group_id,
+        user_group_id: group_id,
         queue_date: createdAt,
         account_code,
         status: "No userID Recieved",
@@ -455,16 +441,26 @@ export const fromListener = async (req, res) => {
       throw new Error("Something went wrong... No Userid received");
     }
     // check if account_code Exists
-
+    let orgDetails = await getDetailsofOrgByAccountCode(account_code, 0);
+    if (orgDetails.error !== undefined) {
+      await saveToDatabase(Queue, {
+        user_id,
+        queue_id,
+        user_group_id: group_id,
+        queue_date: createdAt,
+        account_code,
+        status: orgDetails.error,
+        callerid,
+        call_id,
+        call_type,
+      });
+      throw new Error("No API key Found");
+    }
     // res.send(changeSend(orgDetails));
     // return;
     // check if user and its group exists
     let agent = await Agents.findOne({
-      where: {
-        user_id,
-        agent_group_id: group_id === "" ? 2 : group_id,
-        active: true,
-      },
+      where: { user_id, agent_group_id: group_id },
       include: {
         model: Groups,
         include: {
@@ -481,12 +477,10 @@ export const fromListener = async (req, res) => {
     });
 
     if (agent === null) {
-      console.log(user_id);
       await saveToDatabase(Queue, {
-        number_dialled,
-        user_id: user_id ? user_id : null,
+        user_id,
         queue_id,
-        user_group_id: group_id === "" ? 2 : group_id,
+        user_group_id: group_id,
         queue_date: createdAt,
         account_code,
         status: "No Agent Found",
@@ -503,17 +497,12 @@ export const fromListener = async (req, res) => {
     if (getQuery.length > 0) {
       let getIfExists = await Queue.findOne({ where: { queue_id, user_id } });
       if (getIfExists === null) {
-        let a = await processSameQueueId(
-          queue_id,
-          user_id,
-          group_id === "" ? 2 : group_id
-        );
-
+        let a = await processSameQueueId(queue_id, user_id, group_id);
+        console.log(a);
         let saveQuery = await saveToDatabase(Queue, {
-          number_dialled,
           user_id,
           queue_id,
-          user_group_id: group_id === "" ? 2 : group_id,
+          user_group_id: group_id,
           queue_date: createdAt,
           account_code,
           status: a === "processing" ? "Processing" : a ? "Done" : "Error",
@@ -523,31 +512,9 @@ export const fromListener = async (req, res) => {
         });
         res.send(changeSend(saveQuery));
       } else {
-        // check what kind of query
-        // add mo dito ang bagong code mo
         throw new Error("Exists");
       }
     } else {
-      let orgDetails = await getDetailsofOrgByAccountCode(
-        account_code,
-        sequencecalling[0]
-      );
-
-      if (orgDetails.error !== undefined) {
-        await saveToDatabase(Queue, {
-          number_dialled,
-          user_id,
-          queue_id,
-          user_group_id: group_id === "" ? 2 : group_id,
-          queue_date: createdAt,
-          account_code,
-          status: orgDetails.error,
-          callerid,
-          call_id,
-          call_type,
-        });
-        throw new Error("No API key Found");
-      }
       // save file
       const path = [];
 
@@ -566,6 +533,8 @@ export const fromListener = async (req, res) => {
           const a = await mm.parseFile("/" + converted);
 
           if (!a) {
+            console.log("data is not correct");
+
             return res.code(401).send({ error: true, queueId });
           } else if (a.format.duration <= 15) {
             // "/" +  add this below
@@ -573,10 +542,9 @@ export const fromListener = async (req, res) => {
               console.log(e);
             });
             queueId = await saveToDatabase(Queue, {
-              number_dialled,
               user_id,
               queue_id,
-              user_group_id: group_id === "" ? 2 : group_id,
+              user_group_id: group_id,
               queue_date: createdAt,
               account_code,
               status: "10 seconds mp3",
@@ -607,10 +575,9 @@ export const fromListener = async (req, res) => {
       }
       // if all is correct save the queue as normal
       var queueId = await saveToDatabase(Queue, {
-        number_dialled,
         user_id,
         queue_id,
-        user_group_id: group_id === "" ? 2 : group_id,
+        user_group_id: group_id,
         queue_date: createdAt,
         account_code,
         callerid,
@@ -627,7 +594,6 @@ export const fromListener = async (req, res) => {
           duration,
         });
       });
-
       let processFirstRequests = await processingData(
         file,
         orgDetails.apikey,
@@ -653,7 +619,7 @@ export const fromListener = async (req, res) => {
       res.send(changeSend({ processFirstRequests, saveQuery, a }));
     }
   } catch (err) {
-    // console.log(err);
-    res.send({ result: "error", message: err.message });
+    console.log(err);
+    throw err;
   }
 };

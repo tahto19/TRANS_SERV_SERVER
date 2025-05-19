@@ -1,0 +1,1283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document id="root_doc">
+	<name>Catumnal.kml</name>
+	<Schema name="Catumnal" id="Catumnal">
+		<SimpleField type="string" name="property_n"></SimpleField>
+		<SimpleField type="string" name="paddock_na"></SimpleField>
+		<SimpleField type="string" name="area"></SimpleField>
+	</Schema>
+	<Folder>
+		<name>Catumnal</name>
+		<Placemark>
+			<Style>
+				<LineStyle>
+					<color>ff0000ff</color>
+				</LineStyle>
+				<PolyStyle>
+					<fill>0</fill>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Catumnal">
+					<SimpleData name="property_n">Boort</SimpleData>
+					<SimpleData name="paddock_na">C30</SimpleData>
+					<SimpleData name="area">172.6 ha</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								143.606504116528,-36.1068924268972,0 143.608833415638,-36.093043791309,0 143.627679975556,-36.0952336310452,0 143.627555848824,-36.0963135599862,0 143.62720922894,-36.0963133335344,0 143.623611962392,-36.0990730908194,0 143.621155276776,-36.0993954504572,0 143.619784999078,-36.1000644231912,0 143.619230496685,-36.1015470161443,0 143.61270364668,-36.1072854517045,0 143.612052213644,-36.1072258462324,0 143.611818553216,-36.1074220543691,0 143.606504116528,-36.1068924268972,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+		<Placemark>
+			<Style>
+				<LineStyle>
+					<color>ff0000ff</color>
+				</LineStyle>
+				<PolyStyle>
+					<fill>0</fill>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Catumnal">
+					<SimpleData name="property_n">Boort</SimpleData>
+					<SimpleData name="paddock_na">C11</SimpleData>
+					<SimpleData name="area">93.1 ha</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								143.562041201268,-36.0710088915981,0 143.562051051598,-36.0659699126303,0 143.562265953821,-36.0658657092622,0 143.57932902676,-36.0658887384778,0 143.579571065316,-36.066030059926,0 143.579600297446,-36.0705702106834,0 143.579292572344,-36.070946089761,0 143.5789920123,-36.0711226966124,0 143.578756314122,-36.0711925236498,0 143.562250382345,-36.0711756033649,0 143.562041201268,-36.0710088915981,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+		<Placemark>
+			<Style>
+				<LineStyle>
+					<color>ff0000ff</color>
+				</LineStyle>
+				<PolyStyle>
+					<fill>0</fill>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Catumnal">
+					<SimpleData name="property_n">Boort</SimpleData>
+					<SimpleData name="paddock_na">C33</SimpleData>
+					<SimpleData name="area">44 ha</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								143.629872138729,-36.0721321387318,0 143.63112,-36.07595,0 143.63279,-36.07861,0 143.6346,-36.08046,0 143.63456,-36.08102,0 143.63434,-36.08143,0 143.63437,-36.08114,0 143.63036,-36.0806,0 143.63025,-36.08103,0 143.6343,-36.08151,0 143.63426,-36.08158,0 143.63414,-36.08237,0 143.62956,-36.08684,0 143.62934,-36.08674,0 143.63101,-36.07581,0 143.629872138729,-36.0721321387318,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								143.629463555964,-36.0708114937928,0 143.62946,-36.0708,0 143.62611,-36.06562,0 143.63234,-36.06634,0 143.63149,-36.07094,0 143.629463555964,-36.0708114937928,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+		<Placemark>
+			<Style>
+				<LineStyle>
+					<color>ff0000ff</color>
+				</LineStyle>
+				<PolyStyle>
+					<fill>0</fill>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Catumnal">
+					<SimpleData name="property_n">Boort</SimpleData>
+					<SimpleData name="paddock_na">C31</SimpleData>
+					<SimpleData name="area">81.57 ha</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								143.61322,-36.10742,0 143.61324,-36.10734,0 143.61966,-36.10165,0 143.62013,-36.10038,0 143.62137,-36.09968,0 143.62375,-36.0993,0 143.62594,-36.09776,0 143.62709,-36.09792,0 143.62595,-36.10461,0 143.62504,-36.10464,0 143.62489,-36.10474,0 143.62476,-36.1048,0 143.62461,-36.10574,0 143.62574,-36.10586,0 143.62537,-36.10793,0 143.62488,-36.10789,0 143.62477,-36.10858,0 143.62519,-36.10861,0 143.62514,-36.10902,0 143.61327,-36.10761,0 143.61322,-36.10742,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+		<Placemark>
+			<Style>
+				<LineStyle>
+					<color>ff0000ff</color>
+				</LineStyle>
+				<PolyStyle>
+					<fill>0</fill>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Catumnal">
+					<SimpleData name="property_n">Boort</SimpleData>
+					<SimpleData name="paddock_na">C39</SimpleData>
+					<SimpleData name="area">85.31 ha</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								143.62611,-36.10643,0 143.62773,-36.0972,0 143.62833,-36.09659,0 143.63631,-36.09751,0 143.63461,-36.10736,0 143.62611,-36.10643,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+		<Placemark>
+			<Style>
+				<LineStyle>
+					<color>ff0000ff</color>
+				</LineStyle>
+				<PolyStyle>
+					<fill>0</fill>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Catumnal">
+					<SimpleData name="property_n">Boort</SimpleData>
+					<SimpleData name="paddock_na">C32</SimpleData>
+					<SimpleData name="area">347.7 ha</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								143.63245,-36.06769,0 143.63268,-36.06649,0 143.64228,-36.06761,0 143.64248,-36.06777,0 143.6428,-36.06761,0 143.658,-36.06916,0 143.65566,-36.08369,0 143.63511,-36.08123,0 143.63516,-36.08046,0 143.63347,-36.07866,0 143.63179,-36.07607,0 143.63187,-36.07497,0 143.63124,-36.07482,0 143.63228,-36.06868,0 143.63246,-36.06864,0 143.63298,-36.06922,0 143.63358,-36.06914,0 143.63396,-36.06898,0 143.63386,-36.06849,0 143.63344,-36.06803,0 143.63283,-36.06793,0 143.63245,-36.06769,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+					<innerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								143.64326,-36.07439,0 143.64285,-36.07687,0 143.64568,-36.07718,0 143.64607,-36.07463,0 143.64326,-36.07439,0 
+							</coordinates>
+						</LinearRing>
+					</innerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+		<Placemark>
+			<Style>
+				<LineStyle>
+					<color>ff0000ff</color>
+				</LineStyle>
+				<PolyStyle>
+					<fill>0</fill>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Catumnal">
+					<SimpleData name="property_n">Boort</SimpleData>
+					<SimpleData name="paddock_na">C34</SimpleData>
+					<SimpleData name="area">156.5 ha</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								143.64294,-36.09621,0 143.62834,-36.09458,0 143.62899,-36.09148,0 143.62968,-36.08745,0 143.63397,-36.0832,0 143.63454,-36.08255,0 143.63475,-36.08169,0 143.64537,-36.0829,0 143.64409,-36.09,0 143.6432,-36.09018,0 143.64266,-36.09343,0 143.64331,-36.09388,0 143.64294,-36.09621,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+					<innerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								143.63626,-36.0905,0 143.63764,-36.09073,0 143.63783,-36.08951,0 143.63837,-36.08956,0 143.63847,-36.08884,0 143.63646,-36.08866,0 143.63646,-36.08887,0 143.6347,-36.0888,0 143.63465,-36.08908,0 143.63643,-36.08916,0 143.63626,-36.0905,0 
+							</coordinates>
+						</LinearRing>
+					</innerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+		<Placemark>
+			<Style>
+				<LineStyle>
+					<color>ff0000ff</color>
+				</LineStyle>
+				<PolyStyle>
+					<fill>0</fill>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Catumnal">
+					<SimpleData name="property_n">Boort</SimpleData>
+					<SimpleData name="paddock_na">C02</SimpleData>
+					<SimpleData name="area">181.9 ha</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								143.51309,-36.04515,0 143.51334,-36.04499,0 143.52283,-36.04506,0 143.5314,-36.04502,0 143.5314,-36.04865,0 143.53379,-36.04864,0 143.53376,-36.0533,0 143.5294,-36.05328,0 143.5231,-36.05333,0 143.5231,-36.05546,0 143.51309,-36.05535,0 143.51309,-36.04515,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+		<Placemark>
+			<Style>
+				<LineStyle>
+					<color>ff0000ff</color>
+				</LineStyle>
+				<PolyStyle>
+					<fill>0</fill>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Catumnal">
+					<SimpleData name="property_n">Boort</SimpleData>
+					<SimpleData name="paddock_na">C03</SimpleData>
+					<SimpleData name="area">153.5 ha</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								143.51308,-36.05552,0 143.51316,-36.05544,0 143.52315,-36.0555,0 143.52308,-36.05334,0 143.52633,-36.05334,0 143.5293,-36.05332,0 143.5338,-36.05334,0 143.53376,-36.05544,0 143.53368,-36.06027,0 143.53184,-36.06182,0 143.52838,-36.06182,0 143.52776,-36.0617,0 143.51306,-36.06169,0 143.51296,-36.06149,0 143.51301,-36.06062,0 143.51308,-36.05552,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+		<Placemark>
+			<Style>
+				<LineStyle>
+					<color>ff0000ff</color>
+				</LineStyle>
+				<PolyStyle>
+					<fill>0</fill>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Catumnal">
+					<SimpleData name="property_n">Boort</SimpleData>
+					<SimpleData name="paddock_na">C41</SimpleData>
+					<SimpleData name="area">349.8 ha</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								143.69338,-36.11413,0 143.69705,-36.11193,0 143.69671,-36.10829,0 143.70036,-36.10873,0 143.69871,-36.11848,0 143.69775,-36.12283,0 143.69165,-36.12224,0 143.69023,-36.12159,0 143.68669,-36.11954,0 143.68007,-36.12007,0 143.67276,-36.12192,0 143.67252,-36.12199,0 143.66976,-36.11912,0 143.66744,-36.11808,0 143.66499,-36.11787,0 143.66323,-36.11683,0 143.66238,-36.11725,0 143.66114,-36.11845,0 143.6622,-36.11255,0 143.66279,-36.1104,0 143.66316,-36.11021,0 143.69044,-36.11363,0 143.69325,-36.11412,0 143.69325,-36.11432,0 143.69598,-36.11493,0 143.69583,-36.11689,0 143.69806,-36.1154,0 143.69911,-36.11557,0 143.6992,-36.11534,0 143.69742,-36.11491,0 143.69755,-36.11427,0 143.69654,-36.11396,0 143.69572,-36.11462,0 143.69349,-36.11416,0 143.69338,-36.11413,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+					<innerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								143.69177,-36.122,0 143.69589,-36.12248,0 143.6957,-36.12148,0 143.69349,-36.12051,0 143.69353,-36.11907,0 143.69197,-36.11893,0 143.69051,-36.1178,0 143.6904,-36.11796,0 143.69195,-36.11962,0 143.69177,-36.122,0 
+							</coordinates>
+						</LinearRing>
+					</innerBoundaryIs>
+				</Polygon>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								143.67214,-36.12213,0 143.67156,-36.12235,0 143.66038,-36.12604,0 143.66174,-36.12282,0 143.66067,-36.12232,0 143.6594,-36.12121,0 143.65945,-36.12079,0 143.66,-36.12022,0 143.65989,-36.12047,0 143.66165,-36.1194,0 143.66186,-36.11836,0 143.66315,-36.11749,0 143.66487,-36.11836,0 143.6674,-36.11857,0 143.6695,-36.11971,0 143.67182,-36.12217,0 143.67214,-36.12213,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+		<Placemark>
+			<Style>
+				<LineStyle>
+					<color>ff0000ff</color>
+				</LineStyle>
+				<PolyStyle>
+					<fill>0</fill>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Catumnal">
+					<SimpleData name="property_n">Boort</SimpleData>
+					<SimpleData name="paddock_na">C22</SimpleData>
+					<SimpleData name="area">180.8 ha</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								143.60652,-36.06327,0 143.6088,-36.04886,0 143.62092,-36.05025,0 143.61984,-36.05717,0 143.61964,-36.05868,0 143.61945,-36.05987,0 143.62138,-36.06284,0 143.62156,-36.06313,0 143.62268,-36.06491,0 143.62282,-36.06503,0 143.62253,-36.06495,0 143.62216,-36.06484,0 143.62206,-36.06467,0 143.62184,-36.06462,0 143.62178,-36.06451,0 143.62061,-36.06282,0 143.61902,-36.06357,0 143.61955,-36.06448,0 143.61952,-36.06461,0 143.6195,-36.06474,0 143.60652,-36.06327,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+		<Placemark>
+			<Style>
+				<LineStyle>
+					<color>ff0000ff</color>
+				</LineStyle>
+				<PolyStyle>
+					<fill>0</fill>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Catumnal">
+					<SimpleData name="property_n">Boort</SimpleData>
+					<SimpleData name="paddock_na">C23</SimpleData>
+					<SimpleData name="area">125.4 ha</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								143.6198,-36.05714,0 143.62107,-36.05024,0 143.63487,-36.05185,0 143.6337,-36.05873,0 143.62446,-36.05768,0 143.62478,-36.05833,0 143.62364,-36.06488,0 143.62349,-36.06503,0 143.62284,-36.06496,0 143.6195,-36.05988,0 143.61974,-36.05811,0 143.6198,-36.05714,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+		<Placemark>
+			<Style>
+				<LineStyle>
+					<color>ff0000ff</color>
+				</LineStyle>
+				<PolyStyle>
+					<fill>0</fill>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Catumnal">
+					<SimpleData name="property_n">Boort</SimpleData>
+					<SimpleData name="paddock_na">C15</SimpleData>
+					<SimpleData name="area">207 ha</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								143.588931397169,-36.0767416277497,0 143.588902675013,-36.0624876241178,0 143.597288623329,-36.0624745361879,0 143.605693422676,-36.0633744904095,0 143.60502542474,-36.0673415362989,0 143.60329450248,-36.0672773691949,0 143.602642548624,-36.0711650963973,0 143.604340682709,-36.0713807105965,0 143.603224289005,-36.0776416598513,0 143.595668505618,-36.0767960114004,0 143.588931397169,-36.0767416277497,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+		<Placemark>
+			<Style>
+				<LineStyle>
+					<color>ff0000ff</color>
+				</LineStyle>
+				<PolyStyle>
+					<fill>0</fill>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Catumnal">
+					<SimpleData name="property_n">Boort</SimpleData>
+					<SimpleData name="paddock_na">C26</SimpleData>
+					<SimpleData name="area">79.2 ha</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								143.62566,-36.07228,0 143.61529,-36.07101,0 143.616,-36.06977,0 143.61635,-36.06754,0 143.61498,-36.06734,0 143.61542,-36.06451,0 143.62284,-36.0653,0 143.62566,-36.07228,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+					<innerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								143.62465,-36.07061,0 143.62483,-36.07048,0 143.624737428571,-36.0705031428571,0 143.62465,-36.07061,0 
+							</coordinates>
+						</LinearRing>
+						<LinearRing>
+							<coordinates>
+								143.624737428571,-36.0705031428571,0 143.62474,-36.0705,0 143.6246,-36.07053,0 143.62467,-36.07055,0 143.62471,-36.07051,0 143.624737428571,-36.0705031428571,0 
+							</coordinates>
+						</LinearRing>
+					</innerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+		<Placemark>
+			<Style>
+				<LineStyle>
+					<color>ff0000ff</color>
+				</LineStyle>
+				<PolyStyle>
+					<fill>0</fill>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Catumnal">
+					<SimpleData name="property_n">Boort</SimpleData>
+					<SimpleData name="paddock_na">C27</SimpleData>
+					<SimpleData name="area">117.3 ha</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								143.605756123965,-36.0675421456659,0 143.606399079917,-36.0634763212231,0 143.615118608586,-36.0645029241062,0 143.612719736805,-36.0786858766923,0 143.605134095222,-36.0778565710894,0 143.605073914418,-36.077801434005,0 143.604073022067,-36.0776407374299,0 143.605087204537,-36.0714448558491,0 143.605294510272,-36.0713624888242,0 143.607296608736,-36.0715257200354,0 143.607872706668,-36.0679997951565,0 143.605889703219,-36.0677237155523,0 143.605756123965,-36.0675421456659,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+		<Placemark>
+			<Style>
+				<LineStyle>
+					<color>ff0000ff</color>
+				</LineStyle>
+				<PolyStyle>
+					<fill>0</fill>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Catumnal">
+					<SimpleData name="property_n">Boort</SimpleData>
+					<SimpleData name="paddock_na">C28</SimpleData>
+					<SimpleData name="area">128.6 ha</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								143.6153,-36.0712,0 143.62929,-36.07296,0 143.62932,-36.07303,0 143.6294,-36.07331,0 143.63075,-36.07544,0 143.62999,-36.08062,0 143.61313,-36.07872,0 143.61405,-36.07353,0 143.615,-36.0713,0 143.6153,-36.0712,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+		<Placemark>
+			<Style>
+				<LineStyle>
+					<color>ff0000ff</color>
+				</LineStyle>
+				<PolyStyle>
+					<fill>0</fill>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Catumnal">
+					<SimpleData name="property_n">Boort</SimpleData>
+					<SimpleData name="paddock_na">C38</SimpleData>
+					<SimpleData name="area">113 ha</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								143.6356,-36.10257,0 143.63652,-36.09757,0 143.62844,-36.0965,0 143.62869,-36.09486,0 143.63344,-36.0954,0 143.63337,-36.09541,0 143.63302,-36.09702,0 143.63364,-36.097,0 143.63388,-36.09671,0 143.63508,-36.09685,0 143.63517,-36.0962,0 143.63377,-36.09613,0 143.63389,-36.09546,0 143.63724,-36.09584,0 143.63712,-36.09657,0 143.6399,-36.09687,0 143.64005,-36.09616,0 143.64559,-36.09679,0 143.64355,-36.10838,0 143.64326,-36.11112,0 143.62534,-36.10928,0 143.62579,-36.10649,0 143.63478,-36.10751,0 143.63555,-36.10255,0 143.6356,-36.10257,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+		<Placemark>
+			<Style>
+				<LineStyle>
+					<color>ff0000ff</color>
+				</LineStyle>
+				<PolyStyle>
+					<fill>0</fill>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Catumnal">
+					<SimpleData name="property_n">Boort</SimpleData>
+					<SimpleData name="paddock_na">C35</SimpleData>
+					<SimpleData name="area">90.5 ha</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								143.64446,-36.08991,0 143.64549,-36.08283,0 143.65715,-36.08412,0 143.6576,-36.08694,0 143.6577,-36.08752,0 143.65785,-36.08795,0 143.65769,-36.08865,0 143.65625,-36.09147,0 143.64994,-36.09071,0 143.64963,-36.09086,0 143.64935,-36.0908,0 143.64914,-36.09079,0 143.64881,-36.09074,0 143.64839,-36.09063,0 143.64783,-36.09051,0 143.64758,-36.09046,0 143.64732,-36.0905,0 143.647,-36.09047,0 143.6467,-36.09038,0 143.64575,-36.0903,0 143.64649,-36.09026,0 143.64526,-36.09016,0 143.64446,-36.08991,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+		<Placemark>
+			<Style>
+				<LineStyle>
+					<color>ff0000ff</color>
+				</LineStyle>
+				<PolyStyle>
+					<fill>0</fill>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Catumnal">
+					<SimpleData name="property_n">Boort</SimpleData>
+					<SimpleData name="paddock_na">C42</SimpleData>
+					<SimpleData name="area">88.65 ha</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								143.67699,-36.08927,0 143.67127,-36.08549,0 143.67369,-36.08572,0 143.67606,-36.07174,0 143.67645,-36.0718,0 143.67662,-36.07135,0 143.68137,-36.07189,0 143.67881,-36.08633,0 143.67814,-36.08969,0 143.67778,-36.08961,0 143.67699,-36.08927,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+		<Placemark>
+			<Style>
+				<LineStyle>
+					<color>ff0000ff</color>
+				</LineStyle>
+				<PolyStyle>
+					<fill>0</fill>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Catumnal">
+					<SimpleData name="property_n">Boort</SimpleData>
+					<SimpleData name="paddock_na">C37</SimpleData>
+					<SimpleData name="area">229.7 ha</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								143.644545505841,-36.105243135171,0 143.645746650639,-36.0973053569491,0 143.649594537609,-36.0978849843388,0 143.650475701887,-36.0975357278203,0 143.651893091736,-36.0974659669719,0 143.652822406638,-36.0976357750771,0 143.65346640563,-36.097845769084,0 143.653487650679,-36.0987566849831,0 143.653527507783,-36.0995005582178,0 143.653744330641,-36.0999439821064,0 143.654269550189,-36.1001188199269,0 143.654743285208,-36.1002551307863,0 143.654583650462,-36.1006817072573,0 143.654453941811,-36.1011696714609,0 143.654752027098,-36.1014613620748,0 143.654898827185,-36.1017713027844,0 143.65546876712,-36.1018850547407,0 143.655984476372,-36.1013691690132,0 143.656038683282,-36.099360525162,0 143.655319400773,-36.0994502404264,0 143.654558044216,-36.0989425795018,0 143.654560651887,-36.0985297470744,0 143.656300589624,-36.0984092661331,0 143.656616404118,-36.0978746628173,0 143.664370803008,-36.0985799319809,0 143.662561863401,-36.1084261296422,0 143.660828206572,-36.1082767490608,0 143.66075795681,-36.1086458519724,0 143.661996421262,-36.1087801265873,0 143.661995855479,-36.1091277396024,0 143.662193891199,-36.1091278353279,0 143.662403957831,-36.1088888821133,0 143.661972281415,-36.111573351586,0 143.643892808852,-36.1094328263273,0 143.644000164258,-36.1090710907178,0 143.64412785588,-36.1089796948151,0 143.644087762748,-36.1085158622049,0 143.643864547158,-36.1081777701768,0 143.644432739876,-36.1057001710147,0 143.647196492135,-36.105948213019,0 143.647161652534,-36.1056652053011,0 143.644545505841,-36.105243135171,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+		<Placemark>
+			<Style>
+				<LineStyle>
+					<color>ff0000ff</color>
+				</LineStyle>
+				<PolyStyle>
+					<fill>0</fill>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Catumnal">
+					<SimpleData name="property_n">Boort</SimpleData>
+					<SimpleData name="paddock_na">C29</SimpleData>
+					<SimpleData name="area">284.6 ha</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								143.60331,-36.08196,0 143.60396,-36.07811,0 143.60806,-36.07857,0 143.61638,-36.0795,0 143.62416,-36.08042,0 143.62409,-36.08141,0 143.62428,-36.08148,0 143.62456,-36.08082,0 143.62515,-36.08055,0 143.62705,-36.08079,0 143.62701,-36.08101,0 143.62527,-36.08108,0 143.62512,-36.08157,0 143.62587,-36.08157,0 143.62598,-36.08128,0 143.62644,-36.08128,0 143.62663,-36.08112,0 143.62697,-36.08111,0 143.62612,-36.08601,0 143.62452,-36.08601,0 143.62348,-36.09095,0 143.62558,-36.09099,0 143.62616,-36.09025,0 143.62829,-36.09036,0 143.6276,-36.09496,0 143.61627,-36.09356,0 143.61455,-36.09321,0 143.61437,-36.09277,0 143.61396,-36.09315,0 143.61334,-36.09315,0 143.61292,-36.0927,0 143.61135,-36.0917,0 143.61118,-36.09189,0 143.61277,-36.09289,0 143.61254,-36.09295,0 143.61226,-36.09297,0 143.61222,-36.09307,0 143.60896,-36.09267,0 143.60919,-36.09107,0 143.60331,-36.08196,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+		<Placemark>
+			<Style>
+				<LineStyle>
+					<color>ff0000ff</color>
+				</LineStyle>
+				<PolyStyle>
+					<fill>0</fill>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Catumnal">
+					<SimpleData name="property_n">Boort</SimpleData>
+					<SimpleData name="paddock_na">C01</SimpleData>
+					<SimpleData name="area">315.2 ha</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								143.504993121311,-36.0432621387527,0 143.504986121047,-36.0320163720213,0 143.505103864279,-36.031862004364,0 143.505454682142,-36.0318373803057,0 143.505619392582,-36.0317572551338,0 143.505653388291,-36.0315025502786,0 143.505591898333,-36.0313202169518,0 143.505004408207,-36.0311233703409,0 143.50498026335,-36.023784207961,0 143.50649053437,-36.0236001428124,0 143.506733090646,-36.0234098517589,0 143.507657525343,-36.0230262403874,0 143.519956623896,-36.0229995952401,0 143.519978869935,-36.0442192264223,0 143.519859967032,-36.0443370600338,0 143.515794296399,-36.0443301530647,0 143.515652988364,-36.0438722383839,0 143.515307278506,-36.0438320083448,0 143.515174865704,-36.0437085379148,0 143.515013147807,-36.0434233656972,0 143.513155933915,-36.0433968396118,0 143.51308673555,-36.0432758467743,0 143.512794053612,-36.0431735860354,0 143.512466824234,-36.0430990036353,0 143.512318391845,-36.043207073755,0 143.512312182808,-36.0435171322152,0 143.511812250965,-36.0436660586783,0 143.510909995138,-36.0438473381718,0 143.510522329725,-36.0439504603068,0 143.510091658999,-36.0440978126777,0 143.509752830692,-36.0441602542191,0 143.509398344103,-36.0441833917507,0 143.509200785902,-36.0443207667952,0 143.508739556966,-36.0443559985916,0 143.507649489228,-36.0443405059189,0 143.506778767675,-36.0443368637558,0 143.506584223663,-36.0442767652708,0 143.506480875972,-36.0440856776747,0 143.506417653406,-36.0437388358991,0 143.506333591462,-36.0435389448332,0 143.506094791927,-36.043432722666,0 143.505742410872,-36.0436328869177,0 143.505402389908,-36.0438199484492,0 143.505249531198,-36.0438205882019,0 143.505087089161,-36.0437602212098,0 143.504999634784,-36.0436424771181,0 143.504993121311,-36.0432621387527,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+		<Placemark>
+			<Style>
+				<LineStyle>
+					<color>ff0000ff</color>
+				</LineStyle>
+				<PolyStyle>
+					<fill>0</fill>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Catumnal">
+					<SimpleData name="property_n">Boort</SimpleData>
+					<SimpleData name="paddock_na">C13</SimpleData>
+					<SimpleData name="area">252.2 ha</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								143.579986799671,-36.0226643483054,0 143.579917357117,-36.0086526108421,0 143.582660019937,-36.0087020820841,0 143.582990818632,-36.0089748907239,0 143.58345818205,-36.0090226818628,0 143.58384211045,-36.0086862350152,0 143.597678730745,-36.0085562288768,0 143.597759720064,-36.0225664133515,0 143.594029991088,-36.0226416955736,0 143.594073196209,-36.0218522213141,0 143.594345385004,-36.0220341793002,0 143.595115719373,-36.0219094994981,0 143.595467473408,-36.0214224666056,0 143.595450324276,-36.0208935000565,0 143.594805540809,-36.0206214118737,0 143.594133441126,-36.0197735869624,0 143.593591972356,-36.0199443524666,0 143.593043129869,-36.0201518802837,0 143.593423057994,-36.020671000483,0 143.593968119059,-36.0218063503388,0 143.593901528057,-36.0226308652148,0 143.579986799671,-36.0226643483054,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+		<Placemark>
+			<Style>
+				<LineStyle>
+					<color>ff0000ff</color>
+				</LineStyle>
+				<PolyStyle>
+					<fill>0</fill>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Catumnal">
+					<SimpleData name="property_n">Boort</SimpleData>
+					<SimpleData name="paddock_na">C14</SimpleData>
+					<SimpleData name="area">412.7 ha</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								143.58005470707,-36.0457761951176,0 143.608078286763,-36.0488111236362,0 143.606807145091,-36.0559732708484,0 143.605648560472,-36.0631331865087,0 143.597626645614,-36.0621959462126,0 143.596926268874,-36.0621528307163,0 143.588556563237,-36.0621494395858,0 143.57996475547,-36.0621478783779,0 143.58005470707,-36.0457761951176,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+		<Placemark>
+			<Style>
+				<LineStyle>
+					<color>ff0000ff</color>
+				</LineStyle>
+				<PolyStyle>
+					<fill>0</fill>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Catumnal">
+					<SimpleData name="property_n">Boort</SimpleData>
+					<SimpleData name="paddock_na">C25</SimpleData>
+					<SimpleData name="area">173.1 ha</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								143.64185,-36.06662,0 143.6414,-36.06701,0 143.63298,-36.06618,0 143.63414,-36.05978,0 143.63836,-36.06016,0 143.63847,-36.05961,0 143.64264,-36.0601,0 143.64284,-36.06038,0 143.64328,-36.06036,0 143.64341,-36.0602,0 143.65631,-36.06164,0 143.65926,-36.06198,0 143.65806,-36.06892,0 143.65795,-36.06901,0 143.65594,-36.0687,0 143.65554,-36.06867,0 143.65524,-36.06854,0 143.65493,-36.06862,0 143.65441,-36.0686,0 143.65381,-36.06832,0 143.64997,-36.06794,0 143.64969,-36.06808,0 143.6438,-36.0674,0 143.64353,-36.06728,0 143.64282,-36.06717,0 143.64255,-36.06704,0 143.64233,-36.06714,0 143.64197,-36.06712,0 143.64181,-36.06704,0 143.64185,-36.06662,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+		<Placemark>
+			<Style>
+				<LineStyle>
+					<color>ff0000ff</color>
+				</LineStyle>
+				<PolyStyle>
+					<fill>0</fill>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Catumnal">
+					<SimpleData name="property_n">Boort</SimpleData>
+					<SimpleData name="paddock_na">C24</SimpleData>
+					<SimpleData name="area">134.5 ha</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								143.63457,-36.05691,0 143.63548,-36.05204,0 143.64983,-36.05349,0 143.64938,-36.05703,0 143.65687,-36.05792,0 143.65642,-36.06143,0 143.63843,-36.05943,0 143.639,-36.05621,0 143.63836,-36.0561,0 143.63793,-36.05824,0 143.63618,-36.05803,0 143.63588,-36.05906,0 143.63422,-36.05876,0 143.6345,-36.05726,0 143.63633,-36.05767,0 143.63646,-36.05729,0 143.63457,-36.05691,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+		<Placemark>
+			<Style>
+				<LineStyle>
+					<color>ff0000ff</color>
+				</LineStyle>
+				<PolyStyle>
+					<fill>0</fill>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Catumnal">
+					<SimpleData name="property_n">Boort</SimpleData>
+					<SimpleData name="paddock_na">C10</SimpleData>
+					<SimpleData name="area">86.3 ha</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								143.562401424831,-36.0606905512754,0 143.568005450029,-36.0606728595629,0 143.568204105016,-36.0607966394235,0 143.568260289737,-36.0611117719962,0 143.568427045712,-36.0612325611051,0 143.570562757983,-36.0612476806682,0 143.570793160134,-36.0613403452297,0 143.571080202775,-36.0612431077595,0 143.573481326806,-36.0612337961299,0 143.573632426976,-36.0611679345158,0 143.573691933527,-36.0610917438934,0 143.573733916575,-36.0607717260903,0 143.573874664794,-36.0607107298882,0 143.579368460128,-36.0606791237075,0 143.579588665732,-36.0607704422364,0 143.579604496193,-36.0609043438988,0 143.579579760014,-36.0655441423914,0 143.579565071437,-36.065619844535,0 143.579438010346,-36.0656995634035,0 143.562212332878,-36.065709281059,0 143.562067642786,-36.0655874594293,0 143.562062225819,-36.0613745591657,0 143.562281326963,-36.0611604876726,0 143.562385855222,-36.0610247979375,0 143.562401424831,-36.0606905512754,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+		<Placemark>
+			<Style>
+				<LineStyle>
+					<color>ff0000ff</color>
+				</LineStyle>
+				<PolyStyle>
+					<fill>0</fill>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Catumnal">
+					<SimpleData name="property_n">Boort</SimpleData>
+					<SimpleData name="paddock_na">C08</SimpleData>
+					<SimpleData name="area">43.5 ha</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								143.55236946938,-36.0759539854405,0 143.552347259578,-36.0715318033479,0 143.552462423415,-36.071362273288,0 143.561024620657,-36.071359659607,0 143.561018188716,-36.0763386650791,0 143.552373667763,-36.0762888351066,0 143.5523737,-36.0762917,0 143.5516361,-36.0762926,0 143.5516457,-36.075596,0 143.5516479,-36.074429,0 143.5516479,-36.0736451,0 143.5516486,-36.0729128,0 143.5516486,-36.0714638,0 143.5516459,-36.0712452,0 143.5521144,-36.0712517,0 143.5521233,-36.0722248,0 143.5521179,-36.0729445,0 143.5521179,-36.0741197,0 143.5521152,-36.0746066,0 143.5521167,-36.075319,0 143.5521185,-36.0759455,0 143.55236946938,-36.0759539854405,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+		<Placemark>
+			<Style>
+				<LineStyle>
+					<color>ff0000ff</color>
+				</LineStyle>
+				<PolyStyle>
+					<fill>0</fill>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Catumnal">
+					<SimpleData name="property_n">Boort</SimpleData>
+					<SimpleData name="paddock_na">C12</SimpleData>
+					<SimpleData name="area">89.1 ha</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								143.562067613558,-36.0766220765473,0 143.562039389404,-36.0715407282162,0 143.562109315094,-36.0714228050775,0 143.56239609573,-36.0713407547524,0 143.576881214789,-36.0713744011337,0 143.576910222726,-36.0715397435005,0 143.576968838029,-36.0719535037461,0 143.5795793992,-36.0719781152435,0 143.579573249719,-36.0750643973539,0 143.578059356649,-36.0751692352328,0 143.577982882087,-36.0755334156287,0 143.5778037966,-36.0758299738402,0 143.577528495262,-36.0760282281713,0 143.577220429272,-36.0762262625531,0 143.577097979787,-36.0764443346233,0 143.576977674091,-36.076605883355,0 143.576780555921,-36.0766555726119,0 143.562067613558,-36.0766220765473,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+		<Placemark>
+			<Style>
+				<LineStyle>
+					<color>ff0000ff</color>
+				</LineStyle>
+				<PolyStyle>
+					<fill>0</fill>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Catumnal">
+					<SimpleData name="property_n">Boort</SimpleData>
+					<SimpleData name="paddock_na">C06</SimpleData>
+					<SimpleData name="area">45.8 ha</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								143.55168189665,-36.0656885410909,0 143.551666752862,-36.0606615970057,0 143.559714291403,-36.0606597019165,0 143.560497233273,-36.0620069776583,0 143.561028024779,-36.0620978910402,0 143.561045275272,-36.0656938571457,0 143.55168189665,-36.0656885410909,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+		<Placemark>
+			<Style>
+				<LineStyle>
+					<color>ff0000ff</color>
+				</LineStyle>
+				<PolyStyle>
+					<fill>0</fill>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Catumnal">
+					<SimpleData name="property_n">Boort</SimpleData>
+					<SimpleData name="paddock_na">C05</SimpleData>
+					<SimpleData name="area">410.8 ha</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								143.551620971484,-36.0762938489245,0 143.54915,-36.07626,0 143.54876,-36.07594,0 143.54793,-36.07591,0 143.54754,-36.0764,0 143.54336,-36.07641,0 143.54345,-36.04506,0 143.54359,-36.04497,0 143.55412,-36.04503,0 143.55427,-36.04522,0 143.5543,-36.04542,0 143.55431,-36.04569,0 143.55477,-36.04596,0 143.55528,-36.04601,0 143.55542,-36.04586,0 143.55545,-36.04563,0 143.55544,-36.04534,0 143.55545,-36.04516,0 143.55559,-36.04505,0 143.55614,-36.04501,0 143.55617,-36.04586,0 143.5561,-36.04601,0 143.55624,-36.04616,0 143.55629,-36.04624,0 143.55628,-36.04636,0 143.55629,-36.04762,0 143.55642,-36.04769,0 143.55684,-36.04764,0 143.55687,-36.04757,0 143.5569,-36.04554,0 143.55702,-36.04499,0 143.56094,-36.04501,0 143.56111,-36.04515,0 143.56114,-36.05427,0 143.56114,-36.05873,0 143.5611,-36.0588500000001,0 143.56082,-36.05906,0 143.56073,-36.05934,0 143.56037,-36.0594800000001,0 143.56029,-36.05963,0 143.5603,-36.05989,0 143.56027,-36.06012,0 143.56013,-36.06031,0 143.55994,-36.06047,0 143.55972,-36.06057,0 143.55166,-36.06052,0 143.55163,-36.06569,0 143.551677498137,-36.0656878732178,0 143.551678794602,-36.0656881381374,0 143.5516295,-36.0656902,0 143.5516322,-36.0658185,0 143.5516328,-36.0659712,0 143.5516316,-36.0668288,0 143.5516271,-36.0676764,0 143.5516257,-36.0686283,0 143.551627,-36.0695888000001,0 143.5516251,-36.0703948,0 143.5516236,-36.0712887,0 143.551624313424,-36.0712886822167,0 143.5516403,-36.0729347,0 143.551627,-36.0736838,0 143.551627,-36.0741648000001,0 143.5516311,-36.0747962,0 143.5516286,-36.0752569,0 143.551621,-36.0755817,0 143.551616,-36.0759014,0 143.551620971484,-36.0762938489245,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+		<Placemark>
+			<Style>
+				<LineStyle>
+					<color>ff0000ff</color>
+				</LineStyle>
+				<PolyStyle>
+					<fill>0</fill>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Catumnal">
+					<SimpleData name="property_n">Boort</SimpleData>
+					<SimpleData name="paddock_na">C04</SimpleData>
+					<SimpleData name="area">152.8 ha</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								143.54293,-36.06183,0 143.53406,-36.06184,0 143.53403,-36.05735,0 143.53424,-36.05736,0 143.5344,-36.05763,0 143.53528,-36.05759,0 143.5352,-36.05703,0 143.53392,-36.05717,0 143.53396,-36.05657,0 143.53504,-36.05622,0 143.53513,-36.05571,0 143.5347,-36.05482,0 143.53441,-36.05498,0 143.53409,-36.05498,0 143.53394,-36.05435,0 143.53394,-36.04495,0 143.5385,-36.04505,0 143.53852,-36.0451,0 143.54111,-36.0451,0 143.54117,-36.04618,0 143.54216,-36.04612,0 143.54253,-36.04569,0 143.54305,-36.04581,0 143.54308,-36.04686,0 143.54298,-36.04726,0 143.54293,-36.06183,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+					<innerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								143.53412,-36.04956,0 143.53432,-36.0499,0 143.53469,-36.04995,0 143.53505,-36.04965,0 143.53497,-36.04927,0 143.53445,-36.04926,0 143.53412,-36.04956,0 
+							</coordinates>
+						</LinearRing>
+					</innerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+		<Placemark>
+			<Style>
+				<LineStyle>
+					<color>ff0000ff</color>
+				</LineStyle>
+				<PolyStyle>
+					<fill>0</fill>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Catumnal">
+					<SimpleData name="property_n">Boort</SimpleData>
+					<SimpleData name="paddock_na">C09</SimpleData>
+					<SimpleData name="area">81.3 ha</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								143.561889310047,-36.0443555938229,0 143.561963544022,-36.0355907119384,0 143.565682365921,-36.0354961901551,0 143.565793307742,-36.0359427530315,0 143.566390534237,-36.0359351370101,0 143.566505208199,-36.0354645067533,0 143.569831892684,-36.0354309091282,0 143.570880252549,-36.036078260142,0 143.570906207781,-36.0443654150275,0 143.561889310047,-36.0443555938229,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+		<Placemark>
+			<Style>
+				<LineStyle>
+					<color>ff0000ff</color>
+				</LineStyle>
+				<PolyStyle>
+					<fill>0</fill>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Catumnal">
+					<SimpleData name="property_n">Boort</SimpleData>
+					<SimpleData name="paddock_na">C17</SimpleData>
+					<SimpleData name="area">140.4 ha</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								143.625515004403,-36.0255368475483,0 143.625571775167,-36.0253574019528,0 143.628415719116,-36.0253178994369,0 143.628903909692,-36.0254894282387,0 143.629532208945,-36.0253580776827,0 143.630048375811,-36.0253906926156,0 143.630429595579,-36.0256039891103,0 143.630953289593,-36.0255677357485,0 143.631076287157,-36.0253480445459,0 143.631612230258,-36.0253743816318,0 143.632323578655,-36.0257237519016,0 143.632905709861,-36.0255958091434,0 143.633070241229,-36.0254211592886,0 143.633634473428,-36.0253074825293,0 143.638805547135,-36.0253418826327,0 143.638874897142,-36.026082055818,0 143.639208861824,-36.0262908484245,0 143.637375184311,-36.0369128634619,0 143.637156571115,-36.0369428833382,0 143.63307100869,-36.0364813903249,0 143.632628112947,-36.0360749552312,0 143.632261685307,-36.0361077026293,0 143.631974183997,-36.0363115901354,0 143.631881246181,-36.0363504505332,0 143.62559168005,-36.0356318137112,0 143.625510715494,-36.0263908922168,0 143.625729718654,-36.0262441911976,0 143.626093128657,-36.0261905886975,0 143.626138497414,-36.0257343230648,0 143.625605339919,-36.025682664792,0 143.625515004403,-36.0255368475483,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+		<Placemark>
+			<Style>
+				<LineStyle>
+					<color>ff0000ff</color>
+				</LineStyle>
+				<PolyStyle>
+					<fill>0</fill>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Catumnal">
+					<SimpleData name="property_n">Boort</SimpleData>
+					<SimpleData name="paddock_na">C16</SimpleData>
+					<SimpleData name="area">60.8 ha</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								143.624811046957,-36.035505262456,0 143.611906656427,-36.0340357596371,0 143.623595277818,-36.027154002881,0 143.624786301583,-36.0274419060669,0 143.624811046957,-36.035505262456,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+		<Placemark>
+			<Style>
+				<LineStyle>
+					<color>ff0000ff</color>
+				</LineStyle>
+				<PolyStyle>
+					<fill>0</fill>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Catumnal">
+					<SimpleData name="property_n">Boort</SimpleData>
+					<SimpleData name="paddock_na">C21</SimpleData>
+					<SimpleData name="area">347.2 ha</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								143.6633,-36.04003,0 143.66331,-36.03997,0 143.66337,-36.04005,0 143.66341,-36.04005,0 143.67834,-36.0419,0 143.67711,-36.04757,0 143.68916,-36.04913,0 143.68694,-36.05974,0 143.67637,-36.05848,0 143.67338,-36.05808,0 143.66703,-36.05495,0 143.66796,-36.05441,0 143.66936,-36.05359,0 143.67016,-36.0518,0 143.66877,-36.0515,0 143.66737,-36.05138,0 143.66697,-36.05156,0 143.66694,-36.05179,0 143.6668,-36.05189,0 143.66676,-36.05218,0 143.66634,-36.05257,0 143.6663,-36.05331,0 143.66587,-36.05329,0 143.66578,-36.05345,0 143.66617,-36.05367,0 143.66605,-36.05451,0 143.66565,-36.05451,0 143.66564,-36.05473,0 143.6636,-36.05452,0 143.66329,-36.05432,0 143.66299,-36.05432,0 143.66289,-36.05443,0 143.66087,-36.05415,0 143.66136,-36.05136,0 143.66242,-36.05112,0 143.66235,-36.0514,0 143.66259,-36.05147,0 143.66268,-36.05115,0 143.66309,-36.05076,0 143.66328,-36.05104,0 143.66304,-36.05122,0 143.66281,-36.05128,0 143.66311,-36.05217,0 143.66398,-36.05183,0 143.66416,-36.05151,0 143.66494,-36.05124,0 143.665,-36.05095,0 143.66152,-36.0505,0 143.66318,-36.04072,0 143.66306,-36.04056,0 143.66315,-36.04001,0 143.6633,-36.04003,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+		<Placemark>
+			<Style>
+				<LineStyle>
+					<color>ff0000ff</color>
+				</LineStyle>
+				<PolyStyle>
+					<fill>0</fill>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Catumnal">
+					<SimpleData name="property_n">Boort</SimpleData>
+					<SimpleData name="paddock_na">C18</SimpleData>
+					<SimpleData name="area">125 ha</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								143.629147219483,-36.0363452498228,0 143.633397824661,-36.0367826463143,0 143.633148585707,-36.0380820830456,0 143.633392571856,-36.0382472433047,0 143.633208738075,-36.0386293335402,0 143.632796633357,-36.038622485023,0 143.632729467927,-36.0385220918305,0 143.632798726163,-36.0377970830934,0 143.632235495332,-36.0377061284995,0 143.632032468805,-36.0391221812175,0 143.632599075074,-36.0391638142723,0 143.632727836117,-36.0387704942956,0 143.634215840302,-36.0387910244084,0 143.634359217004,-36.0385811178478,0 143.63510615251,-36.038694153026,0 143.635226263699,-36.0385132381417,0 143.635076315885,-36.0382758868429,0 143.635704121055,-36.0381984316869,0 143.637064180269,-36.0384986371056,0 143.636252535268,-36.043188218349,0 143.635881212233,-36.0430988750376,0 143.635712374758,-36.0431520440398,0 143.635811175596,-36.0434594545989,0 143.636179085966,-36.0436468072601,0 143.634927600908,-36.0515626237293,0 143.626190785888,-36.0506141794454,0 143.627361380324,-36.0435963835569,0 143.627825905647,-36.0408517111854,0 143.627934992024,-36.0407984523297,0 143.627989474499,-36.0405092265325,0 143.628076389232,-36.0403468902383,0 143.627890379398,-36.0402325180907,0 143.628451024417,-36.0366714431618,0 143.628971460737,-36.0367072493069,0 143.629147219483,-36.0363452498228,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+		<Placemark>
+			<Style>
+				<LineStyle>
+					<color>ff0000ff</color>
+				</LineStyle>
+				<PolyStyle>
+					<fill>0</fill>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Catumnal">
+					<SimpleData name="property_n">Boort</SimpleData>
+					<SimpleData name="paddock_na">C20</SimpleData>
+					<SimpleData name="area">90.5 ha</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								143.6466,-36.03832,0 143.65539,-36.03929,0 143.65369,-36.04957,0 143.64486,-36.04847,0 143.64575,-36.04338,0 143.64651,-36.04314,0 143.64579,-36.043,0 143.6466,-36.03832,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+		<Placemark>
+			<Style>
+				<LineStyle>
+					<color>ff0000ff</color>
+				</LineStyle>
+				<PolyStyle>
+					<fill>0</fill>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Catumnal">
+					<SimpleData name="property_n">Boort</SimpleData>
+					<SimpleData name="paddock_na">C19</SimpleData>
+					<SimpleData name="area">268 ha</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								143.64428,-36.05231,0 143.64392,-36.05262,0 143.63523,-36.05163,0 143.63767,-36.03719,0 143.6465,-36.03821,0 143.64483,-36.04857,0 143.65388,-36.04957,0 143.65549,-36.0393,0 143.6557,-36.03928,0 143.66297,-36.0401,0 143.66278,-36.04132,0 143.66288,-36.04135,0 143.66281,-36.04171,0 143.66271,-36.04174,0 143.66215,-36.04515,0 143.65969,-36.04496,0 143.6596,-36.04504,0 143.6596,-36.04525,0 143.65918,-36.04568,0 143.65809,-36.04671,0 143.65792,-36.04679,0 143.65793,-36.04695,0 143.65775,-36.04719,0 143.65764,-36.04756,0 143.65734,-36.04818,0 143.65716,-36.04994,0 143.65895,-36.05012,0 143.65874,-36.05188,0 143.65731,-36.05175,0 143.65664,-36.05276,0 143.6576,-36.05453,0 143.65715,-36.05558,0 143.6561,-36.0557,0 143.65631,-36.05613,0 143.65732,-36.05632,0 143.65679,-36.05801,0 143.6494,-36.05705,0 143.64993,-36.05359,0 143.64995,-36.05359,0 143.65006,-36.05285,0 143.64844,-36.05269,0 143.64433,-36.05227,0 143.6443,-36.05229,0 143.64429,-36.05229,0 143.64428,-36.05231,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+		<Placemark>
+			<Style>
+				<LineStyle>
+					<color>ff0000ff</color>
+				</LineStyle>
+				<PolyStyle>
+					<fill>0</fill>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Catumnal">
+					<SimpleData name="property_n">Boort</SimpleData>
+					<SimpleData name="paddock_na">C07</SimpleData>
+					<SimpleData name="area">45.8 ha</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								143.552779111367,-36.0658151503488,0 143.56101020303,-36.0658629714599,0 143.56099394975,-36.0711581219733,0 143.553146124851,-36.0711702047483,0 143.553145784017,-36.0711653813851,0 143.552336489844,-36.0711808074139,0 143.5523274,-36.0689498,0 143.5521418,-36.0689497,0 143.5521364,-36.0711831,0 143.552164727765,-36.0711831283137,0 143.552166913357,-36.0711840397266,0 143.5516706,-36.0711935,0 143.5516707,-36.0658014,0 143.5527787,-36.0658093,0 143.552779111367,-36.0658151503488,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+		<Placemark>
+			<Style>
+				<LineStyle>
+					<color>ff0000ff</color>
+				</LineStyle>
+				<PolyStyle>
+					<fill>0</fill>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Catumnal">
+					<SimpleData name="property_n">Boort</SimpleData>
+					<SimpleData name="paddock_na">C26</SimpleData>
+					<SimpleData name="area">15 ha</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								143.62341,-36.06537,0 143.62354,-36.06539,0 143.62573,-36.06558,0 143.62907,-36.07075,0 143.62929,-36.07252,0 143.62862,-36.07271,0 143.62573,-36.07236,0 143.62293,-36.0653,0 143.62305,-36.06532,0 143.6232,-36.06534,0 143.62339,-36.0654,0 143.62341,-36.06537,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+		<Placemark>
+			<Style>
+				<LineStyle>
+					<color>ff0000ff</color>
+				</LineStyle>
+				<PolyStyle>
+					<fill>0</fill>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Catumnal">
+					<SimpleData name="property_n">Boort</SimpleData>
+					<SimpleData name="paddock_na">C36</SimpleData>
+					<SimpleData name="area">284.8 ha</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								143.6434,-36.0962,0 143.6438,-36.09349,0 143.64406,-36.09289,0 143.64402,-36.09241,0 143.64451,-36.09094,0 143.6452,-36.09086,0 143.64532,-36.09024,0 143.65641,-36.09147,0 143.65801,-36.08865,0 143.65738,-36.0842,0 143.67011,-36.08558,0 143.67112,-36.08595,0 143.67185,-36.08624,0 143.67967,-36.09148,0 143.67973,-36.09165,0 143.67972,-36.09186,0 143.68012,-36.09215,0 143.68035,-36.09224,0 143.68058,-36.09223,0 143.68092,-36.09231,0 143.68172,-36.09238,0 143.68156,-36.093,0 143.68111,-36.0953,0 143.68074,-36.09746,0 143.6806,-36.09756,0 143.68039,-36.09757,0 143.68002,-36.09755,0 143.67879,-36.0974,0 143.67696,-36.09719,0 143.6733,-36.09677,0 143.6654,-36.09586,0 143.66522,-36.09681,0 143.66512,-36.09738,0 143.66509,-36.09764,0 143.66507,-36.09774,0 143.66499,-36.0978,0 143.66488,-36.09783,0 143.66482,-36.09791,0 143.66485,-36.098,0 143.66486,-36.0981,0 143.66481,-36.09817,0 143.66472,-36.09819,0 143.66465,-36.09824,0 143.65637,-36.09728,0 143.65586,-36.09762,0 143.65381,-36.09734,0 143.65397,-36.09692,0 143.6526,-36.09684,0 143.65215,-36.09709,0 143.6434,-36.0962,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+		<Placemark>
+			<Style>
+				<LineStyle>
+					<color>ff0000ff</color>
+				</LineStyle>
+				<PolyStyle>
+					<fill>0</fill>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Catumnal">
+					<SimpleData name="property_n">Boort</SimpleData>
+					<SimpleData name="paddock_na">C36</SimpleData>
+					<SimpleData name="area">400 ha</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								143.66313,-36.10949,0 143.66525,-36.0982,0 143.66547,-36.09712,0 143.66564,-36.09616,0 143.67304,-36.09701,0 143.6809,-36.09786,0 143.68193,-36.09245,0 143.68962,-36.09338,0 143.69141,-36.09389,0 143.68935,-36.10643,0 143.69119,-36.10689,0 143.68999,-36.11329,0 143.68101,-36.11218,0 143.67878,-36.11149,0 143.67643,-36.11102,0 143.67567,-36.11156,0 143.66371,-36.11025,0 143.66313,-36.10949,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+					<innerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								143.68315,-36.11007,0 143.68409,-36.11049,0 143.68649,-36.11063,0 143.68718,-36.11118,0 143.68864,-36.11111,0 143.68941,-36.10834,0 143.68744,-36.10806,0 143.68607,-36.10924,0 143.68452,-36.1091,0 143.68315,-36.11007,0 
+							</coordinates>
+						</LinearRing>
+					</innerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

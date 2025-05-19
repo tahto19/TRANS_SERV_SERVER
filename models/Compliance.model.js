@@ -34,6 +34,7 @@ Compliance.init(
     },
   },
   {
+    indexes: [{ name: "transcript_id_idx", fields: ["transcript_id"] }],
     timestamps: false,
     sequelize: Connection.sequelize,
     modelName: "Compliance",

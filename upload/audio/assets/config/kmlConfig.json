@@ -1,0 +1,61 @@
+[
+    {
+        "tenantId": "bungullafarm",
+        "boundaryFiles": [
+            {
+                "boundaryUrl": "../../../assets/kmlfiles/BradFarmBoundary1.kml"
+            },
+            {
+                "boundaryUrl": "../../../assets/kmlfiles/BradFarmBoundary2.kml"
+            }
+        ]
+    },
+    {
+        "tenantId": "1112",
+        "boundaryFiles": [
+            {
+                "boundaryUrl": "../../../assets/kmlfiles/AlcheringaBoundary.kml"
+            }
+        ]
+    },
+    {
+        "tenantId": "1116",
+        "boundaryFiles": [
+            {
+                "boundaryUrl": "../../../assets/kmlfiles/AmarinyaOutline.kml"
+            }
+        ]
+    },
+    {
+        "tenantId": "1105",
+        "boundaryFiles": [
+            {
+                "boundaryUrl": "../../../assets/kmlfiles/ArawaFarmOutline.kml"
+            }
+        ]
+    },
+    {
+        "tenantId": "1114",
+        "boundaryFiles": [
+            {
+                "boundaryUrl": "../../../assets/kmlfiles/BindanaOutline.kml"
+            }
+        ]
+    },
+    {
+        "tenantId": "1160",
+        "boundaryFiles": [
+            {
+                "boundaryUrl": "../../../assets/kmlfiles/TantanoolaPaddocks.kml"
+            }
+        ]
+    },
+    {
+        "tenantId": "1072",
+        "boundaryFiles": [
+            {
+                "boundaryUrl": "../../../assets/kmlfiles/YupiriBoundaries.kml"
+            }
+        ]
+    }
+]

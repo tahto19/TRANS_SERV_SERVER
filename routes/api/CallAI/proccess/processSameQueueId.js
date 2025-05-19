@@ -22,8 +22,9 @@ const processSameQueueId = async (queue_id, user_id, user_group_id) => {
     if (getAgentInfo === null) throw new Error("No Agent in the group");
     let agentInfo = changeToJson(getAgentInfo);
     let findQueue = await Query.findAll({
+      where: { queue_id },
       include: [
-        { required: true, model: Queue, where: { queue_id } },
+        { required: true, model: Queue },
         {
           required: true,
           model: Transcripts,

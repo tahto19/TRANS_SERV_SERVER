@@ -36,6 +36,7 @@ Notes.init(
     modelName: "notes",
     paranoid: true,
     tableName: process.env.DB_PREFIX + "_transcript_notes",
+    indexes: [{ name: "transcript_id_idx", fields: ["transcript_id"] }],
   }
 );
 export default Notes;

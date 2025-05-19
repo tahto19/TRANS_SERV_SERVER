@@ -25,9 +25,22 @@ import {
   getIntentV2Schema,
   getIntentDurationCallSchema,
   checkIfContainSchema,
+  PaginationListOftranscriptSchema,
 } from "./Schema/Result.Schema.js";
 
 const Result = (app, opts, done) => {
+  app.post(
+    "/paginationgetTranscripts/getByGroup",
+    PaginationListOftranscriptSchema
+  );
+  app.post(
+    "/paginationgetTranscripts/getByOrganization",
+    PaginationListOftranscriptSchema
+  );
+  app.post(
+    "/paginationgetTranscripts/getByAgent",
+    PaginationListOftranscriptSchema
+  );
   app.get("/seperateTranscript", getScriptSeperationSchema);
   app.post("/getTranscripts/getByGroup", ListOftranscriptSchema);
   app.post("/getTranscripts/getByOrganization", ListOftranscriptSchema);

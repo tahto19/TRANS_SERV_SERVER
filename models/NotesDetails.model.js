@@ -30,6 +30,12 @@ NotesDetails.init(
     },
   },
   {
+    indexes: [
+      {
+        name: "notes_id_idx",
+        fields: ["notes_id"],
+      },
+    ],
     sequelize: Connection.sequelize,
     modelName: "notesDetails",
     paranoid: true,

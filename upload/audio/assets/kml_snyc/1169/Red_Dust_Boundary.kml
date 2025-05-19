@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Red_Dust_Boundary.kml</name>
+	<StyleMap id="poly-673AB7-3082-0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#poly-673AB7-3082-0-normal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#poly-673AB7-3082-0-highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="poly-673AB7-3082-0-highlight">
+		<LineStyle>
+			<color>ffb73a67</color>
+			<width>4.623</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>00b73a67</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-673AB7-3082-0-normal">
+		<LineStyle>
+			<color>ffb73a67</color>
+			<width>3.082</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>00b73a67</color>
+		</PolyStyle>
+	</Style>
+	<Folder>
+		<name>Fleur Macdonald (Yellow) - Property Boundary</name>
+		<Placemark>
+			<name>Fleur Macdonald</name>
+			<description><![CDATA[description:  <br> name Fleur Macdonald <br> folders  <br> descriptio  <br> altitude  <br> alt_mode  <br> time_begin  <br> time_end  <br> time_when  <br>folders: <br>descriptio: <br>altitude: <br>alt_mode: <br>time_begin: <br>time_end: <br>time_when:]]></description>
+			<styleUrl>#poly-673AB7-3082-0</styleUrl>
+			<ExtendedData>
+				<Data name="description">
+					<value>name Fleur Macdonald 
+ folders  
+ descriptio  
+ altitude  
+ alt_mode  
+ time_begin  
+ time_end  
+ time_when</value>
+				</Data>
+				<Data name="folders">
+				</Data>
+				<Data name="descriptio">
+				</Data>
+				<Data name="altitude">
+				</Data>
+				<Data name="alt_mode">
+				</Data>
+				<Data name="time_begin">
+				</Data>
+				<Data name="time_end">
+				</Data>
+				<Data name="time_when">
+				</Data>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							122.954939,-33.779731,0 122.964524,-33.779731,0 122.974348,-33.77963,0 122.986424,-33.779528,0 123.001776,-33.779354,0 123.008554,-33.779252,0 123.009052,-33.761851,0 122.975691,-33.762163,0 122.955271,-33.762427,0 122.954939,-33.779731,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

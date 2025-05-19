@@ -1,7 +1,6 @@
 import {
   agentJoinGroupSchema,
   createGroupSchema,
-  createGroupV2Schema,
   getGroupInfoSchema,
   getGroupsSchema,
   getListOfGroupsNotAddedSchema,
@@ -11,7 +10,7 @@ import {
 
 export const Group = (app, opts, done) => {
   app.get("/", getGroupsSchema);
-  app.post("/create", createGroupV2Schema);
+  app.post("/create", createGroupSchema);
   app.get("/GroupInfo", getGroupInfoSchema);
   app.post("/update", updateGroupSchema);
   app.post("/getUsersByGroupId", getUsersByGroupIdSchema);

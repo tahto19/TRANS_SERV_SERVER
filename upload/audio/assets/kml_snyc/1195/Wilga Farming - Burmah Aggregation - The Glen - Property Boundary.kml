@@ -1,0 +1,2016 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Wilga Farming - Burmah Aggregation - The Glen - Property Boundary.kml</name>
+	<StyleMap id="poly-FFEA00-1591-0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#poly-FFEA00-1591-0-normal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#poly-FFEA00-1591-0-highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="poly-FFEA00-1591-0-highlight">
+		<LineStyle>
+			<color>ff00eaff</color>
+			<width>2.3865</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>0000eaff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-FFEA00-1591-0-normal">
+		<LineStyle>
+			<color>ff00eaff</color>
+			<width>1.591</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>0000eaff</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="poly-FFEA00-2201-0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#poly-FFEA00-2201-0-normal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#poly-FFEA00-2201-0-highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="poly-FFEA00-2201-0-highlight">
+		<LineStyle>
+			<color>ff00eaff</color>
+			<width>3.3015</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>0000eaff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-FFEA00-2201-0-normal">
+		<LineStyle>
+			<color>ff00eaff</color>
+			<width>2.201</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>0000eaff</color>
+		</PolyStyle>
+	</Style>
+	<Folder>
+		<name>Wilga Farming - Burmah Aggregation - The Glen - Property Boundary</name>
+		<open>1</open>
+		<Placemark>
+			<name>Burmah Station</name>
+			<description><![CDATA[description:  <br> name Burmah Station <br> folders Boundary <br> descriptio <table><br><tr style="background-color:#DDDDFF;"><td>Name</td><td>Burmah Station</td></tr><br><tr><td>description</td><td>&lt;html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt"&gt;<br/><br/>&lt;head&gt;<br/><br/>&lt; <br> altitude  <br> alt_mode clampToGround <br> time_begin  <br> time_end  <br> time_when  <br> Name_1 Burmah Station <br> altitudeMo  <br> begin  <br> drawOrder <html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><br><br><head><br><br><META http-equiv="Content-Type" content="text/html"><br><br><meta http-equiv="content-type" content="text/html; charset=UTF-8"><br><br></head><br><br><body style="mar <br> end  <br> extrude  <br> icon  <br> tessellate  <br> timestamp -1 <br> visibility  <br>folders: Boundary<br>descriptio: <table><br><tr style="background-color:#DDDDFF"><td>Name</td><td>Burmah Station</td></tr><br><tr><td>description</td><td>&lt;html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt"&gt;<br><br>&lt;head&gt;<br><br>&lt;</table><br>altitude: <br>alt_mode: clampToGround<br>time_begin: <br>time_end: <br>time_when: <br>Name_1: Burmah Station<br>altitudeMo: <br>begin: <br>drawOrder: <br><br><br><br><br><br><br><br><br><br><br>end: <br>extrude: <br>icon: <br>tessellate: <br>timestamp: -1<br>visibility:]]></description>
+			<styleUrl>#poly-FFEA00-1591-0</styleUrl>
+			<ExtendedData>
+				<Data name="description">
+					<value><![CDATA[name Burmah Station 
+ folders Boundary 
+ descriptio <table>
+<tr style="background-color:#DDDDFF;"><td>Name</td><td>Burmah Station</td></tr>
+<tr><td>description</td><td>&lt;html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt"&gt;<br/><br/>&lt;head&gt;<br/><br/>&lt; 
+ altitude  
+ alt_mode clampToGround 
+ time_begin  
+ time_end  
+ time_when  
+ Name_1 Burmah Station 
+ altitudeMo  
+ begin  
+ drawOrder <html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="mar 
+ end  
+ extrude  
+ icon  
+ tessellate  
+ timestamp -1 
+ visibility]]></value>
+				</Data>
+				<Data name="folders">
+					<value>Boundary</value>
+				</Data>
+				<Data name="descriptio">
+					<value><![CDATA[<table>
+<tr style="background-color:#DDDDFF"><td>Name</td><td>Burmah Station</td></tr>
+<tr><td>description</td><td>&lt;html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt"&gt;<br><br>&lt;head&gt;<br><br>&lt;</table>]]></value>
+				</Data>
+				<Data name="altitude">
+				</Data>
+				<Data name="alt_mode">
+					<value>clampToGround</value>
+				</Data>
+				<Data name="time_begin">
+				</Data>
+				<Data name="time_end">
+				</Data>
+				<Data name="time_when">
+				</Data>
+				<Data name="Name_1">
+					<value>Burmah Station</value>
+				</Data>
+				<Data name="altitudeMo">
+				</Data>
+				<Data name="begin">
+				</Data>
+				<Data name="drawOrder">
+				</Data>
+				<Data name="end">
+				</Data>
+				<Data name="extrude">
+				</Data>
+				<Data name="icon">
+				</Data>
+				<Data name="tessellate">
+				</Data>
+				<Data name="timestamp">
+					<value>-1</value>
+				</Data>
+				<Data name="visibility">
+				</Data>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							150.899267,-29.286424,0 150.894574,-29.285779,0 150.886123,-29.284646,0 150.878949,-29.283641,0 150.872748,-29.282797,0 150.860557,-29.2811,0 150.84679,-29.27922,0 150.839365,-29.278215,0 150.847688,-29.296255,0 150.85051,-29.303281,0 150.843245,-29.302484,0 150.841498,-29.312102,0 150.840947,-29.315728,0 150.837524,-29.315274,0 150.835648,-29.323916,0 150.839254,-29.324534,0 150.83926,-29.324506,0 150.8387,-29.327517,0 150.83828,-29.330117,0 150.83809,-29.331355,0 150.837826,-29.332911,0 150.837293,-29.33585,0 150.837031,-29.337308,0 150.836561,-29.34003,0 150.836395,-29.340907,0 150.835723,-29.344574,0 150.835699,-29.344574,0 150.838941,-29.345013,0 150.840176,-29.344931,0 150.841978,-29.344908,0 150.842242,-29.344933,0 150.84083,-29.353041,0 150.846009,-29.353737,0 150.844624,-29.360556,0 150.843112,-29.375932,0 150.842412,-29.383276,0 150.841793,-29.392041,0 150.840413,-29.40028300000001,0 150.844599,-29.400805,0 150.844571,-29.401201,0 150.85244,-29.402289,0 150.856376,-29.402786,0 150.861261,-29.40349700000001,0 150.868271,-29.404383,0 150.869142,-29.399832,0 150.869756,-29.396603,0 150.870491,-29.393003,0 150.8712,-29.389373,0 150.87212,-29.384398,0 150.872883,-29.384482,0 150.873091,-29.383317,0 150.873925,-29.378873,0 150.880537,-29.37975,0 150.882703,-29.367817,0 150.872611,-29.366364,0 150.867926,-29.365639,0 150.867943,-29.365434,0 150.86621,-29.36518,0 150.866463,-29.359804,0 150.867971,-29.360041,0 150.869448,-29.352312,0 150.870186,-29.352409,0 150.888371,-29.354941,0 150.888519,-29.34624700000001,0 150.88052,-29.345088,0 150.875499,-29.344407,0 150.872179,-29.343868,0 150.87218,-29.343861,0 150.871457,-29.343751,0 150.869408,-29.343436,0 150.86512,-29.34279,0 150.862113,-29.342394,0 150.862429,-29.340773,0 150.862952,-29.337971,0 150.861319,-29.337453,0 150.857728,-29.33884,0 150.856,-29.338628,0 150.856407,-29.336179,0 150.856637,-29.334697,0 150.857227,-29.331115,0 150.857658,-29.328245,0 150.858335,-29.324084,0 150.858698,-29.321856,0 150.869176,-29.32327,0 150.874012,-29.324004,0 150.881796,-29.3251,0 150.887209,-29.325895,0 150.887591,-29.3262,0 150.891761,-29.32942,0 150.892679,-29.32947,0 150.893731,-29.329612,0 150.893759,-29.329612,0 150.893766,-29.329612,0 150.898962,-29.330357,0 150.905914,-29.331397,0 150.914041,-29.332673,0 150.912746,-29.33172,0 150.909623,-29.325002,0 150.908373,-29.322185,0 150.907909,-29.320798,0 150.90744,-29.318702,0 150.906992,-29.316682,0 150.906278,-29.31309600000001,0 150.905908,-29.311227,0 150.905501,-29.3094,0 150.904899,-29.306216,0 150.904818,-29.302903,0 150.904911,-29.29692500000001,0 150.904043,-29.291914,0 150.904041,-29.291914,0 150.903951,-29.291382,0 150.90388,-29.290903,0 150.902882,-29.288604,0 150.902313,-29.2873,0 150.902076,-29.286807,0 150.901895,-29.285585,0 150.900917,-29.286631,0 150.899267,-29.286424,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Boundary</name>
+			<description><![CDATA[description:  <br> name Boundary <br> folders Boundary <br> descriptio  <br> altitude  <br> alt_mode  <br> time_begin  <br> time_end  <br> time_when  <br>folders: Boundary<br>descriptio: <br>altitude: <br>alt_mode: <br>time_begin: <br>time_end: <br>time_when:]]></description>
+			<styleUrl>#poly-FFEA00-2201-0</styleUrl>
+			<ExtendedData>
+				<Data name="description">
+					<value>name Boundary 
+ folders Boundary 
+ descriptio  
+ altitude  
+ alt_mode  
+ time_begin  
+ time_end  
+ time_when</value>
+				</Data>
+				<Data name="folders">
+					<value>Boundary</value>
+				</Data>
+				<Data name="descriptio">
+				</Data>
+				<Data name="altitude">
+				</Data>
+				<Data name="alt_mode">
+				</Data>
+				<Data name="time_begin">
+				</Data>
+				<Data name="time_end">
+				</Data>
+				<Data name="time_when">
+				</Data>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							150.769925,-29.729215,0 150.760461,-29.740121,0 150.76323,-29.740529,0 150.763384,-29.739622,0 150.765181,-29.739958,0 150.766021,-29.740428,0 150.766553,-29.740537,0 150.76719,-29.741244,0 150.769457,-29.741988,0 150.772375,-29.74226699999999,0 150.771166,-29.749638,0 150.782689,-29.751091,0 150.784655,-29.751321,0 150.787616,-29.749859,0 150.789204,-29.750944,0 150.794673,-29.759709,0 150.795367,-29.761313,0 150.796738,-29.763273,0 150.800418,-29.761481,0 150.801209,-29.762268,0 150.80442,-29.76814,0 150.80839,-29.766696,0 150.809376,-29.766901,0 150.809999,-29.766678,0 150.813786,-29.763748,0 150.815288,-29.763748,0 150.816801,-29.764354,0 150.819236,-29.76752,0 150.825341,-29.772736,0 150.829246,-29.750844,0 150.825218,-29.749142,0 150.823201,-29.748517,0 150.818869,-29.745674,0 150.815621,-29.743518,0 150.812724,-29.743497,0 150.80888,-29.743494,0 150.809095,-29.744845,0 150.806198,-29.750082,0 150.787219,-29.747681,0 150.786827,-29.747626,0 150.789603,-29.745315,0 150.790569,-29.744039,0 150.791258,-29.741279,0 150.791946,-29.739613,0 150.791921,-29.738981,0 150.791449,-29.738909,0 150.790805,-29.738301,0 150.790311,-29.737518,0 150.790902,-29.737395,0 150.791813,-29.736642,0 150.793857,-29.737141,0 150.795729,-29.735385,0 150.796244,-29.734071,0 150.796802,-29.733578,0 150.797961,-29.733112,0 150.793596,-29.727328,0 150.791677,-29.724852,0 150.782876,-29.729907,0 150.782643,-29.730066,0 150.776538,-29.733524,0 150.773882,-29.731298,0 150.77285,-29.730759,0 150.769925,-29.729215,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Polygon 1</name>
+			<description><![CDATA[description:  <br> name Polygon 1 <br> folders New Paddocks <br> descriptio  <br> altitude  <br> alt_mode  <br> time_begin  <br> time_end  <br> time_when  <br>folders: New Paddocks<br>descriptio: <br>altitude: <br>alt_mode: <br>time_begin: <br>time_end: <br>time_when:]]></description>
+			<styleUrl>#poly-FFEA00-2201-0</styleUrl>
+			<ExtendedData>
+				<Data name="description">
+					<value>name Polygon 1 
+ folders New Paddocks 
+ descriptio  
+ altitude  
+ alt_mode  
+ time_begin  
+ time_end  
+ time_when</value>
+				</Data>
+				<Data name="folders">
+					<value>New Paddocks</value>
+				</Data>
+				<Data name="descriptio">
+				</Data>
+				<Data name="altitude">
+				</Data>
+				<Data name="alt_mode">
+				</Data>
+				<Data name="time_begin">
+				</Data>
+				<Data name="time_end">
+				</Data>
+				<Data name="time_when">
+				</Data>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							150.786031,-29.746788,0 150.786363,-29.746569,0 150.786733,-29.746397,0 150.787205,-29.745884,0 150.787259,-29.745558,0 150.78912,-29.7435,0 150.789201,-29.743355,0 150.789399,-29.742344,0 150.789353,-29.742149,0 150.789719,-29.741138,0 150.789258,-29.740978,0 150.789167,-29.740857,0 150.78992,-29.740535,0 150.79002,-29.740128,0 150.789799,-29.739741,0 150.789075,-29.739704,0 150.789069,-29.73956,0 150.789584,-29.73949,0 150.789794,-29.738908,0 150.789584,-29.738819,0 150.789617,-29.738666,0 150.788769,-29.738181,0 150.787653,-29.737645,0 150.787567,-29.737482,0 150.78755,-29.737057,0 150.787782,-29.737132,0 150.787947,-29.737389,0 150.788904,-29.738032,0 150.789344,-29.738236,0 150.789505,-29.738374,0 150.789607,-29.738385,0 150.789811,-29.738329,0 150.790189,-29.737572,0 150.790152,-29.737423,0 150.786527,-29.734854,0 150.786066,-29.734259,0 150.785963,-29.734134,0 150.782666,-29.73008400000001,0 150.779354,-29.731982,0 150.781543,-29.734147,0 150.781694,-29.734534,0 150.781849,-29.734724,0 150.782563,-29.736415,0 150.782772,-29.73757000000001,0 150.782488,-29.738892,0 150.784413,-29.742666,0 150.785025,-29.744362,0 150.785183,-29.745484,0 150.785725,-29.746024,0 150.78573,-29.746604,0 150.786031,-29.746788,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Polygon 2</name>
+			<description><![CDATA[description:  <br> name Polygon 2 <br> folders New Paddocks <br> descriptio  <br> altitude  <br> alt_mode  <br> time_begin  <br> time_end  <br> time_when  <br>folders: New Paddocks<br>descriptio: <br>altitude: <br>alt_mode: <br>time_begin: <br>time_end: <br>time_when:]]></description>
+			<styleUrl>#poly-FFEA00-2201-0</styleUrl>
+			<ExtendedData>
+				<Data name="description">
+					<value>name Polygon 2 
+ folders New Paddocks 
+ descriptio  
+ altitude  
+ alt_mode  
+ time_begin  
+ time_end  
+ time_when</value>
+				</Data>
+				<Data name="folders">
+					<value>New Paddocks</value>
+				</Data>
+				<Data name="descriptio">
+				</Data>
+				<Data name="altitude">
+				</Data>
+				<Data name="alt_mode">
+				</Data>
+				<Data name="time_begin">
+				</Data>
+				<Data name="time_end">
+				</Data>
+				<Data name="time_when">
+				</Data>
+			</ExtendedData>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								150.787459,-29.73294,0 150.787461,-29.732683,0 150.787349,-29.732506,0 150.786933,-29.73208199999999,0 150.78656,-29.73184,0 150.786195,-29.731396,0 150.785895,-29.731181,0 150.785385,-29.730348,0 150.784902,-29.729889,0 150.784473,-29.729716,0 150.784326,-29.72949699999999,0 150.784063,-29.729346,0 150.783899,-29.729348,0 150.782866,-29.729924,0 150.786171,-29.73401,0 150.786729,-29.734745,0 150.789992,-29.736978,0 150.790821,-29.737348,0 150.790961,-29.737339,0 150.791258,-29.737062,0 150.791223,-29.736836,0 150.79103,-29.73655,0 150.79061,-29.736265,0 150.79031,-29.735804,0 150.790079,-29.735622,0 150.789811,-29.735194,0 150.789752,-29.734574,0 150.789532,-29.734448,0 150.789167,-29.73449,0 150.78877,-29.734132,0 150.788083,-29.733806,0 150.787584,-29.733722,0 150.787214,-29.733577,0 150.786748,-29.73388,0 150.786592,-29.733722,0 150.787343,-29.733321,0 150.787459,-29.73294,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								150.788169,-29.732734,0 150.78847,-29.732939,0 150.79039,-29.731728,0 150.790669,-29.732175,0 150.79025,-29.732576,0 150.790487,-29.732744,0 150.790701,-29.732716,0 150.790884,-29.73279,0 150.790744,-29.733126,0 150.791248,-29.733293,0 150.791356,-29.733489,0 150.791002,-29.734486,0 150.791152,-29.734849,0 150.791279,-29.735209,0 150.791826,-29.735488,0 150.791901,-29.73587,0 150.793993,-29.736373,0 150.794701,-29.735507,0 150.795216,-29.7352,0 150.795409,-29.734957,0 150.795517,-29.734464,0 150.796337,-29.733066,0 150.797083,-29.732158,0 150.797078,-29.73199,0 150.791679,-29.724852,0 150.790583,-29.725496,0 150.79087,-29.725785,0 150.790833,-29.725964,0 150.790656,-29.726025,0 150.79028,-29.725859,0 150.789945,-29.725855,0 150.789572,-29.726085,0 150.789348,-29.726698,0 150.788506,-29.72755,0 150.787309,-29.727443,0 150.786451,-29.727932,0 150.786252,-29.728077,0 150.786129,-29.728659,0 150.786274,-29.729125,0 150.786805,-29.729819,0 150.786778,-29.73008400000001,0 150.788169,-29.732734,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+		<Placemark>
+			<name>Polygon 3</name>
+			<description><![CDATA[description:  <br> name Polygon 3 <br> folders New Paddocks <br> descriptio  <br> altitude  <br> alt_mode  <br> time_begin  <br> time_end  <br> time_when  <br>folders: New Paddocks<br>descriptio: <br>altitude: <br>alt_mode: <br>time_begin: <br>time_end: <br>time_when:]]></description>
+			<styleUrl>#poly-FFEA00-2201-0</styleUrl>
+			<ExtendedData>
+				<Data name="description">
+					<value>name Polygon 3 
+ folders New Paddocks 
+ descriptio  
+ altitude  
+ alt_mode  
+ time_begin  
+ time_end  
+ time_when</value>
+				</Data>
+				<Data name="folders">
+					<value>New Paddocks</value>
+				</Data>
+				<Data name="descriptio">
+				</Data>
+				<Data name="altitude">
+				</Data>
+				<Data name="alt_mode">
+				</Data>
+				<Data name="time_begin">
+				</Data>
+				<Data name="time_end">
+				</Data>
+				<Data name="time_when">
+				</Data>
+			</ExtendedData>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								150.764637,-29.736193,0 150.764546,-29.736218,0 150.764654,-29.736196,0 150.764681,-29.735976,0 150.764637,-29.736193,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								150.763849,-29.736408,0 150.763694,-29.736392,0 150.763452,-29.736527,0 150.760463,-29.740121,0 150.762789,-29.74045,0 150.763121,-29.740408,0 150.76325,-29.740161,0 150.763293,-29.73957,0 150.763626,-29.739472,0 150.765552,-29.739907,0 150.765976,-29.740289,0 150.766556,-29.740537,0 150.76722,-29.741046,0 150.767682,-29.741018,0 150.768073,-29.741162,0 150.768519,-29.741404,0 150.769018,-29.740654,0 150.76891,-29.740263,0 150.768054,-29.738965,0 150.767593,-29.738993,0 150.767158,-29.738536,0 150.766086,-29.73828,0 150.765388,-29.737596,0 150.76497,-29.737367,0 150.764964,-29.73712,0 150.764669,-29.736841,0 150.764213,-29.73670600000001,0 150.763849,-29.736408,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								150.769486,-29.730664,0 150.770033,-29.731549,0 150.770108,-29.731796,0 150.770312,-29.731894,0 150.770612,-29.731735,0 150.770923,-29.732108,0 150.771569,-29.733812,0 150.77176,-29.733959,0 150.77176,-29.734353,0 150.771768,-29.734458,0 150.771851,-29.734565,0 150.772111,-29.734562,0 150.772536,-29.734401,0 150.772643,-29.734271,0 150.772681,-29.734038,0 150.773099,-29.73387,0 150.773534,-29.733558,0 150.773523,-29.733363,0 150.773244,-29.733153,0 150.773062,-29.732818,0 150.77274,-29.732524,0 150.773046,-29.731695,0 150.772853,-29.730759,0 150.769928,-29.729215,0 150.76933,-29.72992,0 150.769298,-29.730176,0 150.769362,-29.730399,0 150.769486,-29.730656,0 150.768724,-29.731116,0 150.769486,-29.730664,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								150.764771,-29.735532,0 150.76526,-29.736901,0 150.766145,-29.737819,0 150.766263,-29.73808500000001,0 150.76652,-29.738145,0 150.766686,-29.738117,0 150.767405,-29.738471,0 150.767663,-29.738816,0 150.768076,-29.738751,0 150.768441,-29.738998,0 150.768687,-29.738918,0 150.768698,-29.737349,0 150.768918,-29.73693400000001,0 150.768687,-29.73630500000001,0 150.768376,-29.736068,0 150.767792,-29.735015,0 150.767432,-29.734749,0 150.766831,-29.733986,0 150.766595,-29.733464,0 150.766402,-29.73338,0 150.766542,-29.733203,0 150.764772,-29.735251,0 150.764771,-29.735532,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								150.766542,-29.733203,0 150.766837,-29.733562,0 150.767142,-29.73378,0 150.768366,-29.735569,0 150.768956,-29.735942,0 150.769026,-29.736045,0 150.768991,-29.736194,0 150.76912,-29.736681,0 150.768935,-29.737757,0 150.769117,-29.739569,0 150.769256,-29.74003,0 150.769487,-29.74019699999999,0 150.769691,-29.740132,0 150.769927,-29.739569,0 150.769846,-29.738586,0 150.77026,-29.737694,0 150.770399,-29.736923,0 150.770732,-29.736336,0 150.771327,-29.735232,0 150.77059,-29.73308400000001,0 150.77078,-29.732772,0 150.770214,-29.73209900000001,0 150.768997,-29.731402,0 150.768724,-29.731116,0 150.768436,-29.73097,0 150.766542,-29.733203,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+		<Placemark>
+			<name>Polygon 4</name>
+			<description><![CDATA[description:  <br> name Polygon 4 <br> folders New Paddocks <br> descriptio  <br> altitude  <br> alt_mode  <br> time_begin  <br> time_end  <br> time_when  <br>folders: New Paddocks<br>descriptio: <br>altitude: <br>alt_mode: <br>time_begin: <br>time_end: <br>time_when:]]></description>
+			<styleUrl>#poly-FFEA00-2201-0</styleUrl>
+			<ExtendedData>
+				<Data name="description">
+					<value>name Polygon 4 
+ folders New Paddocks 
+ descriptio  
+ altitude  
+ alt_mode  
+ time_begin  
+ time_end  
+ time_when</value>
+				</Data>
+				<Data name="folders">
+					<value>New Paddocks</value>
+				</Data>
+				<Data name="descriptio">
+				</Data>
+				<Data name="altitude">
+				</Data>
+				<Data name="alt_mode">
+				</Data>
+				<Data name="time_begin">
+				</Data>
+				<Data name="time_end">
+				</Data>
+				<Data name="time_when">
+				</Data>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							150.781871,-29.742947,0 150.781946,-29.740329,0 150.781474,-29.74005,0 150.782096,-29.73917,0 150.782091,-29.738834,0 150.781973,-29.73869,0 150.781624,-29.738485,0 150.781597,-29.738159,0 150.781881,-29.73791200000001,0 150.782209,-29.737716,0 150.782096,-29.736528,0 150.781631,-29.73557,0 150.781357,-29.734233,0 150.779139,-29.732063,0 150.776541,-29.733524,0 150.775401,-29.732647,0 150.77443,-29.733472,0 150.774999,-29.733705,0 150.775417,-29.734166,0 150.773878,-29.733984,0 150.773652,-29.734049,0 150.773261,-29.734319,0 150.773003,-29.734701,0 150.772295,-29.735088,0 150.771306,-29.737044,0 150.770673,-29.737361,0 150.770183,-29.739672,0 150.770057,-29.740908,0 150.769533,-29.741278,0 150.769457,-29.741988,0 150.772378,-29.74226699999999,0 150.781871,-29.742947,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Polygon 5</name>
+			<description><![CDATA[description:  <br> name Polygon 5 <br> folders New Paddocks <br> descriptio  <br> altitude  <br> alt_mode  <br> time_begin  <br> time_end  <br> time_when  <br>folders: New Paddocks<br>descriptio: <br>altitude: <br>alt_mode: <br>time_begin: <br>time_end: <br>time_when:]]></description>
+			<styleUrl>#poly-FFEA00-2201-0</styleUrl>
+			<ExtendedData>
+				<Data name="description">
+					<value>name Polygon 5 
+ folders New Paddocks 
+ descriptio  
+ altitude  
+ alt_mode  
+ time_begin  
+ time_end  
+ time_when</value>
+				</Data>
+				<Data name="folders">
+					<value>New Paddocks</value>
+				</Data>
+				<Data name="descriptio">
+				</Data>
+				<Data name="altitude">
+				</Data>
+				<Data name="alt_mode">
+				</Data>
+				<Data name="time_begin">
+				</Data>
+				<Data name="time_end">
+				</Data>
+				<Data name="time_when">
+				</Data>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							150.783375,-29.743159,0 150.781871,-29.742947,0 150.772378,-29.74226699999999,0 150.771168,-29.749638,0 150.782656,-29.751081,0 150.783369,-29.74953,0 150.784689,-29.747546,0 150.784884,-29.747457,0 150.785311,-29.747331,0 150.785389,-29.747257,0 150.785397,-29.747084,0 150.785142,-29.746956,0 150.784833,-29.74698,0 150.784577,-29.746851,0 150.784414,-29.746557,0 150.784309,-29.74659,0 150.784175,-29.746823,0 150.784156,-29.747076,0 150.783636,-29.747673,0 150.783479,-29.748563,0 150.783335,-29.748824,0 150.782688,-29.749087,0 150.782541,-29.749243,0 150.782412,-29.749166,0 150.782404,-29.749041,0 150.78316,-29.74813,0 150.78328,-29.74740600000001,0 150.78376,-29.747061,0 150.784111,-29.746234,0 150.784009,-29.745655,0 150.783527,-29.744355,0 150.783489,-29.744132,0 150.783671,-29.743684,0 150.783375,-29.743159,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Polygon 6</name>
+			<description><![CDATA[description:  <br> name Polygon 6 <br> folders New Paddocks <br> descriptio  <br> altitude  <br> alt_mode  <br> time_begin  <br> time_end  <br> time_when  <br>folders: New Paddocks<br>descriptio: <br>altitude: <br>alt_mode: <br>time_begin: <br>time_end: <br>time_when:]]></description>
+			<styleUrl>#poly-FFEA00-2201-0</styleUrl>
+			<ExtendedData>
+				<Data name="description">
+					<value>name Polygon 6 
+ folders New Paddocks 
+ descriptio  
+ altitude  
+ alt_mode  
+ time_begin  
+ time_end  
+ time_when</value>
+				</Data>
+				<Data name="folders">
+					<value>New Paddocks</value>
+				</Data>
+				<Data name="descriptio">
+				</Data>
+				<Data name="altitude">
+				</Data>
+				<Data name="alt_mode">
+				</Data>
+				<Data name="time_begin">
+				</Data>
+				<Data name="time_end">
+				</Data>
+				<Data name="time_when">
+				</Data>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							150.791706,-29.749135,0 150.791744,-29.748273,0 150.787222,-29.747681,0 150.787109,-29.747924,0 150.786905,-29.747952,0 150.786841,-29.747756,0 150.786395,-29.74784,0 150.786626,-29.749135,0 150.787189,-29.749517,0 150.787324,-29.749358,0 150.786905,-29.747957,0 150.787109,-29.747929,0 150.787635,-29.749624,0 150.788697,-29.750327,0 150.788847,-29.750234,0 150.788874,-29.749908,0 150.78904,-29.749866,0 150.789083,-29.750188,0 150.79051,-29.750048,0 150.790714,-29.749913,0 150.790649,-29.748977,0 150.791706,-29.749135,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Polygon 8</name>
+			<description><![CDATA[description:  <br> name Polygon 8 <br> folders New Paddocks <br> descriptio  <br> altitude  <br> alt_mode  <br> time_begin  <br> time_end  <br> time_when  <br>folders: New Paddocks<br>descriptio: <br>altitude: <br>alt_mode: <br>time_begin: <br>time_end: <br>time_when:]]></description>
+			<styleUrl>#poly-FFEA00-2201-0</styleUrl>
+			<ExtendedData>
+				<Data name="description">
+					<value>name Polygon 8 
+ folders New Paddocks 
+ descriptio  
+ altitude  
+ alt_mode  
+ time_begin  
+ time_end  
+ time_when</value>
+				</Data>
+				<Data name="folders">
+					<value>New Paddocks</value>
+				</Data>
+				<Data name="descriptio">
+				</Data>
+				<Data name="altitude">
+				</Data>
+				<Data name="alt_mode">
+				</Data>
+				<Data name="time_begin">
+				</Data>
+				<Data name="time_end">
+				</Data>
+				<Data name="time_when">
+				</Data>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							150.792737,-29.750372,0 150.799666,-29.75092100000001,0 150.802502,-29.750725,0 150.804057,-29.750751,0 150.805272,-29.750986,0 150.809404,-29.751308,0 150.809699,-29.750554,0 150.809903,-29.750376,0 150.812162,-29.750758,0 150.812461,-29.747324,0 150.81245,-29.745473,0 150.812727,-29.743497,0 150.808883,-29.743494,0 150.809098,-29.744845,0 150.806201,-29.750082,0 150.79381,-29.748513,0 150.792737,-29.750372,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Polygon 9</name>
+			<description><![CDATA[description:  <br> name Polygon 9 <br> folders New Paddocks <br> descriptio  <br> altitude  <br> alt_mode  <br> time_begin  <br> time_end  <br> time_when  <br>folders: New Paddocks<br>descriptio: <br>altitude: <br>alt_mode: <br>time_begin: <br>time_end: <br>time_when:]]></description>
+			<styleUrl>#poly-FFEA00-2201-0</styleUrl>
+			<ExtendedData>
+				<Data name="description">
+					<value>name Polygon 9 
+ folders New Paddocks 
+ descriptio  
+ altitude  
+ alt_mode  
+ time_begin  
+ time_end  
+ time_when</value>
+				</Data>
+				<Data name="folders">
+					<value>New Paddocks</value>
+				</Data>
+				<Data name="descriptio">
+				</Data>
+				<Data name="altitude">
+				</Data>
+				<Data name="alt_mode">
+				</Data>
+				<Data name="time_begin">
+				</Data>
+				<Data name="time_end">
+				</Data>
+				<Data name="time_when">
+				</Data>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							150.804783,-29.756838,0 150.805707,-29.756685,0 150.806565,-29.75709,0 150.806978,-29.757328,0 150.807692,-29.757919,0 150.808902,-29.759313,0 150.809763,-29.758211,0 150.810692,-29.75850399999999,0 150.811174,-29.758515,0 150.811395,-29.758283,0 150.8116,-29.758518,0 150.811961,-29.758534,0 150.812491,-29.756747,0 150.812006,-29.754699,0 150.811845,-29.754498,0 150.811512,-29.75462,0 150.810434,-29.754606,0 150.809645,-29.75475,0 150.808862,-29.754783,0 150.808567,-29.754717,0 150.808685,-29.754587,0 150.80971,-29.754568,0 150.810311,-29.754308,0 150.810949,-29.754457,0 150.81178,-29.754387,0 150.81192,-29.754247,0 150.81173,-29.753434,0 150.811502,-29.752983,0 150.80963,-29.751457,0 150.809394,-29.751429,0 150.80392,-29.75103500000001,0 150.79954,-29.751407,0 150.795762,-29.751481,0 150.792573,-29.750857,0 150.79161,-29.75068,0 150.790355,-29.752434,0 150.794815,-29.759643,0 150.795518,-29.761278,0 150.796805,-29.763073,0 150.800418,-29.761481,0 150.799153,-29.758973,0 150.799649,-29.757883,0 150.802754,-29.758952,0 150.803822,-29.756966,0 150.804783,-29.756838,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Access Lane</name>
+			<description><![CDATA[description:  <br> name Access Lane <br> folders Livestock <br> descriptio  <br> altitude  <br> alt_mode  <br> time_begin  <br> time_end  <br> time_when  <br>folders: Livestock<br>descriptio: <br>altitude: <br>alt_mode: <br>time_begin: <br>time_end: <br>time_when:]]></description>
+			<styleUrl>#poly-FFEA00-2201-0</styleUrl>
+			<ExtendedData>
+				<Data name="description">
+					<value>name Access Lane 
+ folders Livestock 
+ descriptio  
+ altitude  
+ alt_mode  
+ time_begin  
+ time_end  
+ time_when</value>
+				</Data>
+				<Data name="folders">
+					<value>Livestock</value>
+				</Data>
+				<Data name="descriptio">
+				</Data>
+				<Data name="altitude">
+				</Data>
+				<Data name="alt_mode">
+				</Data>
+				<Data name="time_begin">
+				</Data>
+				<Data name="time_end">
+				</Data>
+				<Data name="time_when">
+				</Data>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							150.790355,-29.752434,0 150.790184,-29.75249,0 150.794675,-29.759709,0 150.79537,-29.761313,0 150.796741,-29.763273,0 150.800421,-29.761481,0 150.800372,-29.761378,0 150.796805,-29.763073,0 150.795518,-29.761278,0 150.794815,-29.759643,0 150.790355,-29.752434,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>South 1</name>
+			<description><![CDATA[description:  <br> name South 1 <br> folders Livestock <br> descriptio  <br> altitude  <br> alt_mode  <br> time_begin  <br> time_end  <br> time_when  <br>folders: Livestock<br>descriptio: <br>altitude: <br>alt_mode: <br>time_begin: <br>time_end: <br>time_when:]]></description>
+			<styleUrl>#poly-FFEA00-2201-0</styleUrl>
+			<ExtendedData>
+				<Data name="description">
+					<value>name South 1 
+ folders Livestock 
+ descriptio  
+ altitude  
+ alt_mode  
+ time_begin  
+ time_end  
+ time_when</value>
+				</Data>
+				<Data name="folders">
+					<value>Livestock</value>
+				</Data>
+				<Data name="descriptio">
+				</Data>
+				<Data name="altitude">
+				</Data>
+				<Data name="alt_mode">
+				</Data>
+				<Data name="time_begin">
+				</Data>
+				<Data name="time_end">
+				</Data>
+				<Data name="time_when">
+				</Data>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							150.803342,-29.759435,0 150.802754,-29.758952,0 150.799649,-29.757883,0 150.799153,-29.758973,0 150.800372,-29.761378,0 150.80142,-29.76099,0 150.802044,-29.761097,0 150.802623,-29.761053,0 150.80301,-29.759792,0 150.803342,-29.759435,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>South 2</name>
+			<description><![CDATA[description:  <br> name South 2 <br> folders Livestock <br> descriptio  <br> altitude  <br> alt_mode  <br> time_begin  <br> time_end  <br> time_when  <br>folders: Livestock<br>descriptio: <br>altitude: <br>alt_mode: <br>time_begin: <br>time_end: <br>time_when:]]></description>
+			<styleUrl>#poly-FFEA00-2201-0</styleUrl>
+			<ExtendedData>
+				<Data name="description">
+					<value>name South 2 
+ folders Livestock 
+ descriptio  
+ altitude  
+ alt_mode  
+ time_begin  
+ time_end  
+ time_when</value>
+				</Data>
+				<Data name="folders">
+					<value>Livestock</value>
+				</Data>
+				<Data name="descriptio">
+				</Data>
+				<Data name="altitude">
+				</Data>
+				<Data name="alt_mode">
+				</Data>
+				<Data name="time_begin">
+				</Data>
+				<Data name="time_end">
+				</Data>
+				<Data name="time_when">
+				</Data>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							150.806298,-29.7593,0 150.807781,-29.758021,0 150.807692,-29.757919,0 150.806978,-29.757328,0 150.806565,-29.75709,0 150.805707,-29.756685,0 150.803822,-29.756966,0 150.802754,-29.758952,0 150.803342,-29.759435,0 150.804296,-29.759651,0 150.804342,-29.759709,0 150.806298,-29.7593,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>South 3</name>
+			<description><![CDATA[description:  <br> name South 3 <br> folders Livestock <br> descriptio  <br> altitude  <br> alt_mode  <br> time_begin  <br> time_end  <br> time_when  <br>folders: Livestock<br>descriptio: <br>altitude: <br>alt_mode: <br>time_begin: <br>time_end: <br>time_when:]]></description>
+			<styleUrl>#poly-FFEA00-2201-0</styleUrl>
+			<ExtendedData>
+				<Data name="description">
+					<value>name South 3 
+ folders Livestock 
+ descriptio  
+ altitude  
+ alt_mode  
+ time_begin  
+ time_end  
+ time_when</value>
+				</Data>
+				<Data name="folders">
+					<value>Livestock</value>
+				</Data>
+				<Data name="descriptio">
+				</Data>
+				<Data name="altitude">
+				</Data>
+				<Data name="alt_mode">
+				</Data>
+				<Data name="time_begin">
+				</Data>
+				<Data name="time_end">
+				</Data>
+				<Data name="time_when">
+				</Data>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							150.804771,-29.761925,0 150.804701,-29.760796,0 150.804254,-29.759751,0 150.803388,-29.75957,0 150.803138,-29.75984,0 150.802726,-29.761128,0 150.80202,-29.761212,0 150.801419,-29.761086,0 150.800421,-29.761481,0 150.801212,-29.762268,0 150.80233,-29.764353,0 150.803477,-29.766411,0 150.805951,-29.765543,0 150.804377,-29.762983,0 150.805334,-29.76236,0 150.804771,-29.761925,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>South 4</name>
+			<description><![CDATA[description:  <br> name South 4 <br> folders Livestock <br> descriptio  <br> altitude  <br> alt_mode  <br> time_begin  <br> time_end  <br> time_when  <br>folders: Livestock<br>descriptio: <br>altitude: <br>alt_mode: <br>time_begin: <br>time_end: <br>time_when:]]></description>
+			<styleUrl>#poly-FFEA00-2201-0</styleUrl>
+			<ExtendedData>
+				<Data name="description">
+					<value>name South 4 
+ folders Livestock 
+ descriptio  
+ altitude  
+ alt_mode  
+ time_begin  
+ time_end  
+ time_when</value>
+				</Data>
+				<Data name="folders">
+					<value>Livestock</value>
+				</Data>
+				<Data name="descriptio">
+				</Data>
+				<Data name="altitude">
+				</Data>
+				<Data name="alt_mode">
+				</Data>
+				<Data name="time_begin">
+				</Data>
+				<Data name="time_end">
+				</Data>
+				<Data name="time_when">
+				</Data>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							150.808523,-29.759748,0 150.808902,-29.759313,0 150.807781,-29.758021,0 150.806298,-29.7593,0 150.804342,-29.759709,0 150.804837,-29.76076400000001,0 150.804885,-29.76187,0 150.805362,-29.762203,0 150.805872,-29.762185,0 150.806419,-29.762329,0 150.807143,-29.762646,0 150.808294,-29.762683,0 150.809148,-29.76266,0 150.809258,-29.762491,0 150.809234,-29.762115,0 150.808876,-29.761016,0 150.808523,-29.759748,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>South 6</name>
+			<description><![CDATA[description:  <br> name South 6 <br> folders Livestock <br> descriptio  <br> altitude  <br> alt_mode  <br> time_begin  <br> time_end  <br> time_when  <br>folders: Livestock<br>descriptio: <br>altitude: <br>alt_mode: <br>time_begin: <br>time_end: <br>time_when:]]></description>
+			<styleUrl>#poly-FFEA00-2201-0</styleUrl>
+			<ExtendedData>
+				<Data name="description">
+					<value>name South 6 
+ folders Livestock 
+ descriptio  
+ altitude  
+ alt_mode  
+ time_begin  
+ time_end  
+ time_when</value>
+				</Data>
+				<Data name="folders">
+					<value>Livestock</value>
+				</Data>
+				<Data name="descriptio">
+				</Data>
+				<Data name="altitude">
+				</Data>
+				<Data name="alt_mode">
+				</Data>
+				<Data name="time_begin">
+				</Data>
+				<Data name="time_end">
+				</Data>
+				<Data name="time_when">
+				</Data>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							150.809587,-29.764922,0 150.810831,-29.765308,0 150.81192,-29.764379,0 150.811416,-29.763756,0 150.809528,-29.763092,0 150.806958,-29.76284,0 150.80617,-29.762482,0 150.805334,-29.76236,0 150.804377,-29.762983,0 150.805951,-29.765543,0 150.80838,-29.764847,0 150.809587,-29.764922,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>South Lane</name>
+			<description><![CDATA[description:  <br> name South Lane <br> folders Livestock <br> descriptio  <br> altitude  <br> alt_mode  <br> time_begin  <br> time_end  <br> time_when  <br>folders: Livestock<br>descriptio: <br>altitude: <br>alt_mode: <br>time_begin: <br>time_end: <br>time_when:]]></description>
+			<styleUrl>#poly-FFEA00-2201-0</styleUrl>
+			<ExtendedData>
+				<Data name="description">
+					<value>name South Lane 
+ folders Livestock 
+ descriptio  
+ altitude  
+ alt_mode  
+ time_begin  
+ time_end  
+ time_when</value>
+				</Data>
+				<Data name="folders">
+					<value>Livestock</value>
+				</Data>
+				<Data name="descriptio">
+				</Data>
+				<Data name="altitude">
+				</Data>
+				<Data name="alt_mode">
+				</Data>
+				<Data name="time_begin">
+				</Data>
+				<Data name="time_end">
+				</Data>
+				<Data name="time_when">
+				</Data>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							150.812288,-29.764173,0 150.8134,-29.763486,0 150.813518,-29.762697,0 150.814498,-29.760248,0 150.814239,-29.760063,0 150.813514,-29.762037,0 150.813224,-29.762744,0 150.813134,-29.763378,0 150.81222,-29.763841,0 150.812006,-29.763614,0 150.811952,-29.763472,0 150.810103,-29.762552,0 150.809258,-29.762491,0 150.809148,-29.76266,0 150.808294,-29.762683,0 150.807143,-29.762646,0 150.806419,-29.762329,0 150.805872,-29.762185,0 150.805362,-29.762203,0 150.804885,-29.76187,0 150.804837,-29.76076400000001,0 150.804342,-29.759709,0 150.804296,-29.759651,0 150.803342,-29.759435,0 150.80301,-29.759792,0 150.802623,-29.761053,0 150.802044,-29.761097,0 150.80142,-29.76099,0 150.800372,-29.761378,0 150.800421,-29.761481,0 150.801419,-29.761086,0 150.80202,-29.761212,0 150.802726,-29.761128,0 150.803138,-29.75984,0 150.803388,-29.75957,0 150.804254,-29.759751,0 150.804701,-29.760796,0 150.804771,-29.761925,0 150.805334,-29.76236,0 150.80545,-29.762372,0 150.80617,-29.762482,0 150.806958,-29.76284,0 150.809528,-29.763092,0 150.811416,-29.763756,0 150.81192,-29.764379,0 150.812288,-29.764173,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Gully</name>
+			<description><![CDATA[description:  <br> name Gully <br> folders Livestock <br> descriptio  <br> altitude  <br> alt_mode  <br> time_begin  <br> time_end  <br> time_when  <br>folders: Livestock<br>descriptio: <br>altitude: <br>alt_mode: <br>time_begin: <br>time_end: <br>time_when:]]></description>
+			<styleUrl>#poly-FFEA00-2201-0</styleUrl>
+			<ExtendedData>
+				<Data name="description">
+					<value>name Gully 
+ folders Livestock 
+ descriptio  
+ altitude  
+ alt_mode  
+ time_begin  
+ time_end  
+ time_when</value>
+				</Data>
+				<Data name="folders">
+					<value>Livestock</value>
+				</Data>
+				<Data name="descriptio">
+				</Data>
+				<Data name="altitude">
+				</Data>
+				<Data name="alt_mode">
+				</Data>
+				<Data name="time_begin">
+				</Data>
+				<Data name="time_end">
+				</Data>
+				<Data name="time_when">
+				</Data>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							150.814017,-29.756518,0 150.813596,-29.756149,0 150.81289,-29.754372,0 150.812901,-29.753859,0 150.81251,-29.751913,0 150.812162,-29.750758,0 150.809903,-29.750376,0 150.809699,-29.750554,0 150.809404,-29.751308,0 150.809394,-29.751429,0 150.80963,-29.751457,0 150.811502,-29.752983,0 150.81173,-29.753434,0 150.81192,-29.754247,0 150.812006,-29.754699,0 150.812491,-29.756747,0 150.813402,-29.756878,0 150.814553,-29.75926,0 150.814239,-29.760063,0 150.814498,-29.760248,0 150.815441,-29.760172,0 150.815772,-29.760134,0 150.815627,-29.759551,0 150.814964,-29.75938500000001,0 150.814842,-29.758143,0 150.814017,-29.756518,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Top Hill 1</name>
+			<description><![CDATA[description:  <br> name Top Hill 1 <br> folders Livestock <br> descriptio  <br> altitude  <br> alt_mode  <br> time_begin  <br> time_end  <br> time_when  <br>folders: Livestock<br>descriptio: <br>altitude: <br>alt_mode: <br>time_begin: <br>time_end: <br>time_when:]]></description>
+			<styleUrl>#poly-FFEA00-2201-0</styleUrl>
+			<ExtendedData>
+				<Data name="description">
+					<value>name Top Hill 1 
+ folders Livestock 
+ descriptio  
+ altitude  
+ alt_mode  
+ time_begin  
+ time_end  
+ time_when</value>
+				</Data>
+				<Data name="folders">
+					<value>Livestock</value>
+				</Data>
+				<Data name="descriptio">
+				</Data>
+				<Data name="altitude">
+				</Data>
+				<Data name="alt_mode">
+				</Data>
+				<Data name="time_begin">
+				</Data>
+				<Data name="time_end">
+				</Data>
+				<Data name="time_when">
+				</Data>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							150.815281,-29.746597,0 150.816449,-29.746053,0 150.81798,-29.745082,0 150.815623,-29.743518,0 150.812727,-29.743497,0 150.81245,-29.745473,0 150.812461,-29.747324,0 150.812417,-29.747917,0 150.812836,-29.747904,0 150.813565,-29.747384,0 150.814284,-29.746746,0 150.815281,-29.746597,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Top Hill 2</name>
+			<description><![CDATA[description:  <br> name Top Hill 2 <br> folders Livestock <br> descriptio  <br> altitude  <br> alt_mode  <br> time_begin  <br> time_end  <br> time_when  <br>folders: Livestock<br>descriptio: <br>altitude: <br>alt_mode: <br>time_begin: <br>time_end: <br>time_when:]]></description>
+			<styleUrl>#poly-FFEA00-2201-0</styleUrl>
+			<ExtendedData>
+				<Data name="description">
+					<value>name Top Hill 2 
+ folders Livestock 
+ descriptio  
+ altitude  
+ alt_mode  
+ time_begin  
+ time_end  
+ time_when</value>
+				</Data>
+				<Data name="folders">
+					<value>Livestock</value>
+				</Data>
+				<Data name="descriptio">
+				</Data>
+				<Data name="altitude">
+				</Data>
+				<Data name="alt_mode">
+				</Data>
+				<Data name="time_begin">
+				</Data>
+				<Data name="time_end">
+				</Data>
+				<Data name="time_when">
+				</Data>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							150.815474,-29.74717800000001,0 150.816203,-29.748822,0 150.819162,-29.75048,0 150.821566,-29.747587,0 150.818016,-29.745259,0 150.816648,-29.746251,0 150.815334,-29.746833,0 150.815474,-29.74717800000001,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Top Hill 3</name>
+			<description><![CDATA[description:  <br> name Top Hill 3 <br> folders Livestock <br> descriptio  <br> altitude  <br> alt_mode  <br> time_begin  <br> time_end  <br> time_when  <br>folders: Livestock<br>descriptio: <br>altitude: <br>alt_mode: <br>time_begin: <br>time_end: <br>time_when:]]></description>
+			<styleUrl>#poly-FFEA00-2201-0</styleUrl>
+			<ExtendedData>
+				<Data name="description">
+					<value>name Top Hill 3 
+ folders Livestock 
+ descriptio  
+ altitude  
+ alt_mode  
+ time_begin  
+ time_end  
+ time_when</value>
+				</Data>
+				<Data name="folders">
+					<value>Livestock</value>
+				</Data>
+				<Data name="descriptio">
+				</Data>
+				<Data name="altitude">
+				</Data>
+				<Data name="alt_mode">
+				</Data>
+				<Data name="time_begin">
+				</Data>
+				<Data name="time_end">
+				</Data>
+				<Data name="time_when">
+				</Data>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							150.820107,-29.751041,0 150.821137,-29.752205,0 150.822736,-29.752513,0 150.826604,-29.749845,0 150.825156,-29.749251,0 150.823144,-29.748624,0 150.821566,-29.747587,0 150.819162,-29.750471,0 150.820107,-29.751041,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Top Hill 4</name>
+			<description><![CDATA[description:  <br> name Top Hill 4 <br> folders Livestock <br> descriptio  <br> altitude  <br> alt_mode  <br> time_begin  <br> time_end  <br> time_when  <br>folders: Livestock<br>descriptio: <br>altitude: <br>alt_mode: <br>time_begin: <br>time_end: <br>time_when:]]></description>
+			<styleUrl>#poly-FFEA00-2201-0</styleUrl>
+			<ExtendedData>
+				<Data name="description">
+					<value>name Top Hill 4 
+ folders Livestock 
+ descriptio  
+ altitude  
+ alt_mode  
+ time_begin  
+ time_end  
+ time_when</value>
+				</Data>
+				<Data name="folders">
+					<value>Livestock</value>
+				</Data>
+				<Data name="descriptio">
+				</Data>
+				<Data name="altitude">
+				</Data>
+				<Data name="alt_mode">
+				</Data>
+				<Data name="time_begin">
+				</Data>
+				<Data name="time_end">
+				</Data>
+				<Data name="time_when">
+				</Data>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							150.822736,-29.752513,0 150.82389,-29.753669,0 150.824566,-29.754382,0 150.825461,-29.754058,0 150.828626,-29.754217,0 150.829249,-29.750844,0 150.826704,-29.749773,0 150.822736,-29.752513,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Hill Lane</name>
+			<description><![CDATA[description:  <br> name Hill Lane <br> folders Livestock <br> descriptio  <br> altitude  <br> alt_mode  <br> time_begin  <br> time_end  <br> time_when  <br>folders: Livestock<br>descriptio: <br>altitude: <br>alt_mode: <br>time_begin: <br>time_end: <br>time_when:]]></description>
+			<styleUrl>#poly-FFEA00-2201-0</styleUrl>
+			<ExtendedData>
+				<Data name="description">
+					<value>name Hill Lane 
+ folders Livestock 
+ descriptio  
+ altitude  
+ alt_mode  
+ time_begin  
+ time_end  
+ time_when</value>
+				</Data>
+				<Data name="folders">
+					<value>Livestock</value>
+				</Data>
+				<Data name="descriptio">
+				</Data>
+				<Data name="altitude">
+				</Data>
+				<Data name="alt_mode">
+				</Data>
+				<Data name="time_begin">
+				</Data>
+				<Data name="time_end">
+				</Data>
+				<Data name="time_when">
+				</Data>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							150.81281,-29.75183,0 150.812543,-29.750788,0 150.812682,-29.750187,0 150.812776,-29.748206,0 150.814385,-29.746939,0 150.815334,-29.746833,0 150.816648,-29.746251,0 150.818016,-29.745259,0 150.821566,-29.747587,0 150.823144,-29.748624,0 150.825156,-29.749251,0 150.826604,-29.749845,0 150.826704,-29.749773,0 150.82522,-29.749142,0 150.823203,-29.748517,0 150.81798,-29.745082,0 150.816449,-29.746053,0 150.815281,-29.746597,0 150.814284,-29.746746,0 150.813565,-29.747384,0 150.812836,-29.747904,0 150.812417,-29.747917,0 150.812162,-29.750758,0 150.81251,-29.751913,0 150.81281,-29.75183,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Bottom Hill 1</name>
+			<description><![CDATA[description:  <br> name Bottom Hill 1 <br> folders Livestock <br> descriptio  <br> altitude  <br> alt_mode  <br> time_begin  <br> time_end  <br> time_when  <br>folders: Livestock<br>descriptio: <br>altitude: <br>alt_mode: <br>time_begin: <br>time_end: <br>time_when:]]></description>
+			<styleUrl>#poly-FFEA00-2201-0</styleUrl>
+			<ExtendedData>
+				<Data name="description">
+					<value>name Bottom Hill 1 
+ folders Livestock 
+ descriptio  
+ altitude  
+ alt_mode  
+ time_begin  
+ time_end  
+ time_when</value>
+				</Data>
+				<Data name="folders">
+					<value>Livestock</value>
+				</Data>
+				<Data name="descriptio">
+				</Data>
+				<Data name="altitude">
+				</Data>
+				<Data name="alt_mode">
+				</Data>
+				<Data name="time_begin">
+				</Data>
+				<Data name="time_end">
+				</Data>
+				<Data name="time_when">
+				</Data>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							150.815543,-29.751618,0 150.817235,-29.751434,0 150.819162,-29.750471,0 150.8162,-29.748829,0 150.815331,-29.74684,0 150.814385,-29.746939,0 150.813623,-29.747549,0 150.812776,-29.748206,0 150.812679,-29.750202,0 150.812543,-29.750788,0 150.81281,-29.75183,0 150.813301,-29.752028,0 150.814028,-29.752195,0 150.815543,-29.751618,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Bottom Hill 2</name>
+			<description><![CDATA[description:  <br> name Bottom Hill 2 <br> folders Livestock <br> descriptio  <br> altitude  <br> alt_mode  <br> time_begin  <br> time_end  <br> time_when  <br>folders: Livestock<br>descriptio: <br>altitude: <br>alt_mode: <br>time_begin: <br>time_end: <br>time_when:]]></description>
+			<styleUrl>#poly-FFEA00-2201-0</styleUrl>
+			<ExtendedData>
+				<Data name="description">
+					<value>name Bottom Hill 2 
+ folders Livestock 
+ descriptio  
+ altitude  
+ alt_mode  
+ time_begin  
+ time_end  
+ time_when</value>
+				</Data>
+				<Data name="folders">
+					<value>Livestock</value>
+				</Data>
+				<Data name="descriptio">
+				</Data>
+				<Data name="altitude">
+				</Data>
+				<Data name="alt_mode">
+				</Data>
+				<Data name="time_begin">
+				</Data>
+				<Data name="time_end">
+				</Data>
+				<Data name="time_when">
+				</Data>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							150.814028,-29.752195,0 150.813301,-29.752028,0 150.81281,-29.75183,0 150.81251,-29.751913,0 150.812901,-29.753859,0 150.81289,-29.754372,0 150.813596,-29.756149,0 150.814017,-29.756518,0 150.81427,-29.756287,0 150.815425,-29.755543,0 150.816313,-29.755321,0 150.816692,-29.754741,0 150.816664,-29.753604,0 150.817119,-29.752868,0 150.817235,-29.751434,0 150.815543,-29.751618,0 150.814028,-29.752195,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Bottom Hill 3</name>
+			<description><![CDATA[description:  <br> name Bottom Hill 3 <br> folders Livestock <br> descriptio  <br> altitude  <br> alt_mode  <br> time_begin  <br> time_end  <br> time_when  <br>folders: Livestock<br>descriptio: <br>altitude: <br>alt_mode: <br>time_begin: <br>time_end: <br>time_when:]]></description>
+			<styleUrl>#poly-FFEA00-2201-0</styleUrl>
+			<ExtendedData>
+				<Data name="description">
+					<value>name Bottom Hill 3 
+ folders Livestock 
+ descriptio  
+ altitude  
+ alt_mode  
+ time_begin  
+ time_end  
+ time_when</value>
+				</Data>
+				<Data name="folders">
+					<value>Livestock</value>
+				</Data>
+				<Data name="descriptio">
+				</Data>
+				<Data name="altitude">
+				</Data>
+				<Data name="alt_mode">
+				</Data>
+				<Data name="time_begin">
+				</Data>
+				<Data name="time_end">
+				</Data>
+				<Data name="time_when">
+				</Data>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							150.818735,-29.756374,0 150.820768,-29.75546,0 150.821137,-29.752205,0 150.820107,-29.751041,0 150.819162,-29.750471,0 150.817235,-29.751434,0 150.817119,-29.752868,0 150.816664,-29.753604,0 150.816692,-29.754741,0 150.818298,-29.755576,0 150.818735,-29.756374,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Bottom Hill 4</name>
+			<description><![CDATA[description:  <br> name Bottom Hill 4 <br> folders Livestock <br> descriptio  <br> altitude  <br> alt_mode  <br> time_begin  <br> time_end  <br> time_when  <br>folders: Livestock<br>descriptio: <br>altitude: <br>alt_mode: <br>time_begin: <br>time_end: <br>time_when:]]></description>
+			<styleUrl>#poly-FFEA00-2201-0</styleUrl>
+			<ExtendedData>
+				<Data name="description">
+					<value>name Bottom Hill 4 
+ folders Livestock 
+ descriptio  
+ altitude  
+ alt_mode  
+ time_begin  
+ time_end  
+ time_when</value>
+				</Data>
+				<Data name="folders">
+					<value>Livestock</value>
+				</Data>
+				<Data name="descriptio">
+				</Data>
+				<Data name="altitude">
+				</Data>
+				<Data name="alt_mode">
+				</Data>
+				<Data name="time_begin">
+				</Data>
+				<Data name="time_end">
+				</Data>
+				<Data name="time_when">
+				</Data>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							150.814017,-29.756518,0 150.814842,-29.758143,0 150.814964,-29.75938500000001,0 150.815627,-29.759551,0 150.815772,-29.760134,0 150.816669,-29.759616,0 150.817603,-29.758741,0 150.818367,-29.758219,0 150.818735,-29.756374,0 150.818298,-29.755576,0 150.816692,-29.754741,0 150.816313,-29.755321,0 150.815425,-29.755543,0 150.81427,-29.756287,0 150.814017,-29.756518,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>House Holder</name>
+			<description><![CDATA[description:  <br> name House Holder <br> folders Livestock <br> descriptio  <br> altitude  <br> alt_mode  <br> time_begin  <br> time_end  <br> time_when  <br>folders: Livestock<br>descriptio: <br>altitude: <br>alt_mode: <br>time_begin: <br>time_end: <br>time_when:]]></description>
+			<styleUrl>#poly-FFEA00-2201-0</styleUrl>
+			<ExtendedData>
+				<Data name="description">
+					<value>name House Holder 
+ folders Livestock 
+ descriptio  
+ altitude  
+ alt_mode  
+ time_begin  
+ time_end  
+ time_when</value>
+				</Data>
+				<Data name="folders">
+					<value>Livestock</value>
+				</Data>
+				<Data name="descriptio">
+				</Data>
+				<Data name="altitude">
+				</Data>
+				<Data name="alt_mode">
+				</Data>
+				<Data name="time_begin">
+				</Data>
+				<Data name="time_end">
+				</Data>
+				<Data name="time_when">
+				</Data>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							150.791236,-29.749688,0 150.791287,-29.75009,0 150.79161,-29.75068,0 150.792573,-29.750857,0 150.792737,-29.750372,0 150.79381,-29.748513,0 150.791744,-29.748273,0 150.791706,-29.749135,0 150.791732,-29.749625,0 150.791236,-29.749688,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Yard Holder</name>
+			<description><![CDATA[description:  <br> name Yard Holder <br> folders Livestock <br> descriptio  <br> altitude  <br> alt_mode  <br> time_begin  <br> time_end  <br> time_when  <br>folders: Livestock<br>descriptio: <br>altitude: <br>alt_mode: <br>time_begin: <br>time_end: <br>time_when:]]></description>
+			<styleUrl>#poly-FFEA00-2201-0</styleUrl>
+			<ExtendedData>
+				<Data name="description">
+					<value>name Yard Holder 
+ folders Livestock 
+ descriptio  
+ altitude  
+ alt_mode  
+ time_begin  
+ time_end  
+ time_when</value>
+				</Data>
+				<Data name="folders">
+					<value>Livestock</value>
+				</Data>
+				<Data name="descriptio">
+				</Data>
+				<Data name="altitude">
+				</Data>
+				<Data name="alt_mode">
+				</Data>
+				<Data name="time_begin">
+				</Data>
+				<Data name="time_end">
+				</Data>
+				<Data name="time_when">
+				</Data>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							150.791287,-29.75009,0 150.790242,-29.750165,0 150.790328,-29.750897,0 150.790416,-29.751032,0 150.790065,-29.751593,0 150.789834,-29.751609,0 150.789676,-29.751681,0 150.790184,-29.75249,0 150.790355,-29.752434,0 150.79161,-29.75068,0 150.791287,-29.75009,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>House Lane</name>
+			<description><![CDATA[description:  <br> name House Lane <br> folders Livestock <br> descriptio  <br> altitude  <br> alt_mode  <br> time_begin  <br> time_end  <br> time_when  <br>folders: Livestock<br>descriptio: <br>altitude: <br>alt_mode: <br>time_begin: <br>time_end: <br>time_when:]]></description>
+			<styleUrl>#poly-FFEA00-2201-0</styleUrl>
+			<ExtendedData>
+				<Data name="description">
+					<value>name House Lane 
+ folders Livestock 
+ descriptio  
+ altitude  
+ alt_mode  
+ time_begin  
+ time_end  
+ time_when</value>
+				</Data>
+				<Data name="folders">
+					<value>Livestock</value>
+				</Data>
+				<Data name="descriptio">
+				</Data>
+				<Data name="altitude">
+				</Data>
+				<Data name="alt_mode">
+				</Data>
+				<Data name="time_begin">
+				</Data>
+				<Data name="time_end">
+				</Data>
+				<Data name="time_when">
+				</Data>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							150.792573,-29.750857,0 150.795762,-29.751481,0 150.79954,-29.751407,0 150.80392,-29.75103500000001,0 150.809394,-29.751429,0 150.809404,-29.751308,0 150.805272,-29.750986,0 150.804057,-29.750751,0 150.802502,-29.750725,0 150.799666,-29.75092100000001,0 150.792737,-29.750372,0 150.792573,-29.750857,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Hobbs Creek West</name>
+			<description><![CDATA[description:  <br> name Hobbs Creek West <br> folders Livestock <br> descriptio  <br> altitude  <br> alt_mode  <br> time_begin  <br> time_end  <br> time_when  <br>folders: Livestock<br>descriptio: <br>altitude: <br>alt_mode: <br>time_begin: <br>time_end: <br>time_when:]]></description>
+			<styleUrl>#poly-FFEA00-2201-0</styleUrl>
+			<ExtendedData>
+				<Data name="description">
+					<value>name Hobbs Creek West 
+ folders Livestock 
+ descriptio  
+ altitude  
+ alt_mode  
+ time_begin  
+ time_end  
+ time_when</value>
+				</Data>
+				<Data name="folders">
+					<value>Livestock</value>
+				</Data>
+				<Data name="descriptio">
+				</Data>
+				<Data name="altitude">
+				</Data>
+				<Data name="alt_mode">
+				</Data>
+				<Data name="time_begin">
+				</Data>
+				<Data name="time_end">
+				</Data>
+				<Data name="time_when">
+				</Data>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							150.782096,-29.736528,0 150.782209,-29.737716,0 150.782091,-29.738834,0 150.782096,-29.73917,0 150.781946,-29.740329,0 150.781871,-29.742947,0 150.783375,-29.743159,0 150.783671,-29.743684,0 150.783489,-29.744132,0 150.783527,-29.744355,0 150.784009,-29.745655,0 150.784111,-29.746234,0 150.784414,-29.746557,0 150.784577,-29.746851,0 150.784833,-29.74698,0 150.785142,-29.746956,0 150.785397,-29.747084,0 150.785389,-29.747257,0 150.785795,-29.747126,0 150.786031,-29.746788,0 150.78573,-29.746604,0 150.785725,-29.746024,0 150.785183,-29.745484,0 150.785025,-29.744362,0 150.784413,-29.742666,0 150.782488,-29.738892,0 150.782772,-29.73757000000001,0 150.782563,-29.736415,0 150.782096,-29.736528,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Hobbs Creek South</name>
+			<description><![CDATA[description:  <br> name Hobbs Creek South <br> folders Livestock <br> descriptio  <br> altitude  <br> alt_mode  <br> time_begin  <br> time_end  <br> time_when  <br>folders: Livestock<br>descriptio: <br>altitude: <br>alt_mode: <br>time_begin: <br>time_end: <br>time_when:]]></description>
+			<styleUrl>#poly-FFEA00-2201-0</styleUrl>
+			<ExtendedData>
+				<Data name="description">
+					<value>name Hobbs Creek South 
+ folders Livestock 
+ descriptio  
+ altitude  
+ alt_mode  
+ time_begin  
+ time_end  
+ time_when</value>
+				</Data>
+				<Data name="folders">
+					<value>Livestock</value>
+				</Data>
+				<Data name="descriptio">
+				</Data>
+				<Data name="altitude">
+				</Data>
+				<Data name="alt_mode">
+				</Data>
+				<Data name="time_begin">
+				</Data>
+				<Data name="time_end">
+				</Data>
+				<Data name="time_when">
+				</Data>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							150.786055,-29.747387,0 150.785795,-29.747126,0 150.785389,-29.747257,0 150.785311,-29.747331,0 150.784884,-29.747457,0 150.784689,-29.747546,0 150.783369,-29.74953,0 150.782656,-29.751081,0 150.784657,-29.751321,0 150.787618,-29.749859,0 150.786626,-29.749135,0 150.786395,-29.74784,0 150.786321,-29.747618,0 150.786055,-29.747387,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Hobbs Creek Middle</name>
+			<description><![CDATA[description:  <br> name Hobbs Creek Middle <br> folders Livestock <br> descriptio  <br> altitude  <br> alt_mode  <br> time_begin  <br> time_end  <br> time_when  <br>folders: Livestock<br>descriptio: <br>altitude: <br>alt_mode: <br>time_begin: <br>time_end: <br>time_when:]]></description>
+			<styleUrl>#poly-FFEA00-2201-0</styleUrl>
+			<ExtendedData>
+				<Data name="description">
+					<value>name Hobbs Creek Middle 
+ folders Livestock 
+ descriptio  
+ altitude  
+ alt_mode  
+ time_begin  
+ time_end  
+ time_when</value>
+				</Data>
+				<Data name="folders">
+					<value>Livestock</value>
+				</Data>
+				<Data name="descriptio">
+				</Data>
+				<Data name="altitude">
+				</Data>
+				<Data name="alt_mode">
+				</Data>
+				<Data name="time_begin">
+				</Data>
+				<Data name="time_end">
+				</Data>
+				<Data name="time_when">
+				</Data>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							150.78683,-29.747626,0 150.789606,-29.745315,0 150.790572,-29.744039,0 150.791261,-29.741279,0 150.791949,-29.739613,0 150.791923,-29.738981,0 150.791451,-29.738909,0 150.790808,-29.738301,0 150.790314,-29.737518,0 150.790189,-29.737572,0 150.789811,-29.738329,0 150.789617,-29.738666,0 150.789794,-29.738908,0 150.789584,-29.73949,0 150.789799,-29.739741,0 150.79002,-29.740128,0 150.78992,-29.740535,0 150.789719,-29.741138,0 150.789353,-29.742149,0 150.789399,-29.742344,0 150.789201,-29.743355,0 150.78912,-29.7435,0 150.787259,-29.745558,0 150.787205,-29.745884,0 150.786733,-29.746397,0 150.786363,-29.746569,0 150.786031,-29.746788,0 150.785795,-29.747126,0 150.786045,-29.747372,0 150.786321,-29.747618,0 150.786395,-29.74784,0 150.786841,-29.747756,0 150.78683,-29.747626,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Hobbs Creek North</name>
+			<description><![CDATA[description:  <br> name Hobbs Creek North <br> folders Livestock <br> descriptio  <br> altitude  <br> alt_mode  <br> time_begin  <br> time_end  <br> time_when  <br>folders: Livestock<br>descriptio: <br>altitude: <br>alt_mode: <br>time_begin: <br>time_end: <br>time_when:]]></description>
+			<styleUrl>#poly-FFEA00-2201-0</styleUrl>
+			<ExtendedData>
+				<Data name="description">
+					<value>name Hobbs Creek North 
+ folders Livestock 
+ descriptio  
+ altitude  
+ alt_mode  
+ time_begin  
+ time_end  
+ time_when</value>
+				</Data>
+				<Data name="folders">
+					<value>Livestock</value>
+				</Data>
+				<Data name="descriptio">
+				</Data>
+				<Data name="altitude">
+				</Data>
+				<Data name="alt_mode">
+				</Data>
+				<Data name="time_begin">
+				</Data>
+				<Data name="time_end">
+				</Data>
+				<Data name="time_when">
+				</Data>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							150.792098,-29.737122,0 150.79379,-29.737826,0 150.794546,-29.736806,0 150.793993,-29.736373,0 150.791901,-29.73587,0 150.791279,-29.735209,0 150.791002,-29.734486,0 150.791306,-29.733639,0 150.790744,-29.733126,0 150.79025,-29.732576,0 150.790669,-29.732175,0 150.79039,-29.731728,0 150.78847,-29.732939,0 150.787214,-29.733577,0 150.787584,-29.733722,0 150.788083,-29.733806,0 150.78877,-29.734132,0 150.789532,-29.734448,0 150.789752,-29.734574,0 150.789811,-29.735194,0 150.790079,-29.735622,0 150.79031,-29.735804,0 150.79061,-29.736265,0 150.79103,-29.73655,0 150.791218,-29.736652,0 150.791258,-29.737062,0 150.790961,-29.737339,0 150.790821,-29.737348,0 150.790607,-29.737498,0 150.791146,-29.738032,0 150.791486,-29.738653,0 150.791602,-29.738552,0 150.791648,-29.738254,0 150.792098,-29.737122,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Middle 1</name>
+			<description><![CDATA[description:  <br> name Middle 1 <br> folders Livestock <br> descriptio  <br> altitude  <br> alt_mode  <br> time_begin  <br> time_end  <br> time_when  <br>folders: Livestock<br>descriptio: <br>altitude: <br>alt_mode: <br>time_begin: <br>time_end: <br>time_when:]]></description>
+			<styleUrl>#poly-FFEA00-2201-0</styleUrl>
+			<ExtendedData>
+				<Data name="description">
+					<value>name Middle 1 
+ folders Livestock 
+ descriptio  
+ altitude  
+ alt_mode  
+ time_begin  
+ time_end  
+ time_when</value>
+				</Data>
+				<Data name="folders">
+					<value>Livestock</value>
+				</Data>
+				<Data name="descriptio">
+				</Data>
+				<Data name="altitude">
+				</Data>
+				<Data name="alt_mode">
+				</Data>
+				<Data name="time_begin">
+				</Data>
+				<Data name="time_end">
+				</Data>
+				<Data name="time_when">
+				</Data>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							150.809422,-29.758714,0 150.813514,-29.762037,0 150.814553,-29.75926,0 150.813402,-29.756878,0 150.812491,-29.756747,0 150.811961,-29.758534,0 150.810692,-29.75850399999999,0 150.809763,-29.758211,0 150.809422,-29.758714,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Middle 2</name>
+			<description><![CDATA[description:  <br> name Middle 2 <br> folders Livestock <br> descriptio  <br> altitude  <br> alt_mode  <br> time_begin  <br> time_end  <br> time_when  <br>folders: Livestock<br>descriptio: <br>altitude: <br>alt_mode: <br>time_begin: <br>time_end: <br>time_when:]]></description>
+			<styleUrl>#poly-FFEA00-2201-0</styleUrl>
+			<ExtendedData>
+				<Data name="description">
+					<value>name Middle 2 
+ folders Livestock 
+ descriptio  
+ altitude  
+ alt_mode  
+ time_begin  
+ time_end  
+ time_when</value>
+				</Data>
+				<Data name="folders">
+					<value>Livestock</value>
+				</Data>
+				<Data name="descriptio">
+				</Data>
+				<Data name="altitude">
+				</Data>
+				<Data name="alt_mode">
+				</Data>
+				<Data name="time_begin">
+				</Data>
+				<Data name="time_end">
+				</Data>
+				<Data name="time_when">
+				</Data>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							150.813514,-29.762037,0 150.809422,-29.758714,0 150.808523,-29.759748,0 150.809234,-29.762115,0 150.809258,-29.762491,0 150.810103,-29.762552,0 150.811952,-29.763472,0 150.812006,-29.763614,0 150.81222,-29.763841,0 150.813134,-29.763378,0 150.813224,-29.762744,0 150.813514,-29.762037,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Myall Creek 1</name>
+			<description><![CDATA[description:  <br> name Myall Creek 1 <br> folders Livestock <br> descriptio  <br> altitude  <br> alt_mode  <br> time_begin  <br> time_end  <br> time_when  <br>folders: Livestock<br>descriptio: <br>altitude: <br>alt_mode: <br>time_begin: <br>time_end: <br>time_when:]]></description>
+			<styleUrl>#poly-FFEA00-2201-0</styleUrl>
+			<ExtendedData>
+				<Data name="description">
+					<value>name Myall Creek 1 
+ folders Livestock 
+ descriptio  
+ altitude  
+ alt_mode  
+ time_begin  
+ time_end  
+ time_when</value>
+				</Data>
+				<Data name="folders">
+					<value>Livestock</value>
+				</Data>
+				<Data name="descriptio">
+				</Data>
+				<Data name="altitude">
+				</Data>
+				<Data name="alt_mode">
+				</Data>
+				<Data name="time_begin">
+				</Data>
+				<Data name="time_end">
+				</Data>
+				<Data name="time_when">
+				</Data>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							150.815944,-29.760496,0 150.819823,-29.763707,0 150.820722,-29.763087,0 150.821214,-29.762739,0 150.820988,-29.76232,0 150.820334,-29.762288,0 150.819722,-29.761873,0 150.819974,-29.760672,0 150.818546,-29.759315,0 150.817102,-29.76004,0 150.816586,-29.760121,0 150.815944,-29.760496,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Myall Creek 2</name>
+			<description><![CDATA[description:  <br> name Myall Creek 2 <br> folders Livestock <br> descriptio  <br> altitude  <br> alt_mode  <br> time_begin  <br> time_end  <br> time_when  <br>folders: Livestock<br>descriptio: <br>altitude: <br>alt_mode: <br>time_begin: <br>time_end: <br>time_when:]]></description>
+			<styleUrl>#poly-FFEA00-2201-0</styleUrl>
+			<ExtendedData>
+				<Data name="description">
+					<value>name Myall Creek 2 
+ folders Livestock 
+ descriptio  
+ altitude  
+ alt_mode  
+ time_begin  
+ time_end  
+ time_when</value>
+				</Data>
+				<Data name="folders">
+					<value>Livestock</value>
+				</Data>
+				<Data name="descriptio">
+				</Data>
+				<Data name="altitude">
+				</Data>
+				<Data name="alt_mode">
+				</Data>
+				<Data name="time_begin">
+				</Data>
+				<Data name="time_end">
+				</Data>
+				<Data name="time_when">
+				</Data>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							150.813898,-29.763394,0 150.815486,-29.763311,0 150.815952,-29.763443,0 150.817117,-29.764028,0 150.818098,-29.7653,0 150.819635,-29.763863,0 150.81558,-29.760638,0 150.814692,-29.761062,0 150.814016,-29.76261,0 150.813898,-29.763394,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Myall Creek 3</name>
+			<description><![CDATA[description:  <br> name Myall Creek 3 <br> folders Livestock <br> descriptio  <br> altitude  <br> alt_mode  <br> time_begin  <br> time_end  <br> time_when  <br>folders: Livestock<br>descriptio: <br>altitude: <br>alt_mode: <br>time_begin: <br>time_end: <br>time_when:]]></description>
+			<styleUrl>#poly-FFEA00-2201-0</styleUrl>
+			<ExtendedData>
+				<Data name="description">
+					<value>name Myall Creek 3 
+ folders Livestock 
+ descriptio  
+ altitude  
+ alt_mode  
+ time_begin  
+ time_end  
+ time_when</value>
+				</Data>
+				<Data name="folders">
+					<value>Livestock</value>
+				</Data>
+				<Data name="descriptio">
+				</Data>
+				<Data name="altitude">
+				</Data>
+				<Data name="alt_mode">
+				</Data>
+				<Data name="time_begin">
+				</Data>
+				<Data name="time_end">
+				</Data>
+				<Data name="time_when">
+				</Data>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							150.820722,-29.763087,0 150.819823,-29.763707,0 150.819635,-29.763863,0 150.818098,-29.7653,0 150.818727,-29.76622,0 150.819718,-29.767432,0 150.820807,-29.766552,0 150.821809,-29.766707,0 150.822684,-29.76585,0 150.821808,-29.765282,0 150.82194,-29.764453,0 150.821432,-29.763708,0 150.820722,-29.763087,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Myall Creek Lane</name>
+			<description><![CDATA[description:  <br> name Myall Creek Lane <br> folders Livestock <br> descriptio  <br> altitude  <br> alt_mode  <br> time_begin  <br> time_end  <br> time_when  <br>folders: Livestock<br>descriptio: <br>altitude: <br>alt_mode: <br>time_begin: <br>time_end: <br>time_when:]]></description>
+			<styleUrl>#poly-FFEA00-2201-0</styleUrl>
+			<ExtendedData>
+				<Data name="description">
+					<value>name Myall Creek Lane 
+ folders Livestock 
+ descriptio  
+ altitude  
+ alt_mode  
+ time_begin  
+ time_end  
+ time_when</value>
+				</Data>
+				<Data name="folders">
+					<value>Livestock</value>
+				</Data>
+				<Data name="descriptio">
+				</Data>
+				<Data name="altitude">
+				</Data>
+				<Data name="alt_mode">
+				</Data>
+				<Data name="time_begin">
+				</Data>
+				<Data name="time_end">
+				</Data>
+				<Data name="time_when">
+				</Data>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							150.815944,-29.760496,0 150.815772,-29.760134,0 150.815441,-29.760172,0 150.81558,-29.760638,0 150.819635,-29.763863,0 150.819823,-29.763707,0 150.815944,-29.760496,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Carbon Offest 1</name>
+			<description><![CDATA[description:  <br> name Carbon Offest 1 <br> folders Timbered Areas <br> descriptio  <br> altitude  <br> alt_mode  <br> time_begin  <br> time_end  <br> time_when  <br>folders: Timbered Areas<br>descriptio: <br>altitude: <br>alt_mode: <br>time_begin: <br>time_end: <br>time_when:]]></description>
+			<styleUrl>#poly-FFEA00-2201-0</styleUrl>
+			<ExtendedData>
+				<Data name="description">
+					<value>name Carbon Offest 1 
+ folders Timbered Areas 
+ descriptio  
+ altitude  
+ alt_mode  
+ time_begin  
+ time_end  
+ time_when</value>
+				</Data>
+				<Data name="folders">
+					<value>Timbered Areas</value>
+				</Data>
+				<Data name="descriptio">
+				</Data>
+				<Data name="altitude">
+				</Data>
+				<Data name="alt_mode">
+				</Data>
+				<Data name="time_begin">
+				</Data>
+				<Data name="time_end">
+				</Data>
+				<Data name="time_when">
+				</Data>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							150.824566,-29.754382,0 150.82389,-29.753669,0 150.822736,-29.752513,0 150.821137,-29.752205,0 150.820768,-29.75546,0 150.818735,-29.756374,0 150.818367,-29.758219,0 150.817603,-29.758741,0 150.816669,-29.759616,0 150.815772,-29.760134,0 150.815944,-29.760496,0 150.816586,-29.760121,0 150.817102,-29.76004,0 150.818546,-29.759315,0 150.819974,-29.760672,0 150.819722,-29.761873,0 150.820334,-29.762288,0 150.820988,-29.76232,0 150.821214,-29.762739,0 150.820722,-29.763087,0 150.821432,-29.763708,0 150.82194,-29.764453,0 150.821808,-29.765282,0 150.822684,-29.765841,0 150.821809,-29.766707,0 150.820807,-29.766552,0 150.819718,-29.767432,0 150.819239,-29.76752,0 150.825344,-29.772736,0 150.828626,-29.754217,0 150.825461,-29.754058,0 150.824566,-29.754382,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Carbon Offset 2</name>
+			<description><![CDATA[description:  <br> name Carbon Offset 2 <br> folders Timbered Areas <br> descriptio  <br> altitude  <br> alt_mode  <br> time_begin  <br> time_end  <br> time_when  <br>folders: Timbered Areas<br>descriptio: <br>altitude: <br>alt_mode: <br>time_begin: <br>time_end: <br>time_when:]]></description>
+			<styleUrl>#poly-FFEA00-2201-0</styleUrl>
+			<ExtendedData>
+				<Data name="description">
+					<value>name Carbon Offset 2 
+ folders Timbered Areas 
+ descriptio  
+ altitude  
+ alt_mode  
+ time_begin  
+ time_end  
+ time_when</value>
+				</Data>
+				<Data name="folders">
+					<value>Timbered Areas</value>
+				</Data>
+				<Data name="descriptio">
+				</Data>
+				<Data name="altitude">
+				</Data>
+				<Data name="alt_mode">
+				</Data>
+				<Data name="time_begin">
+				</Data>
+				<Data name="time_end">
+				</Data>
+				<Data name="time_when">
+				</Data>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							150.812288,-29.764173,0 150.81192,-29.764379,0 150.810831,-29.765308,0 150.809587,-29.764922,0 150.80838,-29.764847,0 150.805951,-29.765543,0 150.803477,-29.766411,0 150.804422,-29.76814,0 150.808392,-29.766696,0 150.809379,-29.766901,0 150.810002,-29.766678,0 150.812939,-29.764406,0 150.812288,-29.764173,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Carbon Offset 3</name>
+			<description><![CDATA[description:  <br> name Carbon Offset 3 <br> folders Timbered Areas <br> descriptio  <br> altitude  <br> alt_mode  <br> time_begin  <br> time_end  <br> time_when  <br>folders: Timbered Areas<br>descriptio: <br>altitude: <br>alt_mode: <br>time_begin: <br>time_end: <br>time_when:]]></description>
+			<styleUrl>#poly-FFEA00-2201-0</styleUrl>
+			<ExtendedData>
+				<Data name="description">
+					<value>name Carbon Offset 3 
+ folders Timbered Areas 
+ descriptio  
+ altitude  
+ alt_mode  
+ time_begin  
+ time_end  
+ time_when</value>
+				</Data>
+				<Data name="folders">
+					<value>Timbered Areas</value>
+				</Data>
+				<Data name="descriptio">
+				</Data>
+				<Data name="altitude">
+				</Data>
+				<Data name="alt_mode">
+				</Data>
+				<Data name="time_begin">
+				</Data>
+				<Data name="time_end">
+				</Data>
+				<Data name="time_when">
+				</Data>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							150.788169,-29.732734,0 150.786778,-29.73008400000001,0 150.786805,-29.729819,0 150.786274,-29.729125,0 150.786129,-29.728659,0 150.786252,-29.728077,0 150.786451,-29.727932,0 150.787309,-29.727443,0 150.788506,-29.72755,0 150.789348,-29.726698,0 150.789572,-29.726085,0 150.783899,-29.729348,0 150.784063,-29.729346,0 150.784308,-29.729466,0 150.784473,-29.729716,0 150.784902,-29.729889,0 150.785338,-29.730337,0 150.785895,-29.731181,0 150.786195,-29.731396,0 150.78656,-29.73184,0 150.786933,-29.73208199999999,0 150.787349,-29.732506,0 150.787461,-29.732683,0 150.787459,-29.73294,0 150.788169,-29.732734,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Carbon Offset 4</name>
+			<description><![CDATA[description:  <br> name Carbon Offset 4 <br> folders Timbered Areas <br> descriptio  <br> altitude  <br> alt_mode  <br> time_begin  <br> time_end  <br> time_when  <br>folders: Timbered Areas<br>descriptio: <br>altitude: <br>alt_mode: <br>time_begin: <br>time_end: <br>time_when:]]></description>
+			<styleUrl>#poly-FFEA00-2201-0</styleUrl>
+			<ExtendedData>
+				<Data name="description">
+					<value>name Carbon Offset 4 
+ folders Timbered Areas 
+ descriptio  
+ altitude  
+ alt_mode  
+ time_begin  
+ time_end  
+ time_when</value>
+				</Data>
+				<Data name="folders">
+					<value>Timbered Areas</value>
+				</Data>
+				<Data name="descriptio">
+				</Data>
+				<Data name="altitude">
+				</Data>
+				<Data name="alt_mode">
+				</Data>
+				<Data name="time_begin">
+				</Data>
+				<Data name="time_end">
+				</Data>
+				<Data name="time_when">
+				</Data>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							150.763384,-29.739622,0 150.764251,-29.73981,0 150.765161,-29.740008,0 150.766008,-29.740537,0 150.766539,-29.740616,0 150.767149,-29.741332,0 150.769457,-29.741988,0 150.769533,-29.741278,0 150.770057,-29.740908,0 150.770183,-29.739672,0 150.770673,-29.737361,0 150.771306,-29.737044,0 150.772121,-29.735334,0 150.772295,-29.735088,0 150.773003,-29.734701,0 150.773261,-29.734319,0 150.773652,-29.734049,0 150.773878,-29.733984,0 150.775417,-29.734166,0 150.774999,-29.733705,0 150.77443,-29.733472,0 150.775401,-29.732647,0 150.773882,-29.731298,0 150.77285,-29.730759,0 150.773046,-29.731695,0 150.77274,-29.732524,0 150.773062,-29.732818,0 150.773244,-29.733153,0 150.773523,-29.733363,0 150.773534,-29.733558,0 150.773099,-29.73387,0 150.772681,-29.734038,0 150.772643,-29.734271,0 150.772536,-29.734401,0 150.772111,-29.734562,0 150.771851,-29.734565,0 150.771768,-29.734458,0 150.77176,-29.733959,0 150.771569,-29.733812,0 150.770923,-29.732108,0 150.770612,-29.731735,0 150.770312,-29.731894,0 150.770108,-29.731796,0 150.770033,-29.731549,0 150.769486,-29.730664,0 150.769298,-29.730176,0 150.76933,-29.72992,0 150.768436,-29.73097,0 150.768724,-29.731116,0 150.768997,-29.731402,0 150.770214,-29.73209900000001,0 150.77078,-29.732772,0 150.77059,-29.73308400000001,0 150.771327,-29.735232,0 150.770399,-29.736923,0 150.77026,-29.737694,0 150.769846,-29.738586,0 150.769927,-29.739569,0 150.769691,-29.740132,0 150.769487,-29.74019699999999,0 150.769256,-29.74003,0 150.769117,-29.739569,0 150.768935,-29.737757,0 150.76912,-29.736681,0 150.768991,-29.736194,0 150.769026,-29.736045,0 150.768956,-29.735942,0 150.768366,-29.735569,0 150.767142,-29.73378,0 150.766837,-29.733562,0 150.766692,-29.733366,0 150.766542,-29.733203,0 150.766381,-29.733368,0 150.766595,-29.733464,0 150.766831,-29.733986,0 150.767432,-29.734749,0 150.767792,-29.735015,0 150.768376,-29.736068,0 150.768687,-29.73630500000001,0 150.768918,-29.73693400000001,0 150.768698,-29.737349,0 150.768687,-29.738918,0 150.768441,-29.738998,0 150.768076,-29.738751,0 150.767663,-29.738816,0 150.767405,-29.738471,0 150.766686,-29.738117,0 150.76652,-29.738145,0 150.766263,-29.73808500000001,0 150.766145,-29.737819,0 150.76526,-29.736901,0 150.765006,-29.73621,0 150.764687,-29.735279,0 150.763757,-29.736332,0 150.764213,-29.73670600000001,0 150.764669,-29.736841,0 150.764964,-29.73712,0 150.76497,-29.737367,0 150.765388,-29.737596,0 150.766086,-29.73828,0 150.767158,-29.738536,0 150.767593,-29.738993,0 150.768054,-29.738965,0 150.76891,-29.740263,0 150.769018,-29.740654,0 150.768519,-29.741404,0 150.768073,-29.741162,0 150.767682,-29.741018,0 150.76722,-29.741046,0 150.766553,-29.740537,0 150.765976,-29.740289,0 150.765552,-29.739907,0 150.763626,-29.739472,0 150.763384,-29.739622,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

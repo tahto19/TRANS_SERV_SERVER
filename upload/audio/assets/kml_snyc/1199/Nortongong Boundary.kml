@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Nortongong Boundary.kml</name>
+	<Style id="000">
+		<LineStyle id="1">
+			<color>ff00ffff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle id="2">
+			<color>002d5291</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="002">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#000</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#003</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="003">
+		<LineStyle id="1">
+			<color>ff00ffff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle id="2">
+			<color>002d5291</color>
+		</PolyStyle>
+	</Style>
+	<Placemark id="5">
+		<name>Nortongong Boundary</name>
+		<styleUrl>#002</styleUrl>
+		<ExtendedData>
+			<Data name="id">
+				<displayName>id</displayName>
+				<value>1</value>
+			</Data>
+			<Data name="hectares">
+				<displayName>hectares</displayName>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry id="4">
+			<Polygon id="6">
+				<outerBoundaryIs>
+					<LinearRing id="10">
+						<coordinates>
+							148.5076075453138,-31.12392828357769,0 148.4983584256342,-31.18126092495077,0 148.4823599483506,-31.17976387173253,0 148.4793602338599,-31.19430567242133,0 148.479860186275,-31.20777622911944,0 148.5113571884271,-31.21205219518734,0 148.515356807748,-31.19836842326881,0 148.5123570932573,-31.19708546816282,0 148.5146068791253,-31.18382724682351,0 148.5418542857489,-31.18746275038809,0 148.537854666428,-31.21675553454759,0 148.5291054991635,-31.21504525639531,0 148.5258558084653,-31.229154125855,0 148.5006082115022,-31.22680279386007,0 148.4896092583697,-31.2357802921559,0 148.463611732784,-31.23214664559691,0 148.4558624703497,-31.2144038941122,0 148.4463633744626,-31.20478293783952,0 148.4496130651608,-31.20478293783952,0 148.4538626606893,-31.17591419762307,0 148.4178660868012,-31.17163659838949,0 148.4176161105937,-31.16671712042498,0 148.4346144927075,-31.16778659389054,0 148.4308648495941,-31.14275775086344,0 148.4741107335013,-31.14938996828893,0 148.4776104004071,-31.13034784006579,0 148.4766104955768,-31.12542621894152,0 148.4801101624826,-31.12606818400137,0 148.4966085921813,-31.12243032456723,0 148.5076075453138,-31.12392828357769,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</MultiGeometry>
+	</Placemark>
+</Document>
+</kml>

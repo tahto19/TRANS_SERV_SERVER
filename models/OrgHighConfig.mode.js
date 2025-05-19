@@ -39,6 +39,12 @@ OrgHighConfig.init(
     },
   },
   {
+    indexes: [
+      {
+        name: "intent_id_idx",
+        fields: ["intent_id"],
+      },
+    ],
     timestamps: true,
     sequelize: Connection.sequelize,
     modelName: "OrgHighConfig",

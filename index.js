@@ -31,6 +31,8 @@ import {
 import TranscriptDetails from "./routes/api/TranscriptDetails/TranscriptDetails.js";
 import moment from "moment";
 import checker from "./checker.js";
+import Report from "./routes/api/report/report.js";
+// import { deleteData } from "./routes/api/DeleteData/DeleteData.js";
 const fastify = Fastify({
   logger: {
     transport: {
@@ -44,6 +46,7 @@ const fastify = Fastify({
 });
 // const { errorCodes } = fastify;
 const start = async () => {
+  console.log("hereeeee");
   try {
     // await fastify.register(csrf);
     await fastify.register(cBreaker, {
@@ -123,6 +126,12 @@ const start = async () => {
     fastify.register(Listener, {
       prefix: "/listener",
     });
+    fastify.register(Report, {
+      prefix: "report",
+    });
+    // fastify.register(deleteData, {
+    //   prefix: "/deleteData",
+    // });
     fastify.setErrorHandler((err, req, res) => {
       console.log(err);
       if (err.code === undefined) {
@@ -132,14 +141,14 @@ const start = async () => {
           .status(err.code)
           .send({ result: "error", message: err.message, err });
     });
-    console.log("here");
+
     fastify.listen(process.env.PORT, (err, address) => {
-      console.log(address);
+      console.log(err, process.env.PORT);
     });
     await Connection.auth();
     await Associations();
     await Connection.sync();
-    await createDefault();
+    // await createDefault();
   } catch (err) {
     console.log(err);
     // process.exit(1);

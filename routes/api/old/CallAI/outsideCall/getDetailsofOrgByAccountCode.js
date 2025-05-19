@@ -12,18 +12,19 @@ export const getDetailsofOrgByAccountCode = async (ac, sequence) => {
     });
 
     if (!getIDOfOrg.data.response) {
+      console.log(getIDOfOrg.data);
       throw new Error("Something went wrong");
     }
 
     let id = getIDOfOrg.data.details.id;
     let org = new getOrg();
     let a = await org.start(id);
-    console.log(sequence);
+
     let apikey = org.getApiByCallback(sequence);
     if (apikey === undefined) throw new Error("No API Found");
     let getAccess = await org.getAccess();
     let getOrgDetails = await org.getOrgDetails();
-    let getOrgServices = await org.getOrgServices(sequence);
+    let getOrgServices = await org.getOrgServices();
 
     // let getOrgServiceBundles = await org.getOrgServiceBundles();
 
@@ -34,7 +35,6 @@ export const getDetailsofOrgByAccountCode = async (ac, sequence) => {
       service: getOrgServices,
     };
   } catch (err) {
-    console.log(err);
     throw { error: err.message };
   }
 };

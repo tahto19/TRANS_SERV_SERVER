@@ -25,6 +25,7 @@ import {
   getIntentV2,
   getIntentDurationCall,
   checkIfContain,
+  PaginationListOftranscriptController,
 } from "../Controller/Result.controller.js";
 import { getString, getInt } from "../../Type/type.js";
 export const getTotalSchema = {
@@ -258,6 +259,20 @@ export const checkIfContainSchema = {
   schema: {
     queryString: {
       id: getInt,
+    },
+  },
+};
+export const PaginationListOftranscriptSchema = {
+  handler: PaginationListOftranscriptController,
+  schema: {
+    body: {
+      type: "object",
+      properties: {
+        id: getInt,
+        offset: getInt,
+        limit: getInt,
+        fiter: getString,
+      },
     },
   },
 };

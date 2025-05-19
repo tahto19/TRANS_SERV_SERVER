@@ -48,7 +48,43 @@ import OrgPiiFilter from "../../../../models/OrgPiiFilter.model.js";
 import OrgNotesConfig from "../../../../models/OrgNotesConfig.model.js";
 import OrgIntentMetrics from "../../../../models/OrgIntentMetrics.model.js";
 import OrgHighConfig from "../../../../models/OrgHighConfig.mode.js";
+import promptGenDetails from "../../../../models/promptGenDetails.model.js";
+import sendDurationCall from "../../CallAI/outsideCall/sendDurationCall.js";
+export const callBackForPrompt = async (req, res) => {
+  const { result, code } = req.body;
+  try {
+    if (result.length === 0) {
+      throw new Error("error");
+    }
 
+    let r = result[0];
+    if (
+      r &&
+      r.result &&
+      r.result.choices[0] &&
+      r.result.choices[0].message.tool_calls[0].function.arguments
+    ) {
+      let re = r.result.choices[0].message.tool_calls[0].function.arguments;
+      let a = JSON.parse(re);
+      if (a.results === undefined) throw new Error("no results from ai");
+      await promptGenDetails.update(
+        { results: a.results, status: "Done" },
+        { where: { code } }
+      );
+    } else {
+      throw new Error(
+        'The AI encountered an issue where it failed to retrieve the correct path, resulting in a "no result found" error.'
+      );
+    }
+    res.send(changeSend("done"));
+  } catch (err) {
+    await promptGenDetails.update(
+      { results: err.message, status: "Error" },
+      { where: { code } }
+    );
+    res.send(changeSend({ message: err.message }));
+  }
+};
 export const postCallBack = async (req, res) => {
   try {
     const { result, code } = req.body;
@@ -221,9 +257,6 @@ export const postCallBack = async (req, res) => {
               { where: { transcript_id } }
             );
           } else if (d === "transcript_seperation") {
-            console.log("#####################################");
-
-            console.log("#####################################");
             let a = JSON.parse(data);
             let converted = a.data === undefined ? a : a.data;
 
@@ -232,10 +265,8 @@ export const postCallBack = async (req, res) => {
             // if (r.length !== 0 && r !== null) {
             // }
           } else if (d === "text_analysis") {
-            console.log("KPI *********************");
             await saveKpi(data, transcript_id, agent);
           } else if (d === "compliance_analysis") {
-            console.log("Compliance *********************");
             let getResult = JSON.parse(data);
 
             await saveToDatabase(Compliance, {
@@ -290,12 +321,12 @@ export const getCallBack = async (req, res) => {
 };
 const sequencecalling = [2, 0, 1, 3];
 export const callbackv2 = async (req, res) => {
+  const { result, code } = req.body;
   try {
     var transcript;
     var saveTranscript;
     var changePosition;
 
-    const { result, code } = req.body;
     let getQuery = await Query.findOne({
       where: { code },
       include: [{ model: Queue }],
@@ -339,8 +370,7 @@ export const callbackv2 = async (req, res) => {
     });
 
     let agent = changeToJson(getAgent);
-    res.send(changeSend(agent));
-    return;
+
     var intentDetails;
     var transcript_id = jsonChange.transcript_id;
 
@@ -372,7 +402,7 @@ export const callbackv2 = async (req, res) => {
       //   await Query.update({ status: "Failed" }, { where: { code } });
       //   throw new Error("Failed");
       // }
-      if (v.status === "Failed") {
+      if (v.status === "Failed" || v.status === 3) {
         await Queue.update({ status: "Failed" }, { where: { id: queueId } });
         await Query.update({ status: "Failed" }, { where: { code } });
         throw new Error("Failed");
@@ -381,7 +411,7 @@ export const callbackv2 = async (req, res) => {
         v.result.choices === undefined
           ? "Speech-To-Text"
           : v.result.choices[0].message.tool_calls[0].function.name;
-
+      console.log(d);
       let data =
         v.result.text === undefined
           ? v.result.choices[0].message.tool_calls[0].function.arguments
@@ -404,7 +434,6 @@ export const callbackv2 = async (req, res) => {
               number_dialled: jsonChange.Queue.number_dialled,
             });
             transcript_id = saveTranscript.id;
-
             let a = await StoredSpeech.update(
               { transcript_id },
               { where: { queueId } }
@@ -430,6 +459,7 @@ export const callbackv2 = async (req, res) => {
             transcript_id,
             v.request_id
           );
+          console.log(intentDetails, "saving intent details here");
         } else if (d === "transcript_sentiment") {
           await saveSentiment(data, v.request_id, transcript_id);
         } else if (d === "compliance_analysis") {
@@ -437,9 +467,8 @@ export const callbackv2 = async (req, res) => {
         } else if (d === "text_analysis") {
           await saveKpi(data, transcript_id, agent);
         } else if (d === "suggestion_compliance_analysis") {
-          // let getResult = JSON.parse(data);
+          let getResult = JSON.parse(data);
           await saveNotes(data, transcript_id);
-
           // await saveToDatabase(Notes, {
           //   transcript_id: transcript_id,
           //   notes: getResult.suggestion,
@@ -463,6 +492,7 @@ export const callbackv2 = async (req, res) => {
     // console.log(configSend);
 
     // if all done will run this to create new prompt
+
     if (sequencecalling.length !== parseInt(jsonChange.query)) {
       let requestsDetails = await proccessRequestsDetails(
         jsonChange,
@@ -472,17 +502,53 @@ export const callbackv2 = async (req, res) => {
         queueId,
         intentDetails
       );
-      let findQueue = await Queue.findOne({
+
+      let findQueue = await Queue.findAll({
         where: {
           queue_id: jsonChange.Queue.queue_id,
           user_id: { [Op.not]: jsonChange.Queue.user_id },
         },
       });
+
+      if (
+        !requestsDetails.processFirstRequests &&
+        sequencecalling.length - 1 === parseInt(jsonChange.query)
+      ) {
+        if (findQueue.length !== 0) {
+          console.log("running done proccess");
+
+          for (let i = 0; i < findQueue.length; i++) {
+            let findQ = changeToJson(findQueue[i]);
+            let a = await processSameQueueId(
+              jsonChange.Queue.queue_id,
+              findQ.user_id,
+              findQ.user_group_id
+            );
+            await Queue.update(
+              { status: "Done" },
+              {
+                where: {
+                  queue_id: jsonChange.Queue.queue_id,
+                  user_id: findQ.user_id,
+                },
+              }
+            );
+          }
+        }
+
+        await sendDurationCall(agent, transcript_id, 1 + findQueue.length);
+      }
       res.send(changeSend(requestsDetails));
     } else {
-      {
-        if (findQueue !== null) {
-          let findQ = changeToJson(findQueue);
+      let findQueue = await Queue.findAll({
+        where: {
+          queue_id: jsonChange.Queue.queue_id,
+          user_id: { [Op.not]: jsonChange.Queue.user_id },
+        },
+      });
+      if (findQueue.length !== 0) {
+        for (let i = 0; i < findQueue.length; i++) {
+          let findQ = changeToJson(findQueue[i]);
           let a = await processSameQueueId(
             jsonChange.Queue.queue_id,
             findQ.user_id,
@@ -499,9 +565,13 @@ export const callbackv2 = async (req, res) => {
           );
         }
       }
+
+      await sendDurationCall(agent, transcript_id, 1 + findQueue.length);
     }
   } catch (err) {
     console.log(err);
+
+    await Query.update({ status: err.message }, { where: { code } });
     res.send({ result: "Error", err });
   }
 };
@@ -531,22 +601,25 @@ const proccessRequestsDetails = async (
       orgDetails.service,
       IntentDetailsData,
       t.content,
-      transcript_id
+      transcript_id,
+      tr_d.priority
     );
-    // if (
-    //   sequencecalling.length !== parseInt(tr_d.query) &&
-    //   processFirstRequests
-    // ) {
-    //   await saveToDatabase(Query, {
-    //     type: processFirstRequests.type,
-    //     status: "Proccessing",
-    //     code: processFirstRequests.response.code,
-    //     setup_id: processFirstRequests.response.id,
-    //     transcript_id: transcript_id,
-    //     queue_id: queueId,
-    //     query: parseInt(tr_d.query) + 1,
-    //   });
-    // }
+
+    if (
+      sequencecalling.length !== parseInt(tr_d.query) &&
+      processFirstRequests
+    ) {
+      await saveToDatabase(Query, {
+        priority: tr_d.priority,
+        type: processFirstRequests.type,
+        status: "Proccessing",
+        code: processFirstRequests.response.code,
+        setup_id: processFirstRequests.response.id,
+        transcript_id: transcript_id,
+        queue_id: queueId,
+        query: parseInt(tr_d.query) + 1,
+      });
+    }
     return {
       processFirstRequests,
       // details: orgDetails.details,
@@ -555,7 +628,7 @@ const proccessRequestsDetails = async (
       query: tr_d.query - 1,
     };
   } else {
-    throw err;
+    throw new Error("No Transcript found");
   }
 };
 
@@ -615,7 +688,8 @@ const callForAiProcess = async (
       orgDetails.service,
       IntentDetailsData,
       transcript,
-      transcript_id
+      transcript_id,
+      tr_d.priority
     );
 
     let saveQuery = await saveToDatabase(Query, {
@@ -640,19 +714,19 @@ const saveKpi = async (data, transcript_id, agent) => {
     where: { transcript_id },
     include: [{ model: IntentDetails, as: "main_intent" }],
   });
-
+  console.log();
   let main_intent = changeToJson(getMainIntent).main_intent.intent_name;
 
-  let kpi_of_mainIntent = agent.Group.GroupServiceConfigs[0].Intents.find(
-    (x) => x.OrgIntentsConf.intent === main_intent
-  );
+  let kpi_of_mainIntent;
+  agent.Group.GroupServiceConfigs[0].Intents.forEach((x) => {
+    if (x.OrgIntentsConf.intent === main_intent) {
+      kpi_of_mainIntent = x;
+      return false;
+    }
+  });
 
-  // let totalCSAT = 0;
-  // getKPIResult.data.forEach(async (x, i) => {
   let total = 0;
-  // console.log("##################");
-  // console.log(kpi_of_mainIntent);
-  // console.log("##################");
+
   for (let i = 0; i < getKPIResult.data.length; i++) {
     let x = getKPIResult.data[i];
 
@@ -726,10 +800,18 @@ const array_move = async (arr, old_index, new_index) => {
 const saveIntent = async (data, agent, transcript_id, request_id) => {
   try {
     const intent = filterIntents(data);
-    let IntentDetailsData = agent.Group.GroupServiceConfigs[0].Intents.find(
-      (x) => x.OrgIntentsConf.intent === intent.main_intent.name
-    );
+    let IntentDetailsData;
+    // let IntentDetailsData = agent.Group.GroupServiceConfigs[0].Intents.find(
+    //   (x) => x.OrgIntentsConf.intent === intent.main_intent.name
+    // );
+    agent.Group.GroupServiceConfigs[0].Intents.forEach((x) => {
+      if (x.OrgIntentsConf.intent === intent.main_intent.name) {
+        IntentDetailsData = x;
+        return false;
+      }
+    });
     // check if main intent have real intent in the database
+
     if (IntentDetailsData === undefined) {
       IntentDetailsData = agent.Group.GroupServiceConfigs[0].Intents.find(
         (x) => x.OrgIntentsConf.default === true

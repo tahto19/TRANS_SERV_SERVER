@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Redding Ag</name>
+	<description>Tyson Reddings&apos; Property</description>
+	<Style id="icon-ci-1-labelson">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>icon-1.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="poly-FFEA00-3479-0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#poly-FFEA00-3479-0-normal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#poly-FFEA00-3479-0-highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="poly-FFEA00-3479-0-highlight">
+		<LineStyle>
+			<color>ff00eaff</color>
+			<width>5.2185</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>0000eaff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-FFEA00-3479-0-normal">
+		<LineStyle>
+			<color>ff00eaff</color>
+			<width>3.479</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>0000eaff</color>
+		</PolyStyle>
+	</Style>
+	<Folder>
+		<name>Redding Ag - Property Boundary</name>
+		<Placemark>
+			<description>1</description>
+			<styleUrl>#poly-FFEA00-3479-0</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							121.860435,-33.477399,0 121.848901,-33.473776,0 121.844016,-33.469432,0 121.837989,-33.470164,0 121.837931,-33.472141,0 121.837872,-33.476216,0 121.837843,-33.485708,0 121.837931,-33.491344,0 121.837901,-33.495565,0 121.837872,-33.499981,0 121.837931,-33.50564,0 121.837931,-33.507494,0 121.837901,-33.510592,0 121.837901,-33.51608,0 121.844396,-33.516093,0 121.847526,-33.516056,0 121.847556,-33.515166,0 121.848697,-33.515105,0 121.84874,-33.516007,0 121.858,-33.516135,0 121.860465,-33.516172,0 121.860479,-33.513263,0 121.860479,-33.511056,0 121.860457,-33.50886,0 121.860501,-33.507238,0 121.860501,-33.506775,0 121.860428,-33.506506,0 121.860296,-33.506055,0 121.860384,-33.505726,0 121.860487,-33.504494,0 121.860457,-33.50292,0 121.860501,-33.499249,0 121.860472,-33.49809,0 121.860662,-33.4972,0 121.860472,-33.496224,0 121.860472,-33.495614,0 121.860428,-33.494126,0 121.860465,-33.491698,0 121.860465,-33.490393,0 121.860435,-33.487526,0 121.86045,-33.485976,0 121.860391,-33.4835,0 121.86045,-33.480376,0 121.860435,-33.477399,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+	</Folder>
+	<Folder>
+		<name>Redding Ag - XPS2M-M1 Weather Station + SMP</name>
+		<Placemark>
+			<name>REA-S01-01-XPS2M-M1</name>
+			<description><![CDATA[description:  <br> id 1 <br> Name REA-S01-01-XPS2M-M1 <br>id: 1<br>Name: REA-S01-01-XPS2M-M1]]></description>
+			<styleUrl>#icon-ci-1-labelson</styleUrl>
+			<ExtendedData>
+				<Data name="description">
+					<value>id 1 
+ Name REA-S01-01-XPS2M-M1</value>
+				</Data>
+				<Data name="id">
+					<value>1</value>
+				</Data>
+				<Data name="Name">
+					<value>REA-S01-01-XPS2M-M1</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>121.851564,-33.477993,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

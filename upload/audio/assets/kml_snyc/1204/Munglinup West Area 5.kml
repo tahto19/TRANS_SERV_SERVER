@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Munglinup West Area 5.kml</name>
+	<Schema name="Lawson_Munglinup_West_Farm_Outline" id="Lawson_Munglinup_West_Farm_Outline">
+		<SimpleField type="string" name="timestamp"></SimpleField>
+		<SimpleField type="string" name="begin"></SimpleField>
+		<SimpleField type="string" name="end"></SimpleField>
+		<SimpleField type="string" name="altitudeMode"></SimpleField>
+		<SimpleField type="int" name="tessellate"></SimpleField>
+		<SimpleField type="int" name="extrude"></SimpleField>
+		<SimpleField type="int" name="visibility"></SimpleField>
+		<SimpleField type="int" name="drawOrder"></SimpleField>
+		<SimpleField type="string" name="icon"></SimpleField>
+	</Schema>
+	<StyleMap id="stylemap_id4">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#style16</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#style5</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="style16">
+		<LineStyle>
+			<color>ff00ffff</color>
+			<width>2.5</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="style5">
+		<LineStyle>
+			<color>ff00ffff</color>
+			<width>2.5</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Placemark>
+		<name>Munglinup West Area 5</name>
+		<styleUrl>#stylemap_id4</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="#Lawson_Munglinup_West_Farm_Outline">
+				<SimpleData name="tessellate">1</SimpleData>
+				<SimpleData name="extrude">0</SimpleData>
+				<SimpleData name="visibility">-1</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						120.754229731665,-33.7268968426391,0 120.749223771903,-33.7248048144723,0 120.74291485803,-33.7202106301896,0 120.737790520741,-33.7163284964639,0 120.729576600644,-33.7101429047059,0 120.721155298039,-33.7036198827765,0 120.720343760465,-33.7036228853891,0 120.716554605948,-33.7262809577799,0 120.716939700506,-33.7269897103389,0 120.717553853955,-33.7277921653418,0 120.719741359797,-33.7301646414498,0 120.722819619188,-33.7302037512583,0 120.725250072055,-33.7307550030917,0 120.728993744708,-33.7316200256096,0 120.731827981826,-33.7321607748736,0 120.731589400522,-33.7376191177449,0 120.744475642895,-33.7422670809516,0 120.746917228699,-33.7431165773226,0 120.74839297627,-33.7430148165585,0 120.75009909189,-33.7426960749696,0 120.758538121363,-33.7285491751705,0 120.754229731665,-33.7268968426391,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+</Document>
+</kml>

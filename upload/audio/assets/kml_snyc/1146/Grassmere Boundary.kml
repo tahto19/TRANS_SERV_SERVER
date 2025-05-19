@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Grassmere Boundary.kml</name>
+	<StyleMap id="poly-FFEA00-2401-0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#poly-FFEA00-2401-0-normal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#poly-FFEA00-2401-0-highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="poly-FFEA00-2401-0-highlight">
+		<LineStyle>
+			<color>ff00eaff</color>
+			<width>3.6015</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>0000eaff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-FFEA00-2401-0-normal">
+		<LineStyle>
+			<color>ff00eaff</color>
+			<width>2.401</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>0000eaff</color>
+		</PolyStyle>
+	</Style>
+	<Folder>
+		<name>GrassmereKMZ Grassmere.kmz</name>
+		<open>1</open>
+		<Placemark>
+			<name>Barragunda</name>
+			<description><![CDATA[Name: Barragunda<br>description: <br>timestamp: <br>begin: <br>end: <br>altitudeMode: <br>tessellate: 1<br>extrude: <br>visibility: -1<br>drawOrder: <br>icon:]]></description>
+			<styleUrl>#poly-FFEA00-2401-0</styleUrl>
+			<ExtendedData>
+				<Data name="Name">
+					<value>Barragunda</value>
+				</Data>
+				<Data name="description">
+				</Data>
+				<Data name="timestamp">
+				</Data>
+				<Data name="begin">
+				</Data>
+				<Data name="end">
+				</Data>
+				<Data name="altitudeMode">
+				</Data>
+				<Data name="tessellate">
+					<value>1</value>
+				</Data>
+				<Data name="extrude">
+				</Data>
+				<Data name="visibility">
+					<value>-1</value>
+				</Data>
+				<Data name="drawOrder">
+				</Data>
+				<Data name="icon">
+				</Data>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							146.372756,-35.197469,0 146.374698,-35.186429,0 146.359761,-35.184442,0 146.361351,-35.174172,0 146.355325,-35.173337,0 146.347018,-35.182901,0 146.341824,-35.212243,0 146.350728,-35.213332,0 146.352557,-35.202483,0 146.385602,-35.206349,0 146.386868,-35.19905,0 146.372756,-35.197469,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Barragunda 2</name>
+			<description><![CDATA[Name: Barragunda 2<br>description: <br>timestamp: <br>begin: <br>end: <br>altitudeMode: <br>tessellate: 1<br>extrude: <br>visibility: -1<br>drawOrder: <br>icon:]]></description>
+			<styleUrl>#poly-FFEA00-2401-0</styleUrl>
+			<ExtendedData>
+				<Data name="Name">
+					<value>Barragunda 2</value>
+				</Data>
+				<Data name="description">
+				</Data>
+				<Data name="timestamp">
+				</Data>
+				<Data name="begin">
+				</Data>
+				<Data name="end">
+				</Data>
+				<Data name="altitudeMode">
+				</Data>
+				<Data name="tessellate">
+					<value>1</value>
+				</Data>
+				<Data name="extrude">
+				</Data>
+				<Data name="visibility">
+					<value>-1</value>
+				</Data>
+				<Data name="drawOrder">
+				</Data>
+				<Data name="icon">
+				</Data>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							146.374684,-35.186455,0 146.392512,-35.173003,0 146.387499,-35.167801,0 146.373353,-35.163255,0 146.369441,-35.16207,0 146.360744,-35.16104,0 146.357391,-35.159202,0 146.355771,-35.17343,0 146.361407,-35.174255,0 146.359806,-35.184448,0 146.374684,-35.186455,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Buckingbong</name>
+			<description><![CDATA[Name: Buckingbong<br>description: <br>timestamp: <br>begin: <br>end: <br>altitudeMode: <br>tessellate: 1<br>extrude: <br>visibility: -1<br>drawOrder: <br>icon:]]></description>
+			<styleUrl>#poly-FFEA00-2401-0</styleUrl>
+			<ExtendedData>
+				<Data name="Name">
+					<value>Buckingbong</value>
+				</Data>
+				<Data name="description">
+				</Data>
+				<Data name="timestamp">
+				</Data>
+				<Data name="begin">
+				</Data>
+				<Data name="end">
+				</Data>
+				<Data name="altitudeMode">
+				</Data>
+				<Data name="tessellate">
+					<value>1</value>
+				</Data>
+				<Data name="extrude">
+				</Data>
+				<Data name="visibility">
+					<value>-1</value>
+				</Data>
+				<Data name="drawOrder">
+				</Data>
+				<Data name="icon">
+				</Data>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							146.332333,-35.153821,0 146.357719,-35.156981,0 146.358716,-35.14918,0 146.363069,-35.144833,0 146.372184,-35.138776,0 146.384425,-35.140307,0 146.391398,-35.142757,0 146.395766,-35.1432,0 146.397594,-35.135945,0 146.404849,-35.1367,0 146.405784,-35.132094,0 146.398605,-35.131314,0 146.390784,-35.130348,0 146.370791,-35.120754,0 146.400973,-35.094576,0 146.386884,-35.086384,0 146.382411,-35.092521,0 146.371788,-35.086648,0 146.365627,-35.092967,0 146.351203,-35.104173,0 146.343934,-35.111325,0 146.32871,-35.128601,0 146.348278,-35.139888,0 146.332333,-35.153821,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Calooli</name>
+			<description><![CDATA[Name: Calooli<br>description: <br>timestamp: <br>begin: <br>end: <br>altitudeMode: <br>tessellate: 1<br>extrude: <br>visibility: -1<br>drawOrder: <br>icon:]]></description>
+			<styleUrl>#poly-FFEA00-2401-0</styleUrl>
+			<ExtendedData>
+				<Data name="Name">
+					<value>Calooli</value>
+				</Data>
+				<Data name="description">
+				</Data>
+				<Data name="timestamp">
+				</Data>
+				<Data name="begin">
+				</Data>
+				<Data name="end">
+				</Data>
+				<Data name="altitudeMode">
+				</Data>
+				<Data name="tessellate">
+					<value>1</value>
+				</Data>
+				<Data name="extrude">
+				</Data>
+				<Data name="visibility">
+					<value>-1</value>
+				</Data>
+				<Data name="drawOrder">
+				</Data>
+				<Data name="icon">
+				</Data>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							146.374314,-35.117756,0 146.40723,-35.12234,0 146.407381,-35.120981,0 146.412258,-35.121447,0 146.415349,-35.103017,0 146.401153,-35.094778,0 146.374314,-35.117756,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Grassmere</name>
+			<description><![CDATA[Name: Grassmere<br>description: <br>timestamp: <br>begin: <br>end: <br>altitudeMode: <br>tessellate: 1<br>extrude: <br>visibility: -1<br>drawOrder: <br>icon:]]></description>
+			<styleUrl>#poly-FFEA00-2401-0</styleUrl>
+			<ExtendedData>
+				<Data name="Name">
+					<value>Grassmere</value>
+				</Data>
+				<Data name="description">
+				</Data>
+				<Data name="timestamp">
+				</Data>
+				<Data name="begin">
+				</Data>
+				<Data name="end">
+				</Data>
+				<Data name="altitudeMode">
+				</Data>
+				<Data name="tessellate">
+					<value>1</value>
+				</Data>
+				<Data name="extrude">
+				</Data>
+				<Data name="visibility">
+					<value>-1</value>
+				</Data>
+				<Data name="drawOrder">
+				</Data>
+				<Data name="icon">
+				</Data>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							146.02656,-35.456686,0 146.039721,-35.458497,0 146.040506,-35.455381,0 146.048646,-35.456344,0 146.05638,-35.416088,0 146.077842,-35.419056,0 146.075108,-35.433571,0 146.112198,-35.438404,0 146.113465,-35.431388,0 146.127844,-35.432649,0 146.134093,-35.426371,0 146.122833,-35.409225,0 146.120133,-35.405084,0 146.122645,-35.396244,0 146.117402,-35.390051,0 146.112063,-35.386861,0 146.109805,-35.382818,0 146.107158,-35.374814,0 146.103451,-35.371275,0 146.095909,-35.369263,0 146.09542,-35.371333,0 146.091356,-35.366678,0 146.057699,-35.362056,0 146.056442,-35.367195,0 146.039416,-35.364899,0 146.031067,-35.4128,0 146.034449,-35.413231,0 146.02656,-35.456686,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

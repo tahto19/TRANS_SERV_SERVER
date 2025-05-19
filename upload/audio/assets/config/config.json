@@ -1,0 +1,47 @@
+{
+  "MeasurementsList": [
+    {
+      "type": "Air Delta T",
+      "active": true,
+      "name": "Air Delta",
+      "specialCharacters": "°C"
+    },
+    {
+      "type": "Air Humidity",
+      "active": true,
+      "name": "Air Humidity",
+      "specialCharacters": "%"
+    },
+    {
+      "type": "Air Temperature",
+      "active": true,
+      "name": "Air Temperature",
+      "specialCharacters": "°C"
+    },
+    {
+      "type": "Air Wind Direction",
+      "active": false,
+      "name": "Air Wind Direction",
+      "compass": true
+    },
+    {
+      "type": "Air Wind Gust",
+      "active": true,
+      "name": "Air Wind Gust",
+      "specialCharacters": "km/h"
+    },
+    {
+      "type": "Air Wind Speed",
+      "active": true,
+      "name": "Air Wind Speed",
+      "specialCharacters": "km/h"
+    },
+    {
+      "type": "Rainfall",
+      "active": true,
+      "name": "Rainfall ",
+      "specialCharacters": "mm"
+    }
+  ],
+  "MeasuermentTimeRange": 60
+}

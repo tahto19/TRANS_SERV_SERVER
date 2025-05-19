@@ -51,6 +51,10 @@ StoredSpeech.init(
     modelName: "StoredSpeech",
     paranoid: true,
     tableName: process.env.DB_PREFIX + "_stored_speech",
+    indexes: [
+      { name: "transcript_id_idx", fields: ["transcript_id"] },
+      { name: "queueId_idx", fields: ["queueId"] },
+    ],
   }
 );
 export default StoredSpeech;

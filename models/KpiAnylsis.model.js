@@ -48,6 +48,12 @@ KpiAnylsis.init(
     setup_id: { type: DataTypes.INTEGER(11), allowNull: false },
   },
   {
+    indexes: [
+      {
+        name: "transcript_id_idx",
+        fields: ["transcript_id"],
+      },
+    ],
     timestamps: false,
     sequelize: Connection.sequelize,
     modelName: "KpiAnylsis",

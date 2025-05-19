@@ -8,6 +8,7 @@ import {
   speechTotextSchema,
   generatePromptSchema,
   getGeneratePromptSchema,
+  reRunFailedSuccessSchema,
 } from "./schema/CallAI.schema.js";
 
 // import { intentAnylsisSchema } from "./schema/CallAI.schema.js";
@@ -28,6 +29,7 @@ export const CallAI = (app, opts, done) => {
   app.post("/newintentAnylsis", newintentAnylsisSchema);
   app.post("/generatePromptSchema", generatePromptSchema);
   app.get("/generatePromptSchema", getGeneratePromptSchema);
+  app.get("/rerun", reRunFailedSuccessSchema);
   // app.post("/callback", newintentAnylsisSchema);
   done();
 };

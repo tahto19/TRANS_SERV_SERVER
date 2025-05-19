@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Anthony Teale - Boundary.kml</name>
+	<StyleMap id="poly-FFEA00-1690-0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#poly-FFEA00-1690-0-normal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#poly-FFEA00-1690-0-highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="poly-FFEA00-1690-0-highlight">
+		<LineStyle>
+			<color>ff00eaff</color>
+			<width>2.535</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>0000eaff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-FFEA00-1690-0-normal">
+		<LineStyle>
+			<color>ff00eaff</color>
+			<width>1.69</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>0000eaff</color>
+		</PolyStyle>
+	</Style>
+	<Folder>
+		<name>Anthony Teale - Boundary</name>
+		<open>1</open>
+		<Placemark>
+			<description><![CDATA[description:  <br> fid 15 <br> id 1 <br> name  <br> folders  <br> descriptio  <br> altitude  <br> alt_mode  <br> time_begin  <br> time_end  <br> time_when  <br> layer Teale Farming <br> path C:/Users/khodges/ownCloud - khodges@192.168.101.10/Customers/1177 - Lake King Group/Lake King QGIS/Teale Farming.shp <br>fid: 15<br>id: 1<br>folders: <br>descriptio: <br>altitude: <br>alt_mode: <br>time_begin: <br>time_end: <br>time_when: <br>layer: Teale Farming<br>path: C:/Users/khodges/ownCloud - khodges@192.168.101.10/Customers/1177 - Lake King Group/Lake King QGIS/Teale Farming.shp]]></description>
+			<styleUrl>#poly-FFEA00-1690-0</styleUrl>
+			<ExtendedData>
+				<Data name="description">
+					<value>fid 15 
+ id 1 
+ name  
+ folders  
+ descriptio  
+ altitude  
+ alt_mode  
+ time_begin  
+ time_end  
+ time_when  
+ layer Teale Farming 
+ path C:/Users/khodges/ownCloud - khodges@192.168.101.10/Customers/1177 - Lake King Group/Lake King QGIS/Teale Farming.shp</value>
+				</Data>
+				<Data name="fid">
+					<value>15</value>
+				</Data>
+				<Data name="id">
+					<value>1</value>
+				</Data>
+				<Data name="folders">
+				</Data>
+				<Data name="descriptio">
+				</Data>
+				<Data name="altitude">
+				</Data>
+				<Data name="alt_mode">
+				</Data>
+				<Data name="time_begin">
+				</Data>
+				<Data name="time_end">
+				</Data>
+				<Data name="time_when">
+				</Data>
+				<Data name="layer">
+					<value>Teale Farming</value>
+				</Data>
+				<Data name="path">
+					<value>C:/Users/khodges/ownCloud - khodges@192.168.101.10/Customers/1177 - Lake King Group/Lake King QGIS/Teale Farming.shp</value>
+				</Data>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							119.79815,-33.305902,0 119.796366,-33.305168,0 119.7856,-33.305364,0 119.767871,-33.31842,0 119.754121,-33.305706,0 119.720887,-33.33074,0 119.705147,-33.342667,0 119.726504,-33.357232,0 119.735631,-33.363341,0 119.749908,-33.373065,0 119.770036,-33.386746,0 119.778052,-33.377952,0 119.787999,-33.366762,0 119.795137,-33.358894,0 119.803563,-33.34951,0 119.811608,-33.345991,0 119.803241,-33.327733,0 119.79581,-33.311794,0 119.79815,-33.305902,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

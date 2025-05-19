@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Extent.kml</name>
+	<Placemark>
+		<name>Extent.kml</name>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<!-- <coordinates>
+						116.074279,-30.599216,0 116.297248,-30.744325,0  
+					</coordinates> -->
+					<coordinates>
+						116.036274,-30.507198,0 116.805922,-31.003090
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+</Document>
+</kml>

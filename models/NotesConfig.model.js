@@ -38,6 +38,12 @@ NotesConfig.init(
     },
   },
   {
+    indexes: [
+      {
+        name: "intent_id_idx",
+        fields: ["intent_id"],
+      },
+    ],
     sequelize: Connection.sequelize,
     modelName: "notesConfig",
     paranoid: true,

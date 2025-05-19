@@ -32,7 +32,9 @@ export const processingData = async (
   service,
   intent,
   transcript,
-  transcript_id
+  transcript_id,
+  priority,
+  language
 ) => {
   let type = "";
   try {
@@ -43,6 +45,7 @@ export const processingData = async (
       headers: {
         Authorization: "Bearer " + process.env.OPEN_AIAPI_KEY,
       },
+      priority: priority,
       data: [],
     };
 
@@ -50,7 +53,6 @@ export const processingData = async (
       agent.Group.GroupServiceConfigs[0].Intents[0].intent === undefined
         ? changeToJson(agent)
         : agent;
-
     let getNotesConfigDetails = serviceBundle.sort(
       (a, b) => a.sequence - b.sequence
     );
@@ -95,7 +97,7 @@ export const processingData = async (
           }
         } else {
           if (getAiModule.name === "Text Analysis") {
-            let prompt = await kpiPromt(
+            let prompt = kpiPromt(
               intent,
               transcript,
               agentDetails.Group.GroupServiceConfigs[0].metricRange
@@ -105,7 +107,7 @@ export const processingData = async (
           } else if (getAiModule.name === "Sentiment Analysis") {
             data.data.push(sentimental_config(transcript));
           } else if (getAiModule.name === "Compliance") {
-            console.log(agentDetails);
+            console.log();
             let prompt = compliance_config(
               transcript,
               intent.OrgIntentsConf.script,
@@ -126,8 +128,7 @@ export const processingData = async (
               transcript,
               createPrompt.explanation,
               createPrompt.intent_prompt,
-              null,
-              forChatGpt.chatgpt_version
+              chatgpt.chatgpt_version
             );
             console.log(prompt);
             data.data.push(prompt);
@@ -160,7 +161,7 @@ export const processingData = async (
 
     await er.start(data, apikey);
     let response = await er.start_call(apikey);
-
+    // return data;
     return { response, type, data };
   } catch (err) {
     console.log(err);
@@ -188,6 +189,7 @@ const notes_propmt_with_config = async (tranascript, callflow, intent) => {
 };
 const pii_filter_prompt = async (transcript_id, agent) => {
   try {
+    console.log(transcript_id, "here#############");
     let getT = await Transcripts.findOne({
       where: { id: transcript_id },
       include: [
@@ -298,27 +300,24 @@ export const createPromptIntent = async (intents) => {
 
   return response;
 };
-export const kpiPromt = async (kpi_array, transcript, metric_range) => {
+export const kpiPromt = (kpi_array, transcript, metric_range) => {
   let array = [];
   let prompt = kpi_prompt;
-  let r = null;
+
   for (let i = 0; i < kpi_array.OrgIntentsConf.OrgIntentMetrics.length; i++) {
-    if (r === null) {
-      r = await GroupServiceConfig.findOne({
-        where: { organization_id: kpi_array.OrgIntentsConf.organization_id },
-        order: [["chatgpt_version", "DESC"]],
-        attributes: ["chatgpt_version"],
-      });
+    if (kpi_array.OrgIntentsConf.OrgIntentMetrics[i].active) {
+      console.log(kpi_array.OrgIntentsConf.OrgIntentMetrics[i]);
+      const kpi_name =
+        kpi_array.OrgIntentsConf.OrgIntentMetrics[i].call_quality;
+      const kpi_explanation =
+        kpi_array.OrgIntentsConf.OrgIntentMetrics[i].metric_desc;
+      array.push("\n" + "- " + kpi_name + ":if " + kpi_explanation);
     }
-    const kpi_name = kpi_array.OrgIntentsConf.OrgIntentMetrics[i].call_quality;
-    const kpi_explanation =
-      kpi_array.OrgIntentsConf.OrgIntentMetrics[i].metric_desc;
-    array.push("\n" + "- " + kpi_name + ":if " + kpi_explanation);
   }
   prompt = prompt.replace("[kpi_array]", array.join(""));
   prompt = prompt.replace("[transcript]", `"${transcript}"`);
-
   prompt = prompt.replace("[metricrange]", metric_range);
-  let config = kpi_config(prompt, r);
+  let config = kpi_config(prompt);
+
   return config;
 };

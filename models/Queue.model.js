@@ -10,13 +10,16 @@ Queue.init(
       primaryKey: true,
       autoIncrement: true,
       allowNull: false,
-      type: DataTypes.INTEGER(11),
+      type: DataTypes.INTEGER(255),
     },
     account_code: { allowNull: true, type: DataTypes.TEXT },
 
-    queue_id: { allowNull: false, type: DataTypes.INTEGER(11) },
-    user_id: { allowNull: true, type: DataTypes.INTEGER(11) },
-    user_group_id: { allowNull: false, type: DataTypes.INTEGER(11) },
+    queue_id: { allowNull: false, type: DataTypes.INTEGER(255) },
+    user_id: {
+      allowNull: true,
+      type: DataTypes.INTEGER(255),
+    },
+    user_group_id: { allowNull: false, type: DataTypes.INTEGER(255) },
     queue_date: { allowNull: false, type: DataTypes.DATE },
     callerid: {
       type: DataTypes.STRING(255),
@@ -34,7 +37,7 @@ Queue.init(
     filepath: { allowNull: true, type: DataTypes.TEXT },
     status: {
       allowNull: false,
-      type: DataTypes.STRING(11),
+      type: DataTypes.STRING(255),
       defaultValue: "Created",
     },
     createdAt: {

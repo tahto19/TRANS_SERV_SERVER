@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="Yerritup_Creek" id="Yerritup_Creek">
+	<SimpleField name="timestamp" type="string"></SimpleField>
+	<SimpleField name="begin" type="string"></SimpleField>
+	<SimpleField name="end" type="string"></SimpleField>
+	<SimpleField name="altitudeMode" type="string"></SimpleField>
+	<SimpleField name="tessellate" type="int"></SimpleField>
+	<SimpleField name="extrude" type="int"></SimpleField>
+	<SimpleField name="visibility" type="int"></SimpleField>
+	<SimpleField name="drawOrder" type="int"></SimpleField>
+	<SimpleField name="icon" type="string"></SimpleField>
+</Schema>
+<Folder><name>Yerritup_Creek</name>
+  <Placemark>
+	<name>BLock 1</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Yerritup_Creek">
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>121.065376072115,-33.7199759493145 121.027670691979,-33.7104918639341 121.020019733977,-33.7351646101832 121.025341794989,-33.737057564139 121.066053770423,-33.7375542206879 121.065376072115,-33.7199759493145</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>Block 2</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Yerritup_Creek">
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>121.066826589402,-33.7432223373368 121.073463049528,-33.7437163867845 121.087549354627,-33.7447625974396 121.104185935888,-33.7448252199732 121.105811951302,-33.7414352970794 121.107225363738,-33.736303641724 121.109115641164,-33.7320228803724 121.115389693352,-33.7303770121645 121.116952058346,-33.7433113290641 121.125288610917,-33.7416260419972 121.132763332645,-33.7424669991791 121.14070506952,-33.7437111162832 121.151141663144,-33.7434960600969 121.155971242845,-33.740898902676 121.155167437339,-33.7346767994144 121.15291617183,-33.7292072024195 121.149122589542,-33.7228571332436 121.147538914734,-33.7168170533983 121.141404950601,-33.7151104758637 121.127946092752,-33.7140536571257 121.128634007703,-33.702484253576 121.120740128503,-33.7031355146745 121.120460700858,-33.7041283193141 121.110748046756,-33.7045080617957 121.110619622957,-33.7029737087392 121.102705695079,-33.7015907078801 121.099888609073,-33.7048720139387 121.07608272292,-33.7070963718711 121.076874482717,-33.7040589932996 121.07248510571,-33.7006507706637 121.076000806942,-33.6999396583072 121.079842558284,-33.6951510333894 121.087042045859,-33.6919375532886 121.086088850086,-33.6866702872334 121.074137776122,-33.6830226330761 121.06628815684,-33.6867462528766 121.066429367986,-33.7213346605888 121.066826589402,-33.7432223373368</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>Untitled Polygon</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Yerritup_Creek">
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>121.114762817183,-33.7745340921296 121.127204301069,-33.7717427505156 121.131715695695,-33.7689776099068 121.131932376552,-33.7562560910043 121.103934895409,-33.7551558413123 121.104493585253,-33.7738370023868 121.114762817183,-33.7745340921296</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>Block 3</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Yerritup_Creek">
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>120.893136523338,-33.7415294377327 120.861344575529,-33.7418410873856 120.858249800566,-33.7452349245086 120.856818860185,-33.7556845918454 120.863359478837,-33.7660746854263 120.854774749745,-33.7688280104687 120.850925139568,-33.7758993382796 120.854658437211,-33.7825832643185 120.8598904648,-33.7904275598403 120.857443680608,-33.8188763264096 120.862262509793,-33.8216398337922 120.90140622578,-33.8101055506081 120.897179915956,-33.7479879969549 120.900180916663,-33.7441910488097 120.893136523338,-33.7415294377327</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>Block 4</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Yerritup_Creek">
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>120.837847370132,-33.8217078962247 120.830874520091,-33.819146347481 120.804711862192,-33.8226058879127 120.797460525485,-33.8263306319298 120.79694236854,-33.8343460841107 120.8289263287,-33.8293972678283 120.842614299029,-33.8278932574643 120.837847370132,-33.8217078962247</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+</Folder>
+</Document></kml>

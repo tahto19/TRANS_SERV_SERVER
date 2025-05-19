@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Beaumont_south.kml</name>
+	<Style id="poly-0288D1-2601-89-nodesc-normal0">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ffd18802</color>
+			<width>2.601</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>59d18802</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="poly-0288D1-2601-89-nodesc0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#poly-0288D1-2601-89-nodesc-normal0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#poly-0288D1-2601-89-nodesc-highlight0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="poly-0288D1-2601-89-nodesc-highlight0">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ffd18802</color>
+			<width>3.9015</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>59d18802</color>
+		</PolyStyle>
+	</Style>
+	<Placemark>
+		<name>Beaumont 1</name>
+		<styleUrl>#poly-0288D1-2601-89-nodesc0</styleUrl>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<tessellate>1</tessellate>
+					<coordinates>
+						122.7168892,-33.5146669,0 122.7000664,-33.5264021,0 122.7383469,-33.5594524,0 122.7551697,-33.5470064,0 122.7168892,-33.5146669,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+</Document>
+</kml>

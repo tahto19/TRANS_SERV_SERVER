@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Hallerton.kml</name>
+	<Schema name="4725__1a5cc2da90f34a7d8a61eebc137248dc__lot_epsg4283gdba00000009gdbtable" id="4725__1a5cc2da90f34a7d8a61eebc137248dc__lot_epsg4283gdba00000009gdbtable">
+		<SimpleField type="float" name="fid"></SimpleField>
+		<SimpleField type="float" name="OBJECTID"></SimpleField>
+		<SimpleField type="int" name="controllingauthorityoid"></SimpleField>
+		<SimpleField type="int" name="planoid"></SimpleField>
+		<SimpleField type="int" name="plannumber"></SimpleField>
+		<SimpleField type="string" name="planlabel"></SimpleField>
+		<SimpleField type="int" name="itstitlestatus"></SimpleField>
+		<SimpleField type="int" name="itslotid"></SimpleField>
+		<SimpleField type="int" name="stratumlevel"></SimpleField>
+		<SimpleField type="int" name="hasstratum"></SimpleField>
+		<SimpleField type="int" name="classsubtype"></SimpleField>
+		<SimpleField type="string" name="lotnumber"></SimpleField>
+		<SimpleField type="string" name="sectionnumber"></SimpleField>
+		<SimpleField type="float" name="planlotarea"></SimpleField>
+		<SimpleField type="string" name="planlotareaunits"></SimpleField>
+		<SimpleField type="string" name="startdate"></SimpleField>
+		<SimpleField type="string" name="enddate"></SimpleField>
+		<SimpleField type="string" name="lastupdate"></SimpleField>
+		<SimpleField type="int" name="msoid"></SimpleField>
+		<SimpleField type="int" name="centroidid"></SimpleField>
+		<SimpleField type="string" name="shapeuuid"></SimpleField>
+		<SimpleField type="string" name="changetype"></SimpleField>
+		<SimpleField type="string" name="lotidstring"></SimpleField>
+		<SimpleField type="string" name="processstate"></SimpleField>
+		<SimpleField type="string" name="urbanity"></SimpleField>
+		<SimpleField type="float" name="Shape__Length"></SimpleField>
+		<SimpleField type="float" name="Shape__Area"></SimpleField>
+		<SimpleField type="string" name="cadid"></SimpleField>
+		<SimpleField type="string" name="createdate"></SimpleField>
+		<SimpleField type="string" name="modifieddate"></SimpleField>
+		<SimpleField type="string" name="lganame"></SimpleField>
+		<SimpleField type="string" name="councilname"></SimpleField>
+		<SimpleField type="string" name="abscode"></SimpleField>
+		<SimpleField type="string" name="ltocode"></SimpleField>
+		<SimpleField type="string" name="vgcode"></SimpleField>
+		<SimpleField type="string" name="wbcode"></SimpleField>
+	</Schema>
+	<Folder>
+		<name>Titles</name>
+		<Placemark>
+			<name>56/DP752570</name>
+			<Style>
+				<LineStyle>
+					<color>ff0000ff</color>
+				</LineStyle>
+				<PolyStyle>
+					<fill>0</fill>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#4725__1a5cc2da90f34a7d8a61eebc137248dc__lot_epsg4283gdba00000009gdbtable">
+					<SimpleData name="fid">20</SimpleData>
+					<SimpleData name="OBJECTID">20</SimpleData>
+					<SimpleData name="controllingauthorityoid">2</SimpleData>
+					<SimpleData name="planoid">192586</SimpleData>
+					<SimpleData name="plannumber">752570</SimpleData>
+					<SimpleData name="planlabel">DP752570</SimpleData>
+					<SimpleData name="itstitlestatus">1</SimpleData>
+					<SimpleData name="itslotid">3234994</SimpleData>
+					<SimpleData name="stratumlevel">0</SimpleData>
+					<SimpleData name="hasstratum">1</SimpleData>
+					<SimpleData name="classsubtype">1</SimpleData>
+					<SimpleData name="lotnumber">56</SimpleData>
+					<SimpleData name="startdate">2011/11/23 18:40:02</SimpleData>
+					<SimpleData name="enddate">3000/01/01 00:00:00</SimpleData>
+					<SimpleData name="lastupdate">2011/11/23 18:40:05</SimpleData>
+					<SimpleData name="msoid">956523</SimpleData>
+					<SimpleData name="shapeuuid">58f24261-daf8-388a-aab2-7f5c801178c4</SimpleData>
+					<SimpleData name="changetype">M</SimpleData>
+					<SimpleData name="lotidstring">56//DP752570</SimpleData>
+					<SimpleData name="urbanity">R</SimpleData>
+					<SimpleData name="Shape__Length">15898.728772201</SimpleData>
+					<SimpleData name="Shape__Area">11855710.352167</SimpleData>
+					<SimpleData name="cadid">102663962</SimpleData>
+					<SimpleData name="createdate">19931025000000</SimpleData>
+					<SimpleData name="modifieddate">20111123183242</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								148.296960963,-31.7159452939999,0 148.293607287,-31.7333125389999,0 148.258955697,-31.734939582,0 148.254930628,-31.735117741,0 148.258680127,-31.714453132,0 148.281930342,-31.71768401,0 148.283617407,-31.708162364,0 148.290593992,-31.7082149999999,0 148.29841683,-31.708274037,0 148.296960963,-31.7159452939999,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+		<Placemark>
+			<name>76/DP752570</name>
+			<Style>
+				<LineStyle>
+					<color>ff0000ff</color>
+				</LineStyle>
+				<PolyStyle>
+					<fill>0</fill>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#4725__1a5cc2da90f34a7d8a61eebc137248dc__lot_epsg4283gdba00000009gdbtable">
+					<SimpleData name="fid">56</SimpleData>
+					<SimpleData name="OBJECTID">56</SimpleData>
+					<SimpleData name="controllingauthorityoid">2</SimpleData>
+					<SimpleData name="planoid">192586</SimpleData>
+					<SimpleData name="plannumber">752570</SimpleData>
+					<SimpleData name="planlabel">DP752570</SimpleData>
+					<SimpleData name="itstitlestatus">1</SimpleData>
+					<SimpleData name="itslotid">3234995</SimpleData>
+					<SimpleData name="stratumlevel">0</SimpleData>
+					<SimpleData name="hasstratum">1</SimpleData>
+					<SimpleData name="classsubtype">1</SimpleData>
+					<SimpleData name="lotnumber">76</SimpleData>
+					<SimpleData name="startdate">2011/11/23 18:40:02</SimpleData>
+					<SimpleData name="enddate">3000/01/01 00:00:00</SimpleData>
+					<SimpleData name="lastupdate">2011/11/23 18:40:05</SimpleData>
+					<SimpleData name="msoid">773701</SimpleData>
+					<SimpleData name="shapeuuid">3614fb08-30a0-35ce-9903-7d9bd1e4a385</SimpleData>
+					<SimpleData name="changetype">M</SimpleData>
+					<SimpleData name="lotidstring">76//DP752570</SimpleData>
+					<SimpleData name="urbanity">R</SimpleData>
+					<SimpleData name="Shape__Length">6960.96388969886</SimpleData>
+					<SimpleData name="Shape__Area">602101.870430014</SimpleData>
+					<SimpleData name="cadid">102664937</SimpleData>
+					<SimpleData name="createdate">19931025000000</SimpleData>
+					<SimpleData name="modifieddate">20111123183242</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								148.296570672,-31.733173391,0 148.293607287,-31.7333125389999,0 148.296960963,-31.7159452939999,0 148.29841683,-31.708274037,0 148.298800963,-31.7082769319999,0 148.2985647,-31.710914252,0 148.298553773,-31.711036296,0 148.296570672,-31.733173391,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+		<Placemark>
+			<name>24/DP752570</name>
+			<Style>
+				<LineStyle>
+					<color>ff0000ff</color>
+				</LineStyle>
+				<PolyStyle>
+					<fill>0</fill>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#4725__1a5cc2da90f34a7d8a61eebc137248dc__lot_epsg4283gdba00000009gdbtable">
+					<SimpleData name="fid">234</SimpleData>
+					<SimpleData name="OBJECTID">234</SimpleData>
+					<SimpleData name="controllingauthorityoid">2</SimpleData>
+					<SimpleData name="planoid">192586</SimpleData>
+					<SimpleData name="plannumber">752570</SimpleData>
+					<SimpleData name="planlabel">DP752570</SimpleData>
+					<SimpleData name="itstitlestatus">1</SimpleData>
+					<SimpleData name="itslotid">2417529</SimpleData>
+					<SimpleData name="stratumlevel">0</SimpleData>
+					<SimpleData name="hasstratum">1</SimpleData>
+					<SimpleData name="classsubtype">1</SimpleData>
+					<SimpleData name="lotnumber">24</SimpleData>
+					<SimpleData name="startdate">2011/11/23 18:40:02</SimpleData>
+					<SimpleData name="enddate">3000/01/01 00:00:00</SimpleData>
+					<SimpleData name="lastupdate">2011/11/23 18:40:05</SimpleData>
+					<SimpleData name="msoid">2903864</SimpleData>
+					<SimpleData name="shapeuuid">826da134-52c3-30d9-a33d-95a9438f9cba</SimpleData>
+					<SimpleData name="changetype">M</SimpleData>
+					<SimpleData name="lotidstring">24//DP752570</SimpleData>
+					<SimpleData name="urbanity">R</SimpleData>
+					<SimpleData name="Shape__Length">9857.7984309378</SimpleData>
+					<SimpleData name="Shape__Area">3547263.68708937</SimpleData>
+					<SimpleData name="cadid">108074059</SimpleData>
+					<SimpleData name="createdate">19931025000000</SimpleData>
+					<SimpleData name="modifieddate">20111123183242</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								148.283617407,-31.708162364,0 148.281930342,-31.71768401,0 148.258680127,-31.714453132,0 148.260374409,-31.705115453,0 148.278326015,-31.707471115,0 148.283592281,-31.708162166,0 148.283617407,-31.708162364,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								148.283694909,-31.707724957,0 148.283681239,-31.7078020829999,0 148.283626317,-31.707801671,0 148.278387938,-31.707114277,0 148.278673334,-31.705606464,0 148.279050726,-31.703612687,0 148.284309615,-31.70425561,0 148.283694909,-31.707724957,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Coorong_1.kml</name>
+	<Style id="poly-E65100-2801-76-nodesc-highlight">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff0051e6</color>
+			<width>4.2015</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4c0051e6</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-E65100-2801-76-nodesc-normal">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff0051e6</color>
+			<width>2.801</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4c0051e6</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="poly-E65100-2801-76-nodesc">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#poly-E65100-2801-76-nodesc-normal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#poly-E65100-2801-76-nodesc-highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Placemark>
+		<name>Phils</name>
+		<styleUrl>#poly-E65100-2801-76-nodesc</styleUrl>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<tessellate>1</tessellate>
+					<coordinates>
+						122.724184,-33.4464432,0 122.7632799,-33.4777701,0 122.7736225,-33.4696441,0 122.7614346,-33.4591901,0 122.7710476,-33.451313,0 122.7453413,-33.4306144,0 122.7351284,-33.4386366,0 122.724184,-33.4464432,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+</Document>
+</kml>

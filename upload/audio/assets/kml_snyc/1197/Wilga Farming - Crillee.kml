@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Wilga Farming - Crillee.kml</name>
+	<Style id="05">
+		<LineStyle id="1">
+			<color>ff01ffb7</color>
+			<width>0.92</width>
+		</LineStyle>
+		<PolyStyle id="2">
+			<color>00393cc4</color>
+		</PolyStyle>
+	</Style>
+	<Style id="050">
+		<LineStyle id="1">
+			<color>ff00ffff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle id="2">
+			<color>00393cc4</color>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="051">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#05</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#056</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="052">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#050</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#055</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="053">
+		<LineStyle id="1">
+			<color>ff01ffb7</color>
+			<width>0.92</width>
+		</LineStyle>
+		<PolyStyle id="2">
+			<color>00393cc4</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="054">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#053</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#057</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="055">
+		<LineStyle id="1">
+			<color>ff00ffff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle id="2">
+			<color>00393cc4</color>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="056">
+		<LineStyle id="1">
+			<color>ff01ffb7</color>
+			<width>0.92</width>
+		</LineStyle>
+		<PolyStyle id="2">
+			<color>00393cc4</color>
+		</PolyStyle>
+	</Style>
+	<Style id="057">
+		<LineStyle id="1">
+			<color>ff01ffb7</color>
+			<width>0.92</width>
+		</LineStyle>
+		<PolyStyle id="2">
+			<color>00393cc4</color>
+		</PolyStyle>
+	</Style>
+	<Folder id="3">
+		<name>Crillee - Property Boundary</name>
+		<open>1</open>
+		<Style id="05">
+			<LineStyle id="1">
+				<color>ff01ffb7</color>
+				<colorMode>normal</colorMode>
+				<width>0.92</width>
+			</LineStyle>
+			<PolyStyle id="2">
+				<color>00393cc4</color>
+				<colorMode>normal</colorMode>
+				<fill>1</fill>
+				<outline>1</outline>
+			</PolyStyle>
+		</Style>
+		<Placemark id="5">
+			<styleUrl>#052</styleUrl>
+			<ExtendedData>
+				<Data name="name">
+					<displayName>name</displayName>
+					<value>Cardew - Cropping 1 (250ha)</value>
+				</Data>
+				<Data name="folders">
+					<displayName>folders</displayName>
+					<value>Cardew Mapping; Land Use Areas (Post-Transformation); Cropping Areas (897.8ha)</value>
+				</Data>
+				<Data name="descriptio">
+					<displayName>descriptio</displayName>
+				</Data>
+				<Data name="altitude">
+					<displayName>altitude</displayName>
+				</Data>
+				<Data name="alt_mode">
+					<displayName>alt_mode</displayName>
+				</Data>
+				<Data name="time_begin">
+					<displayName>time_begin</displayName>
+				</Data>
+				<Data name="time_end">
+					<displayName>time_end</displayName>
+				</Data>
+				<Data name="time_when">
+					<displayName>time_when</displayName>
+				</Data>
+				<Data name="OBJECTID">
+					<displayName>OBJECTID</displayName>
+				</Data>
+				<Data name="Shape__Are">
+					<displayName>Shape__Are</displayName>
+				</Data>
+				<Data name="Shape__Len">
+					<displayName>Shape__Len</displayName>
+				</Data>
+				<Data name="cadid">
+					<displayName>cadid</displayName>
+				</Data>
+				<Data name="changetype">
+					<displayName>changetype</displayName>
+				</Data>
+				<Data name="classsubty">
+					<displayName>classsubty</displayName>
+				</Data>
+				<Data name="controllin">
+					<displayName>controllin</displayName>
+				</Data>
+				<Data name="createdate">
+					<displayName>createdate</displayName>
+				</Data>
+				<Data name="enddate">
+					<displayName>enddate</displayName>
+				</Data>
+				<Data name="fid">
+					<displayName>fid</displayName>
+				</Data>
+				<Data name="hasstratum">
+					<displayName>hasstratum</displayName>
+				</Data>
+				<Data name="itslotid">
+					<displayName>itslotid</displayName>
+				</Data>
+				<Data name="itstitlest">
+					<displayName>itstitlest</displayName>
+				</Data>
+				<Data name="lastupdate">
+					<displayName>lastupdate</displayName>
+				</Data>
+				<Data name="lotidstrin">
+					<displayName>lotidstrin</displayName>
+				</Data>
+				<Data name="lotnumber">
+					<displayName>lotnumber</displayName>
+				</Data>
+				<Data name="modifiedda">
+					<displayName>modifiedda</displayName>
+				</Data>
+				<Data name="msoid">
+					<displayName>msoid</displayName>
+				</Data>
+				<Data name="planlabel">
+					<displayName>planlabel</displayName>
+				</Data>
+				<Data name="plannumber">
+					<displayName>plannumber</displayName>
+				</Data>
+				<Data name="planoid">
+					<displayName>planoid</displayName>
+				</Data>
+				<Data name="shapeuuid">
+					<displayName>shapeuuid</displayName>
+				</Data>
+				<Data name="startdate">
+					<displayName>startdate</displayName>
+				</Data>
+				<Data name="stratumlev">
+					<displayName>stratumlev</displayName>
+				</Data>
+				<Data name="urbanity">
+					<displayName>urbanity</displayName>
+				</Data>
+				<Data name="id">
+					<displayName>id</displayName>
+				</Data>
+				<Data name="hectares">
+					<displayName>hectares</displayName>
+				</Data>
+				<Data name="layer">
+					<displayName>layer</displayName>
+					<value>Wilga Farming - Cardew - Property Boundary</value>
+				</Data>
+				<Data name="path">
+					<displayName>path</displayName>
+					<value>C:\Users\khodges\ownCloud - khodges@192.168.101.10\Sales\Leads\Wilga Farming\Project 1\Nortongong Aggregation\KMZ and Mapping\Wilga Farming - Cardew - Property Boundary.shp|layername=Wilga Farming - Cardew - Property Boundary</value>
+				</Data>
+			</ExtendedData>
+			<Polygon id="6">
+				<outerBoundaryIs>
+					<LinearRing id="10">
+						<coordinates>
+							148.296978821792,-31.90240707142716,0 148.2987703666529,-31.90744553342998,0 148.2999236939052,-31.91066318414611,0 148.2991753270645,-31.9107731873097,0 148.2985921840719,-31.91098219295819,0 148.2954691293776,-31.91195021292793,0 148.2918406840896,-31.91314922354292,0 148.290505934573,-31.91346822373541,0 148.2879919403378,-31.91316022356797,0 148.2818106246151,-31.91240121875409,0 148.2811367704903,-31.91217021604615,0 148.2780655507287,-31.91006916479022,0 148.2766141726135,-31.90804507004115,0 148.2757848136905,-31.90696700140519,0 148.2745537340393,-31.90573490749913,0 148.2724285017992,-31.90362270813995,0 148.2715343492104,-31.90281961962274,0 148.2659361764805,-31.90125742736588,0 148.2657385736342,-31.90121013047078,0 148.265554599024,-31.90122538594806,0 148.2648767562872,-31.90101065078233,0 148.2645338701804,-31.90090233651932,0 148.2644200786384,-31.90086352509875,0 148.2640879597217,-31.90076389037342,0 148.2639836548309,-31.90071761697094,0 148.2638209390387,-31.90066537128086,0 148.2635981571768,-31.9005948561839,0 148.262990553859,-31.90037836454917,0 148.262789992171,-31.90027393999684,0 148.2625722235495,-31.90007228136741,0 148.2623928871877,-31.89987433219745,0 148.2623916996531,-31.89986989527962,0 148.262354498,-31.9002643319999,0 148.2620649650654,-31.9000618658931,0 148.2620633287029,-31.9000634573457,0 148.2619567946217,-31.90013894153828,0 148.2618055481993,-31.9001540911909,0 148.2616396835953,-31.90013457551509,0 148.261419009297,-31.90004656094348,0 148.2611380258049,-31.89985352419616,0 148.2609262704138,-31.89970652849215,0 148.2608684242537,-31.89959815907282,0 148.2607657197181,-31.89949715185536,0 148.2605587465145,-31.89943624973431,0 148.2602522819271,-31.899245971522,0 148.25994356333,-31.89904180276036,0 148.2598302544302,-31.89893385275424,0 148.2596405269972,-31.89881164540889,0 148.259587299362,-31.89871007979476,0 148.2596296562228,-31.8986434193152,0 148.2596872585405,-31.89860057670629,0 148.259836185554,-31.89859805617055,0 148.2599395011217,-31.89857556033528,0 148.2598968418583,-31.89854572934219,0 148.2595911232057,-31.8986077633855,0 148.2595229826922,-31.89868669544049,0 148.2592617894653,-31.89857287922394,0 148.2586697534754,-31.89817037674542,0 148.2581820434327,-31.89780997098343,0 148.2577726932652,-31.89748319866336,0 148.2581013564228,-31.8974129543222,0 148.2581533761609,-31.89732654998646,0 148.257551884,-31.8969059409999,0 148.257513805,-31.896855186,0 148.257486349,-31.896838666,0 148.257455064,-31.8968267079999,0 148.257422749,-31.8968161129999,0 148.257392191,-31.896803679,0 148.257366196,-31.8967861909999,0 148.257339034,-31.89674796,0 148.257322039,-31.89669889,0 148.257310618,-31.896643744,0 148.257300175,-31.8965871999999,0 148.25728612,-31.896533989,0 148.257251868,-31.8964251039999,0 148.257218809,-31.896313063,0 148.257181483,-31.896203882,0 148.257134449,-31.896103539,0 148.257072258,-31.896018032,0 148.257017434,-31.895966131,0 148.256955941,-31.895918944,0 148.256889652,-31.895877028,0 148.256820504,-31.895840939,0 148.256750334,-31.8958112409999,0 148.256652411,-31.895785399,0 148.256548546,-31.89577474,0 148.256441273,-31.895773468,0 148.256333105,-31.8957758069999,0 148.256226586,-31.895775978,0 148.256175143257,-31.8957759623284,0 148.2560307208971,-31.8958015620606,0 148.2558119963378,-31.8958418078454,0 148.2555774296069,-31.89578262357513,0 148.255495072,-31.8957772859999,0 148.255354383,-31.8957639029999,0 148.255214123,-31.8957457779999,0 148.255074912,-31.8957224709999,0 148.25493736,-31.895693518,0 148.254768693,-31.895650221,0 148.254600843,-31.895598939,0 148.254435458,-31.895539382,0 148.254274178,-31.895471238,0 148.254118671,-31.8953941839999,0 148.254046941,-31.89535408699991,0 148.253976341,-31.895311751,0 148.253906735,-31.895267621,0 148.253837973,-31.89522218199989,0 148.253769909,-31.895175884,0 148.253701156,-31.8951277379999,0 148.25363319,-31.895078355,0 148.253566077,-31.895027781,0 148.253514606,-31.8949875509999,0 148.253827476,-31.8933198739999,0 148.253247193,-31.892759687,0 148.251615865,-31.891184869,0 148.241287908,-31.8884580979999,0 148.240878272,-31.8883499469999,0 148.239991807,-31.8881159069999,0 148.238593076,-31.887431131,0 148.2391433657535,-31.88739923354493,0 148.2389802277565,-31.887328584405,0 148.238331601763,-31.88702554680295,0 148.2375136310395,-31.88659982929928,0 148.2365683193666,-31.8861366091865,0 148.2358108543353,-31.8857704228505,0 148.235366719019,-31.88553628827116,0 148.2348073698379,-31.88544676481461,0 148.2337020404612,-31.88528703186063,0 148.2331627724939,-31.88519614449124,0 148.2319340575713,-31.88496715136991,0 148.2312171062082,-31.88484923080451,0 148.2305547003184,-31.88474566287334,0 148.2295729045102,-31.88453821336827,0 148.22961862437,-31.88444442719857,0 148.229606662699,-31.88444245733803,0 148.2295751080693,-31.88452605721221,0 148.2288744297674,-31.88417043404789,0 148.2289324456189,-31.88386681617114,0 148.2291330431818,-31.88267585774287,0 148.2291565907061,-31.88252928469501,0 148.2294855304562,-31.8826366219895,0 148.2304100145278,-31.88295231045277,0 148.2307532276322,-31.88306784019333,0 148.230787885815,-31.88304904347942,0 148.2309980105915,-31.8821459281788,0 148.2311645435652,-31.88143417974057,0 148.231834881,-31.877445168,0 148.2394497,-31.878421632,0 148.243241733,-31.875955695,0 148.243578375,-31.8757367759999,0 148.255553813,-31.876995786,0 148.257580506,-31.87570837,0 148.2593316855712,-31.87459597314132,0 148.2595226081251,-31.87442421652631,0 148.2595900333169,-31.87413904721115,0 148.2598670657839,-31.87270551871358,0 148.2602034170616,-31.87054058252199,0 148.2609528670363,-31.86650303074863,0 148.26129949,-31.864471653,0 148.261384425,-31.8639738649999,0 148.267845787,-31.8714426889999,0 148.2676657620584,-31.87172924751437,0 148.2678343162009,-31.87189706916952,0 148.2679588175256,-31.87202623340851,0 148.268123635,-31.871763878,0 148.279587049,-31.885014675,0 148.2819013357473,-31.88345536465911,0 148.2860092541626,-31.88577708961576,0 148.2905329947017,-31.88406869969349,0 148.290461765,-31.8838648199999,0 148.290521894,-31.8837985669999,0 148.290583755,-31.883733704,0 148.290647221,-31.883670329,0 148.290712173,-31.883608567,0 148.290778516,-31.883548526,0 148.290828418,-31.883506019,0 148.290879495,-31.883464821,0 148.290931154,-31.883424294,0 148.290982849,-31.883383787,0 148.291034016,-31.8833426689999,0 148.291125816,-31.883265283,0 148.291216388,-31.8831863729999,0 148.291306789,-31.8831072739999,0 148.29139807,-31.883029296,0 148.291491269,-31.882953775,0 148.291553012,-31.8829077889999,0 148.291616146,-31.88286349,0 148.291679342,-31.882819324,0 148.291741238,-31.8827736969999,0 148.291800526,-31.882725068,0 148.291880207,-31.8826551669999,0 148.291959968,-31.8825822539999,0 148.29203488,-31.882505388,0 148.292099985,-31.882423618,0 148.2921232661103,-31.88238311922354,0 148.2921647913049,-31.88228538502696,0 148.292179818,-31.882232722,0 148.292187913,-31.8821202239999,0 148.292186739,-31.8820032529999,0 148.292188406,-31.8818865059999,0 148.292205016,-31.88177468,0 148.29224643,-31.881659897,0 148.292302688,-31.8815489849999,0 148.292363849,-31.8814393559999,0 148.292419982,-31.881328426,0 148.292461117,-31.8812136249999,0 148.292476338,-31.881141483,0 148.292486852,-31.88106813,0 148.292495199,-31.8809942139999,0 148.292503884,-31.8809203229999,0 148.292515457,-31.88084707,0 148.292541461,-31.880714107,0 148.292570227,-31.8805810179999,0 148.292603573,-31.8804491139999,0 148.292643275,-31.8803197459999,0 148.292691142,-31.88019424100001,0 148.292754284,-31.8800711919999,0 148.292830093,-31.8799536299999,0 148.2928441014176,-31.87993354353328,0 148.2932808451472,-31.87726708975836,0 148.29325961,-31.877180811,0 148.293233606,-31.877078577,0 148.293201775,-31.876972676,0 148.293164189,-31.87686787000001,0 148.293126478,-31.8767632679999,0 148.293094332,-31.8766580409999,0 148.293073357,-31.876551298,0 148.293062743,-31.876439499,0 148.293059104,-31.8763252699999,0 148.293063551,-31.87621081,0 148.293077212,-31.8760983019999,0 148.29310119,-31.8759899189999,0 148.293140112,-31.875877475,0 148.293191896,-31.875767201,0 148.293253855,-31.8756604659999,0 148.293323291,-31.875558698,0 148.293397504,-31.8754632939999,0 148.293484544,-31.875370436,0 148.293581642,-31.875285673,0 148.293684987,-31.875206154,0 148.293790727,-31.8751290549999,0 148.293895049,-31.875051543,0 148.29398806,-31.874989306,0 148.294087811,-31.874932062,0 148.29418541,-31.874873904,0 148.294271993,-31.8748089589999,0 148.294338712,-31.8747313489999,0 148.294368419,-31.874672403,0 148.294390202,-31.8746086049999,0 148.29440795,-31.874542219,0 148.294425493,-31.8744754909999,0 148.294446683,-31.8744106899999,0 148.294501812,-31.8742761679999,0 148.294562436,-31.8741434469999,0 148.294627836,-31.8740127249999,0 148.294697281,-31.8738842,0 148.294770068,-31.873758067,0 148.294915778,-31.873532274,0 148.295077049,-31.8733146559999,0 148.295250233,-31.8731046469999,0 148.29543169,-31.8729016839999,0 148.295617801,-31.8727051669999,0 148.295720116,-31.87259849599999,0 148.295823452,-31.8724919319999,0 148.295929424,-31.872388363,0 148.296039655,-31.872290682,0 148.296155756,-31.872201795,0 148.29626941,-31.8721334529999,0 148.296390236,-31.87207534,0 148.296513365,-31.872020552,0 148.296633939,-31.8719621609999,0 148.296747083,-31.8718932639999,0 148.296838211,-31.87182261,0 148.296924893,-31.871745699,0 148.297009056,-31.87166522,0 148.297092599,-31.871583863,0 148.297177417,-31.8715043079999,0 148.297446776,-31.87124981199999,0 148.297711544,-31.870988333,0 148.297978796,-31.870730564,0 148.298255622,-31.870487156,0 148.298549085,-31.8702688029999,0 148.298714103,-31.870160572,0 148.298882302,-31.8700554329999,0 148.299053999,-31.869956408,0 148.299229532,-31.8698665169999,0 148.299409224,-31.869788773,0 148.299628572,-31.869711369,0 148.299855505,-31.869647034,0 148.300086937,-31.8695974899999,0 148.300319766,-31.8695644759999,0 148.300550921,-31.869549739,0 148.300765428,-31.8695570359999,0 148.300980654,-31.8695837929999,0 148.301196004,-31.8696230639999,0 148.301410925,-31.869667974,0 148.301624814,-31.8697116009999,0 148.30183527,-31.8697544579999,0 148.302044947,-31.8698015369999,0 148.302254077,-31.8698513849999,0 148.302462929,-31.8699025609999,0 148.302671726,-31.869953629,0 148.302846524,-31.8700037999999,0 148.303021215,-31.870062138,0 148.303195743,-31.8701172839999,0 148.3032274572415,-31.87012466518428,0 148.3034311935239,-31.87000240454784,0 148.3035770303302,-31.86982953920159,0 148.3037083869958,-31.86962792616029,0 148.3037639244991,-31.86949914135458,0 148.304392413062,-31.86945746554957,0 148.306792026139,-31.86804732990357,0 148.3069749693906,-31.86816999774286,0 148.3084678825185,-31.86928143506211,0 148.309270719807,-31.86983639767328,0 148.3103347798021,-31.87002087529149,0 148.3113539211847,-31.87061301018288,0 148.3118295185255,-31.87063842476367,0 148.3137630437619,-31.87065117531221,0 148.3140249716735,-31.87086276510341,0 148.314101402,-31.8708776899999,0 148.3141615024161,-31.87097305694336,0 148.3145310928535,-31.87127161834134,0 148.3146861148724,-31.87171842755592,0 148.3154235573732,-31.87208700230222,0 148.318247224,-31.873448138,0 148.32143624,-31.8711265929999,0 148.323996568,-31.872269151,0 148.328117427,-31.878254319,0 148.328384526,-31.8790122419999,0 148.3283086783749,-31.87903175257927,0 148.3283387744841,-31.87911712512343,0 148.328415714248,-31.87933120409742,0 148.328506248,-31.8793576959999,0 148.328856166,-31.880350654,0 148.3300304141881,-31.88368288961236,0 148.3300879428485,-31.88380456653909,0 148.3301764190261,-31.8840972164351,0 148.330966385,-31.886338951,0 148.3319755077518,-31.88920256463613,0 148.3321106153177,-31.88948336421534,0 148.3321864696731,-31.88979757768839,0 148.3321861095725,-31.88980019484942,0 148.3329201996384,-31.89188334114571,0 148.3331298343832,-31.89240186747438,0 148.3331438559593,-31.89251801645074,0 148.333318687,-31.8930141389999,0 148.3332072069343,-31.8930427899008,0 148.3332099610055,-31.89306560349513,0 148.3330440102486,-31.89327203737641,0 148.3317384562745,-31.89360578802354,0 148.3294607112046,-31.89416176915198,0 148.3284276465044,-31.89442348391361,0 148.3267443497728,-31.8948155933391,0 148.326478807442,-31.89481827404672,0 148.3263759409228,-31.89479844882951,0 148.325688833,-31.8949750369999,0 148.3233987629093,-31.89556359480445,0 148.3231739260253,-31.89567531582276,0 148.320373728337,-31.8964083946412,0 148.3197624431307,-31.89657291015385,0 148.319643843362,-31.89659984250657,0 148.3194736930155,-31.89660494587345,0 148.3193591062004,-31.89660180476764,0 148.3192626647766,-31.89662659067918,0 148.3195475221714,-31.89664220446718,0 148.319367107571,-31.89668221334988,0 148.3180903360263,-31.89701830408993,0 148.3180653071076,-31.89701830098577,0 148.3128134776503,-31.89828406290665,0 148.312656453,-31.89832441899989,0 148.3072490845514,-31.89971405489011,0 148.3069769889559,-31.89979051524543,0 148.3051056394976,-31.90026489735697,0 148.3031343493128,-31.90077149786273,0 148.2975664481362,-31.90221906173947,0 148.2970270144492,-31.9023541456991,0 148.2970198851706,-31.90234284978784,0 148.2969614782425,-31.90235785974403,0 148.296978821792,-31.90240707142716,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark id="5">
+			<name>Cardew - Cropping 1 (250ha) [12]</name>
+			<styleUrl>#051</styleUrl>
+			<ExtendedData>
+				<Data name="name">
+					<displayName>name</displayName>
+					<value>Cardew - Cropping 1 (250ha)</value>
+				</Data>
+				<Data name="folders">
+					<displayName>folders</displayName>
+					<value>Cardew Mapping; Land Use Areas (Post-Transformation); Cropping Areas (897.8ha)</value>
+				</Data>
+				<Data name="descriptio">
+					<displayName>descriptio</displayName>
+				</Data>
+				<Data name="altitude">
+					<displayName>altitude</displayName>
+				</Data>
+				<Data name="alt_mode">
+					<displayName>alt_mode</displayName>
+				</Data>
+				<Data name="time_begin">
+					<displayName>time_begin</displayName>
+				</Data>
+				<Data name="time_end">
+					<displayName>time_end</displayName>
+				</Data>
+				<Data name="time_when">
+					<displayName>time_when</displayName>
+				</Data>
+				<Data name="OBJECTID">
+					<displayName>OBJECTID</displayName>
+				</Data>
+				<Data name="Shape__Are">
+					<displayName>Shape__Are</displayName>
+				</Data>
+				<Data name="Shape__Len">
+					<displayName>Shape__Len</displayName>
+				</Data>
+				<Data name="cadid">
+					<displayName>cadid</displayName>
+				</Data>
+				<Data name="changetype">
+					<displayName>changetype</displayName>
+				</Data>
+				<Data name="classsubty">
+					<displayName>classsubty</displayName>
+				</Data>
+				<Data name="controllin">
+					<displayName>controllin</displayName>
+				</Data>
+				<Data name="createdate">
+					<displayName>createdate</displayName>
+				</Data>
+				<Data name="enddate">
+					<displayName>enddate</displayName>
+				</Data>
+				<Data name="fid">
+					<displayName>fid</displayName>
+				</Data>
+				<Data name="hasstratum">
+					<displayName>hasstratum</displayName>
+				</Data>
+				<Data name="itslotid">
+					<displayName>itslotid</displayName>
+				</Data>
+				<Data name="itstitlest">
+					<displayName>itstitlest</displayName>
+				</Data>
+				<Data name="lastupdate">
+					<displayName>lastupdate</displayName>
+				</Data>
+				<Data name="lotidstrin">
+					<displayName>lotidstrin</displayName>
+				</Data>
+				<Data name="lotnumber">
+					<displayName>lotnumber</displayName>
+				</Data>
+				<Data name="modifiedda">
+					<displayName>modifiedda</displayName>
+				</Data>
+				<Data name="msoid">
+					<displayName>msoid</displayName>
+				</Data>
+				<Data name="planlabel">
+					<displayName>planlabel</displayName>
+				</Data>
+				<Data name="plannumber">
+					<displayName>plannumber</displayName>
+				</Data>
+				<Data name="planoid">
+					<displayName>planoid</displayName>
+				</Data>
+				<Data name="shapeuuid">
+					<displayName>shapeuuid</displayName>
+				</Data>
+				<Data name="startdate">
+					<displayName>startdate</displayName>
+				</Data>
+				<Data name="stratumlev">
+					<displayName>stratumlev</displayName>
+				</Data>
+				<Data name="urbanity">
+					<displayName>urbanity</displayName>
+				</Data>
+				<Data name="id">
+					<displayName>id</displayName>
+				</Data>
+				<Data name="hectares">
+					<displayName>hectares</displayName>
+				</Data>
+				<Data name="layer">
+					<displayName>layer</displayName>
+					<value>Wilga Farming - Cardew - Property Boundary</value>
+				</Data>
+				<Data name="path">
+					<displayName>path</displayName>
+					<value>C:\Users\khodges\ownCloud - khodges@192.168.101.10\Sales\Leads\Wilga Farming\Project 1\Nortongong Aggregation\KMZ and Mapping\Wilga Farming - Cardew - Property Boundary.shp|layername=Wilga Farming - Cardew - Property Boundary</value>
+				</Data>
+			</ExtendedData>
+			<Polygon id="12">
+				<outerBoundaryIs>
+					<LinearRing id="16">
+						<coordinates>
+							148.2959918346374,-31.91573357154317,0 148.2937185498694,-31.91477629193031,0 148.2916406255113,-31.91392453082932,0 148.2911611045055,-31.91372854928304,0 148.295219273017,-31.91237174251266,0 148.2991797613236,-31.91103752967668,0 148.3000322431116,-31.91095461185621,0 148.3007870446946,-31.91317075336623,0 148.3027051287176,-31.91851490224605,0 148.2959918346374,-31.91573357154317,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark id="57">
+			<name>Transformation Area 4 (0.51ha)</name>
+			<styleUrl>#054</styleUrl>
+			<ExtendedData>
+				<Data name="name">
+					<displayName>name</displayName>
+					<value>Transformation Area 4 (0.51ha)</value>
+				</Data>
+				<Data name="folders">
+					<displayName>folders</displayName>
+					<value>Wilgamar Mapping; Land Use Areas (Post-Transformation); Transformation Areas (30.99ha)</value>
+				</Data>
+				<Data name="descriptio">
+					<displayName>descriptio</displayName>
+				</Data>
+				<Data name="altitude">
+					<displayName>altitude</displayName>
+				</Data>
+				<Data name="alt_mode">
+					<displayName>alt_mode</displayName>
+				</Data>
+				<Data name="time_begin">
+					<displayName>time_begin</displayName>
+				</Data>
+				<Data name="time_end">
+					<displayName>time_end</displayName>
+				</Data>
+				<Data name="time_when">
+					<displayName>time_when</displayName>
+				</Data>
+				<Data name="OBJECTID">
+					<displayName>OBJECTID</displayName>
+				</Data>
+				<Data name="Shape__Are">
+					<displayName>Shape__Are</displayName>
+				</Data>
+				<Data name="Shape__Len">
+					<displayName>Shape__Len</displayName>
+				</Data>
+				<Data name="cadid">
+					<displayName>cadid</displayName>
+				</Data>
+				<Data name="changetype">
+					<displayName>changetype</displayName>
+				</Data>
+				<Data name="classsubty">
+					<displayName>classsubty</displayName>
+				</Data>
+				<Data name="controllin">
+					<displayName>controllin</displayName>
+				</Data>
+				<Data name="createdate">
+					<displayName>createdate</displayName>
+				</Data>
+				<Data name="enddate">
+					<displayName>enddate</displayName>
+				</Data>
+				<Data name="fid">
+					<displayName>fid</displayName>
+				</Data>
+				<Data name="hasstratum">
+					<displayName>hasstratum</displayName>
+				</Data>
+				<Data name="itslotid">
+					<displayName>itslotid</displayName>
+				</Data>
+				<Data name="itstitlest">
+					<displayName>itstitlest</displayName>
+				</Data>
+				<Data name="lastupdate">
+					<displayName>lastupdate</displayName>
+				</Data>
+				<Data name="lotidstrin">
+					<displayName>lotidstrin</displayName>
+				</Data>
+				<Data name="lotnumber">
+					<displayName>lotnumber</displayName>
+				</Data>
+				<Data name="modifiedda">
+					<displayName>modifiedda</displayName>
+				</Data>
+				<Data name="msoid">
+					<displayName>msoid</displayName>
+				</Data>
+				<Data name="planlabel">
+					<displayName>planlabel</displayName>
+				</Data>
+				<Data name="plannumber">
+					<displayName>plannumber</displayName>
+				</Data>
+				<Data name="planoid">
+					<displayName>planoid</displayName>
+				</Data>
+				<Data name="shapeuuid">
+					<displayName>shapeuuid</displayName>
+				</Data>
+				<Data name="startdate">
+					<displayName>startdate</displayName>
+				</Data>
+				<Data name="stratumlev">
+					<displayName>stratumlev</displayName>
+				</Data>
+				<Data name="urbanity">
+					<displayName>urbanity</displayName>
+				</Data>
+				<Data name="id">
+					<displayName>id</displayName>
+				</Data>
+				<Data name="hectares">
+					<displayName>hectares</displayName>
+				</Data>
+				<Data name="layer">
+					<displayName>layer</displayName>
+					<value>Wilga Farming - Wilgamar - Property Boundary</value>
+				</Data>
+				<Data name="path">
+					<displayName>path</displayName>
+					<value>C:\Users\khodges\ownCloud - khodges@192.168.101.10\Sales\Leads\Wilga Farming\Project 1\Nortongong Aggregation\KMZ and Mapping\Wilga Farming - Wilgamar - Property Boundary.shp|layername=Wilga Farming - Wilgamar - Property Boundary</value>
+				</Data>
+			</ExtendedData>
+			<MultiGeometry id="56">
+				<Polygon id="58">
+					<outerBoundaryIs>
+						<LinearRing id="62">
+							<coordinates>
+								148.2289847734071,-31.88358928022054,0 148.2290580110305,-31.88361472203261,0 148.229145861688,-31.88370665123833,0 148.2292225732797,-31.88374466138173,0 148.2295748958893,-31.88383703276492,0 148.2300010262294,-31.88392916842931,0 148.2302771975812,-31.88401227296158,0 148.2306963782563,-31.88412635032229,0 148.230052893852,-31.88396425877409,0 148.2299663546837,-31.88396139632286,0 148.2297640892441,-31.88415713126253,0 148.229589592306,-31.88444258407102,0 148.22954643066,-31.88451700058611,0 148.2292829239199,-31.88438254542046,0 148.2289326657028,-31.88419745192746,0 148.2288928329544,-31.88415895619336,0 148.2289847734071,-31.88358928022054,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

@@ -9,7 +9,7 @@ export const chatgptConfig = (transcript, explanation, intent_prompt) => {
     // service_api_id: 2, //changeable
     // request_link_id: 1,
     fields: {
-      model: "gpt-3.5-turbo-0125",
+      model: "gpt-4o-mini",
       messages: [
         {
           role: "system",
@@ -68,15 +68,13 @@ export const intent_config = (
   transcript,
   explanation,
   intent_prompt,
-  enuma,
   model
 ) => {
   const changeTranscript = transcript === null ? "[target]" : transcript;
-  var model_ = model === null ? "gpt-3.5-turbo-0125" : model;
+  var model_ = model === null ? "gpt-4o-mini" : model;
   return {
     // service_api_id: 2, //changeable
     // request_link_id: 1,
-
     model: model_,
     messages: [
       {
@@ -131,7 +129,7 @@ export const intent_config = (
   // return {
   //   // service_api_id: 2, //changeable
   //   // request_link_id: 1,
-  //   model: "gpt-3.5-turbo-0125",
+  //   model: "gpt-4o-mini",
   //   messages: [
   //     {
   //       role: "system",
@@ -185,15 +183,9 @@ export const intent_config = (
   //   },
   // };
 };
-export const kpi_config = (kpi_prompt, config) => {
-  let modelVersion =
-    config !== null && config.chatgpt_version !== null
-      ? config.chatgpt_version
-      : "gpt-3.5-turbo-0125";
-  console.log(modelVersion);
-  return;
+export const kpi_config = (kpi_prompt) => {
   return {
-    model: modelVersion,
+    model: "gpt-4o-mini",
     messages: [
       {
         role: "system",
@@ -222,7 +214,7 @@ export const kpi_config = (kpi_prompt, config) => {
                     },
                     grade: {
                       type: "string",
-                      description: "Given grade",
+                      description: "Given grade 20% - 100%",
                     },
                     explain: {
                       type: "string",
@@ -248,7 +240,7 @@ export const sentimental_config = (transcript) => {
   const changeTranscript =
     transcript === null || transcript === undefined ? "[target]" : transcript;
   return {
-    model: "gpt-3.5-turbo-0125",
+    model: "gpt-4o-mini",
     messages: [
       {
         role: "system",
@@ -294,7 +286,7 @@ export const sentimental_config = (transcript) => {
 };
 export const transcript_seperator_config = (transcript) => {
   return {
-    model: "gpt-3.5-turbo-0125",
+    model: "gpt-4o-mini",
     messages: [
       {
         role: "system",
@@ -341,13 +333,15 @@ export const transcript_seperator_config = (transcript) => {
     },
   };
 };
-export const speech_cofig = (file) => {
+export const speech_cofig = (file, language) => {
   return {
     file: file,
     model: "whisper-1",
     prompt:
-      "Hi, I'm Joe, a native British english speaker and today I'll be having a British english language conversation on property auctions.",
-    language: "en",
+      language === "en" || language
+        ? "Hi, I'm Joe, a native British english speaker and today I'll be having a British english language conversation on property auctions."
+        : "Hi, I am Juan. I am a native Tagalog speaker, but I mix in some English when I speak. Please transcribe accordingly.",
+    language: language ? language : "en",
     timestamp_granularities: ["segment"],
     response_format: "verbose_json",
   };
@@ -355,11 +349,18 @@ export const speech_cofig = (file) => {
 export const compliance_config = (transcript, script, metricRange) => {
   let prompt = compliance_prompt;
   let toReplace = transcript === null ? "[target]" : transcript;
-  prompt = prompt.replace("[transcript]", `${toReplace}`);
+  prompt = prompt.replaceAll("[transcript]", `${toReplace}`);
   prompt = prompt.replace("[script]", `"${script}"`);
-  prompt = prompt.replace("[callmetrics]", metricRange);
+  prompt = prompt.replace(
+    "[callmetrics]",
+    metricRange.trim() === "" ||
+      metricRange === null ||
+      metricRange === undefined
+      ? "1-100%"
+      : metricRange
+  );
   return {
-    model: "gpt-3.5-turbo-0125",
+    model: "gpt-4o-mini",
     messages: [
       {
         role: "system",
@@ -406,7 +407,7 @@ export const notes_config = (transcript, callflow) => {
   prompt = prompt.replace("[transcript]", `"${transcript}"`);
   prompt = prompt.replace("[callflow]", `"${callflow}"`);
   return {
-    model: "gpt-3.5-turbo-0125",
+    model: "gpt-4o-mini",
     messages: [
       {
         role: "system",
@@ -460,7 +461,7 @@ export const notes_configV2 = (transcript, callflow, notes_config) => {
     properties: {},
     required: [],
   };
-  console.log(notes_config);
+
   if (
     notes_config &&
     notes_config.filters &&
@@ -502,10 +503,10 @@ export const notes_configV2 = (transcript, callflow, notes_config) => {
   prompt += "\n";
   prompt += `Transcript:
   "${transcript}"`;
-  console.log(prompt);
+
   // prompt = prompt.replace("[callflow]", `"${callflow}"`);
   return {
-    model: "gpt-3.5-turbo-0125",
+    model: "gpt-4o-mini",
     messages: [
       {
         role: "system",
@@ -537,7 +538,7 @@ export const pii_filter = (transcript, pii_filter) => {
   prompt += `Transcript:
   "${transcript}"`;
   return {
-    model: "gpt-3.5-turbo-0125",
+    model: "gpt-4o-mini",
     messages: [
       {
         role: "system",
@@ -596,7 +597,7 @@ export const prompt_suggestion = (prompt) => {
     // service_api_id: 2, //changeable
     // request_link_id: 1,
 
-    model: "gpt-3.5-turbo-0125",
+    model: "gpt-4o-mini",
     messages: [
       {
         role: "system",

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Coorong_4.kml</name>
+	<Style id="poly-E65100-2801-76-nodesc-highlight">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff0051e6</color>
+			<width>4.2015</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4c0051e6</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-E65100-2801-76-nodesc-normal">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff0051e6</color>
+			<width>2.801</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4c0051e6</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="poly-E65100-2801-76-nodesc">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#poly-E65100-2801-76-nodesc-normal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#poly-E65100-2801-76-nodesc-highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Placemark>
+		<name>Phils</name>
+		<styleUrl>#poly-E65100-2801-76-nodesc</styleUrl>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<tessellate>1</tessellate>
+					<coordinates>
+						122.7171143,-33.5145147,0 122.7549978,-33.5469348,0 122.7710053,-33.5351085,0 122.7335511,-33.5031627,0 122.7309652,-33.5054171,0 122.7218931,-33.4973518,0 122.7126511,-33.4892321,0 122.7122727,-33.489149,0 122.7118582,-33.4891253,0 122.7112934,-33.4888242,0 122.7111803,-33.4880137,0 122.7106751,-33.4872516,0 122.7102762,-33.4868816,0 122.7096716,-33.4863297,0 122.7101935,-33.4857598,0 122.7108943,-33.4854033,0 122.7114807,-33.4853324,0 122.7122675,-33.4859859,0 122.7129255,-33.4854225,0 122.7141761,-33.4845031,0 122.7151539,-33.4837739,0 122.7169162,-33.4822974,0 122.7230366,-33.4774472,0 122.7027913,-33.4596191,0 122.6919168,-33.4681038,0 122.6784857,-33.48074,0 122.655091,-33.502286,0 122.6635774,-33.5062581,0 122.6641247,-33.5067232,0 122.6665116,-33.5161558,0 122.6671821,-33.518003,0 122.6691457,-33.521447,0 122.6842437,-33.5081276,0 122.6997873,-33.4940728,0 122.7209338,-33.5120996,0 122.7171143,-33.5145147,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+</Document>
+</kml>

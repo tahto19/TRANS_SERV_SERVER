@@ -1,0 +1,2447 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Murray_River_boundary.kml</name>
+	<StyleMap id="msn_ylw-pushpin43000">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin1330</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin7300</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_ylw-pushpin107">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin104</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin2021</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_ylw-pushpin28000">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin44000</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin37000</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_ylw-pushpin0001000">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin2001">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin20300</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin2201</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_ylw-pushpin5400">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin730</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin2420</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="falseColor3001">
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>PARCEL_ID</b></td><td>$[NSW_CADL_LGA_NAME__COONAMBLE/PARCEL_ID]</td></tr>
+  <tr><td><b>LOCALITY_N</b></td><td>$[NSW_CADL_LGA_NAME__COONAMBLE/LOCALITY_N]</td></tr>
+  <tr><td><b>LGA_NAME</b></td><td>$[NSW_CADL_LGA_NAME__COONAMBLE/LGA_NAME]</td></tr>
+  <tr><td><b>STATE</b></td><td>$[NSW_CADL_LGA_NAME__COONAMBLE/STATE]</td></tr>
+  <tr><td><b>CREATION_D</b></td><td>$[NSW_CADL_LGA_NAME__COONAMBLE/CREATION_D]</td></tr>
+  <tr><td><b>POLYGON_PI</b></td><td>$[NSW_CADL_LGA_NAME__COONAMBLE/POLYGON_PI]</td></tr>
+  <tr><td><b>CAD_PID</b></td><td>$[NSW_CADL_LGA_NAME__COONAMBLE/CAD_PID]</td></tr>
+</table>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<colorMode>random</colorMode>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin5011">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin261</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin6010</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin50001">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin11300">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin41200</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin000300</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_ylw-pushpin008">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin1160</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl1180</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_ylw-pushpin6010">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff00ffff</color>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin3001">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff00ffff</color>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin17000">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff00ffff</color>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin261">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff00ffff</color>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin1910">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin701</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin18000</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_ylw-pushpin2420">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin7010">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin50001</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl4000000</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_ylw-pushpin71000">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin4010">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin13100">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin110020</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin17201</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_ylw-pushpin41200">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin24000">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin1330">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin22000">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl740">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin2201">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff00ffff</color>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin40020">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin16000">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin041000</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl0021000</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_ylw-pushpin001002">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin110020">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin7300">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin730">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="inline1101201">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline3140201</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline213201</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_ylw-pushpin100001">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff00ffff</color>
+			<width>4</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="inline11010401">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline314401</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline2130401</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="inline213201">
+		<LineStyle>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin6400">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin100001</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin2510</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_ylw-pushpin18000">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff00ffff</color>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="s_ylw-pushpin041000">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff00ffff</color>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin16200">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin4000">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin6410</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin4010</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_ylw-pushpin1701">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="falseColor001">
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>PARCEL_ID</b></td><td>$[NSW_CADL_LGA_NAME__COONAMBLE/PARCEL_ID]</td></tr>
+  <tr><td><b>LOCALITY_N</b></td><td>$[NSW_CADL_LGA_NAME__COONAMBLE/LOCALITY_N]</td></tr>
+  <tr><td><b>LGA_NAME</b></td><td>$[NSW_CADL_LGA_NAME__COONAMBLE/LGA_NAME]</td></tr>
+  <tr><td><b>STATE</b></td><td>$[NSW_CADL_LGA_NAME__COONAMBLE/STATE]</td></tr>
+  <tr><td><b>CREATION_D</b></td><td>$[NSW_CADL_LGA_NAME__COONAMBLE/CREATION_D]</td></tr>
+  <tr><td><b>POLYGON_PI</b></td><td>$[NSW_CADL_LGA_NAME__COONAMBLE/POLYGON_PI]</td></tr>
+  <tr><td><b>CAD_PID</b></td><td>$[NSW_CADL_LGA_NAME__COONAMBLE/CAD_PID]</td></tr>
+</table>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<colorMode>random</colorMode>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin001010">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin16200</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin16200</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_ylw-pushpin0300">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin601</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl740</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_ylw-pushpin100100">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin820</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin22100</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_ylw-pushpin701">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff00ffff</color>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin1020">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin230001">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin9110">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin4400">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin3001</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin1230</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_ylw-pushpin30020">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin22000</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin620</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_ylw-pushpin281">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin223">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin6001">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin5110</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin000020</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_ylw-pushpin7000">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin1710</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin40020</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_ylw-pushpin820">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff00ffff</color>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="falseColor701">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#falseColor3001</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#falseColor001</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_ylw-pushpin1412">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin230001</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin24000</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_ylw-pushpin22100">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff00ffff</color>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin30000">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin51000</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin17000</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_ylw-pushpin070">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin51000">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff00ffff</color>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin620">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin16200">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin2021">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff00ffff</color>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="inline2130401">
+		<LineStyle>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin1710">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin3701">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin223</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin070</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin_hl4000000">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin104">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff00ffff</color>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="inline314401">
+		<LineStyle>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin20300">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff00ffff</color>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin412">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff00ffff</color>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin3201">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin0001000</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin001002</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_ylw-pushpin20001">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff00ffff</color>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin6410">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin291">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl1180">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ffff0000</color>
+			<width>3</width>
+		</LineStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin000300">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin17201">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin000020">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin74">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff00ffff</color>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="s_ylw-pushpin1160">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ffff0000</color>
+			<width>3</width>
+		</LineStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin2510">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff00ffff</color>
+			<width>4</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin1230">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff00ffff</color>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin37000">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="s_ylw-pushpin601">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin18000">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin19000</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin20001</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_ylw-pushpin2300">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin281</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin10100</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_ylw-pushpin3210">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin1020</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin71000</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_ylw-pushpin10100">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl0021000">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff00ffff</color>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin37000">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin291</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin1701</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_ylw-pushpin44000">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="inline3140201">
+		<LineStyle>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin5500">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin0210">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin5500</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin9110</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_ylw-pushpin312">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin74</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin412</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_ylw-pushpin5110">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin19000">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff00ffff</color>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Folder>
+		<name>MRL Portfolio</name>
+		<Placemark>
+			<name>482 Swamp Road, Numurkah (Stanaway)</name>
+			<description>$951,312.50
+
+Vacant land
+
+$2,500/acre</description>
+			<styleUrl>#msn_ylw-pushpin37000</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							145.4602463031814,-36.13121857329974,0 145.4602480556428,-36.11599690192067,0 145.4500575259978,-36.11600511787869,0 145.4500422282053,-36.13122321452872,0 145.4602463031814,-36.13121857329974,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>302 &amp; 313 Spences Road and 702 Lorenz Road, Katunga</name>
+			<description>Sold for $1,887,250
+
+
+248.5 acres @ $5,030 overall - $1,250,000
+
+Renovated settlement home in good condition and good shedding
+
+209 ML of Katunga deep lead water @ $2,750/ML  - $574,750 
+
+207 ML shallow @ $300/ML - $62,500</description>
+			<styleUrl>#msn_ylw-pushpin4000</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							145.4944692995886,-35.98419106972239,0 145.4944130288212,-35.9910248001461,0 145.4967828627918,-35.99183298537584,0 145.497482729762,-35.98995269311451,0 145.5054847139684,-35.99000160655076,0 145.505387301193,-35.98715810186368,0 145.5042265330831,-35.98715806863794,0 145.5042516609427,-35.9867251882245,0 145.5053277720723,-35.98677475044148,0 145.5053754317301,-35.98438791010002,0 145.5036161897673,-35.98440295708019,0 145.5036579213906,-35.98551185120582,0 145.5029369991734,-35.98549673598156,0 145.5029309957741,-35.98440292740001,0 145.4979653854072,-35.9843570330799,0 145.4979719099549,-35.98274146054597,0 145.4995356917335,-35.982727249875,0 145.4995782105158,-35.97699008003988,0 145.493828376543,-35.9769454417123,0 145.4937374668967,-35.98417621382244,0 145.4944692995886,-35.98419106972239,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>392 RUTTLES ROAD STRATHMERTON</name>
+			<description>$277,500
+
+77 acres
+
+vacant land, purchased by adjoining owner (MRL)
+
+$3,600/acre</description>
+			<styleUrl>#msn_ylw-pushpin4000</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							145.5035381348098,-35.8914901271524,0 145.50360974029,-35.89329191546155,0 145.5058143479753,-35.89335074196095,0 145.5095390238054,-35.89046956464974,0 145.5075233623029,-35.8904362029498,0 145.5074554852976,-35.8859157144211,0 145.5047491178747,-35.88599640385752,0 145.5023084000815,-35.88922182790755,0 145.5035381348098,-35.8914901271524,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Bouchiers Road, Strathmerton (Kerrins)</name>
+			<description>250 acres vacanat land
+
+sold to adjining owner (MRL) for $735,520
+
+$2,950/acre</description>
+			<styleUrl>#msn_ylw-pushpin4000</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							145.4799680503905,-35.91114314906952,0 145.4799390872485,-35.91477428569333,0 145.4717436963568,-35.91474998099546,0 145.4718624835345,-35.92078523622767,0 145.4854904438347,-35.92085571925322,0 145.4852830057597,-35.91114351325376,0 145.4799680503905,-35.91114314906952,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>884 Ulupna Bridge Road</name>
+			<styleUrl>#m_ylw-pushpin0300</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							145.488695623859,-35.81507536699122,0 145.4878136921956,-35.81678118075236,0 145.4879980071284,-35.81767928033161,0 145.4889487546292,-35.81804241074011,0 145.490259841325,-35.81579559864983,0 145.488695623859,-35.81507536699122,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>292 - 295 Reynoldsons Road, Strathmerton (Coburn)</name>
+			<styleUrl>#msn_ylw-pushpin3210</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							145.4604109127056,-35.95822709546889,0 145.4622136963131,-35.95827422495253,0 145.4637974327725,-35.96025240878709,0 145.4671892724219,-35.96081824566856,0 145.4687303961599,-35.96167036610289,0 145.4705567097593,-35.96019196104153,0 145.470556353228,-35.95669824131783,0 145.4705540690985,-35.95391532589014,0 145.4675675916486,-35.95392150933442,0 145.4674973349756,-35.94952269593951,0 145.4636742719658,-35.94947456338278,0 145.4639231316033,-35.9489264976424,0 145.4639131443386,-35.94848321794122,0 145.462967343282,-35.94851549325868,0 145.4629574396634,-35.94940205542909,0 145.4684630585107,-35.9494742622492,0 145.4684115533673,-35.94493982545655,0 145.4628980930619,-35.94484117766736,0 145.4628517930256,-35.9429524869838,0 145.4612015243795,-35.94483718082541,0 145.4602390236947,-35.947109776089,0 145.4604426066867,-35.94947096401717,0 145.4604109127056,-35.95822709546889,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Leased from Onley</name>
+			<styleUrl>#msn_ylw-pushpin18000</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							145.4917603771331,-35.94953674767793,0 145.4916149125487,-35.95828097936614,0 145.4956127939544,-35.95990307566677,0 145.5011156967633,-35.95972947938203,0 145.5023919941007,-35.96005312496471,0 145.5050833267651,-35.96270662859742,0 145.5051847446761,-35.9633286440091,0 145.505487808061,-35.96335730708111,0 145.5052764947539,-35.94959444935865,0 145.4917603771331,-35.94953674767793,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Burnette Downs, Lower River Road, Tocumwal (Bell)</name>
+			<styleUrl>#msn_ylw-pushpin0210</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							145.421306413704,-35.7779435909893,0 145.4341146958311,-35.77946303582249,0 145.4346440108399,-35.76906890813753,0 145.4231195809693,-35.76760003110424,0 145.421306413704,-35.7779435909893,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>569 McArthur Road &amp; 3946 Labuan
+Road &amp; 3876 Labuan Road &amp; 592 MacArthur Road,
+Yarroweyah 3644 (Jones)</name>
+			<styleUrl>#msn_ylw-pushpin6001</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							145.5410395060647,-35.95318159828958,0 145.5419385024803,-35.95507979541087,0 145.5430845302476,-35.95506882063304,0 145.543147442387,-35.95390482442306,0 145.544229829439,-35.95391742972203,0 145.5443012373393,-35.95503023863269,0 145.5455480539123,-35.95500839340843,0 145.5455738699453,-35.95139436094492,0 145.5455547286119,-35.94749867373191,0 145.5519348289828,-35.94749727230039,0 145.5519642434011,-35.94716249649353,0 145.5590680156842,-35.94719649306687,0 145.5590084831291,-35.94622805920574,0 145.5584915585889,-35.94620429648304,0 145.5584765542793,-35.94569018830666,0 145.5560101698642,-35.94561914395503,0 145.5540455788074,-35.94457949673467,0 145.5519928418849,-35.94460391966646,0 145.5500285892396,-35.94426960994562,0 145.5482147783567,-35.94092035819408,0 145.5317595073368,-35.94096676901901,0 145.5316588577401,-35.95241991638001,0 145.5392633885646,-35.94862240416541,0 145.5392642785649,-35.95318186986452,0 145.5410395060647,-35.95318159828958,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>569 McArthur Road &amp; 3946 Labuan Road &amp; 3876 Labuan Road &amp; 592 MacArthur Road, Yarroweyah 3644 (Jones)</name>
+			<styleUrl>#msn_ylw-pushpin6001</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							145.5446589094327,-35.94079443299036,0 145.544464042893,-35.93847491603943,0 145.5465520139674,-35.93849418453387,0 145.5474986886129,-35.93784530914444,0 145.5486516493903,-35.93695066124825,0 145.5486264811564,-35.93407083369574,0 145.5468397639404,-35.93301797802692,0 145.5433276079359,-35.93306197314046,0 145.5433119301154,-35.93370894943934,0 145.5425961936398,-35.93372313413491,0 145.5426679463393,-35.93718689591205,0 145.5318311767004,-35.93726434500208,0 145.5317860704561,-35.94080911046019,0 145.5446589094327,-35.94079443299036,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>1595-1621 Bearii East Road, Strathmerton (Wren)</name>
+			<styleUrl>#msn_ylw-pushpin30020</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							145.5035686085342,-35.89910735876365,0 145.5113571009195,-35.89909028157102,0 145.5113550591257,-35.89701775233571,0 145.5140175559228,-35.89701954157627,0 145.5140151797583,-35.89912130073759,0 145.5229830441907,-35.8991062457636,0 145.5230777129811,-35.89246385526579,0 145.5213791916147,-35.89246396687702,0 145.5213791641487,-35.89191357787878,0 145.5149734938927,-35.89348627627004,0 145.511576723562,-35.89057704449768,0 145.5096356835655,-35.8905769571949,0 145.5059114911657,-35.89342512921871,0 145.5058981256797,-35.8941270931154,0 145.5036286864069,-35.89410304948038,0 145.5035686085342,-35.89910735876365,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>304 Maidment Rd, 22 &amp; 27 Hill Rd, Yarroweyah (Adams)</name>
+			<styleUrl>#msn_ylw-pushpin6001</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							145.559588717382,-35.89910882316147,0 145.5595491933049,-35.90945932573946,0 145.5721523405336,-35.90949630284618,0 145.5720437671216,-35.91792731007986,0 145.5776696314636,-35.91794693815029,0 145.5775248042283,-35.9093900999477,0 145.5771032332736,-35.90940824414224,0 145.5771312574981,-35.90815342393312,0 145.5792671868478,-35.90814675001629,0 145.5781330317698,-35.90591060015807,0 145.5767454385687,-35.90591202750213,0 145.5763308708333,-35.90452822884086,0 145.5773812325768,-35.90468976405812,0 145.5752772637746,-35.90138534002382,0 145.5722755694509,-35.9013898459998,0 145.5722601817797,-35.89912530960349,0 145.5683542886237,-35.89906698562215,0 145.559588717382,-35.89910882316147,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>553B &amp; 583 Mywee-Koonoomoo Rd, Mywee, VIC, 3641 (Adams)</name>
+			<styleUrl>#inline1101201</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							145.5172585518222,-35.85826512745518,0 145.5213037115352,-35.85819868575654,0 145.5213729064561,-35.8547245005937,0 145.5222168911638,-35.85472665615777,0 145.5212104366809,-35.85322100159598,0 145.5173609244625,-35.85310273233493,0 145.5133247667006,-35.85309207230181,0 145.5134818698031,-35.86918151841223,0 145.5174287291104,-35.8691690653154,0 145.5172585518222,-35.85826512745518,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>553B &amp; 583 Mywee-Koonoomoo Rd, Mywee, VIC, 3641 (Adams)</name>
+			<styleUrl>#inline11010401</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							145.510155735651,-35.88228963695961,0 145.5194796857809,-35.88232922855225,0 145.5194505025386,-35.87508566807105,0 145.5219267874522,-35.87512794182002,0 145.5217687788924,-35.86959989361329,0 145.5193065873283,-35.86954741696078,0 145.5192732324591,-35.87040067781093,0 145.5185487275125,-35.87038932929638,0 145.5185714092249,-35.86955368185971,0 145.514872328251,-35.86950944302368,0 145.512690283207,-35.86962843335511,0 145.5100673579922,-35.86985196781001,0 145.510155735651,-35.88228963695961,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>28 Rankins Road, Strathmerton (Paul Allott)</name>
+			<styleUrl>#msn_ylw-pushpin30020</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							145.5317442507352,-35.95543595877736,0 145.5298977121908,-35.95537438208427,0 145.5237452024618,-35.96222602412045,0 145.5211035475495,-35.96106488493635,0 145.5189058525741,-35.96114384105708,0 145.5167439760433,-35.96116919860681,0 145.515124632973,-35.96179855021825,0 145.5139746667175,-35.96179241078879,0 145.5103594849375,-35.96403455873085,0 145.5103579159901,-35.96578747006905,0 145.515125000774,-35.96583319022086,0 145.5152184888939,-35.96597494499177,0 145.5164401673361,-35.96594742131165,0 145.5164400220657,-35.96688932606628,0 145.51515757558,-35.96691555829629,0 145.5151345348228,-35.97036227523537,0 145.5316690531687,-35.97039757078441,0 145.5316667953882,-35.96941206031217,0 145.530965009745,-35.96948571156394,0 145.5304459471977,-35.96545723292745,0 145.531594531705,-35.9654615745507,0 145.5315938342204,-35.96390484709215,0 145.5307684594139,-35.96388752078264,0 145.5307354388943,-35.96231790496401,0 145.5303152496873,-35.96229188097392,0 145.5302825430183,-35.96140242776816,0 145.5315753813954,-35.96137583596337,0 145.5317442507352,-35.95543595877736,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>13 Rankins Road (Allot)</name>
+			<styleUrl>#msn_ylw-pushpin30020</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							145.5151310678381,-35.97035079241922,0 145.5151142090864,-35.96592355557078,0 145.5055078033872,-35.96589316441631,0 145.5055192240588,-35.96870070774416,0 145.5072533719664,-35.96869652070345,0 145.5072574646526,-35.96972210621561,0 145.5055229855306,-35.96978051064983,0 145.5055266679598,-35.97096849324288,0 145.5121881352398,-35.97108534196824,0 145.5193027375836,-35.97816886599236,0 145.5193315945186,-35.97846230975078,0 145.5216192683991,-35.9785114500817,0 145.5215381206892,-35.97681427171061,0 145.5225217926024,-35.97682646150918,0 145.5224722805876,-35.97881076805889,0 145.5315885655019,-35.97892882819587,0 145.5315799592772,-35.97436882479678,0 145.5300806989215,-35.97438883779186,0 145.5300645512587,-35.97353996354684,0 145.5315659870054,-35.97353678318609,0 145.531638946018,-35.97042578588695,0 145.5151310678381,-35.97035079241922,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>408 Larissa Road, Naring (Croke)</name>
+			<styleUrl>#msn_ylw-pushpin30020</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							145.5955410803265,-36.06989231276513,0 145.613437148773,-36.07013813511485,0 145.6134485710387,-36.077151576951,0 145.6060724508782,-36.07715884432333,0 145.6059650552763,-36.07786029584099,0 145.5990230082166,-36.07786678147613,0 145.5992428351031,-36.07988296128158,0 145.6009804365719,-36.08128408906361,0 145.6135638526195,-36.08127200193737,0 145.6135692589284,-36.08451592860652,0 145.6319858629377,-36.06994238865103,0 145.6135991629969,-36.06993135797875,0 145.6136099390345,-36.05531912680949,0 145.60501606174,-36.05530022831641,0 145.6050599385118,-36.06183432609347,0 145.5954079120691,-36.06187087234828,0 145.5955410803265,-36.06989231276513,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>6821 Benalla-Tocumwal Road and 87 Macarthur Road, Yarroweah (Paul Craig)</name>
+			<styleUrl>#msn_ylw-pushpin4000</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							145.5863171558699,-35.92590176185522,0 145.586637586388,-35.93275862209529,0 145.5847925090583,-35.9327967861644,0 145.5850998189923,-35.93563154263885,0 145.5922087509902,-35.93571391812063,0 145.5921239297434,-35.93673127272689,0 145.5895625263138,-35.93662777298903,0 145.5896295625574,-35.94032706960966,0 145.5902620877476,-35.94036633273057,0 145.5902558318795,-35.94135980820855,0 145.5912117196364,-35.94138864470654,0 145.5912125783868,-35.94039153514139,0 145.5834704246676,-35.94030265999633,0 145.5865141582953,-35.94384680657088,0 145.5954577110345,-35.94373481697929,0 145.5955007546027,-35.94316056098587,0 145.6021863366336,-35.9433494720245,0 145.6001647553171,-35.94024809643631,0 145.5977176486439,-35.94021453001712,0 145.5996888244107,-35.93935942388218,0 145.5975371696078,-35.93618561085483,0 145.595466992656,-35.93678429327348,0 145.5952148261015,-35.93527573223228,0 145.596821978555,-35.93515918258424,0 145.5942777945342,-35.9310902363851,0 145.593159392765,-35.93162744021136,0 145.5927799844678,-35.93091796770462,0 145.5938192683838,-35.93047489622631,0 145.5908707721827,-35.92593968761052,0 145.5863171558699,-35.92590176185522,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>533 &amp; 619 Lorenzs Road, Strathmerton (Macintosh)</name>
+			<styleUrl>#msn_ylw-pushpin30020</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							145.5119127665327,-35.98423099907435,0 145.5126356345903,-35.98198305103572,0 145.5111173558163,-35.9793858434986,0 145.5111552197544,-35.97623343022694,0 145.5163135603179,-35.97535498562579,0 145.512111702227,-35.97114735911065,0 145.5068532420718,-35.97112022508369,0 145.5068570344092,-35.97226297535338,0 145.5054934214044,-35.97226568541058,0 145.5055883816895,-35.98439369554682,0 145.5119127665327,-35.98423099907435,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>1222 - 1226 Loofs Road, Naing (Macintosh)</name>
+			<styleUrl>#msn_ylw-pushpin30020</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							145.5317410818422,-36.05527868545561,0 145.5542538914917,-36.05515221112805,0 145.5541412482617,-36.04704154235959,0 145.55937394271,-36.04707499497547,0 145.5592919179021,-36.04070300313659,0 145.5496471810497,-36.04067935510319,0 145.5496745670939,-36.04786181399043,0 145.5316736489543,-36.04800140716993,0 145.5317410818422,-36.05527868545561,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Sandmount Road, Katunga (McCracken)</name>
+			<styleUrl>#msn_ylw-pushpin3701</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							145.5132085600594,-35.9989323762636,0 145.5132341965745,-35.99793648209359,0 145.5144907999576,-35.99791572196625,0 145.5144908277817,-35.99897386033652,0 145.5178503933603,-35.99891152943466,0 145.5181324195198,-35.99789486900554,0 145.5186966200719,-35.99787409552261,0 145.5186967076843,-35.99891149445942,0 145.5189531680151,-35.99891148283129,0 145.5189015323423,-35.99459590811004,0 145.5170294879088,-35.99459600236128,0 145.5145676160789,-35.99268726089979,0 145.5111313778764,-35.9941188829976,0 145.5102851318763,-35.99409811980772,0 145.5102849933916,-35.99891161042975,0 145.5132085600594,-35.9989323762636,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>877 - 951 Lorenz Road, Katunga (McCracken)</name>
+			<styleUrl>#msn_ylw-pushpin30020</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							145.5054918010283,-36.01403194744427,0 145.5113258981797,-36.01187277609861,0 145.5113230886588,-36.00730900202453,0 145.5136415309143,-36.00727678800604,0 145.5136819371413,-36.00999626707282,0 145.5197102524329,-36.00999361284439,0 145.5196638671121,-35.99920931137479,0 145.5055223846123,-35.99909015465448,0 145.5054918010283,-36.01403194744427,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>1063 LORENZS ROAD KATUNGA (McCracken)</name>
+			<styleUrl>#msn_ylw-pushpin3701</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							145.5055162400637,-36.02802996936087,0 145.5099624351858,-36.02806807921132,0 145.509962245565,-36.02763579729278,0 145.5123918634966,-36.02767439503919,0 145.5123899469771,-36.02360706253535,0 145.5146250494743,-36.02354741644532,0 145.5145741508196,-36.01875305502841,0 145.5092781611029,-36.01869573969126,0 145.5092786014217,-36.01973714512923,0 145.5073108364045,-36.01973767531171,0 145.5073354075365,-36.02042538448841,0 145.505416209129,-36.02042586544101,0 145.5055162400637,-36.02802996936087,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#msn_ylw-pushpin3701</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							145.5054165774109,-36.02138866344974,0 145.5025010437156,-36.02074091219911,0 145.5029133158259,-36.01871695275336,0 145.5023545579645,-36.01871706924666,0 145.5019903100682,-36.01916908016924,0 145.4994636910373,-36.01916955977334,0 145.4993443225534,-36.02606647669768,0 145.5020412398436,-36.02610518861268,0 145.5020180003497,-36.02950454207119,0 145.5054439084987,-36.02956264456599,0 145.5054165774109,-36.02138866344974,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>73 Boards Road, Strathmerton (Widmer)</name>
+			<styleUrl>#msn_ylw-pushpin30020</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							145.5297910974217,-35.95543427268344,0 145.5180275987407,-35.95548943522331,0 145.518025978229,-35.96113699571547,0 145.521241888716,-35.96108126785318,0 145.5239094090916,-35.96218841718533,0 145.5297910974217,-35.95543427268344,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Marabou and Belmont, 600 Taylors Road, Tocumwal (AFF)</name>
+			<description>Portion already settled with NAB</description>
+			<styleUrl>#msn_ylw-pushpin30020</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							145.4409859902829,-35.79930543439573,0 145.4422442948577,-35.79216979356053,0 145.4329413989375,-35.78554467688398,0 145.4200041637361,-35.78412037853079,0 145.4230101475614,-35.7675915149299,0 145.3805393789519,-35.76229983359752,0 145.3807911182396,-35.76066847211262,0 145.3785290202025,-35.76025824341298,0 145.3762621027817,-35.75881937613094,0 145.3732455723974,-35.7586146854867,0 145.3726172285813,-35.75800250946932,0 145.3638895808518,-35.75573374885682,0 145.3629368802551,-35.76156996273678,0 145.3615116428601,-35.76137382394778,0 145.3602534621669,-35.7679255764993,0 145.3635629923557,-35.76830305490256,0 145.3611627708638,-35.78084788477516,0 145.3769616451455,-35.78295697532998,0 145.3736114656475,-35.80114030433185,0 145.3851709441167,-35.80237330452108,0 145.3887954581903,-35.78228249656406,0 145.406622924422,-35.78421937130837,0 145.4117186834311,-35.7842221410269,0 145.4198644711869,-35.78523096079046,0 145.4181423204403,-35.79550283586251,0 145.420819515693,-35.79628830791936,0 145.4248155603445,-35.7971279043813,0 145.4302879327232,-35.79746730944989,0 145.4326594529439,-35.80054872068656,0 145.4351015235711,-35.80156593085764,0 145.4366989994984,-35.80113561605802,0 145.4383439453917,-35.79961092113058,0 145.4409859902829,-35.79930543439573,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>151-152 Lower River Road Tocumwal (Meuwissen)</name>
+			<styleUrl>#msn_ylw-pushpin30020</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							145.421371194443,-35.77796808029068,0 145.4201413785117,-35.78399442271281,0 145.4329397337367,-35.78529591501766,0 145.4455424996933,-35.79429884689605,0 145.4517487743809,-35.79506146019232,0 145.4540053546185,-35.78194195896531,0 145.421371194443,-35.77796808029068,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Swindon and Fendyk, Tuppal Road, Tocumwal (Taylor)</name>
+			<styleUrl>#msn_ylw-pushpin6400</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							145.4728222509788,-35.76049352789544,0 145.4722672207311,-35.76404742447672,0 145.47509728796,-35.76440617019126,0 145.4742532422279,-35.76926387309516,0 145.4713745842842,-35.76890247221506,0 145.4705733617261,-35.7728441433393,0 145.4634357553782,-35.77212838688255,0 145.4346098278477,-35.76908349536793,0 145.4341303575275,-35.77936784710578,0 145.4617763335105,-35.78299658956268,0 145.4614248255039,-35.78517373541996,0 145.4686047972904,-35.78757781040417,0 145.4731002262589,-35.78403470505984,0 145.4744082528973,-35.78412827668183,0 145.4748999906009,-35.78114604246124,0 145.4754603546143,-35.77770091903997,0 145.4774374152375,-35.77842764349474,0 145.4792372125227,-35.77865630710205,0 145.484288520298,-35.77762058125098,0 145.4848319344201,-35.774115186407,0 145.4783055206509,-35.76465414498671,0 145.4728222509788,-35.76049352789544,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>41 Singapore Road and 136-169 Macarthur Road, Yarroweyah (First Australian Farmland)</name>
+			<styleUrl>#msn_ylw-pushpin37000</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							145.5775421795254,-35.92608452738983,0 145.5775666429912,-35.92961719083475,0 145.5751889913481,-35.92959911603386,0 145.5751730422847,-35.92610530264727,0 145.5685428253934,-35.92634751998368,0 145.5685087893172,-35.93296620091806,0 145.57777918805,-35.93308474667543,0 145.5778241802687,-35.94458617526958,0 145.5789448755379,-35.94482956396828,0 145.578905093082,-35.94583864644478,0 145.5778720000975,-35.94583907617795,0 145.5778671929682,-35.94870117224565,0 145.5802943940251,-35.94863700534682,0 145.580400654366,-35.94842917678353,0 145.5873163461764,-35.94845950517832,0 145.587540213256,-35.94863798089549,0 145.5883056938267,-35.94866713652113,0 145.5874936282593,-35.94508167747899,0 145.5834211289758,-35.94029020611935,0 145.5896289548759,-35.94028732370013,0 145.5895577699413,-35.93679893769674,0 145.5921353435596,-35.93677507845265,0 145.5920316143047,-35.9357601139292,0 145.5850813073711,-35.93567671412954,0 145.5847989906789,-35.93282708616709,0 145.5866979195507,-35.93282492957638,0 145.5862790628972,-35.92592518156419,0 145.5775421795254,-35.92608452738983,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>1619 NUMURKAH ROAD STRATHMERTON 3641 (Johns)</name>
+			<description>Purchased by MRL with settlement due Dec 2020
+
+$1,050,000
+
+Purchased by adjoining owner (MRL has pruchase Coburns to east on long settlement terms)
+
+Includies basic shedding, small dairy (purchaser will demolish) and unrenovated settlement home.  Allow $100,000 for buildings
+
+240 acres @ $3,720/acre
+
+163 ML of shallow water @ $350/ML - $57,050</description>
+			<styleUrl>#msn_ylw-pushpin4000</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							145.4675411614335,-35.95397595088928,0 145.470609748313,-35.95392741124439,0 145.4706405383121,-35.96024890290119,0 145.4687498178774,-35.96168022633118,0 145.4702379735728,-35.96225670631814,0 145.4762221033138,-35.96326089950316,0 145.4778661601537,-35.96213184067343,0 145.4778990624784,-35.96085228634,0 145.4785182958246,-35.96062612438261,0 145.4784383176468,-35.95754150733512,0 145.476806632167,-35.95748974326178,0 145.4768065187214,-35.956887825453,0 145.4784219481846,-35.95688694582876,0 145.4784711271472,-35.94948640346603,0 145.4745894551518,-35.94951469905823,0 145.4746007410076,-35.95232067085021,0 145.467604155607,-35.95229808783051,0 145.4675411614335,-35.95397595088928,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Spences Rd, Katunga,(Tucketts)</name>
+			<styleUrl>#msn_ylw-pushpin11300</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							145.4313498697072,-35.98448261496633,0 145.4317383199262,-35.97536348457886,0 145.430022370904,-35.97579141361102,0 145.4276438633557,-35.9753637258962,0 145.4238772847035,-35.97547063876404,0 145.42387744097,-35.9743476733146,0 145.4162137406346,-35.97445420564209,0 145.4170715295601,-35.97557717495228,0 145.4170724526028,-35.98081671940383,0 145.4181300467222,-35.9808165323126,0 145.4180825322127,-35.98434649572885,0 145.4313498697072,-35.98448261496633,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>730 Schinnicks Rd, Katunga (Tuckett)</name>
+			<styleUrl>#msn_ylw-pushpin11300</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							145.4042056734257,-35.99917635913483,0 145.4042860879122,-35.98443498239589,0 145.3861155478974,-35.98443158878126,0 145.3859398252896,-35.99910325827475,0 145.4042056734257,-35.99917635913483,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>890 Boothroyds Rd, Katunga (Tuckett/Young)</name>
+			<styleUrl>#msn_ylw-pushpin11300</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							145.3860556183658,-35.96979299357982,0 145.3770182583888,-35.96967423417033,0 145.3772413791032,-35.9747774283279,0 145.3810268867477,-35.97582354310084,0 145.3829217206312,-35.97721449069802,0 145.382818907001,-35.9844285288357,0 145.3861356348795,-35.98441842994377,0 145.3860556183658,-35.96979299357982,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>873 Boothroyds Rd, Katunga (Tuckett/Young)</name>
+			<styleUrl>#msn_ylw-pushpin11300</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							145.3861079433687,-35.98443734100397,0 145.404054663085,-35.98422144194141,0 145.4041754074989,-35.9772425295298,0 145.3962492000167,-35.9774295958347,0 145.3922288323588,-35.97935681406882,0 145.3861572750446,-35.97712526993326,0 145.3861079433687,-35.98443734100397,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>1081 Spences Rd, Katunga (Tuckett)</name>
+			<styleUrl>#msn_ylw-pushpin11300</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							145.4130262792854,-35.99252298527378,0 145.4130314482235,-35.98469247411806,0 145.4044033576785,-35.98459908340767,0 145.4045163634652,-35.99252214753808,0 145.4130262792854,-35.99252298527378,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>511 Christies Rd, Katunga (De Kleine)</name>
+			<styleUrl>#msn_ylw-pushpin28000</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							145.368093255862,-35.96992941998786,0 145.3681414572248,-35.98437077388098,0 145.383036146102,-35.98431422311154,0 145.3828356363467,-35.97727715473249,0 145.381108298353,-35.97603514094556,0 145.3772772400906,-35.97507530615515,0 145.3768783681857,-35.96987833779975,0 145.368093255862,-35.96992941998786,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>506 Christies Rd (De Kleine)</name>
+			<styleUrl>#msn_ylw-pushpin11300</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							145.3774534343212,-35.96106606447183,0 145.3774536796113,-35.9614664400268,0 145.3681030786769,-35.96143823162643,0 145.3680734732015,-35.96842599673339,0 145.3695539305389,-35.96839353567568,0 145.3695545207022,-35.96950078419267,0 145.3860472912174,-35.96961663662022,0 145.3860454270318,-35.96721771003666,0 145.3848277134148,-35.96722018507188,0 145.3848269469464,-35.96611315457083,0 145.3861201470415,-35.96608011115065,0 145.3860811149863,-35.96109357905523,0 145.3774534343212,-35.96106606447183,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Ulupna Island Station, 610 Ulupna Bridge Road, Ulupna</name>
+			<styleUrl>#msn_ylw-pushpin001010</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							145.4618314047643,-35.84036834978619,0 145.4621184427548,-35.8404211946194,0 145.4638964036873,-35.84072947732366,0 145.4656057995587,-35.83970648943436,0 145.4658402224987,-35.83970441810682,0 145.4675139566552,-35.83967862113897,0 145.4685502530268,-35.84059957438826,0 145.4700775645163,-35.84040485869138,0 145.4714344057987,-35.84113053158864,0 145.4723502642842,-35.84224791730839,0 145.4730605350074,-35.84217047248744,0 145.4730509064924,-35.84202346244584,0 145.4738880673672,-35.84205529914566,0 145.4767558444487,-35.84262332631137,0 145.4790286853317,-35.84291325206602,0 145.4814139432835,-35.84164290979676,0 145.4805712306861,-35.83890809691621,0 145.4807098611561,-35.83742677217296,0 145.4820290202421,-35.83597103480488,0 145.4837887225752,-35.83541460250665,0 145.4859341900615,-35.83553604139886,0 145.4873855252382,-35.8363568546088,0 145.4882562725843,-35.83640849203939,0 145.4903869286802,-35.83731819769823,0 145.4913843910912,-35.83613181568027,0 145.4936286960768,-35.83621218967033,0 145.494004967939,-35.83536734509756,0 145.4949417595975,-35.83491659100855,0 145.4949535330015,-35.82080787241009,0 145.4939357103006,-35.82046865885791,0 145.4939769940832,-35.82016268416938,0 145.4919862586192,-35.81802461907759,0 145.4902667024397,-35.81583063897844,0 145.4900316573612,-35.8157059714755,0 145.4897070748026,-35.8161853010313,0 145.4888900076542,-35.81582049199223,0 145.4892203989218,-35.81531194654717,0 145.488764533897,-35.81511286726305,0 145.4870924225221,-35.81572741890152,0 145.4859288005331,-35.81576652225284,0 145.4838325397583,-35.8153038375215,0 145.4813151274354,-35.81442522720986,0 145.4788478925353,-35.81428250845075,0 145.4776612586585,-35.81711796735538,0 145.4767331933794,-35.81739705618064,0 145.4751595101783,-35.81742279182295,0 145.4723902812963,-35.81810278928435,0 145.4707681542518,-35.81804981921807,0 145.470280741718,-35.81801433560915,0 145.4693294776943,-35.81872553971128,0 145.4675499887843,-35.82009003953225,0 145.4669974830049,-35.82178708882793,0 145.4660631410596,-35.8233822495285,0 145.4671494546235,-35.82338273589887,0 145.467105163083,-35.82514950150483,0 145.4671146025105,-35.82664136131574,0 145.4651023520909,-35.82768465410191,0 145.4650935245116,-35.82508863886702,0 145.4637972288352,-35.82706142233324,0 145.4615306230048,-35.82848325354772,0 145.4606122886228,-35.82967475095528,0 145.4593623718262,-35.83017991936102,0 145.457700748237,-35.83121528765123,0 145.4577346649941,-35.84040320254564,0 145.4577248648924,-35.84113203496629,0 145.4618314047643,-35.84036834978619,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>600 Ulupna Bridge Road</name>
+			<styleUrl>#m_ylw-pushpin7010</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							145.465791390084,-35.82384632609843,0 145.4671267817688,-35.82386369504002,0 145.4671342350867,-35.82339509447529,0 145.4660555713717,-35.8234005480136,0 145.465791390084,-35.82384632609843,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>557 Ulupna Bridge Road</name>
+			<styleUrl>#msn_ylw-pushpin3201</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							145.4613742679121,-35.82734348569093,0 145.4604275416997,-35.82838627636572,0 145.4592897785344,-35.82876805935364,0 145.4576076193011,-35.82935161374641,0 145.4576269190724,-35.83108906534421,0 145.4596660725656,-35.82982243557426,0 145.4604942397882,-35.82949656307153,0 145.4614173588191,-35.82831887076812,0 145.4627835655425,-35.82756760828212,0 145.4636918613057,-35.82695787827583,0 145.4641077677367,-35.8263207812415,0 145.4646819773785,-35.82553006661322,0 145.4631803996413,-35.82671348695272,0 145.4628548804856,-35.82671348453729,0 145.4613742679121,-35.82734348569093,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>1391 BEARII-MYWEE ROAD MYWEE</name>
+			<styleUrl>#m_ylw-pushpin7010</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							145.4856759909774,-35.87202672070657,0 145.4940090363012,-35.87114529631607,0 145.49402996668,-35.862981585763,0 145.4855411848095,-35.86292615870624,0 145.4856759909774,-35.87202672070657,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>333-334 Mywee Road, Strathmerton</name>
+			<styleUrl>#msn_ylw-pushpin4400</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							145.4997511345753,-35.88618915470073,0 145.4945578702636,-35.88611057007607,0 145.4944410441504,-35.89152780063417,0 145.4931454762615,-35.89156300409005,0 145.4898494655184,-35.89549390755735,0 145.4885535912626,-35.89542751847743,0 145.4855046369487,-35.89722516166071,0 145.4854654411874,-35.89912138122109,0 145.5032719536712,-35.89910230394982,0 145.5033846564779,-35.89155201847295,0 145.5019776592769,-35.88922766105878,0 145.5043862701551,-35.88603241931723,0 145.4997511345753,-35.88618915470073,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>1793 Bearii East Road, Strathmerton</name>
+			<styleUrl>#msn_ylw-pushpin43000</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							145.5230399491271,-35.89910519020938,0 145.5315562670199,-35.89902621498573,0 145.5314360813997,-35.8943191642154,0 145.5284475979852,-35.8925288259591,0 145.5230605998144,-35.89249234505697,0 145.5230399491271,-35.89910519020938,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>158 Bouchiers Road, Strathmerton (Kim Stephens)</name>
+			<styleUrl>#msn_ylw-pushpin7000</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							145.4745860936201,-35.90433580622899,0 145.4730114306218,-35.90486610777624,0 145.4721670484947,-35.90561366745469,0 145.4718996671781,-35.90688982215593,0 145.4719413084551,-35.90950390541742,0 145.4736320759041,-35.90953365778773,0 145.4736338838064,-35.91099630328221,0 145.4853519944114,-35.91108319357993,0 145.4853800346518,-35.90631100106398,0 145.4763945551835,-35.90635715010807,0 145.4763137772785,-35.90333855262227,0 145.4745860936201,-35.90433580622899,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Lot 1 PS321769, Mywee Road, Strathmerton (Kevin Randall)</name>
+			<styleUrl>#msn_ylw-pushpin7000</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							145.4853520340136,-35.91217921317088,0 145.4938946191861,-35.91217885415504,0 145.4938937483253,-35.90633332942618,0 145.4853518443755,-35.90631100166343,0 145.4853520340136,-35.91217921317088,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>131 MYWEE ROAD STRATHMERTON (Hibberson)</name>
+			<styleUrl>#msn_ylw-pushpin7000</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							145.4854303218268,-35.92087501947987,0 145.4933814012885,-35.9207756664899,0 145.4938704777506,-35.91948777856024,0 145.4939304463205,-35.91230575975331,0 145.4853688440595,-35.91225665041748,0 145.4854303218268,-35.92087501947987,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>20 LORENZS ROAD
+STRATHMERTON (Forster)</name>
+			<styleUrl>#msn_ylw-pushpin5011</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							145.5053546614365,-35.92606636336888,0 145.4984091890335,-35.92609666168708,0 145.4984064604706,-35.93474359058159,0 145.5053053651397,-35.93469418875937,0 145.5053546614365,-35.92606636336888,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>4809 Murray Valley Highway, Strathmerton (Winchester)</name>
+			<styleUrl>#m_ylw-pushpin7010</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							145.5068989672028,-35.92622140862882,0 145.5069154019211,-35.92720039851069,0 145.5054613348115,-35.9272004815847,0 145.5056088580245,-35.93320091514075,0 145.5063277786518,-35.93320087456963,0 145.5063441751836,-35.93386235479564,0 145.5195032426371,-35.93381296765155,0 145.5198731756739,-35.93370204140585,0 145.5198590895286,-35.92622271931817,0 145.5068989672028,-35.92622140862882,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>133A Lorenzs Road, Strathmerton</name>
+			<styleUrl>#msn_ylw-pushpin1910</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							145.5055534758838,-35.9405130092956,0 145.5128698875839,-35.94064746313707,0 145.5127983878645,-35.93410318335067,0 145.5055415573393,-35.93401633937517,0 145.5055534758838,-35.9405130092956,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>361 FOWLERS ROAD, STRATHMERTON (Flanagan North)</name>
+			<styleUrl>#m_ylw-pushpin7010</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							145.5164695151172,-35.94063655374813,0 145.5164430997299,-35.93718763064937,0 145.5199856597618,-35.93720526926733,0 145.5200306779928,-35.93406144300604,0 145.5128344055527,-35.93412147512865,0 145.5129261584783,-35.94060463655971,0 145.5164695151172,-35.94063655374813,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>4083 LABUAN ROAD, STRATHMERTON</name>
+			<styleUrl>#msn_ylw-pushpin13100</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							145.5313026129026,-35.93517245839004,0 145.5312130856224,-35.93004605165531,0 145.5201418127419,-35.92999232583426,0 145.5202357028859,-35.93398517079427,0 145.5200257315161,-35.93398512065208,0 145.5199545287991,-35.94064541084916,0 145.5274765396099,-35.94065616667664,0 145.5275514893319,-35.93963989105828,0 145.5286874219511,-35.93963908458096,0 145.5287022528092,-35.94012293813244,0 145.5312423072064,-35.94010013117568,0 145.5313172432009,-35.93587786380462,0 145.5298235615834,-35.93586554912866,0 145.5298237405617,-35.93515154912625,0 145.5313026129026,-35.93517245839004,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>4083 LABUAN ROAD
+STRATHMERTON (Letcher)</name>
+			<styleUrl>#msn_ylw-pushpin13100</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							145.5318032839207,-35.93718274936076,0 145.5425501120252,-35.93710893552215,0 145.5425237202907,-35.93358780603023,0 145.5317973281118,-35.93362487110746,0 145.5317783205798,-35.93538987781408,0 145.5340032361552,-35.93536599639232,0 145.5340041190231,-35.93616399517189,0 145.531806104468,-35.9361400702422,0 145.5318032839207,-35.93718274936076,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>324 Fowlers Road and 269 Lorenzs Road , Strathmerton</name>
+			<styleUrl>#msn_ylw-pushpin100100</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							145.5054789965456,-35.95178479379679,0 145.5135353908393,-35.95177494861788,0 145.5133637544616,-35.94088110973565,0 145.5055193541865,-35.94079287906091,0 145.5054789965456,-35.95178479379679,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>206 LORENZS ROAD STRATHMERTON (Hawthorn)</name>
+			<styleUrl>#m_ylw-pushpin16000</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							145.5053453141836,-35.94059883527351,0 145.5010487782226,-35.94059053084261,0 145.5010414276244,-35.9452542856957,0 145.4976191662932,-35.94525984719162,0 145.4976293013252,-35.94943113277146,0 145.5053106896606,-35.94938766948924,0 145.5053453141836,-35.94059883527351,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>362 FOWLERS ROAD STRATHMERTON (Nick Flanagan)</name>
+			<styleUrl>#m_ylw-pushpin7010</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							145.513467874612,-35.94087557534627,0 145.5134822709611,-35.94721687346835,0 145.5212746281548,-35.94722641609256,0 145.5212733388103,-35.94093748704247,0 145.51640539697,-35.94090959373014,0 145.513467874612,-35.94087557534627,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>425 Macarthur Road, Yarroweyah (Forster)</name>
+			<styleUrl>#m_ylw-pushpin7010</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							145.5594557739637,-35.94096803895899,0 145.5533745932087,-35.94099568600405,0 145.5533591335648,-35.94189777146211,0 145.5519557160049,-35.94187866933809,0 145.5519857693596,-35.94455728381645,0 145.5540100536477,-35.94452746876124,0 145.5560107272919,-35.94560629552863,0 145.55847747321,-35.94565855404081,0 145.5584953024342,-35.94620353049479,0 145.5594820116325,-35.94621615620959,0 145.5594557739637,-35.94096803895899,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>250-324 Mcarthurs Road, Yaroweah (Goodins)</name>
+			<styleUrl>#msn_ylw-pushpin5400</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							145.5776280699617,-35.94027103581803,0 145.5775803632101,-35.93867988472044,0 145.5683698825226,-35.93862268316494,0 145.5685115462701,-35.92631614047537,0 145.5652447665773,-35.92656541069881,0 145.5648423296436,-35.92715966678473,0 145.5648186464294,-35.92783059552728,0 145.5623567158312,-35.9278497175539,0 145.5622856599197,-35.9288656834611,0 145.5621908323533,-35.93214355492513,0 145.5621670262726,-35.93499968980669,0 145.5605571402739,-35.93534467321172,0 145.5605096922324,-35.93666732618789,0 145.5596810598218,-35.93668646188932,0 145.5596808114084,-35.93933182661347,0 145.5605331547922,-35.93933185615221,0 145.5605567534141,-35.94025200426183,0 145.5774859872394,-35.9402518720014,0 145.5776280699617,-35.94027103581803,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>520 Churchill Road, Yarroweyah (Mezenberg)</name>
+			<styleUrl>#msn_ylw-pushpin100100</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							145.5521163715565,-35.94744606286064,0 145.5522177771365,-35.95280343499874,0 145.5498760880629,-35.9527620544938,0 145.5498758366261,-35.95519339196201,0 145.5594973483685,-35.95523494890826,0 145.5595483158735,-35.94744623988593,0 145.5521163715565,-35.94744606286064,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>184 Montgomery Road, Yarroweyah (Alan &amp; Vikki Gardner)</name>
+			<styleUrl>#falseColor701</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							145.5553528925465,-35.96403088210126,0 145.555284962341,-35.9590546771751,0 145.5532871409717,-35.95901672342993,0 145.5506545300267,-35.96021059296675,0 145.5506744778325,-35.96408715982482,0 145.5553528925465,-35.96403088210126,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>541 Churchill Road, Yarroweyah (Dale)</name>
+			<styleUrl>#msn_ylw-pushpin13100</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							145.5424431225889,-35.95527493957686,0 145.5425441898526,-35.95914861107612,0 145.5374527971914,-35.95914779035726,0 145.5374004922482,-35.96405174239591,0 145.550638523708,-35.9640532460545,0 145.5504862182965,-35.96013844628958,0 145.553133651839,-35.95894356854001,0 145.5552718486967,-35.95902607018951,0 145.5553738407758,-35.95527611591891,0 145.5424431225889,-35.95527493957686,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>640 Churchill Road (Wren)</name>
+			<styleUrl>#msn_ylw-pushpin2300</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							145.5316684519288,-35.95511677664715,0 145.5419395110086,-35.9550971637403,0 145.5410359708239,-35.95322120856029,0 145.539200684521,-35.95319637639943,0 145.5392122686556,-35.94870045098269,0 145.5329854857522,-35.95184507702579,0 145.5330151828506,-35.95318280149969,0 145.5316584159701,-35.95321795003935,0 145.5316684519288,-35.95511677664715,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>171 Adams Road, Katunga (Goodins)</name>
+			<styleUrl>#msn_ylw-pushpin100100</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							145.50363890876,-35.97144686445499,0 145.5036176923495,-35.97064472611555,0 145.5044643333463,-35.97062729467459,0 145.5050303981845,-35.97003995024363,0 145.505453306809,-35.97003944424994,0 145.5053940981504,-35.96423993219875,0 145.4954793447616,-35.96417261925875,0 145.4954598230602,-35.96812856744648,0 145.4917034504004,-35.96814469353992,0 145.4916875240747,-35.97142836374559,0 145.50363890876,-35.97144686445499,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Lot 2, 122 Adams Road, Katunga (Milne)</name>
+			<styleUrl>#msn_ylw-pushpin100100</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							145.4894482287149,-35.97171480533227,0 145.4894430804805,-35.97685421366481,0 145.4959426472431,-35.9769128175022,0 145.4958454834029,-35.97397743793647,0 145.4990341692937,-35.97401581961861,0 145.4989846366746,-35.97169203523485,0 145.4925846504394,-35.97169364116885,0 145.4925635014938,-35.9726011175711,0 145.4920041198311,-35.97258150151057,0 145.4919787047116,-35.97171485508964,0 145.4894482287149,-35.97171480533227,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>273 Berrys Road, Katunga (Winchester)</name>
+			<styleUrl>#msn_ylw-pushpin2001</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							145.4872362499553,-36.0136564382061,0 145.4920200524348,-36.01146705510932,0 145.4918871728405,-35.99923887806665,0 145.4784416504986,-35.99923621869566,0 145.4784843247882,-36.00639080036586,0 145.4842600681827,-36.00642859482852,0 145.4843037648228,-36.01124680286559,0 145.4856521492479,-36.01122397915285,0 145.4857027392228,-36.01362995863325,0 145.4872362499553,-36.0136564382061,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Katunga-Picola Road, Katunga (Siding Site)</name>
+			<styleUrl>#msn_ylw-pushpin100100</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							145.4586529571256,-35.99920936094426,0 145.4581957589964,-35.99921069520064,0 145.4582150177876,-36.00067699815318,0 145.4581437720055,-36.00067690262473,0 145.4581564137918,-36.00106099398843,0 145.4586862394369,-36.0010653328378,0 145.4586529571256,-35.99920936094426,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>973B NUMURKAH ROAD KATUNGA 3640</name>
+			<styleUrl>#msn_ylw-pushpin30000</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							145.4582025273528,-36.00420149671623,0 145.4589552815847,-36.00420833977196,0 145.4589416424086,-36.00328885933615,0 145.4582002285694,-36.00328924541581,0 145.4582025273528,-36.00420149671623,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Loofs and Lukies Road, Naring</name>
+			<styleUrl>#msn_ylw-pushpin1412</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							145.5414107783157,-36.05549172991667,0 145.5346326864318,-36.05549128237467,0 145.534682133986,-36.06046404050638,0 145.5318217974813,-36.06226675707315,0 145.5317071749182,-36.06351508709575,0 145.5329084473637,-36.06356150828153,0 145.5329654617331,-36.0646711473344,0 145.5316902149438,-36.06478553336665,0 145.5314452754107,-36.07011392004893,0 145.5362282211763,-36.06992805666182,0 145.5361516564134,-36.06787072191853,0 145.5385429243101,-36.06780891394548,0 145.5384652216281,-36.0700532177105,0 145.5315995454643,-36.07017630509544,0 145.5315467248556,-36.08804947118131,0 145.5340074242637,-36.08694005659925,0 145.5357814428964,-36.08546071143103,0 145.5354518828304,-36.08395513143141,0 145.5382619020794,-36.0819794603459,0 145.5383081513621,-36.07946682878237,0 145.5453009590222,-36.07948478256221,0 145.5525021073995,-36.07940601574793,0 145.5525031597396,-36.06999285314865,0 145.5638318017504,-36.06991321590571,0 145.5638305285554,-36.0624998943207,0 145.563847526745,-36.05545209816533,0 145.5594632321459,-36.05547434671448,0 145.5594931565998,-36.05723921454961,0 145.5592596952019,-36.05734468804511,0 145.5585861841523,-36.05867248595624,0 145.5570774052062,-36.05983239217089,0 145.554745676677,-36.0600757564691,0 145.5497749867396,-36.0611844591465,0 145.5476323587392,-36.06000653082087,0 145.5436042682617,-36.05952129234677,0 145.5414616020507,-36.06111473878039,0 145.5414107783157,-36.05549172991667,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>1582A SINGAPORE ROAD NARING 3636</name>
+			<styleUrl>#m_ylw-pushpin7010</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							145.5774163394059,-36.06242621436491,0 145.5703615553327,-36.06244719424552,0 145.5703356593132,-36.05701877513099,0 145.5638608520216,-36.05699859086317,0 145.5637639916526,-36.06681724236029,0 145.5661165053905,-36.06982245392168,0 145.577498634721,-36.06983833468946,0 145.5774163394059,-36.06242621436491,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Greg Moore</name>
+			<styleUrl>#msn_ylw-pushpin312</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							145.4486165935163,-35.97879215959571,0 145.4423746294764,-35.97400891722489,0 145.4433695110306,-35.97257921857282,0 145.4435253903534,-35.97022263215636,0 145.4491719810374,-35.97015905756108,0 145.4479215164612,-35.96736855056186,0 145.4472872371234,-35.96429614265862,0 145.433108823326,-35.96428431259143,0 145.4331482617352,-35.96609663000395,0 145.4320280966726,-35.96609509383677,0 145.4318559985027,-35.97224758923431,0 145.431864508345,-35.97509990249925,0 145.4322659078206,-35.97512137893734,0 145.4322405759266,-35.97698506132731,0 145.4333578772423,-35.97705919148065,0 145.4333941164157,-35.97784312549095,0 145.432142777521,-35.97781856812766,0 145.4320682925369,-35.98430425591388,0 145.4415738721967,-35.98433416855172,0 145.4415741212416,-35.98337023707272,0 145.4445391501889,-35.98112764571741,0 145.4486422795408,-35.98437842568469,0 145.4486165935163,-35.97879215959571,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>776 Spences Road, Katunga</name>
+			<styleUrl>#msn_ylw-pushpin312</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							145.447993878383,-35.9843591048048,0 145.4442712029063,-35.98135596047097,0 145.4416385931496,-35.9833597846753,0 145.4416603709167,-35.98437207908513,0 145.447993878383,-35.9843591048048,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>382 Shinnicks road, Katunga</name>
+			<styleUrl>#msn_ylw-pushpin107</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							145.3989728632995,-35.95958626875418,0 145.4010448479854,-35.96105053234496,0 145.40416199354,-35.9610313050224,0 145.4041318543003,-35.95514429882044,0 145.3964779419494,-35.95517830158773,0 145.396488752272,-35.95960837606855,0 145.3989728632995,-35.95958626875418,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>1028 Sandmount Road, Katunga</name>
+			<styleUrl>#msn_ylw-pushpin107</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							145.5189935177428,-35.9989042621534,0 145.5226865336651,-35.99892735588357,0 145.5226854480758,-35.99795752714985,0 145.5266314238801,-35.99796934041998,0 145.5281013245236,-35.99574812509285,0 145.525369159968,-35.99364670420462,0 145.5225538038006,-35.99359100051056,0 145.5213536747604,-35.99465184857246,0 145.5189122981683,-35.99461036934594,0 145.5189935177428,-35.9989042621534,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Untitled Polygon</name>
+			<styleUrl>#m_ylw-pushpin008</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							145.3868576963452,-35.9800244122721,0 145.3872382269531,-35.98004517676845,0 145.3872440309826,-35.97941235965934,0 145.3868611829179,-35.97942420439198,0 145.3868576963452,-35.9800244122721,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Untitled Polygon</name>
+			<styleUrl>#m_ylw-pushpin008</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							145.5368763736544,-35.9399558367427,0 145.5368768058219,-35.94038523397933,0 145.5379270192337,-35.9403857955455,0 145.5379158889155,-35.93995648191714,0 145.5368763736544,-35.9399558367427,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

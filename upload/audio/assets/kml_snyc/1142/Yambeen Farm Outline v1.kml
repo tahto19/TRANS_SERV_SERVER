@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document id="root_doc">
+	<name>Yambeen Farm Outline v1.kml</name>
+	<open>1</open>
+	<Schema name="Yambeen_Farm_Outline_v1" id="Yambeen_Farm_Outline_v1">
+		<SimpleField type="string" name="timestamp"></SimpleField>
+		<SimpleField type="string" name="begin"></SimpleField>
+		<SimpleField type="string" name="end"></SimpleField>
+		<SimpleField type="string" name="altitudeMode"></SimpleField>
+		<SimpleField type="int" name="tessellate"></SimpleField>
+		<SimpleField type="int" name="extrude"></SimpleField>
+		<SimpleField type="int" name="visibility"></SimpleField>
+		<SimpleField type="int" name="drawOrder"></SimpleField>
+		<SimpleField type="string" name="icon"></SimpleField>
+	</Schema>
+	<Placemark>
+		<name>Block 2</name>
+		<Style>
+			<LineStyle>
+				<color>ff0000ff</color>
+			</LineStyle>
+			<PolyStyle>
+				<fill>0</fill>
+			</PolyStyle>
+		</Style>
+		<ExtendedData>
+			<SchemaData schemaUrl="#Yambeen_Farm_Outline_v1">
+				<SimpleData name="tessellate">1</SimpleData>
+				<SimpleData name="extrude">0</SimpleData>
+				<SimpleData name="visibility">-1</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						151.500366106154,-27.4845247724905,0 151.516923142499,-27.4866788574274,0 151.510759670594,-27.5228602843521,0 151.523853730416,-27.5244257030086,0 151.530098403626,-27.4884948001548,0 151.516985183954,-27.4866368519562,0 151.520032374071,-27.4697958874456,0 151.503441193241,-27.4675669796414,0 151.500366106154,-27.4845247724905,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+	<Placemark>
+		<name>Block 1</name>
+		<Style>
+			<LineStyle>
+				<color>ff0000ff</color>
+			</LineStyle>
+			<PolyStyle>
+				<fill>0</fill>
+			</PolyStyle>
+		</Style>
+		<ExtendedData>
+			<SchemaData schemaUrl="#Yambeen_Farm_Outline_v1">
+				<SimpleData name="tessellate">1</SimpleData>
+				<SimpleData name="extrude">0</SimpleData>
+				<SimpleData name="visibility">-1</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<gx:balloonVisibility>1</gx:balloonVisibility>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						151.465751746641,-27.56866008558899,0 151.473688459317,-27.5698439700307,0 151.480788539218,-27.5704685100846,0 151.488135021107,-27.5696717766255,0 151.490578402544,-27.5581312030361,0 151.510026293092,-27.560655234199,0 151.509732594757,-27.5675046480177,0 151.514530322324,-27.5695654935243,0 151.518777799314,-27.5704251518598,0 151.524973270063,-27.5737157537638,0 151.52582852458,-27.569127158815,0 151.533259503706,-27.5700159278529,0 151.533163717179,-27.56921250575679,0 151.531492228789,-27.5668523466064,0 151.530357835825,-27.5645639431165,0 151.530223463832,-27.5616310222545,0 151.531401201894,-27.5613893622363,0 151.532862283202,-27.5602713168196,0 151.534458929819,-27.5589327448197,0 151.536457668685,-27.5591734957571,0 151.538617467904,-27.5598874201066,0 151.542089344763,-27.5622648763048,0 151.544609420618,-27.5616536720309,0 151.54751506496,-27.5624565830482,0 151.54950016994,-27.553040267733,0 151.550698700931,-27.543314018092,0 151.54896658431,-27.5429064598481,0 151.549592554902,-27.5398824823596,0 151.549899681639,-27.5384902088587,0 151.549381615968,-27.5372590043676,0 151.547699107441,-27.5355273708297,0 151.547359233689,-27.5347015370906,0 151.547375410006,-27.5342058851035,0 151.544850926782,-27.5350317927199,0 151.543014756923,-27.5347824966136,0 151.523327624469,-27.5323818658173,0 151.492848259631,-27.528632040505,0 151.489326775111,-27.5478323304337,0 151.477030657469,-27.546283544276,0 151.477498027547,-27.5433188716769,0 151.474942736542,-27.5430364933261,0 151.472597231575,-27.5550300287585,0 151.466234248059,-27.5542724341167,0 151.465751746641,-27.56866008558899,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+</Document>
+</kml>

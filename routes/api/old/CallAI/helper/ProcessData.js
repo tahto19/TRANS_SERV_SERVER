@@ -1,23 +1,13 @@
 import { changeToJson } from "../../../../helper/helpersHere.js";
-import Agents from "../../../../models/Agents.model.js";
-import GroupServiceConfig from "../../../../models/GroupServiceConfig.model.js";
-import Groups from "../../../../models/Groups.model.js";
-import IntentDetails from "../../../../models/IntentDetails.model.js";
-import IntentResult from "../../../../models/IntentResult.model.js";
-import Intents from "../../../../models/Intents.model.js";
 import NotesFilterD from "../../../../models/NotesFilterD.model.js";
-import PiiFilter from "../../../../models/PiiFilter.model.js";
 import Query from "../../../../models/Query.model.js";
 import TranscriptSeperation from "../../../../models/TranscriptSeperation.js";
-import Transcripts from "../../../../models/Transcripts.model.js";
-import { Agent } from "../../Agent/Agent.js";
 import {
   compliance_config,
   intent_config,
   kpi_config,
   notes_config,
   notes_configV2,
-  pii_filter,
   sentimental_config,
   speech_cofig,
 } from "../proccess/assets/chatgptconfig.js";
@@ -34,6 +24,7 @@ export const processingData = async (
   transcript,
   transcript_id
 ) => {
+  console.log(transcript_id);
   let type = "";
   try {
     if (!service.Service && !service.Service.ServiceBundles)
@@ -58,30 +49,23 @@ export const processingData = async (
     for (let i = 0; i < serviceBundle.length; i++) {
       let v = serviceBundle[i];
       let getAiModule = v.AiModule;
-
       type += type === "" ? getAiModule.name : "|" + getAiModule.name;
-      if (
-        getAiModule.name === "Speech-to-Text" ||
-        getAiModule.name === "DEV-TEXT-TO-SPEECH"
-      ) {
-        // let fileToChage = v.sequence === 1 ? 2 : 1;
-
-        data.data.push(speech_cofig(file[2]));
+      if (getAiModule.name === "DEV-TEXT-TO-SPEECH") {
+        let fileToChage = v.sequence === 1 ? 2 : 1;
+        data.data.push(speech_cofig(file[fileToChage]));
       } else {
-        if (v.requirement !== null && v.requirement !== undefined) {
+        if (v.requirement !== null) {
           if (getAiModule.name === "Sentiment Analysis") {
             data.data.push(sentimental_config());
           } else if (getAiModule.name === "Intent Analysis") {
             let createPrompt = createPromptIntent(
               agentDetails.Group.GroupServiceConfigs[0].Intents
             );
-
             let prompt = intent_config(
               null,
               createPrompt.explanation,
               createPrompt.intent_prompt
             );
-
             data.data.push(prompt);
           } else if (getAiModule.name === "Compliance") {
             let prompt = compliance_config(
@@ -101,47 +85,22 @@ export const processingData = async (
             );
 
             data.data.push(prompt);
-          } else if (getAiModule.name === "Sentiment Analysis") {
-            data.data.push(sentimental_config(transcript));
-          } else if (getAiModule.name === "Compliance") {
-            let prompt = compliance_config(
+          } else if (getAiModule.name === "Content Summarizer") {
+            let prompt = await notes_propmt_with_config(
               transcript,
+              null,
+              agent
+            );
+
+            data.data.push(prompt);
+          } else if (getAiModule.name === "Compliance") {
+            let prompt = await compliancePropmt_with_no_target(
+              transcript_id,
               intent.script,
               agentDetails.Group.GroupServiceConfigs[0].metricRange
             );
 
             data.data.push(prompt);
-          } else if (getAiModule.name === "Intent Analysis") {
-            let createPrompt = await createPromptIntent(
-              agentDetails.Group.GroupServiceConfigs[0].Intents
-            );
-            let prompt = intent_config(
-              transcript,
-              createPrompt.explanation,
-              createPrompt.intent_prompt
-            );
-
-            data.data.push(prompt);
-          } else if (getAiModule.name === "Content Summarizer") {
-            let prompt = await notes_propmt_with_config(
-              transcript,
-              null,
-              intent
-            );
-
-            data.data.push(prompt);
-          } else if (getAiModule.name === "Pii Filter") {
-            let createPrompt = await pii_filter_prompt(transcript_id, agent);
-            // let prompt = intent_config(
-            //   transcript,
-            //   createPrompt.explanation,
-            //   createPrompt.intent_prompt
-            // );
-
-            if (createPrompt) data.data.push(createPrompt);
-            else {
-              return false;
-            }
           }
         }
       }
@@ -153,16 +112,15 @@ export const processingData = async (
     let response = await er.start_call(apikey);
     console.log(response);
     return { response, type, data };
-
     // return data;
   } catch (err) {
     console.log(err);
     throw err;
   }
 };
-const notes_propmt_with_config = async (tranascript, callflow, intent) => {
+const notes_propmt_with_config = async (tranascript, callflow, agent) => {
   try {
-    let getConfig = intent.notesConfig;
+    let getConfig = agent.Group.GroupServiceConfigs[0].notesConfig;
 
     if (!getConfig) {
       // get default config
@@ -172,51 +130,8 @@ const notes_propmt_with_config = async (tranascript, callflow, intent) => {
     }
 
     let prompt = notes_configV2(tranascript, callflow, getConfig);
-
+    // console.log(prompt);
     return prompt;
-  } catch (err) {
-    console.log(err);
-    throw err;
-  }
-};
-const pii_filter_prompt = async (transcript_id, agent) => {
-  try {
-    let getT = await Transcripts.findOne({
-      where: { id: transcript_id },
-      include: [
-        {
-          required: true,
-          model: IntentResult,
-          // attributes: ["main_intent_id", "sub_intent_id", "id"],
-          include: [
-            {
-              model: IntentDetails,
-              // attributes: ["intent_name", "desc", "score"],
-              as: "main_intent",
-            },
-          ],
-        },
-      ],
-    });
-    let t = changeToJson(getT);
-    let findIntent = agent.Group.GroupServiceConfigs[0].Intents.find(
-      (x) => x.intent.id === t.IntentResults[0].main_intent.conn
-    );
-
-    if (
-      findIntent !== undefined &&
-      findIntent.piifilter !== null &&
-      findIntent.piifilter.active
-    ) {
-      let prompt = pii_filter(t.content, findIntent.piifilter.data);
-      return prompt;
-    } else {
-      return false;
-    }
-
-    // console.log(t.IntentResults[0].main_intent.intent_name);
-    // let prompt = Pii_filter_function(tranascript, callflow, getConfig);
-    // // console.log(prompt);
   } catch (err) {
     console.log(err);
     throw err;
@@ -243,39 +158,19 @@ const compliancePropmt_with_no_target = async (
     console.log(err);
   }
 };
-const array_move = async (arr, old_index, new_index) => {
-  if (new_index >= arr.length) {
-    var k = new_index - arr.length + 1;
-    while (k--) {
-      arr.push(undefined);
-    }
-  }
-  arr.splice(new_index, 0, arr.splice(old_index, 1)[0]);
-  return arr; // for testing
-};
-export const createPromptIntent = async (intents) => {
-  let findIndex = intents.findIndex((x) => x.default === true);
-
-  let changePosition = await array_move(intents, findIndex, 0);
-
-  const intentNames = changePosition.map((intent) => intent.intent).join(",");
+export const createPromptIntent = (intents) => {
+  const intentNames = intents.map((intent) => intent.intent).join(",");
   const newPrompt = intent_prompt.replace("[callintent]", intentNames);
 
-  const explanations = " ###Instructions###";
-  const instructions = ` Categorize the document using the categories below.
- `;
-  //  Class: [${changePosition
-  //   .filter((intent) => intent.desc.trim() !== "")
-  //   .map((intent, i) => `${intent.intent}`)}]
-  // Text:`;
-  let intentsExplanations = changePosition
+  const explanations = intents
     .filter((intent) => intent.desc.trim() !== "")
-    .map((intent) => `if ${intent.desc} classify it as ${intent.intent}`)
+    .map((intent) => `${intent.intent}: ${intent.desc}`)
     .join("\n");
+
   const response = {
     response: true,
     intent_prompt: newPrompt,
-    explanation: explanations + instructions + intentsExplanations,
+    explanation: explanations || " ",
   };
 
   return response;
@@ -283,10 +178,9 @@ export const createPromptIntent = async (intents) => {
 export const kpiPromt = (kpi_array, transcript, metric_range) => {
   let array = [];
   let prompt = kpi_prompt;
-
-  for (let i = 0; i < kpi_array.IntentsMetrics.length; i++) {
-    const kpi_name = kpi_array.IntentsMetrics[i].call_quality;
-    const kpi_explanation = kpi_array.IntentsMetrics[i].metric_desc;
+  for (let i = 0; i < kpi_array.data.length; i++) {
+    const kpi_name = kpi_array.data[i].call_quality;
+    const kpi_explanation = kpi_array.data[i].metric_desc;
     array.push("\n" + "- " + kpi_name + ":if" + kpi_explanation);
   }
   prompt = prompt.replace("[kpi_array]", array.join(""));

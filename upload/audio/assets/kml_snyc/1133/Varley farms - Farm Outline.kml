@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Varley farms - Farm Outline.kml</name>
+	<StyleMap id="msn_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_ylw-pushpin0">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff0000ff</color>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff0000ff</color>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Folder>
+		<name>Varley farms - Farm Outline</name>
+		<Placemark>
+			<name>Block 1</name>
+			<styleUrl>#msn_ylw-pushpin</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							119.4490293120041,-32.69744033672145,0 119.436319279647,-32.72732290901468,0 119.4703461063311,-32.72697781180724,0 119.4794074816945,-32.69691498661837,0 119.4490293120041,-32.69744033672145,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Block 2</name>
+			<styleUrl>#msn_ylw-pushpin</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							119.5005245824708,-32.69674691344778,0 119.5009536902264,-32.71249344686316,0 119.5170900138254,-32.71249465618053,0 119.5175044736539,-32.72607765138061,0 119.5026300612013,-32.72717381871458,0 119.5041365821857,-32.73170386319386,0 119.4692505761133,-32.73187296581655,0 119.46921609232,-32.74692358652681,0 119.4741522020865,-32.74729966126,0 119.4743491713908,-32.7554677110993,0 119.4719731432254,-32.7554696264548,0 119.4723967781589,-32.76326988709875,0 119.4773590551636,-32.76000691381115,0 119.4790899409532,-32.76000265219663,0 119.4808125312681,-32.76163682494594,0 119.4810286110584,-32.76363024035162,0 119.4821083231792,-32.76507903621685,0 119.5810636557134,-32.764322755676,0 119.5805996405213,-32.75070473714624,0 119.5887882860253,-32.74979906300785,0 119.5893641978472,-32.72695376579644,0 119.6031052266014,-32.72639556277364,0 119.6024921267136,-32.68476548953382,0 119.5753680140385,-32.68334080178915,0 119.5502109806425,-32.68840762938631,0 119.5411742297613,-32.69493405435696,0 119.5005245824708,-32.69674691344778,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Block 3</name>
+			<styleUrl>#msn_ylw-pushpin</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							119.5910102887747,-32.60548887215789,0 119.5884363899904,-32.61363986553168,0 119.5445867694359,-32.64569432345363,0 119.5654587078969,-32.659272877375,0 119.5656738701611,-32.65927280100568,0 119.5895273497726,-32.65112626949396,0 119.607516333945,-32.62256331750362,0 119.5910102887747,-32.60548887215789,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

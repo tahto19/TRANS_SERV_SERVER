@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Greg Curnow - Property Boundaries.kml</name>
+	<StyleMap id="poly-FFEA00-3401-0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#poly-FFEA00-3401-0-normal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#poly-FFEA00-3401-0-highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="poly-FFEA00-3401-0-highlight">
+		<LineStyle>
+			<color>ff00eaff</color>
+			<width>5.1015</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>0000eaff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-FFEA00-3401-0-normal">
+		<LineStyle>
+			<color>ff00eaff</color>
+			<width>3.401</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>0000eaff</color>
+		</PolyStyle>
+	</Style>
+	<Folder>
+		<name>GD &amp; DL Curnow - Greg Curnow - Property Boundaries</name>
+		<Placemark>
+			<description>1</description>
+			<styleUrl>#poly-FFEA00-3401-0</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							121.31104,-33.660625,0 121.311115,-33.648721,0 121.324083,-33.636126,0 121.309488,-33.626155,0 121.309111,-33.62606,0 121.306334,-33.627599,0 121.305693,-33.629785,0 121.306095,-33.630225,0 121.307603,-33.631606,0 121.303682,-33.63374,0 121.300289,-33.632568,0 121.295916,-33.636272,0 121.294358,-33.636398,0 121.294006,-33.636921,0 121.293805,-33.637841,0 121.294031,-33.639034,0 121.296344,-33.639704,0 121.293076,-33.642403,0 121.291719,-33.642737,0 121.290236,-33.642131,0 121.284858,-33.644641,0 121.278022,-33.651085,0 121.272996,-33.651043,0 121.263144,-33.655269,0 121.262038,-33.655269,0 121.263496,-33.657612,0 121.265331,-33.659851,0 121.266009,-33.659976,0 121.276741,-33.660018,0 121.293277,-33.660018,0 121.297399,-33.660499,0 121.31104,-33.660625,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description>2</description>
+			<styleUrl>#poly-FFEA00-3401-0</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							121.167114,-33.563655,0 121.167893,-33.58248,0 121.172518,-33.60802,0 121.182571,-33.604587,0 121.19574,-33.604503,0 121.195991,-33.590771,0 121.195966,-33.577455,0 121.195765,-33.563111,0 121.167114,-33.563655,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description>3</description>
+			<styleUrl>#poly-FFEA00-3401-0</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							121.228663,-33.573183,0 121.208457,-33.564891,0 121.196946,-33.564849,0 121.196996,-33.575445,0 121.197097,-33.587505,0 121.197298,-33.601949,0 121.213282,-33.601698,0 121.228663,-33.573183,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description>4</description>
+			<styleUrl>#poly-FFEA00-3401-0</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							121.434613,-33.571327,0 121.434677,-33.562274,0 121.43458,-33.547035,0 121.434597,-33.528895,0 121.413643,-33.528868,0 121.414031,-33.545202,0 121.414386,-33.557006,0 121.414386,-33.561641,0 121.414613,-33.571368,0 121.434613,-33.571327,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description>6</description>
+			<styleUrl>#poly-FFEA00-3401-0</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							121.448841,-33.231911,0 121.445606,-33.217634,0 121.444379,-33.212967,0 121.437742,-33.183237,0 121.402436,-33.197613,0 121.410467,-33.213341,0 121.422626,-33.237509,0 121.424523,-33.241241,0 121.448841,-33.231911,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

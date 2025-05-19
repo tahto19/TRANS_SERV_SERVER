@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="Erinair" id="Erinair">
+	<SimpleField name="timestamp" type="string"></SimpleField>
+	<SimpleField name="begin" type="string"></SimpleField>
+	<SimpleField name="end" type="string"></SimpleField>
+	<SimpleField name="altitudeMode" type="string"></SimpleField>
+	<SimpleField name="tessellate" type="int"></SimpleField>
+	<SimpleField name="extrude" type="int"></SimpleField>
+	<SimpleField name="visibility" type="int"></SimpleField>
+	<SimpleField name="drawOrder" type="int"></SimpleField>
+	<SimpleField name="icon" type="string"></SimpleField>
+</Schema>
+<Folder><name>Erinair</name>
+  <Placemark>
+	<name>Block 1</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Erinair">
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>121.069803236121,-33.6707921305351,0 121.075841536667,-33.6557519487811,0 121.076107401562,-33.655055611458,0 121.074504060854,-33.6420992163546,0 121.057577604836,-33.6443639634166,0 121.051670642206,-33.6505316163453,0 121.050808049181,-33.6507410881402,0 121.010234486154,-33.6579407197554,0 121.012792665227,-33.6645354436252,0 121.02144698015,-33.6692477950177,0 121.029520933064,-33.6699359422683,0 121.036766201036,-33.6760972428237,0 121.047528528444,-33.6722730130443,0 121.05286118498,-33.6713757464798,0 121.053995123164,-33.6714731168549,0 121.059097019175,-33.6712160578674,0 121.060970883437,-33.6679439318866,0 121.061459312477,-33.6679881469505,0 121.066171605585,-33.6671670029415,0 121.069803236121,-33.6707921305351,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>Block 2</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Erinair">
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>121.006997075804,-33.6398046815661,0 120.995641653762,-33.6477949539739,0 120.997853461054,-33.6496373205206,0 121.000785020565,-33.653805631314,0 121.008641339986,-33.6575602543453,0 121.032535431668,-33.6524499998655,0 121.032934438773,-33.6406727308392,0 121.024172839081,-33.6369157869251,0 121.023627436594,-33.6348210116387,0 121.019544925528,-33.6267794128236,0 121.002488588004,-33.6268079526131,0 121.006997075804,-33.6398046815661,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>Block 3</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Erinair">
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>121.211558159104,-33.7560144390029,0 121.211694494407,-33.7918190505861,0 121.227003665448,-33.7900132476462,0 121.234252465712,-33.7897852730003,0 121.23457045766,-33.7895728618089,0 121.238703276343,-33.7879976384338,0 121.238627673226,-33.7875097690272,0 121.238500664981,-33.7832594180417,0 121.238548547483,-33.7829008716799,0 121.242927014308,-33.7779761681834,0 121.245569076563,-33.7760823748825,0 121.246097710041,-33.7755046183361,0 121.248651998453,-33.7714369441907,0 121.249603713457,-33.7651556644086,0 121.249643263846,-33.764901023105,0 121.251020411122,-33.758906184237,0 121.251249341877,-33.758401579473,0 121.251309129588,-33.7580130641897,0 121.25138893757,-33.7574943744645,0 121.250758641012,-33.7546686198619,0 121.251723805536,-33.7503508383844,0 121.251936345588,-33.7499654652176,0 121.254347388225,-33.7462651602507,0 121.25473435639,-33.7447942997725,0 121.244986332916,-33.748006766004,0 121.211558159104,-33.7560144390029,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>Block 4</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Erinair">
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>121.255809314693,-33.7431724178128,0 121.272322049803,-33.740715044591,0 121.274325227574,-33.7213206083071,0 121.274374407707,-33.701524481577,0 121.249105070363,-33.7006576222657,0 121.24573564885,-33.7068493101142,0 121.256812100422,-33.707385640017,0 121.259668140255,-33.7133910208367,0 121.254171641083,-33.714339971384,0 121.247135537851,-33.716450589726,0 121.245100759697,-33.7162553405575,0 121.24523996309,-33.724370918715,0 121.250881459422,-33.729822465336,0 121.248724587958,-33.7372135384328,0 121.253824535996,-33.738857890981,0 121.255809314693,-33.7431724178128,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+</Folder>
+</Document></kml>

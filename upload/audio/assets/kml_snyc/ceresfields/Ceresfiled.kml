@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Kondut.kml</name>
+	<StyleMap id="poly-F7FF0A-2000-0-nodesc">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#poly-F7FF0A-2000-0-nodesc-normal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#poly-F7FF0A-2000-0-nodesc-highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="poly-F7FF0A-2000-0-nodesc-highlight">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff0afff7</color>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>000afff7</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-F7FF0A-2000-0-nodesc-normal">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff0afff7</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>000afff7</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="poly-FFF20A-2000-0-nodesc">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#poly-FFF20A-2000-0-nodesc-normal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#poly-FFF20A-2000-0-nodesc-highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="poly-FFF20A-2000-0-nodesc-highlight">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff0af2ff</color>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>000af2ff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-FFF20A-2000-0-nodesc-normal">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff0af2ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>000af2ff</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="poly-FFF60A-2000-0-nodesc">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#poly-FFF60A-2000-0-nodesc-normal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#poly-FFF60A-2000-0-nodesc-highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="poly-FFF60A-2000-0-nodesc-highlight">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff0af6ff</color>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>000af6ff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-FFF60A-2000-0-nodesc-normal">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff0af6ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>000af6ff</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="poly-FFFB0A-2000-0-nodesc">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#poly-FFFB0A-2000-0-nodesc-normal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#poly-FFFB0A-2000-0-nodesc-highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="poly-FFFB0A-2000-0-nodesc-highlight">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff0afbff</color>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>000afbff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-FFFB0A-2000-0-nodesc-normal">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff0afbff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>000afbff</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="poly-FFFF0A-2000-0-nodesc">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#poly-FFFF0A-2000-0-nodesc-normal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#poly-FFFF0A-2000-0-nodesc-highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="poly-FFFF0A-2000-0-nodesc-highlight">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff0affff</color>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>000affff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-FFFF0A-2000-0-nodesc-normal">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff0affff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>000affff</color>
+		</PolyStyle>
+	</Style>
+	<Folder>
+		<name>Boundaries</name>
+		<open>1</open>
+		<Placemark>
+			<name>Yorl&apos;s</name>
+			<styleUrl>#poly-FFF20A-2000-0-nodesc</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							116.755753,-30.819416,0 116.763768,-30.811182,0 116.763881,-30.804148,0 116.755945,-30.804133,0 116.755753,-30.819416,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Joe&apos;s</name>
+			<styleUrl>#poly-FFF60A-2000-0-nodesc</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							116.820858,-30.793837,0 116.826226,-30.793754,0 116.826202,-30.761615,0 116.823209,-30.75905,0 116.82164,-30.727788,0 116.786431,-30.717482,0 116.786281,-30.714006,0 116.782686,-30.712979,0 116.781198,-30.716207,0 116.773905,-30.713078,0 116.773346,-30.72282,0 116.783695,-30.722702,0 116.781271,-30.739755,0 116.781986,-30.749686,0 116.77265,-30.75807,0 116.772523,-30.783955,0 116.791625,-30.784389,0 116.791687,-30.786459,0 116.790349,-30.788923,0 116.804915,-30.789054,0 116.811578,-30.792377,0 116.815357,-30.792114,0 116.820858,-30.793837,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Dunolly</name>
+			<styleUrl>#poly-FFFB0A-2000-0-nodesc</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							116.795884,-30.887498,0 116.796054,-30.889933,0 116.804008,-30.890369,0 116.80378,-30.91074,0 116.798601,-30.915164,0 116.798265,-30.92828099999999,0 116.823462,-30.928074,0 116.823443,-30.923314,0 116.846532,-30.923276,0 116.852988,-30.91671699999999,0 116.853095,-30.908575,0 116.840824,-30.908274,0 116.823212,-30.911543,0 116.823288,-30.878844,0 116.797874,-30.882183,0 116.784518,-30.882466,0 116.779238,-30.887113,0 116.795884,-30.887498,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Sylvania</name>
+			<styleUrl>#poly-FFFF0A-2000-0-nodesc</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							117.045363,-31.009857,0 117.04238,-31.010061,0 117.042219,-31.014269,0 117.034253,-31.014263,0 117.033925,-31.009827,0 117.026421,-31.009972,0 117.026062,-31.015228,0 117.017065,-31.015732,0 117.017107,-31.047573,0 117.035919,-31.047511,0 117.037025,-31.042526,0 117.040607,-31.04740899999999,0 117.04466,-31.047356,0 117.04393,-31.018579,0 117.045341,-31.018318,0 117.045363,-31.009857,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Wilkins</name>
+			<styleUrl>#poly-F7FF0A-2000-0-nodesc</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							116.967095,-30.937708,0 116.966802,-30.925327,0 116.91483,-30.924831,0 116.914848,-30.944833,0 116.938501,-30.945153,0 116.938307,-30.937589,0 116.967095,-30.937708,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Home Farm</name>
+			<styleUrl>#poly-F7FF0A-2000-0-nodesc</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							117.008245,-30.924791,0 117.008182,-30.865476,0 116.970205,-30.865335,0 116.970109,-30.913643,0 116.98225,-30.913683,0 116.982163,-30.917792,0 116.986323,-30.924591,0 117.008245,-30.924791,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Forrest Hill</name>
+			<styleUrl>#poly-FFFB0A-2000-0-nodesc</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							116.902488,-30.871823,0 116.945674,-30.867215,0 116.945786,-30.835573,0 116.928271,-30.835165,0 116.928748,-30.855902,0 116.902529,-30.85553,0 116.902488,-30.871823,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Ellis Field</name>
+			<styleUrl>#poly-FFFF0A-2000-0-nodesc</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							116.902391,-30.87225,0 116.877554,-30.872067,0 116.874161,-30.874709,0 116.878621,-30.884471,0 116.882393,-30.884459,0 116.882664,-30.89312,0 116.902401,-30.893489,0 116.902391,-30.87225,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Manmanning Farm</name>
+			<styleUrl>#poly-FFFB0A-2000-0-nodesc</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							117.097818,-30.84221,0 117.094106,-30.840386,0 117.094357,-30.844672,0 117.098767,-30.844274,0 117.102935,-30.84462600000001,0 117.106281,-30.852823,0 117.121406,-30.853014,0 117.121405,-30.827957,0 117.105573,-30.827915,0 117.097818,-30.84221,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Total space</name>
+			<styleUrl>#poly-FFF60A-2000-0-nodesc</styleUrl>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							116.786935,-30.932851,0 116.992918,-31.05195399999999,0 117.057771,-31.05406,0 117.031533,-30.879346,0 117.133899,-30.873615,0 117.130995,-30.803451,0 117.070412,-30.851343,0 116.870822,-30.821043,0 116.83812,-30.709833,0 116.75636,-30.707268,0 116.743603,-30.811845,0 116.786935,-30.932851,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

@@ -22,16 +22,16 @@ class getOrg {
     this.orgDetails = getAccess.data.details;
 
     return this.orgDetails;
-    //   this.getOrgServices();
-    //   this.getApiByCallback();
-    //   this.getOrgDetails();
-    //   this.getOrgServiceBundles();
+    this.getOrgServices();
+    this.getApiByCallback();
+    this.getOrgDetails();
+    this.getOrgServices();
+    this.getOrgServiceBundles();
   }
   getApiByCallback(data) {
     if (this.error) return "error";
     else if (data !== undefined) {
       this.access = this.orgDetails.ApiKeys[data];
-
       return this.access.api_key;
     } else {
       this.access = this.orgDetails.ApiKeys.find(
@@ -43,41 +43,43 @@ class getOrg {
     if (this.error) return "error";
     return this.orgDetails;
   }
-  getOrgServices(data) {
+  getOrgServices() {
     if (this.error) return "error";
 
-    this.service = this.orgDetails.ApiKeys[data];
+    this.service =
+      this.orgDetails.OrganizationSubscription.Subscription.SubscriptionServices;
     return this.service;
   }
-  // getOrgServices(data) {
-  //   if (this.error) return "error";
-  //   else if (data !== undefined) {
-  //     // this.access = this.orgDetails.ApiKeys.find(
-  //     //   (x) => x.callback_url === data
-  //     // );
-  //     // let service_id = this.access.service_id;
-  //     // this.service =
-  //     //   this.orgDetails.OrganizationSubscription.Subscription.SubscriptionServices.find(
-  //     //     (x) => x.service_id === service_id
-  //     //   );
+  getOrgServices(data) {
+    if (this.error) return "error";
+    if (this.error) return "error";
+    else if (data !== undefined) {
+      this.access = this.orgDetails.ApiKeys.find(
+        (x) => x.callback_url === data
+      );
+      let service_id = this.access.service_id;
+      this.service =
+        this.orgDetails.OrganizationSubscription.Subscription.SubscriptionServices.find(
+          (x) => x.service_id === service_id
+        );
 
-  //     return this.orgDetails.ApiKeys[data];
-  //   } else {
-  //     let service_id = this.access.service_id;
+      return this.service;
+    } else {
+      let service_id = this.access.service_id;
 
-  //     this.service =
-  //       this.orgDetails.OrganizationSubscription.Subscription.SubscriptionServices.find(
-  //         (x) => x.service_id === service_id
-  //       );
+      this.service =
+        this.orgDetails.OrganizationSubscription.Subscription.SubscriptionServices.find(
+          (x) => x.service_id === service_id
+        );
 
-  //     return this.orgDetails.ApiKeys[data];
-  //   }
-  // }
+      return this.service;
+    }
+  }
   getOrgServiceBundles(data) {
     if (this.error) return "error";
-
-    // this.bundles = this.orgDetails.ApiKeys[data];
-    // return this.orgDetails.ApiKeys[data];
+    console.log();
+    this.bundles = this.service.Service.ServiceBundles;
+    return this.service.Service.ServiceBundles;
   }
   getAccess(data) {
     if (this.error) return "error";
@@ -90,6 +92,7 @@ class getOrg {
     }
   }
   findBundles(toFind) {
+    console.log(toFind);
     return this.bundles.find(
       (x) => x.AiModule.name.toLowerCase() === toFind.toLowerCase()
     );

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Heal Farming Outline.kml</name>
+	<Style id="s_ylw-pushpin_hl280">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<width>1.5</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="s_ylw-pushpin47">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<width>1.5</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin122">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin47</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl280</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Placemark>
+		<name>Heal Farming Outline</name>
+		<styleUrl>#m_ylw-pushpin122</styleUrl>
+		<Polygon>
+			<tessellate>1</tessellate>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						115.3763024259689,-29.6486633126142,0 115.4090771832856,-29.64842423038097,0 115.4092747939579,-29.64438166611033,0 115.4135143897726,-29.64437451055182,0 115.4130993526714,-29.61505076285627,0 115.4310596340731,-29.61470013651266,0 115.4310570443352,-29.6066194555018,0 115.4778653494427,-29.6069337505914,0 115.4778599012796,-29.60008810476179,0 115.4881355298409,-29.60025570460769,0 115.4883145275845,-29.5670311012471,0 115.4654445967068,-29.56663231404687,0 115.4415533758069,-29.56632407712317,0 115.4320011451868,-29.56067205696415,0 115.3824001301563,-29.55970240468763,0 115.3842559729163,-29.57652706908847,0 115.3842741231674,-29.58447866445148,0 115.371297596545,-29.58451695465026,0 115.371565664824,-29.61484811469798,0 115.3769686357442,-29.61474471535182,0 115.3763024259689,-29.6486633126142,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+</Document>
+</kml>

@@ -24,7 +24,6 @@ GroupServiceConfig.init(
       },
     },
     organization_id: { type: DataTypes.INTEGER(11), allowNull: false },
-
     // createdAt: {
     //   type: "TIMESTAMP",
     //   defaultValue: Sequelize.literal("CURRENT_TIMESTAMP"),
@@ -36,18 +35,19 @@ GroupServiceConfig.init(
       allowNull: true,
       defaultValue: "",
     },
-    chatgpt_version: { type: DataTypes.TEXT, allowNull: true },
     forDefault: {
       type: DataTypes.BOOLEAN,
       allowNull: false,
       defaultValue: false,
     },
+    chatgpt_version: { type: DataTypes.TEXT, allowNull: true },
     /**
      * in milliseconds
      * - 1000 (1 second)
      */
   },
   {
+    indexes: [{ name: "groupd_id_idx", fields: ["groupId"] }],
     timestamps: true,
     sequelize: Connection.sequelize,
     modelName: "GroupServiceConfig",

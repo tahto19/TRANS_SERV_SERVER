@@ -9,6 +9,7 @@ import {
   newIntentAnylsis,
   speechTotext,
   speechTotextFromListener,
+  reRunFailedSuccess,
 } from "../controller/CallAI.controller.js";
 
 export const intentAnylsisSchema = {
@@ -84,6 +85,14 @@ export const generatePromptSchema = {
 };
 export const getGeneratePromptSchema = {
   handler: getGeneratePrompt,
+  schema: {
+    queryString: {
+      id: getInt,
+    },
+  },
+};
+export const reRunFailedSuccessSchema = {
+  handler: reRunFailedSuccess,
   schema: {
     queryString: {
       id: getInt,

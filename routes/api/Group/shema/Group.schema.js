@@ -9,6 +9,7 @@ import {
   getUsersByGroupId,
   getUsersByGroupIdWithTranscripts,
   updateGroup,
+  update2,
 } from "../controller/Group.controller.js";
 export const createGroupSchema = {
   handler: createGroup,
@@ -96,6 +97,19 @@ export const getListOfGroupsNotAddedSchema = {
     body: {
       type: "object",
       properties: { organization_id: getInt, account_code: getString },
+    },
+  },
+};
+export const update2GroupSchema = {
+  handler: update2,
+  schema: {
+    body: {
+      type: "object",
+      properties: {
+        name: getString,
+        code: getString,
+        organization_id: getInt,
+      },
     },
   },
 };

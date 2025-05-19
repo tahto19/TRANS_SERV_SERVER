@@ -2,17 +2,14 @@ import { getInt, getObject, getString } from "../../Type/type.js";
 import {
   addNewAgent,
   autoComplete,
-  changeUserInUserID,
   createAgent,
   getAgent,
-  getAgentDetails,
   getAgents,
   getAgentsList,
   getAgentsWithNoGroup,
   getAllAgent,
   getNewAgentList,
   getUserId,
-  switchUserID,
   totalAgent,
   updateAgent,
   updateNewAgent,
@@ -146,40 +143,6 @@ export const updateNewAgentListSchema = {
         contact_details: getString,
         user_id: getString,
       },
-    },
-  },
-};
-export const changeUserInUserIDSchema = {
-  handler: changeUserInUserID,
-  schema: {
-    body: {
-      type: "object",
-      properties: {
-        fullname: getString,
-        contact_details: getString,
-        user_id: getString,
-      },
-    },
-  },
-};
-export const switchUserIDSchema = {
-  handler: switchUserID,
-  schema: {
-    body: {
-      type: "object",
-      properties: {
-        id1: getInt,
-        id2: getInt,
-        organization_id: getInt,
-      },
-    },
-  },
-};
-export const getAgentDetailsSchema = {
-  handler: getAgentDetails,
-  schema: {
-    queryString: {
-      id: getInt,
     },
   },
 };

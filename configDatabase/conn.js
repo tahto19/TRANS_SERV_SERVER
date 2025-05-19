@@ -25,7 +25,8 @@ const auth = async () => {
 };
 
 const sync = async () => {
-  await sequelize.sync({ force: false, alter: true });
+  logger.info("Sync is running");
+  await sequelize.sync({ force: false, alter: false });
   logger.info("Sync was successful");
 };
 

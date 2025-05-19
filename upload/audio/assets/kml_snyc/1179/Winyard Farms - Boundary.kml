@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Winyard Farms - Boundary.kml</name>
+	<StyleMap id="poly-FFEA00-1690-0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#poly-FFEA00-1690-0-normal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#poly-FFEA00-1690-0-highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="poly-FFEA00-1690-0-highlight">
+		<LineStyle>
+			<color>ff00eaff</color>
+			<width>2.535</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>0000eaff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-FFEA00-1690-0-normal">
+		<LineStyle>
+			<color>ff00eaff</color>
+			<width>1.69</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>0000eaff</color>
+		</PolyStyle>
+	</Style>
+	<Folder>
+		<name>Winyard Farms - Boundary</name>
+		<Placemark>
+			<description><![CDATA[description:  <br> fid 17 <br> id  <br> name  <br> folders Winyard Farms - Property Boundaries <br> descriptio 2 <br> altitude  <br> alt_mode clampToGround <br> time_begin  <br> time_end  <br> time_when  <br> layer Winyard Farms <br> path C:/Users/khodges/ownCloud - khodges@192.168.101.10/Customers/1177 - Lake King Group/Lake King QGIS/Winyard Farms.shp|layername=Winyard Farms <br>fid: 17<br>id: <br>folders: Winyard Farms - Property Boundaries<br>descriptio: 2<br>altitude: <br>alt_mode: clampToGround<br>time_begin: <br>time_end: <br>time_when: <br>layer: Winyard Farms<br>path: C:/Users/khodges/ownCloud - khodges@192.168.101.10/Customers/1177 - Lake King Group/Lake King QGIS/Winyard Farms.shp|layername=Winyard Farms]]></description>
+			<styleUrl>#poly-FFEA00-1690-0</styleUrl>
+			<ExtendedData>
+				<Data name="description">
+					<value>fid 17 
+ id  
+ name  
+ folders Winyard Farms - Property Boundaries 
+ descriptio 2 
+ altitude  
+ alt_mode clampToGround 
+ time_begin  
+ time_end  
+ time_when  
+ layer Winyard Farms 
+ path C:/Users/khodges/ownCloud - khodges@192.168.101.10/Customers/1177 - Lake King Group/Lake King QGIS/Winyard Farms.shp|layername=Winyard Farms</value>
+				</Data>
+				<Data name="fid">
+					<value>17</value>
+				</Data>
+				<Data name="id">
+				</Data>
+				<Data name="folders">
+					<value>Winyard Farms - Property Boundaries</value>
+				</Data>
+				<Data name="descriptio">
+					<value>2</value>
+				</Data>
+				<Data name="altitude">
+				</Data>
+				<Data name="alt_mode">
+					<value>clampToGround</value>
+				</Data>
+				<Data name="time_begin">
+				</Data>
+				<Data name="time_end">
+				</Data>
+				<Data name="time_when">
+				</Data>
+				<Data name="layer">
+					<value>Winyard Farms</value>
+				</Data>
+				<Data name="path">
+					<value>C:/Users/khodges/ownCloud - khodges@192.168.101.10/Customers/1177 - Lake King Group/Lake King QGIS/Winyard Farms.shp|layername=Winyard Farms</value>
+				</Data>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							119.702495,-33.12152,0 119.702604,-33.121526,0 119.702221,-33.118902,0 119.701947,-33.117801,0 119.70166,-33.117159,0 119.701113,-33.116403,0 119.697719,-33.113033,0 119.694038,-33.109354,0 119.690247,-33.105479,0 119.688058,-33.103324,0 119.688003,-33.101444,0 119.687989,-33.097226,0 119.687989,-33.094681,0 119.677097,-33.094727,0 119.669885,-33.094646,0 119.662276,-33.094692,0 119.662249,-33.101318,0 119.662222,-33.105766,0 119.662235,-33.109938,0 119.662016,-33.109904,0 119.657706,-33.110087,0 119.657781,-33.105892,0 119.657145,-33.105892,0 119.652424,-33.105938,0 119.639013,-33.105892,0 119.635291,-33.114076,0 119.63811,-33.117996,0 119.636221,-33.121091,0 119.635989,-33.121538,0 119.644377,-33.121492,0 119.661277,-33.121515,0 119.679601,-33.121561,0 119.689426,-33.121515,0 119.698554,-33.121492,0 119.702495,-33.12152,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<description><![CDATA[description:  <br> fid 16 <br> id  <br> name  <br> folders Winyard Farms - Property Boundaries <br> descriptio 1 <br> altitude  <br> alt_mode clampToGround <br> time_begin  <br> time_end  <br> time_when  <br> layer Winyard Farms <br> path C:/Users/khodges/ownCloud - khodges@192.168.101.10/Customers/1177 - Lake King Group/Lake King QGIS/Winyard Farms.shp|layername=Winyard Farms <br>fid: 16<br>id: <br>folders: Winyard Farms - Property Boundaries<br>descriptio: 1<br>altitude: <br>alt_mode: clampToGround<br>time_begin: <br>time_end: <br>time_when: <br>layer: Winyard Farms<br>path: C:/Users/khodges/ownCloud - khodges@192.168.101.10/Customers/1177 - Lake King Group/Lake King QGIS/Winyard Farms.shp|layername=Winyard Farms]]></description>
+			<styleUrl>#poly-FFEA00-1690-0</styleUrl>
+			<ExtendedData>
+				<Data name="description">
+					<value>fid 16 
+ id  
+ name  
+ folders Winyard Farms - Property Boundaries 
+ descriptio 1 
+ altitude  
+ alt_mode clampToGround 
+ time_begin  
+ time_end  
+ time_when  
+ layer Winyard Farms 
+ path C:/Users/khodges/ownCloud - khodges@192.168.101.10/Customers/1177 - Lake King Group/Lake King QGIS/Winyard Farms.shp|layername=Winyard Farms</value>
+				</Data>
+				<Data name="fid">
+					<value>16</value>
+				</Data>
+				<Data name="id">
+				</Data>
+				<Data name="folders">
+					<value>Winyard Farms - Property Boundaries</value>
+				</Data>
+				<Data name="descriptio">
+					<value>1</value>
+				</Data>
+				<Data name="altitude">
+				</Data>
+				<Data name="alt_mode">
+					<value>clampToGround</value>
+				</Data>
+				<Data name="time_begin">
+				</Data>
+				<Data name="time_end">
+				</Data>
+				<Data name="time_when">
+				</Data>
+				<Data name="layer">
+					<value>Winyard Farms</value>
+				</Data>
+				<Data name="path">
+					<value>C:/Users/khodges/ownCloud - khodges@192.168.101.10/Customers/1177 - Lake King Group/Lake King QGIS/Winyard Farms.shp|layername=Winyard Farms</value>
+				</Data>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<tessellate>1</tessellate>
+						<coordinates>
+							119.688444,-33.087613,0 119.68842,-33.101937,0 119.688667,-33.102745,0 119.689118,-33.103726,0 119.690247,-33.104952,0 119.694291,-33.109073,0 119.697917,-33.112626,0 119.69893,-33.113635,0 119.701571,-33.116294,0 119.702296,-33.117509,0 119.702611,-33.11893,0 119.702933,-33.120884,0 119.70307,-33.121509,0 119.723928,-33.121566,0 119.752857,-33.12152,0 119.752173,-33.118976,0 119.752145,-33.111663,0 119.752145,-33.086443,0 119.737722,-33.086741,0 119.713747,-33.087108,0 119.702443,-33.087337,0 119.694561,-33.087441,0 119.688444,-33.087613,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

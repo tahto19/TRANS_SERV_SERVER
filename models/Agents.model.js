@@ -15,12 +15,12 @@ Agents.init(
       type: DataTypes.INTEGER(11),
     },
     user_conn: {
-      allowNull: false,
-      type: DataTypes.INTEGER(11),
-      // references: {
-      //   model: AgentLists,
-      //   key: "id",
-      // },
+      allowNull: true,
+      type: DataTypes.INTEGER(250),
+      references: {
+        model: AgentLists,
+        key: "id",
+      },
     },
     user_id: {
       allowNull: false,
@@ -63,6 +63,10 @@ Agents.init(
     modelName: "Agents",
     paranoid: true,
     tableName: process.env.DB_PREFIX + "_agents",
+    indexes: [
+      { name: "user_conn_idx", fields: ["user_conn"] },
+      { name: "agent_group_id_idx", fields: ["agent_group_id"] },
+    ],
   }
 );
 export default Agents;

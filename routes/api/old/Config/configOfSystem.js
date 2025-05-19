@@ -4,21 +4,17 @@ import {
   createDataSchema,
   createDataV2Schema,
   defaultConfigSchema,
+  defaultIntentConfigSchema,
   deleteDataSchema,
   getDataSchema,
+  getDefaultNotesFilterSchema,
+  getDefaultPiiSchema,
   getOrgConfigSchema,
   metricsOnChangeSchema,
-  updateDataSchema,
-  defaultIntentConfigSchema,
-  updatePiiFilterSchema,
-  getDefaultPiiSchema,
-  updateDataV2Schema,
-  getDefaultNotesFilterSchema,
   saveNotesConfigSchema,
-  updateIntentWithOutArchiveSchema,
-  HighlightTranscriptSchema,
-  updateHighlightConfigSchema,
-  piiFilterToggleSchema,
+  updateDataSchema,
+  updateDataV2Schema,
+  updatePiiFilterSchema,
 } from "./schema/configOfSystem.schema.js";
 
 export const configOfSystemFunction = (app, opts, done) => {
@@ -30,7 +26,6 @@ export const configOfSystemFunction = (app, opts, done) => {
   app.post("/metricsOnChange", metricsOnChangeSchema);
   app.post("/saveConfigv2", createDataV2Schema);
   app.post("/updateIntentv2", updateDataV2Schema);
-  app.post("/updateIntentWithoutArchive", updateIntentWithOutArchiveSchema);
   app.post("/addIntentV2", addIntentV2Schema);
   app.get("/defaultConfig", defaultConfigSchema);
   app.get("/", getDataSchema);
@@ -40,9 +35,5 @@ export const configOfSystemFunction = (app, opts, done) => {
   app.post("/updatePiiFilter", updatePiiFilterSchema);
   app.get("/getDefaultNotesFilter", getDefaultNotesFilterSchema);
   app.post("/saveNotesConfig", saveNotesConfigSchema);
-  app.post("/piiFilterToggle", piiFilterToggleSchema);
-  app.post("/HighlightTranscript", HighlightTranscriptSchema);
-  app.post("/updateHighlightConfig", updateHighlightConfigSchema);
-
   done();
 };
